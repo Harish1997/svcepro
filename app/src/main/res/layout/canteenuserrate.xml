@@ -25,10 +25,10 @@
         android:id="@+id/ratingBar" />
 
     <Button
-        android:text="Submit"
+        android:id="@+id/submit"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:id="@+id/submit"
         android:layout_marginLeft="8dp"
-        android:background="@color/orange" />
+        android:background="@color/buttoncol"
+        android:text="Submit" />
 </LinearLayout>

@@ -18,24 +18,24 @@ public class facultyadv extends AppCompatActivity {
     ListView listView;
 
     //these r for first semester first yr
-    String[] ftautoone={"Ramanjaneyullu Kolla [1-30]","K.Paul Durai[31-60]"};
-    String[] ftbioone={"P.Jaibiba[01-31]","J.Hariharan[32-63]"};
-    String[] ftchemaone={"G.Sudha[1-20]","S.Bharath[21-40]"};
-    String[] ftchembone={"S.Rajasekar[61-80]","G.Saraswathy[81-100]","M.Yogesh Kumar[101-120]"};
-    String[] ftcivilone={"P.Venkateswara Rao","K.Sathyapriya","C.Sandhiya"};
-    String[] ftcseaone={"S.Rajalakshmi","B.Lalithambigai","T.Padmavathy"};
-    String[] ftcsebone={"E.Rajalakshmi","R.Senthil kumar","S.K.umamaheswari"};
-    String[] ftcsecone={"V.Rajalakshmi","K.Kumanan","U.Muthunagai"};
-    String[] fteceaone={"P.Muthukumaran [1-23]","Rajeswari Ramraj[24-46]","P.Arul [47-60]"};
-    String[] ftecebone={"M.vidya[61-83]","S.Mehzabeen[84-106]","C.Gomatheeswari preethika[107-120]"};
-    String[] ftececone={"B.Hemalatha[121-143]","M.Anushya[144-166]","S.Reethi[167-180]"};
-    String[] fteeeaone={"D S Purushothaman[1-20]","S Arulmozhi[21-40]","C Kamal[41-60]"};
-    String[] fteeebone={"S Anitha[61-80]","I Venkatraman[81-100]","M Rajalakshmi[101-120]"};
-    String[] ftitaone={"G.S.Sangeetha[1-21]","S.Uvaraj Arutkumaran[22-41]","V.Saroja[42-61]"};
-    String[] ftitbone={"P.Leela Rani[62-81]","V.Rajaram[82-101]","V.Ranjith[102-121]"};
-    String[]  ftmechaone={"G.Kirubakaran[1-25]","M.ArulKumar[26-50]","R.Ganesan[51-63+LE]"};
-    String[] ftmechbone={"Kumaraswamy[64-88]","E.Suresh[89-113]","Nishal[114-123+LE]"};
-
+    String[] ftautoone={"Mr.E.Ravindar Rao[1-25]","Mr.G.Ravi[26-49]"};
+    String[] ftbioone={"Ms.S.Pandi Prabha","Dr.S.Prabhu"};
+    String[] ftchemaone={"Dr.R.Palani[1-21]","Mr.B.S.Vishal[22-41]"};
+    String[] ftchembone={"Dr.D.Swaminathan[42-62]","Ms.G.Thayanidhi[63-82]"};
+    String[] ftcivilone={"Mr.G.Arun[1-15]","Mr.R.Mathiyazhagan[16-30]","Mr.K.Arun[31-43]"};
+    String[] ftcseaone={"Ms.N.Rajeswari[1-21]","Ms.G.Janakasudha[22-42]","Mr.M.Suresh Kumar[43-63]"};
+    String[] ftcsebone={"Mr.A.Sowmyanarayanan[64-84]","Ms.S.Senthamizhselvi[85-105]","Ms.D.Sasikala[106-125]"};
+    String[] ftcsecone={"Dr.K.S.Gayathri[126-146]","Mr.M.P.Lakshmana Kumar[147-167]","Ms.R.Bhuvaneswari[168-187]"};
+    String[] fteceaone={"Mr.S.Senthil Rajan[1-18]","Dr.P.Jothilakshmi[19-36]","Mr.B.Nethaji[37-52]"};
+    String[] ftecebone={"Dr.R.Gayathri[53-70]","Mr.N.Kumaran [71-88]","Ms.S.Radhika[89-104]"};
+    String[] ftececone={"Ms.S.Kalyani[105-120]","Mr.M.H.Masood[123-140]","Mr.R.Nagaraj[141-156]"};
+    String[] fteeeaone={"Mr.S.Kumaravel","Ms.N.Shanmugavadivu","Mr.S.V.Sreeraj"};
+    String[] fteeebone={"Ms.M.Sasikala","Mr.V.Mohanraj","Mr.M.Ranjithkumar"};
+    String[] ftitaone={"Ms.K.Kiruthika Devi[1-20]","Ms.P.Leela Rani[21-40]","Mr.A.R.Guru Gokul[41-60]"};
+    String[] ftitbone={"Ms.S.Kalavathi[61-80]","Ms.R.Saktheeswari[81-100]","Ms.Kiruba Wesley[101-120]"};
+    String[]  ftmechaone={"Dr.P.Raghu[1-25]","Dr.M.Gajesndiram[26-50]","Mr.G.Suresh[51-60]"};
+    String[] ftmechbone={"Mr.M.Maheshwaran[61-85]","Mr.M.Kalamani[86-110]","Mr.S.Yeshwant Raj[111-120]"};
+    String[] ftmarineone={"Mr.M.R.Kathic Kumar"};
 
 //these r for second sem first year
 
@@ -56,6 +56,7 @@ public class facultyadv extends AppCompatActivity {
     String[] ftitbtwo={"P.Leela Rani[62-81]","V.Rajaram[82-101]","V.Ranjith[102-121]"};
     String[] ftmechatwo={"G.Kirubakaran[1-25]","M.ArulKumar[26-50]","R.Ganesan[51-63+LE]"};
     String[] ftmechbtwo={"Kumaraswamy[64-88]","E.Suresh[89-113]","Nishal[114-123+LE]"};
+    String[] ftmarinetwo={""};
 
 
 
@@ -63,6 +64,13 @@ public class facultyadv extends AppCompatActivity {
     //below r for even sem of second yr,third yr and final yr
 
     //method used is (ft)+(department)+(section if avail)+(semester)
+
+
+    //for marine four ,six,eight
+    String[] ftmarinefour={"1-Mr.Dhanabal[1-25]","Mr.A.K.Boobalasenthilraj[26-50]","Mr.S.Premnath[51-61]"};
+    String[] ftmarinesix={"1-Dr.V.Ganesh[1-25]","2-Mr.A.Balasubramaniyan[26-51]","'3-Mr.G.Ravi[52-63,301-313]"};
+    String[] ftmarineeight={"1-Mr.K.E.kumaraguru[1-21]","2-Mr.E.Ravindar Rao[22-40]","3-Mr.R.Sakthivel[41-56,301,302,304-309]"};
+
 
     String[] ftautofour={"1-Mr.Dhanabal[1-25]","Mr.A.K.Boobalasenthilraj[26-50]","Mr.S.Premnath[51-61]"};
     String[] ftautosix={"1-Dr.V.Ganesh[1-25]","2-Mr.A.Balasubramaniyan[26-51]","'3-Mr.G.Ravi[52-63,301-313]"};
@@ -117,6 +125,12 @@ public class facultyadv extends AppCompatActivity {
     String[] ftmechbeight={"Mr.G.Saravanaram[63-87],Mr.K.karhtee[88-112]","Mr.J.Sivaramapandian[318,501]"};
 
     //below are the odd sem of second year,third year and fourth year
+//marine three,five,seven
+    String[] ftmarinethree={"Mr.S.G.Karthik[1-24,301]","Mr.Karnam Dileep-Chairperson"};
+    String[] ftmarinefive={"Mr.Karnam Dileep[1-27,302-305]","Mr.R.Somasundaram"};
+    String[] ftmarineseven={"Mr.J.Arun Chakkaravarthy[1-24,302-305]","Mr.G.Ramesh Kannan"};
+
+
 
     String[] ftautothree={"1-Mr.Dhanbal[1-25]","Mr.A.K.Boobalasenthilraj[26-50]","Mr.S.Premnath[51-61]"};
     String[] ftautofive={"1-Dr.V.Ganesh[1-25]","2-Mr.A.Balasubramaniyam[26-51]","'3-Mr.G.Ravi[52-63,301-313]"};
@@ -170,8 +184,6 @@ public class facultyadv extends AppCompatActivity {
     String[] ftmechbfive={"DrS.Ilaiyavel[64-88]","Mr.M.Kalaimani[89-113]","Mr.S.Yeswanthraj[114-126],[309-316]"};
     String[] ftmechbseven={"Mr.G.Saranaram[63-87],Mr.K.karhtee[88-112]","Mr.J.Sivaramapandian[318,501]"};
 
-
-
     Integer r, x, y, z, t, d;
 
     @SuppressLint("NewApi")
@@ -198,10 +210,9 @@ public class facultyadv extends AppCompatActivity {
             {
                 switch (t) {
                     case 1: {
-                        Toast.makeText(facultyadv.this,"to switch",Toast.LENGTH_LONG).show();
+                        //Toast.makeText(facultyadv.this,"to switch",Toast.LENGTH_LONG).show();
                         if (y % 2 == 0) // calling the even semester
                         {
-                           // Toast.makeText(facultyadv.this, "Teacher list not available", Toast.LENGTH_LONG).show();
                             switch(y)
                             {
 
@@ -210,7 +221,6 @@ public class facultyadv extends AppCompatActivity {
                                     break;
                                 }
                                 case 4: {
-                                    Toast.makeText(facultyadv.this,"case 4",Toast.LENGTH_SHORT).show();
                                     new Asyncftautofour().execute();
                                     break;
                                 }
@@ -225,7 +235,6 @@ public class facultyadv extends AppCompatActivity {
 
                         } else {
 
-                            //Toast.makeText(facultyadv.this, "Teacher list not available", Toast.LENGTH_LONG).show();
                             switch(y)
                             {
                                 case 1:
@@ -257,7 +266,6 @@ public class facultyadv extends AppCompatActivity {
                     case 1: {
                         if (y % 2 == 0) // calling the even semester
                         {
-                           // Toast.makeText(facultyadv.this, "Teacher list not available", Toast.LENGTH_LONG).show();
                             switch(y)
                             {
                                 case 2:
@@ -276,7 +284,6 @@ public class facultyadv extends AppCompatActivity {
 
                             }
                         } else {
-                            // Toast.makeText(facultyadv.this, "Teacher list not available", Toast.LENGTH_LONG).show();
                             switch(y)
                             {
                                 case 1:
@@ -334,7 +341,6 @@ public class facultyadv extends AppCompatActivity {
 
                         } else {
 
-                            // Toast.makeText(facultyadv.this, "Teacher list not available", Toast.LENGTH_LONG).show();
 
                             switch(y)
                             {
@@ -362,7 +368,6 @@ public class facultyadv extends AppCompatActivity {
                     case 2: {
                         if (y % 2 == 0) // calling the even semester
                         {
-                            // Toast.makeText(facultyadv.this, "Teacher list not available", Toast.LENGTH_LONG).show();
                             switch(y)
                             {
                                 case 2:
@@ -417,7 +422,6 @@ public class facultyadv extends AppCompatActivity {
                     case 1: {
                         if (y % 2 == 0) // calling the even semester
                         {
-                            //Toast.makeText(facultyadv.this, "Teacher list not available", Toast.LENGTH_LONG).show();
                             switch(y)
                             {
                                 case 2:
@@ -472,7 +476,6 @@ public class facultyadv extends AppCompatActivity {
                     case 1: {
                         if (y % 2 == 0) // calling the even semester
                         {
-                            //Toast.makeText(facultyadv.this, "Teacher list not available yet", Toast.LENGTH_LONG).show();
                             switch(y)
                             {
                                 case 2:
@@ -1047,6 +1050,56 @@ public class facultyadv extends AppCompatActivity {
                 break;
 
             }
+            case 10: {
+                //Toast.makeText(facultyadv.this,"to switch",Toast.LENGTH_LONG).show();
+                if (y % 2 == 0) // calling the even semester
+                {
+                    // Toast.makeText(facultyadv.this, "Teacher list not available", Toast.LENGTH_LONG).show();
+                    switch(y)
+                    {
+
+                        case 2: {
+                            new Asyncftmarinetwo().execute();
+                            break;
+                        }
+                        case 4: {
+                            // Toast.makeText(facultyadv.this,"case 4",Toast.LENGTH_SHORT).show();
+                            new Asyncftmarinefour().execute();
+                            break;
+                        }
+                        case 6:
+                            new Asyncftmarinesix().execute();
+                            break;
+                        case 8:
+                            new Asyncftmarineeight().execute();
+                            break;
+
+                    }
+
+                } else {
+
+                    //Toast.makeText(facultyadv.this, "Teacher list not available", Toast.LENGTH_LONG).show();
+                    switch(y)
+                    {
+                        case 1:
+                            new Asyncftmarineone().execute();
+                            break;
+                        case 3:
+                            new Asyncftmarinethree().execute();
+                            break;
+                        case 5:
+                            new Asyncftmarinefive().execute();
+                            break;
+                        case 7:
+                            new Asyncftmarineseven().execute();
+                            break;
+
+
+                    }
+
+                }
+                break;
+            }
         }
         }
         else
@@ -1099,6 +1152,456 @@ public class facultyadv extends AppCompatActivity {
 
 
     }
+
+
+
+
+    //marine all 8 semesters
+
+    //firstsem marine
+    public class Asyncftmarineone extends AsyncTask<Void ,String,String>
+    {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter= (ArrayAdapter<String>) listView.getAdapter();
+            progressBar= (ProgressBar)findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count=0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for(String value:ftmarineone)
+            {
+                publishProgress(value);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    //second sem marine
+    public class Asyncftmarinetwo extends AsyncTask<Void ,String,String>
+    {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter= (ArrayAdapter<String>) listView.getAdapter();
+            progressBar= (ProgressBar)findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count=0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for(String value:ftmarinetwo)
+            {
+                publishProgress(value);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    //third sem marine
+    public class Asyncftmarinethree extends AsyncTask<Void ,String,String>
+    {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter= (ArrayAdapter<String>) listView.getAdapter();
+            progressBar= (ProgressBar)findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count=0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for(String value:ftmarinethree)
+            {
+                publishProgress(value);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    //fourth sem marine
+    public class Asyncftmarinefour extends AsyncTask<Void ,String,String>
+    {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter= (ArrayAdapter<String>) listView.getAdapter();
+            progressBar= (ProgressBar)findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count=0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for(String value:ftmarinefour)
+            {
+                publishProgress(value);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+}
+//fifth sem marine
+    public class Asyncftmarinefive extends AsyncTask<Void ,String,String>
+    {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter= (ArrayAdapter<String>) listView.getAdapter();
+            progressBar= (ProgressBar)findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count=0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for(String value:ftmarinefive)
+            {
+                publishProgress(value);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+    //sixth sem marine
+    public class Asyncftmarinesix extends AsyncTask<Void ,String,String>
+    {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter= (ArrayAdapter<String>) listView.getAdapter();
+            progressBar= (ProgressBar)findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count=0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for(String value:ftmarinesix)
+            {
+                publishProgress(value);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+    //seventh sem marine
+    public class Asyncftmarineseven extends AsyncTask<Void ,String,String>
+    {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter= (ArrayAdapter<String>) listView.getAdapter();
+            progressBar= (ProgressBar)findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count=0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for(String value:ftmarineseven)
+            {
+                publishProgress(value);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+    //eighth sem marine
+    public class Asyncftmarineeight extends AsyncTask<Void ,String,String>
+    {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter= (ArrayAdapter<String>) listView.getAdapter();
+            progressBar= (ProgressBar)findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count=0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for(String value:ftmarineeight)
+            {
+                publishProgress(value);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //automobile begins
 
     public class Asyncftautoone extends AsyncTask<Void ,String,String>
     {
@@ -2000,6 +2503,17 @@ public class facultyadv extends AppCompatActivity {
 
 
 
+
+
+
+
+
+
+
+
+
+    //Second sem for all departments
+
     public class Asyncftautotwo extends AsyncTask<Void ,String,String>
     {
 
@@ -2023,7 +2537,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftautoone)
+            for(String value:ftautotwo)
             {
                 publishProgress(value);
                 try {
@@ -2076,7 +2590,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftbioone)
+            for(String value:ftbiotwo)
             {
                 publishProgress(value);
                 try {
@@ -2132,7 +2646,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftchemaone)
+            for(String value:ftchematwo)
             {
                 publishProgress(value);
                 try {
@@ -2185,7 +2699,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftchembone)
+            for(String value:ftchembtwo)
             {
                 publishProgress(value);
                 try {
@@ -2238,7 +2752,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcivilone)
+            for(String value:ftciviltwo)
             {
                 publishProgress(value);
                 try {
@@ -2291,7 +2805,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcseaone)
+            for(String value:ftcseatwo)
             {
                 publishProgress(value);
                 try {
@@ -2344,7 +2858,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcsebone)
+            for(String value:ftcsebtwo)
             {
                 publishProgress(value);
                 try {
@@ -2397,7 +2911,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcsecone)
+            for(String value:ftcsectwo)
             {
                 publishProgress(value);
                 try {
@@ -2450,7 +2964,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:fteceaone)
+            for(String value:fteceatwo)
             {
                 publishProgress(value);
                 try {
@@ -2503,7 +3017,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftecebone)
+            for(String value:ftecebtwo)
             {
                 publishProgress(value);
                 try {
@@ -2556,7 +3070,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftececone)
+            for(String value:ftecectwo)
             {
                 publishProgress(value);
                 try {
@@ -2609,7 +3123,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:fteeeaone)
+            for(String value:fteeeatwo)
             {
                 publishProgress(value);
                 try {
@@ -2662,7 +3176,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:fteeebone)
+            for(String value:fteeebtwo)
             {
                 publishProgress(value);
                 try {
@@ -2715,7 +3229,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftitaone)
+            for(String value:ftitatwo)
             {
                 publishProgress(value);
                 try {
@@ -2767,7 +3281,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftitbone)
+            for(String value:ftitbtwo)
             {
                 publishProgress(value);
                 try {
@@ -2819,7 +3333,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftmechaone)
+            for(String value:ftmechatwo)
             {
                 publishProgress(value);
                 try {
@@ -2871,7 +3385,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftmechbone)
+            for(String value:ftmechbtwo)
             {
                 publishProgress(value);
                 try {
@@ -2903,6 +3417,11 @@ public class facultyadv extends AppCompatActivity {
 
 
 
+
+
+
+
+    //fourth sem for all departments
 
     public class Asyncftautofour extends AsyncTask<Void ,String,String>
     {
@@ -3787,6 +4306,12 @@ public class facultyadv extends AppCompatActivity {
             progressBar.setVisibility(View.INVISIBLE);
         }
     }
+
+
+
+
+    //sixth sem for all departments
+
     public class Asyncftautosix extends AsyncTask<Void ,String,String>
     {
 
@@ -4667,6 +5192,18 @@ public class facultyadv extends AppCompatActivity {
             progressBar.setVisibility(View.INVISIBLE);
         }
     }
+
+
+
+
+
+
+
+
+
+    //eighth sem for all depts
+
+
     public class Asyncftautoeight extends AsyncTask<Void ,String,String>
     {
 
@@ -5551,7 +6088,22 @@ public class facultyadv extends AppCompatActivity {
         }
     }
 
-//odd sem asynctask
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //third sem (odd) for all depts
 
     public class Asyncftautothree extends AsyncTask<Void ,String,String>
     {
@@ -5576,7 +6128,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftautofour)
+            for(String value:ftautothree)
             {
                 publishProgress(value);
                 try {
@@ -5628,7 +6180,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftbiotechfour)
+            for(String value:ftbiotechthree)
             {
                 publishProgress(value);
                 try {
@@ -5680,7 +6232,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftchemafour)
+            for(String value:ftchemathree)
             {
                 publishProgress(value);
                 try {
@@ -5732,7 +6284,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftchembfour)
+            for(String value:ftchembthree)
             {
                 publishProgress(value);
                 try {
@@ -5784,7 +6336,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcivilfour)
+            for(String value:ftcivilthree)
             {
                 publishProgress(value);
                 try {
@@ -5836,7 +6388,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcseafour)
+            for(String value:ftcseathree)
             {
                 publishProgress(value);
                 try {
@@ -5888,7 +6440,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcsebfour)
+            for(String value:ftcsebthree)
             {
                 publishProgress(value);
                 try {
@@ -5940,7 +6492,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcsecfour)
+            for(String value:ftcsecthree)
             {
                 publishProgress(value);
                 try {
@@ -5991,7 +6543,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:fteceafour)
+            for(String value:fteceathree)
             {
                 publishProgress(value);
                 try {
@@ -6043,7 +6595,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftecebfour)
+            for(String value:ftecebthree)
             {
                 publishProgress(value);
                 try {
@@ -6095,7 +6647,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftececfour)
+            for(String value:ftececthree)
             {
                 publishProgress(value);
                 try {
@@ -6147,7 +6699,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:fteeeafour)
+            for(String value:fteeeathree)
             {
                 publishProgress(value);
                 try {
@@ -6199,7 +6751,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:fteeebfour)
+            for(String value:fteeebthree)
             {
                 publishProgress(value);
                 try {
@@ -6251,7 +6803,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftitafour)
+            for(String value:ftitathree)
             {
                 publishProgress(value);
                 try {
@@ -6303,7 +6855,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftitbfour)
+            for(String value:ftitbthree)
             {
                 publishProgress(value);
                 try {
@@ -6355,7 +6907,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftmechafour)
+            for(String value:ftmechathree)
             {
                 publishProgress(value);
                 try {
@@ -6407,7 +6959,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftmechbfour)
+            for(String value:ftmechbthree)
             {
                 publishProgress(value);
                 try {
@@ -6436,6 +6988,16 @@ public class facultyadv extends AppCompatActivity {
             progressBar.setVisibility(View.INVISIBLE);
         }
     }
+
+
+
+
+
+
+
+
+
+    //fifth sem all depts ( five)
     public class Asyncftautofive extends AsyncTask<Void ,String,String>
     {
 
@@ -6459,7 +7021,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftautosix)
+            for(String value:ftautofive)
             {
                 publishProgress(value);
                 try {
@@ -6511,7 +7073,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftbiotechsix)
+            for(String value:ftbiotechfive)
             {
                 publishProgress(value);
                 try {
@@ -6563,7 +7125,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftchemasix)
+            for(String value:ftchemafive)
             {
                 publishProgress(value);
                 try {
@@ -6615,7 +7177,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftchembsix)
+            for(String value:ftchembfive)
             {
                 publishProgress(value);
                 try {
@@ -6666,7 +7228,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcivilsix)
+            for(String value:ftcivilfive)
             {
                 publishProgress(value);
                 try {
@@ -6718,7 +7280,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcseasix)
+            for(String value:ftcseafive)
             {
                 publishProgress(value);
                 try {
@@ -6770,7 +7332,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcsebsix)
+            for(String value:ftcsebfive)
             {
                 publishProgress(value);
                 try {
@@ -6822,7 +7384,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcsecsix)
+            for(String value:ftcsecfive)
             {
                 publishProgress(value);
                 try {
@@ -6874,7 +7436,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:fteceasix)
+            for(String value:fteceafive)
             {
                 publishProgress(value);
                 try {
@@ -6926,7 +7488,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftecebsix)
+            for(String value:ftecebfive)
             {
                 publishProgress(value);
                 try {
@@ -6978,7 +7540,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftececsix)
+            for(String value:ftececfive)
             {
                 publishProgress(value);
                 try {
@@ -7029,7 +7591,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:fteeeasix)
+            for(String value:fteeeafive)
             {
                 publishProgress(value);
                 try {
@@ -7080,7 +7642,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:fteeebsix)
+            for(String value:fteeebfive)
             {
                 publishProgress(value);
                 try {
@@ -7132,7 +7694,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftitasix)
+            for(String value:ftitafive)
             {
                 publishProgress(value);
                 try {
@@ -7184,7 +7746,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftitbsix)
+            for(String value:ftitbfive)
             {
                 publishProgress(value);
                 try {
@@ -7235,7 +7797,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftmechasix)
+            for(String value:ftmechafive)
             {
                 publishProgress(value);
                 try {
@@ -7286,7 +7848,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftmechbsix)
+            for(String value:ftmechbfive)
             {
                 publishProgress(value);
                 try {
@@ -7314,7 +7876,17 @@ public class facultyadv extends AppCompatActivity {
 
             progressBar.setVisibility(View.INVISIBLE);
         }
-    } public class Asyncftautoseven extends AsyncTask<Void ,String,String>
+    }
+
+
+
+
+
+
+
+    //seveth sem for all depts
+
+    public class Asyncftautoseven extends AsyncTask<Void ,String,String>
     {
 
         ArrayAdapter<String> arrayAdapter;
@@ -7337,7 +7909,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftautoeight)
+            for(String value:ftautoseven)
             {
                 publishProgress(value);
                 try {
@@ -7389,7 +7961,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftbiotecheight)
+            for(String value:ftbiotechseven)
             {
                 publishProgress(value);
                 try {
@@ -7441,7 +8013,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftchemaeight)
+            for(String value:ftchemaseven)
             {
                 publishProgress(value);
                 try {
@@ -7493,7 +8065,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftchembeight)
+            for(String value:ftchembseven)
             {
                 publishProgress(value);
                 try {
@@ -7545,7 +8117,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcivileight)
+            for(String value:ftcivilseven)
             {
                 publishProgress(value);
                 try {
@@ -7597,7 +8169,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcseaeight)
+            for(String value:ftcseaseven)
             {
                 publishProgress(value);
                 try {
@@ -7648,7 +8220,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcsebeight)
+            for(String value:ftcsebseven)
             {
                 publishProgress(value);
                 try {
@@ -7700,7 +8272,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftcseceight)
+            for(String value:ftcsecseven)
             {
                 publishProgress(value);
                 try {
@@ -7752,7 +8324,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:fteceaeight)
+            for(String value:fteceaseven)
             {
                 publishProgress(value);
                 try {
@@ -7804,7 +8376,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftecebeight)
+            for(String value:ftecebseven)
             {
                 publishProgress(value);
                 try {
@@ -7856,7 +8428,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftececeight)
+            for(String value:ftececseven)
             {
                 publishProgress(value);
                 try {
@@ -7908,7 +8480,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:fteeeaeight)
+            for(String value:fteeeaseven)
             {
                 publishProgress(value);
                 try {
@@ -7960,7 +8532,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:fteeebeight)
+            for(String value:fteeebseven)
             {
                 publishProgress(value);
                 try {
@@ -8012,7 +8584,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftitaeight)
+            for(String value:ftitaseven)
             {
                 publishProgress(value);
                 try {
@@ -8064,7 +8636,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftitbeight)
+            for(String value:ftitbseven)
             {
                 publishProgress(value);
                 try {
@@ -8116,7 +8688,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftmechaeight)
+            for(String value:ftmechaseven)
             {
                 publishProgress(value);
                 try {
@@ -8168,7 +8740,7 @@ public class facultyadv extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for(String value:ftmechbeight)
+            for(String value:ftmechbseven)
             {
                 publishProgress(value);
                 try {

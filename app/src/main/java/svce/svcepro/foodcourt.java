@@ -1,6 +1,7 @@
 package svce.svcepro;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -23,10 +24,12 @@ public class foodcourt extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recycler);
 
-        List<cdata> cdata = fill_with_data();
+        List<ctdata> ctdata = fill_with_data();
+        setTitle("Food Court, Block V");
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xff388E3C));
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
-        mcrecyadapter adapter = new mcrecyadapter(cdata,foodcourt.this);
+        mctrecyadapter adapter = new mctrecyadapter(ctdata,foodcourt.this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -106,18 +109,18 @@ public class foodcourt extends AppCompatActivity {
                 })
         );
     }
-    public List<cdata> fill_with_data() {
+    public List<ctdata> fill_with_data() {
 
-        List<cdata> data = new ArrayList<>();
+        List<ctdata> data = new ArrayList<>();
 
-        data.add(new cdata("Snacks", (float) 4,"Rs 15-60", R.drawable.foodcsnack));
-        data.add(new cdata("Kulfi", (float) 4,"Rs 25", R.drawable.foodckulfi));
-        data.add(new cdata("Cream Buns",(float) 3 ,"Rs 20 per piece", R.drawable.foodcbun));
-        data.add(new cdata("Sandwich", (float) 3.5,"Rs 45", R.drawable.foodcsandwich));
-        data.add(new cdata("Pastries", (float) 5,"Rs 45", R.drawable.foodcpastries));
-        data.add(new cdata("Chillout Sodas", (float) 5,"Rs 15", R.drawable.foodcsoft));
-        data.add(new cdata("Thick Shakes", (float) 3,"Rs 40", R.drawable.foodcmilk));
-        data.add(new cdata("Chillout Crushers", (float) 3,"Rs 40", R.drawable.foodccrushers));
+        data.add(new ctdata("Snacks", (float) 4,"Rs 15-60","From 7.45 AM to 3.30 PM", R.drawable.samosa));
+        data.add(new ctdata("Kulfi", (float) 4,"Rs 25","From 10 AM to 3.30 PM", R.drawable.kulfi));
+        data.add(new ctdata("Cream Buns",(float) 3 ,"Rs 20 per piece","From 7.45 AM to 3.30 PM", R.drawable.creambun));
+        data.add(new ctdata("Sandwich", (float) 3.5,"Rs 45","From 10 AM to 3.30 PM", R.drawable.sandwich));
+        data.add(new ctdata("Pastries", (float) 5,"Rs 45","From 10.45 AM to 3.30 PM", R.drawable.pasteries));
+        data.add(new ctdata("Chillout Sodas", (float) 5,"Rs 15","From 10 AM to 3.30 PM", R.drawable.sodadis));
+        data.add(new ctdata("Thick Shakes", (float) 3,"Rs 40","From 10 AM to 3.30 PM", R.drawable.thickshake));
+        data.add(new ctdata("Chillout Crushers", (float) 3,"Rs 40","From 11 AM to 3.30 PM", R.drawable.crushers));
         return data;
     }
 }

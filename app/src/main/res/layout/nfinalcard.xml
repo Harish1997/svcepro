@@ -1,20 +1,15 @@
-<android.support.v7.widget.CardView
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/finalcard"
     android:layout_width="match_parent"
-    android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp"
-    android:layout_marginBottom="@dimen/activity_vertical_margin"
-    app:cardCornerRadius="50dp"
-    app:cardElevation="@dimen/activity_vertical_margin"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="240dp">
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/activity_vertical_margin">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
-        android:background="#da07dbfc">
+        android:background="@color/cardview_light_background"
+        android:padding="16dp">
 
         <ImageView
             android:id="@+id/finalimg"
@@ -27,25 +22,28 @@
             app:srcCompat="@drawable/ccd" />
 
         <TextView
-            android:text="TextView"
+            android:id="@+id/svceimgtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/finalimg"
-            android:layout_toRightOf="@+id/finalimg"
             android:layout_toEndOf="@+id/finalimg"
-            android:id="@+id/title" />
+            android:layout_toRightOf="@+id/finalimg"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
         <TextView
-            android:text="TextView"
+            android:id="@+id/desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/title"
-            android:layout_toRightOf="@+id/finalimg"
-            android:layout_toEndOf="@+id/finalimg"
+            android:layout_below="@+id/svceimgtitle"
             android:layout_marginLeft="21dp"
             android:layout_marginStart="21dp"
             android:layout_marginTop="25dp"
-            android:id="@+id/desc" />
+            android:layout_toEndOf="@+id/finalimg"
+            android:layout_toRightOf="@+id/finalimg"
+            android:text="TextView" />
 
     </RelativeLayout>
 

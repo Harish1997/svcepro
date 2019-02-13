@@ -4,6 +4,9 @@ package svce.svcepro;
  * Created by harishananth on 22/12/16.
  */
 
+import android.content.Intent;
+import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,36 +17,74 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.ScaleAnimation;
+import android.widget.TextView;
+import android.widget.Toast;
 
-public class TabFragment extends Fragment {
+import static com.facebook.FacebookSdk.getApplicationContext;
+
+public class TabFragment extends Fragment implements View.OnClickListener {
 
     public static TabLayout tablayout;
     public static ViewPager viewPager;
+    TextView displaytxt;
     public static int int_items = 3 ;
     private FloatingActionButton fab;
     private FloatingActionButton fab2;
     ViewPager mViewPager;
+    private Boolean isFabOpen = false;
+    private FloatingActionButton fabs,fabt;
+    private Animation fab_open,fab_close,rotate_forward,rotate_backward;
 
+
+    String[] titles={"Hi "+navandtab.username+"!","Stay up-to-date","Who's hungry?"};
     int[] colorIntArray = {R.color.white,R.color.orange,R.color.white};
     int[] iconIntArray = {R.drawable.pri,R.drawable.wall,R.drawable.food};
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         /**
          *Inflate tab_layout and setup Views.
          */
         View x =  inflater.inflate(R.layout.tab_layout,null);
+
         fab=(FloatingActionButton)x.findViewById(R.id.fab);
+
+        //anim
+        //below is the main fab
+        fab2=(FloatingActionButton)x.findViewById(R.id.fab2);
+        fabs = (FloatingActionButton)x.findViewById(R.id.fab3);
+        fabt = (FloatingActionButton)x.findViewById(R.id.fab4);
+        fab_open = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_opens);
+        fab_close = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fab_closes);
+        rotate_forward = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_forward);
+        rotate_backward = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_backward);
+        fab2.setOnClickListener(this);
+        fabs.setOnClickListener(this);
+        fabt.setOnClickListener(this);
+
         tablayout = (TabLayout) x.findViewById(R.id.tabs);
         viewPager = (ViewPager) x.findViewById(R.id.viewpager);
+        displaytxt=(TextView)x.findViewById(R.id.displaytxt);
+        displaytxt.setText("Hello!");
+       /* fab2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),Chat.class);
+                intent.putExtra("name",navandtab.username);
+                intent.putExtra("email",navandtab.email);
+                startActivity(intent);
+            }
+        });*/
 
        // if(tablayout!=null)
             tablayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -51,6 +92,8 @@ public class TabFragment extends Fragment {
                 public void onTabSelected(TabLayout.Tab tab) {
                     viewPager.setCurrentItem(tab.getPosition());
                     animateFab(tab.getPosition());
+
+
                 }
 
                 @Override
@@ -85,6 +128,29 @@ public class TabFragment extends Fragment {
 
         return x;
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        switch (id){
+            case R.id.fab2:
+
+                animateFAB();
+                break;
+            case R.id.fab3:
+                String url = "https://www.facebook.com/svceproapp/";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+                break;
+            case R.id.fab4:
+                Intent intent=new Intent(getActivity(),Chat.class);
+                intent.putExtra("uname",navandtab.username);
+                startActivity(intent);
+                Log.d("test", "Fab 2");
+                break;
+        }
     }
 
 
@@ -133,7 +199,33 @@ public class TabFragment extends Fragment {
             return null;
         }
     }
+
+    public void animateFAB(){
+
+        if(isFabOpen){
+
+            fab2.startAnimation(rotate_backward);
+            fabs.startAnimation(fab_close);
+            fabt.startAnimation(fab_close);
+            fabs.setClickable(false);
+            fabt.setClickable(false);
+            isFabOpen = false;
+            Log.d("test", "close");
+
+        } else {
+
+            fab2.startAnimation(rotate_forward);
+            fabs.startAnimation(fab_open);
+            fabt.startAnimation(fab_open);
+            fabs.setClickable(true);
+            fabt.setClickable(true);
+            isFabOpen = true;
+            Log.d("test","open");
+
+        }
+    }
     protected void animateFab(final int position) {
+        displaytxt.clearAnimation();
         fab.clearAnimation();
         // Scale down animation
         ScaleAnimation shrink =  new ScaleAnimation(1f, 0.2f, 1f, 0.2f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
@@ -149,6 +241,8 @@ public class TabFragment extends Fragment {
             @Override
             public void onAnimationEnd(Animation animation) {
                 // Change FAB color and icon
+
+                displaytxt.setText(titles[position]);
                 fab.setBackgroundTintList(getResources().getColorStateList(colorIntArray[position]));
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     fab.setImageDrawable(getResources().getDrawable(iconIntArray[position], null));
@@ -159,6 +253,7 @@ public class TabFragment extends Fragment {
                 expand.setDuration(100);     // animation duration in milliseconds
                 expand.setInterpolator(new AccelerateInterpolator());
                 fab.startAnimation(expand);
+                displaytxt.startAnimation(expand);
             }
 
             @Override
@@ -167,7 +262,9 @@ public class TabFragment extends Fragment {
             }
         });
         fab.startAnimation(shrink);
+        displaytxt.startAnimation(shrink);
     }
+
 
 
 }

@@ -52,7 +52,7 @@ public class testfeeea extends Fragment{
                         Toast.makeText(getActivity(),"first",Toast.LENGTH_SHORT).show();
                         switch (position) {
                             case 0: {
-                                Toast.makeText(getActivity(), "Class Timetable first", Toast.LENGTH_SHORT).show();
+                              //  Toast.makeText(getActivity(), "Class Timetable first", Toast.LENGTH_SHORT).show();
                                 Intent newint = new Intent(getActivity(), ttday.class);
                                 newint.putExtra("sec", t);
                                 newint.putExtra("year", x);
@@ -75,26 +75,24 @@ public class testfeeea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }
                             case 3: {
                                 Toast.makeText(getActivity(), "Notes", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/2WGr2w"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=0ea97b67f7e8b4a779c426de6b1798a79&authkey=Ad6Bgk4Mz8U6mNGvs1HbZ0g"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 4: {
                                 Toast.makeText(getActivity(), "Question Papers", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/2WGr2w"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=0ea97b67f7e8b4a779c426de6b1798a79&authkey=Ad6Bgk4Mz8U6mNGvs1HbZ0g"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
@@ -162,20 +160,19 @@ public class testfeeea extends Fragment{
                             }
                             case 3: {
                                 Toast.makeText(getActivity(), "Notes", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/2WGr2w"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=053921961a94a466ca6b9e20d7127a06f&authkey=AQGfMNq3ssqXuKKFNPjEIkg"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 4: {
                                 Toast.makeText(getActivity(), "Question Papers", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/2WGr2w"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=053921961a94a466ca6b9e20d7127a06f&authkey=AQGfMNq3ssqXuKKFNPjEIkg"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
@@ -215,7 +212,13 @@ public class testfeeea extends Fragment{
                         Toast.makeText(getActivity(),"third",Toast.LENGTH_SHORT).show();
                         switch (position) {
                             case 0: {
-                                Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), ttday.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 1: {
@@ -226,30 +229,41 @@ public class testfeeea extends Fragment{
                                 break;
                             }
                             case 2: {
-                                Toast.makeText(getActivity(), "Faculty Advisors details not available", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(), "Faculty Advisors", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), facultyadv.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 3: {
                                 Toast.makeText(getActivity(), "Notes", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/Ux6z63"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=057a0cead03324528b012dca38509103c&authkey=AVqN_N9KQPRQJKFSNOLdivI"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 4: {
                                 Toast.makeText(getActivity(), "Question Papers", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/Ux6z63"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=057a0cead03324528b012dca38509103c&authkey=AVqN_N9KQPRQJKFSNOLdivI"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
                             case 6: {
-                                Toast.makeText(getActivity(), "Handling Staff details not available", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(), "Handling Staff", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), teacherlist.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 7: {
@@ -306,20 +320,19 @@ public class testfeeea extends Fragment{
                             }
                             case 3: {
                                 Toast.makeText(getActivity(), "Notes", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/Ux6z63"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=0a7ad777de9894f9cb39188baf5e71df9&authkey=AZz_I7MpclF7pKM9lZl90P4"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 4: {
                                 Toast.makeText(getActivity(), "Question Papers", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/Ux6z63"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=0a7ad777de9894f9cb39188baf5e71df9&authkey=AZz_I7MpclF7pKM9lZl90P4"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
@@ -358,7 +371,13 @@ public class testfeeea extends Fragment{
                     case 5: {
                         switch (position) {
                             case 0: {
-                                Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                              //  Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), ttday.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 1: {
@@ -369,25 +388,30 @@ public class testfeeea extends Fragment{
                                 break;
                             }
                             case 2: {
-                                Toast.makeText(getActivity(), "Faculty Advisors details not available", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(), "Faculty Advisors", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), facultyadv.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 3: {
                                 Toast.makeText(getActivity(), "Notes", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/HpEdZr"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=085758bae6ed54c0096fb11c97469e736&authkey=Aacn_tQiW9bYOJ-NwnluPHA"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 4: {
                                 Toast.makeText(getActivity(), "Question Papers", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/HpEdZr"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=085758bae6ed54c0096fb11c97469e736&authkey=Aacn_tQiW9bYOJ-NwnluPHA"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
@@ -422,6 +446,7 @@ public class testfeeea extends Fragment{
 
 
                         }
+                        break;
                     }
                     case 6: {
                         switch (position) {
@@ -455,20 +480,19 @@ public class testfeeea extends Fragment{
                             }
                             case 3: {
                                 Toast.makeText(getActivity(), "Notes", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/HpEdZr"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=0f202fca4368a4fc5974dc35d1590aa3e&authkey=AUPV_czd3d2hJeWgvfS65kA"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 4: {
                                 Toast.makeText(getActivity(), "Question Papers", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/HpEdZr"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=0f202fca4368a4fc5974dc35d1590aa3e&authkey=AUPV_czd3d2hJeWgvfS65kA"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
@@ -507,8 +531,13 @@ public class testfeeea extends Fragment{
                     case 7: {
                         switch (position) {
                             case 0: {
-                                Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
-
+                               // Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), ttday.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 1: {
@@ -519,25 +548,30 @@ public class testfeeea extends Fragment{
                                 break;
                             }
                             case 2: {
-                                Toast.makeText(getActivity(), "Faculty Advisors details not available", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(), "Faculty Advisors", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), facultyadv.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 3: {
                                 Toast.makeText(getActivity(), "Notes", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/jdD1xe"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=03799d327ca5f477caf7d596fff666b56&authkey=AcHlENjbqzb4Q8wYFk7KKuI"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 4: {
                                 Toast.makeText(getActivity(), "Question Papers", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/jdD1xe"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=03799d327ca5f477caf7d596fff666b56&authkey=AcHlENjbqzb4Q8wYFk7KKuI"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
@@ -607,20 +641,19 @@ public class testfeeea extends Fragment{
                             }
                             case 3: {
                                 Toast.makeText(getActivity(), "Notes", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/jdD1xe"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=0649727334c0b4201a9750e8c3ce53a79&authkey=AS_8L94pXWderBNQpS_7RUE"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 4: {
                                 Toast.makeText(getActivity(), "Question Papers", Toast.LENGTH_SHORT).show();
-                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/jdD1xe"));
+                                Intent browserintent =new Intent(Intent.ACTION_VIEW, Uri.parse("https://svcepro-my.sharepoint.com/personal/deaned_svcepro_onmicrosoft_com/_layouts/15/guestaccess.aspx?folderid=0649727334c0b4201a9750e8c3ce53a79&authkey=AS_8L94pXWderBNQpS_7RUE"));
                                 startActivity(browserintent);
                                 break;
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
@@ -631,7 +664,6 @@ public class testfeeea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }

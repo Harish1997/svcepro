@@ -34,16 +34,6 @@ public class bottomact extends AppCompatActivity {
                   SocialFragment p=new SocialFragment();
                     getSupportFragmentManager().beginTransaction().replace(R.id.frame,p).commit();
                 }
-                if(menuItemId==R.id.Bottombarthree)
-                {
-                   UpdatesFragment ph=new UpdatesFragment();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.frame,ph).commit();
-                }
-                if(menuItemId==R.id.Bottombarfour)
-                {
-                  busfone mail=new busfone();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.frame,mail).commit();
-                }
                 if(menuItemId==R.id.Bottombarfive)
                 {
                    busfthree fav=new busfthree();
@@ -59,12 +49,6 @@ public class bottomact extends AppCompatActivity {
 
         bottomBar.mapColorForTab(0,"#F44336");
         bottomBar.mapColorForTab(1,"#9C27B0");
-        bottomBar.mapColorForTab(2,"#03A9F4");
-        bottomBar.mapColorForTab(3,"#009688");
-        bottomBar.mapColorForTab(4,"#FF9800");
-
-        BottomBarBadge unread;
-        unread=bottomBar.makeBadgeForTabAt(3,"#FF0000",13);
-        unread.show();
+        bottomBar.mapColorForTab(2,"#FF9800");
     }
 }

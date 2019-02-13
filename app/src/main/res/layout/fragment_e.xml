@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#34275b">
-    <ScrollView
-        android:layout_width="wrap_content"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/scrollView"
-        android:layout_marginTop="100dp" >
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Late Trip Schedule:"
+        android:textColor="@color/bgcol"
+        android:textSize="35sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/busdatae"
-            android:textColor="@color/frage"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="200dp"
-            android:layout_marginLeft="10dp"
-            android:elevation="12dp" />
-    </ScrollView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recybusmorning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView2" />
 
-
-</LinearLayout>
+</RelativeLayout>

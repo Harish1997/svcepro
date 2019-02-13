@@ -7,18 +7,24 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class rsemester extends AppCompatActivity {
 
+    ImageView bg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rsemester);
         List<data> data = fill_with_data();
+        bg=(ImageView)findViewById(R.id.semimg);
+        Glide.with(this).load("https://c1.staticflickr.com/8/7579/15702940878_42363a493b_b.jpg").into(bg);
 
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recyclerviewsem);
         Recycler_View_Adapter adapter = new Recycler_View_Adapter(data, rsemester.this);
@@ -100,7 +106,7 @@ public class rsemester extends AppCompatActivity {
                         switch (position)
                         {
                             case 1:
-                                Toast.makeText(rsemester.this,"item one long",Toast.LENGTH_SHORT).show();
+                               // Toast.makeText(rsemester.this,"item one long",Toast.LENGTH_SHORT).show();
                                 break;
                         }
                         // do whatever

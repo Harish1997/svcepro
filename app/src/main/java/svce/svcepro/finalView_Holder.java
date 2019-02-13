@@ -20,7 +20,7 @@ public class finalView_Holder extends RecyclerView.ViewHolder {
     finalView_Holder(View itemView) {
         super(itemView);
         cv = (CardView) itemView.findViewById(R.id.finalcard);
-        title = (TextView) itemView.findViewById(R.id.title);
+        title = (TextView) itemView.findViewById(R.id.svceimgtitle);
         description = (TextView) itemView.findViewById(R.id.desc);
         imageView = (ImageView) itemView.findViewById(R.id.finalimg);
     }

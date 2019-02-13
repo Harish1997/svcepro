@@ -19,7 +19,7 @@ public class aboutapp extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.aboutapp,null);
         abt=(TextView)view.findViewById(R.id.aboutapp);
-        abt.setText("Svce Pro version 2.0.0\n Official App of Sri Venkateswara College Of Engineering.All rights reserved \n The App is open source and is available with complete documentation \n Backend services from Google firebase Analytics+Database and Microsoft Onedrive with fabric integeration\n Feel free to suggest any changes to be made in the Write To Us section \n Developers Welcome! Do pitch us about yourself via the -Be a Developer- section\n The notes and question paper modules r under the control of the Instituition wherein notes will be updated in a timely basis");
+        abt.setText("Svce Pro version 3.0.2\n Official App of Sri Venkateswara College Of Engineering.All rights reserved \n The App is open source and is available with complete documentation \n Backend services from Google firebase Analytics+Database and Microsoft Onedrive with fabric integeration\n Feel free to suggest any changes to be made in the Write To Us section \n Developers Welcome! Do pitch us about yourself via the -Be a Developer- section\n The notes and question paper modules are under the control of the Institution wherein notes will be updated in a timely basis");
         return view;
     }
 }

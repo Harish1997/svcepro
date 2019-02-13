@@ -1,8 +1,10 @@
 package svce.svcepro;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -39,8 +41,13 @@ public class fautoone extends AppCompatActivity {
         y = extras.getInt("sem");
         z = extras.getInt("sel");
         t = extras.getInt("sec"); //section se
-        setTitle("Hello!");
+        //setTitle("Hello!");
+        ActionBar actionBar = getSupportActionBar();
+        //actionBar.setTitle("svce pro");
+        actionBar.hide();
         bottomBar=BottomBar.attach(this,savedInstanceState);
+        bottomBar.setBackgroundColor(Color.parseColor("#000000"));
+
         bottomBar.setItemsFromMenu(R.menu.menu_main, new OnMenuTabClickListener() {
             @Override
             public void onMenuTabSelected(@IdRes int menuItemId) {
@@ -57,19 +64,9 @@ public class fautoone extends AppCompatActivity {
                 }
                 if(menuItemId==R.id.Bottombartwo)
                 {
-                    SocialFragment soc=new SocialFragment();
+                    secondfrag soc=new secondfrag();
                     getSupportFragmentManager().beginTransaction().replace(R.id.frame,soc).commit();
 
-                }
-                if(menuItemId==R.id.Bottombarthree)
-                {
-                   PrimaryFragment ph=new PrimaryFragment();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.frame,ph).commit();
-                }
-                if(menuItemId==R.id.Bottombarfour)
-                {
-                   busfone mail=new busfone();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.frame,mail).commit();
                 }
                 if(menuItemId==R.id.Bottombarfive)
                 {
@@ -85,13 +82,7 @@ public class fautoone extends AppCompatActivity {
         });
         bottomBar.mapColorForTab(0,"#F44336");
         bottomBar.mapColorForTab(1,"#9C27B0");
-        bottomBar.mapColorForTab(2,"#03A9F4");
-        bottomBar.mapColorForTab(3,"#009688");
-        bottomBar.mapColorForTab(4,"#FF9800");
-
-        BottomBarBadge unread;
-        unread=bottomBar.makeBadgeForTabAt(3,"#FF0000",13);
-        unread.show();
+        bottomBar.mapColorForTab(2,"#FF9800");
 
 
 

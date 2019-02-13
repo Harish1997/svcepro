@@ -15,6 +15,8 @@
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <permission
         android:name="com.svce.svcepro.permission.C2D_MESSAGE"
@@ -27,12 +29,13 @@
     <application
         android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_svce"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".display">
+        <activity android:name=".Displaycred" />
+        <activity android:name=".Login">
             <intent-filter>
                 <action android:name="com.svce.svcepro.MESSAGE" />
 
@@ -44,7 +47,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".RssService" />
+
+        <service android:name=".MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
         <activity android:name=".navandtab" />
         <activity android:name=".bout" />
         <activity android:name=".selectme" />
@@ -79,8 +97,10 @@
         <activity android:name=".fitbone" />
         <activity android:name=".fitbtwo" />
         <activity android:name=".fmechaone" />
+        <activity android:name=".Placements" />
         <activity android:name=".fmechatwo" />
         <activity android:name=".fmechbone" />
+        <activity android:name=".Newsactivity" />
         <activity android:name=".fmechbtwo" />
         <activity android:name=".wfautoone" />
         <activity android:name=".wfautotwo" />
@@ -101,6 +121,7 @@
         <activity android:name=".wfeeeaone" />
         <activity android:name=".wfeeeatwo" />
         <activity android:name=".wfeeebone" />
+        <activity android:name=".Chat" />
         <activity android:name=".wfeeebtwo" />
         <activity android:name=".wfeceaone" />
         <activity android:name=".wfeceatwo" />
@@ -117,6 +138,7 @@
         <activity android:name=".wfmechbone" />
         <activity android:name=".wfmechbtwo" />
         <activity android:name=".aboutcollege" />
+        <activity android:name=".opennotif" />
         <activity android:name=".webloader" />
         <activity android:name=".teacherlist" />
         <activity android:name=".userins" />
@@ -125,12 +147,18 @@
         <activity android:name=".facultyadv" />
         <activity android:name=".officeb" />
         <activity android:name=".clgmap" />
-        <activity android:name=".studentasso" />
+        <activity
+            android:name=".studentasso"
+            android:exported="true" />
         <activity android:name=".Maincant" />
         <activity android:name=".nyear" />
         <activity android:name=".busactivity" />
-        <activity android:name=".RssActivity"/>
-<activity android:name=".clubspie"/>
+        <activity android:name=".fmarineone" />
+        <activity android:name=".fmarinetwo" />
+        <activity android:name=".clubspie" />
+        <activity android:name=".newsitemreader" />
+        <activity android:name=".interques" />
+
         <receiver
             android:name="com.pushbots.google.gcm.GCMBroadcastReceiver"
             android:permission="com.google.android.c2dm.permission.SEND">
@@ -151,19 +179,29 @@
         <activity android:name=".Recycler" />
         <activity
             android:name=".bustab"
-            android:label="@string/title_activity_bustab"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/title_activity_bustab" />
         <activity android:name=".rsemester" />
         <activity android:name=".rdepartment" />
-        <activity android:name=".rsection"></activity>
-        <activity android:name=".userrate"/>
-        <activity android:name=".busroutes"/>
-        <activity android:name=".ntestclass"/>
-        <activity android:name=".bottomact"/>
-        <activity android:name=".bedev"/>
-        <activity android:name=".foodcourt"/>
-        <activity android:name=".ccd"/>
-        <activity android:name=".maincantlist"/>
+        <activity android:name=".rsection" />
+        <activity android:name=".userrate" />
+        <activity android:name=".busroutes" />
+        <activity android:name=".ntestclass" />
+        <activity android:name=".bottomact" />
+        <activity android:name=".bedev" />
+        <activity android:name=".foodcourt" />
+        <activity android:name=".ccd" />
+        <activity android:name=".maincantlist" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".interquesexp" />
+        <activity
+            android:name=".bottomtest"
+            android:label="@string/title_activity_bottomtest" />
+        <activity
+            android:name=".photoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_photo"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".photosActivity"></activity>
     </application>
 
 </manifest>

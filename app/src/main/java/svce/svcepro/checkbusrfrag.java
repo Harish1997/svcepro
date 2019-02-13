@@ -69,5 +69,7 @@ public class checkbusrfrag extends Fragment{
         });
 
         return view;
+
     }
+    
 }

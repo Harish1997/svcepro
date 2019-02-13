@@ -1,12 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/bb_darkBackgroundColor">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:orientation="vertical">
 
-    <android.support.v7.widget.RecyclerView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/recyclerview"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/searchcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerviewimg"
+                android:elevation="21dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/cast_libraries_material_featurehighlight_text_body_color">
+
+                    <TextView
+                        android:id="@+id/exploretxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Explore"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:textSize="27sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/optioncard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="17dp">
+
+                <HorizontalScrollView
+                    android:id="@+id/myscroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quick"
+                    android:elevation="24dp"
+                    android:scrollbars="none">
+
+                    <RelativeLayout
+                        android:id="@+id/reloptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@+id/textView2"
+                        android:layout_toEndOf="@+id/searchimg"
+                        android:layout_toRightOf="@+id/searchimg"
+                        android:background="@android:color/background_light"
+                        android:elevation="0dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp">
+
+
+                        <Button
+                            android:id="@+id/busbutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/mybutton"
+                            android:elevation="1dp"
+                            android:layout_toRightOf="@+id/photosbutton"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:text="Bus Schedule"
+                            android:textColor="@color/cardview_light_background" />
+
+                        <Button
+                            android:id="@+id/clubsbutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/busbutton"
+                            android:background="@drawable/mybutton"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:text="Clubs"
+                            android:textColor="@color/cardview_light_background" />
+
+                        <Button
+                            android:id="@+id/abtsvcebutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/clubsbutton"
+                            android:background="@drawable/mybutton"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:text="About SVCE"
+                            android:textColor="@color/cardview_light_background" />
+
+                        <Button
+                            android:id="@+id/webbutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/abtsvcebutton"
+                            android:background="@drawable/mybutton"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:text="Website"
+                            android:textColor="@color/cardview_light_background" />
+
+                        <Button
+                            android:id="@+id/devbutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/webbutton"
+                            android:background="@drawable/mybutton"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:text="Be a Developer"
+                            android:textColor="@color/cardview_light_background" />
+
+                        <Button
+                            android:id="@+id/resbutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/devbutton"
+                            android:background="@drawable/mybutton"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:text="Results"
+                            android:textColor="@color/cardview_light_background" />
+
+
+                    </RelativeLayout>
+                </HorizontalScrollView>
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/searchimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="820dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerviewimg"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@+id/optioncard"
+                android:divider="@null"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                app:reverseLayout="true" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerviewcat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchcard"
+                android:layout_weight="0.20"
+                android:divider="@null"
+                android:orientation="vertical"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                app:reverseLayout="true" />
+
+
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

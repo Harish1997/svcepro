@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
-
+    <item android:title="Essentials">
+<menu>
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_svce_home"
+        app:itemTextColor="@color/black"/>
 
     <item android:title="Check Bus Routes"
         android:id="@+id/checkbus"
-        android:icon="@drawable/inbox"/>
+        android:icon="@drawable/ic_svce_bus"/>
 
-    <item android:title="Write to us"
-        android:id="@+id/checkbusc"
-        android:icon="@drawable/sent"/>
 
     <item android:title="Be a Developer"
         android:id="@+id/beadev"
-        android:icon="@drawable/draft"/>
-
+        android:icon="@drawable/ic_svce_dev"/>
+        </menu>
+</item>
 
     <item android:title="Others">
         <menu>
             <item
                 android:title="App"
                 android:id="@+id/app"
-                android:icon="@drawable/ic_favorites"
+                android:icon="@drawable/ic_svce_app"
                />
             <item
                 android:title="Licenses"
                 android:id="@+id/License"
-                android:icon="@drawable/spam" />
+                android:icon="@drawable/ic_svce_lic" />
         </menu>
     </item>
 
@@ -35,7 +37,7 @@
 
         <item android:title="Rate Us!"
             android:id="@+id/rateus"
-            android:icon="@drawable/settings"/>
+            android:icon="@drawable/ic_svce_rate"/>
     </group>
 
 

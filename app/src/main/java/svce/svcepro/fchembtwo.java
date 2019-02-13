@@ -57,19 +57,9 @@ public class fchembtwo extends AppCompatActivity {
                 }
                 if(menuItemId==R.id.Bottombartwo)
                 {
-                    SocialFragment soc=new SocialFragment();
+                    secondfrag soc=new secondfrag();
                     getSupportFragmentManager().beginTransaction().replace(R.id.frame,soc).commit();
 
-                }
-                if(menuItemId==R.id.Bottombarthree)
-                {
-                    PrimaryFragment ph=new PrimaryFragment();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.frame,ph).commit();
-                }
-                if(menuItemId==R.id.Bottombarfour)
-                {
-                    busfone mail=new busfone();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.frame,mail).commit();
                 }
                 if(menuItemId==R.id.Bottombarfive)
                 {
@@ -85,13 +75,8 @@ public class fchembtwo extends AppCompatActivity {
         });
         bottomBar.mapColorForTab(0,"#F44336");
         bottomBar.mapColorForTab(1,"#9C27B0");
-        bottomBar.mapColorForTab(2,"#03A9F4");
-        bottomBar.mapColorForTab(3,"#009688");
-        bottomBar.mapColorForTab(4,"#FF9800");
+        bottomBar.mapColorForTab(2,"#FF9800");
 
-        BottomBarBadge unread;
-        unread=bottomBar.makeBadgeForTabAt(3,"#FF0000",13);
-        unread.show();
 
 
 

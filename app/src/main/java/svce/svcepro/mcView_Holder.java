@@ -18,7 +18,7 @@ import android.widget.TextView;
 public class mcView_Holder extends RecyclerView.ViewHolder {
 
     CardView cv;
-    TextView title,desc;
+    TextView title,desc,timing;
     RatingBar rb;
     ImageView imageView;
 
@@ -26,6 +26,7 @@ public class mcView_Holder extends RecyclerView.ViewHolder {
         super(itemView);
         cv = (CardView) itemView.findViewById(R.id.cardView3);
         title = (TextView) itemView.findViewById(R.id.titlemc);
+        timing = (TextView) itemView.findViewById(R.id.timings);
         rb=(RatingBar)itemView.findViewById(R.id.ratingBarmc);
         desc=(TextView)itemView.findViewById(R.id.cost);
         imageView = (ImageView) itemView.findViewById(R.id.finalimg);

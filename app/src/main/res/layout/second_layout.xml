@@ -1,57 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bb_darkBackgroundColor">
+    android:background="@color/darkbggrey"
+    android:orientation="vertical">
 
-        <RelativeLayout
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/headlines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_light"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="5dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="We publish useful materials from the detailed description without much 'water', to working (audited) examples.Our main task - is to bring the materials most simple and understandable to the reader."
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:typeface="sans" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerviewnews"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_below="@+id/headlines" />
+    </RelativeLayout>
 
-            <Button
-                android:layout_width="50dp"
-                android:id="@+id/button3"
-                android:textSize="33sp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:background="@drawable/cast_ic_expanded_controller_skip_next"
-                android:backgroundTint="?attr/colorAccent"
-                android:layout_height="210dp" />
-
-            <Button
-                android:layout_width="50dp"
-                android:id="@+id/button2"
-                android:textSize="33sp"
-                android:background="@drawable/cast_ic_expanded_controller_skip_previous"
-                android:backgroundTint="?attr/colorAccent"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_height="210dp" />
-
-            <ImageSwitcher
-                android:layout_width="290dp"
-                android:id="@+id/imgsw"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_height="210dp">
-
-            </ImageSwitcher>
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/fragment_container"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/button3">
-
-            </FrameLayout>
-
-        </RelativeLayout>
-
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/mainloadgif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/loading" />
 
 </RelativeLayout>

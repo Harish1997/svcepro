@@ -49,10 +49,10 @@ public class testfcsea extends Fragment{
             public void onItemClick(View view, int position) {
                 switch (y) {
                     case 1: {
-                        Toast.makeText(getActivity(),"first",Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getActivity(),"first",Toast.LENGTH_SHORT).show();
                         switch (position) {
                             case 0: {
-                                Toast.makeText(getActivity(), "Class Timetable first", Toast.LENGTH_SHORT).show();
+                             //   Toast.makeText(getActivity(), "Class Timetable first", Toast.LENGTH_SHORT).show();
                                 Intent newint = new Intent(getActivity(), ttday.class);
                                 newint.putExtra("sec", t);
                                 newint.putExtra("year", x);
@@ -75,7 +75,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }
@@ -93,8 +92,7 @@ public class testfcsea extends Fragment{
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
@@ -156,7 +154,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }
@@ -174,8 +171,7 @@ public class testfcsea extends Fragment{
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
@@ -186,7 +182,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }
@@ -197,7 +192,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }
@@ -212,11 +206,17 @@ public class testfcsea extends Fragment{
                         break;
                     }
                     case 3: {
-                        Toast.makeText(getActivity(),"third",Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(getActivity(),"third",Toast.LENGTH_SHORT).show();
                         switch (position) {
                             case 0: {
-                                Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
-                                break;
+                              //  Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), ttday.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
+                               break;
                             }
                             case 1: {
                                 Toast.makeText(getActivity(), "Bus Routes", Toast.LENGTH_SHORT).show();
@@ -226,7 +226,13 @@ public class testfcsea extends Fragment{
                                 break;
                             }
                             case 2: {
-                                Toast.makeText(getActivity(), "Faculty Advisors details not available", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(), "Faculty Advisors", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), facultyadv.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 3: {
@@ -243,13 +249,18 @@ public class testfcsea extends Fragment{
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
                             case 6: {
-                                Toast.makeText(getActivity(), "Handling Staff details not available", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(), "Handling Staff", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), teacherlist.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 7: {
@@ -300,7 +311,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }
@@ -318,8 +328,7 @@ public class testfcsea extends Fragment{
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
@@ -330,7 +339,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }
@@ -341,7 +349,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }
@@ -358,7 +365,13 @@ public class testfcsea extends Fragment{
                     case 5: {
                         switch (position) {
                             case 0: {
-                                Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                              //  Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), ttday.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 1: {
@@ -369,7 +382,13 @@ public class testfcsea extends Fragment{
                                 break;
                             }
                             case 2: {
-                                Toast.makeText(getActivity(), "Faculty Advisors details not available", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(), "Faculty Advisors", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), facultyadv.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 3: {
@@ -386,8 +405,7 @@ public class testfcsea extends Fragment{
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
@@ -398,7 +416,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }
@@ -422,6 +439,7 @@ public class testfcsea extends Fragment{
 
 
                         }
+                        break;
                     }
                     case 6: {
                         switch (position) {
@@ -449,7 +467,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }
@@ -467,8 +484,7 @@ public class testfcsea extends Fragment{
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
@@ -479,7 +495,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }
@@ -490,7 +505,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }
@@ -507,8 +521,13 @@ public class testfcsea extends Fragment{
                     case 7: {
                         switch (position) {
                             case 0: {
-                                Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
-
+                                //Toast.makeText(getActivity(), "Class Timetable Not Available", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), ttday.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 1: {
@@ -519,7 +538,13 @@ public class testfcsea extends Fragment{
                                 break;
                             }
                             case 2: {
-                                Toast.makeText(getActivity(), "Faculty Advisors details not available", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(), "Faculty Advisors", Toast.LENGTH_SHORT).show();
+                                Intent newint = new Intent(getActivity(), facultyadv.class);
+                                newint.putExtra("sec", t);
+                                newint.putExtra("year", x);
+                                newint.putExtra("sem", y);
+                                newint.putExtra("sel", z);
+                                startActivity(newint);
                                 break;
                             }
                             case 3: {
@@ -536,8 +561,7 @@ public class testfcsea extends Fragment{
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
@@ -548,7 +572,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }
@@ -559,7 +582,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
 
@@ -601,7 +623,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }
@@ -619,8 +640,7 @@ public class testfcsea extends Fragment{
                             }
                             case 5: {
                                 Toast.makeText(getActivity(), "Notifications", Toast.LENGTH_SHORT).show();
-                                Intent newint = new Intent(getActivity(), RssActivity.class);
-                                newint.putExtra("json", 2);
+                                Intent newint = new Intent(getActivity(), Newsactivity.class);
                                 startActivity(newint);
                                 break;
                             }
@@ -631,7 +651,6 @@ public class testfcsea extends Fragment{
                                 newint.putExtra("year", x);
                                 newint.putExtra("sem", y);
                                 newint.putExtra("sel", z);
-                                ;
                                 startActivity(newint);
                                 break;
                             }

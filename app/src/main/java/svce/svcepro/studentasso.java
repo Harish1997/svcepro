@@ -1,8 +1,11 @@
 package svce.svcepro;
 
 import android.annotation.SuppressLint;
+import android.app.ActionBar;
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -15,29 +18,44 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import co.intentservice.chatui.fab.FloatingActionButton;
+
 /**
  * Created by harishananth on 17/09/16.
  */
 public class studentasso extends Activity  {
     ListView listView;
 
-    String[] stcouncil={"1-Students' President -CHIDAMBARAM SP , IV-Year, AE","2-General Secretary - ROHAN CHANDHOKE III-Year, CS 'C'","3-Joint Secretary POOJA M III-Year,Bio Tech","4-Sports Secretary    -KESHAV ADITYA RP, III Year CS 'B'","5-Treasurer -SRESHTA KANNAN, II Year EC 'C'","6-Post Graduate Representative - MERLIN MONISHA A , II-Year CS"};
-
+    String[] stcouncil={"President - Miss. Madhuvanti M., IV - CS","Vice President - Mr. Harish Anantharaman ,IV - IT","General Secretary - Mr. Pranav Karnth.M III-ECE","Joint Secretary - Miss. Yagna Madhavan III-CH","Sports Secretary - Mr Heramba Ganesh, III-EEE","Treasurer - Miss. Pavitra Mohandas, II-CSE","PG Representative - Miss. Hemavathy M, II-CS"};
+    android.support.design.widget.FloatingActionButton fab;
     Integer r,x,y,z,t;
     @SuppressLint("NewApi")
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ttday);
+        setContentView(R.layout.studentassolay);
 
-        listView = (ListView) findViewById(R.id.days);
+        listView = (ListView) findViewById(R.id.names);
+        fab=(android.support.design.widget.FloatingActionButton) findViewById(R.id.fabby);
 
-
-
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                emailIntent.setData(Uri.parse("mailto:studentcouncil@svce.ac.in"));
+                try {
+                    startActivity(emailIntent);
+                } catch (ActivityNotFoundException e) {
+                    //TODO: Handle case where no email app is available
+                }
+            }
+        });
 
         listView.setAdapter(new ArrayAdapter<String>(studentasso.this,android.R.layout.simple_list_item_1,new ArrayList<String>()));
         new Async().execute();
+
+
 
         }
 
@@ -53,11 +71,8 @@ public class studentasso extends Activity  {
             super.onPreExecute();
 
             arrayAdapter= (ArrayAdapter<String>) listView.getAdapter();
-            progressBar= (ProgressBar)findViewById(R.id.progressBar);
 
-            progressBar.setMax(10);
-            progressBar.setProgress(0);
-            progressBar.setVisibility(View.VISIBLE);
+
             count=0;
 
         }
@@ -69,7 +84,7 @@ public class studentasso extends Activity  {
             {
                 publishProgress(value);
                 try {
-                    Thread.sleep(500);
+                    Thread.sleep(10);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -84,14 +99,12 @@ public class studentasso extends Activity  {
 
             arrayAdapter.add(values[0]);
             count++;
-            progressBar.setProgress(count);
         }
 
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
 
-            progressBar.setVisibility(View.INVISIBLE);
         }
     }
 

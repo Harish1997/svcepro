@@ -1,6 +1,7 @@
 package svce.svcepro;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -23,10 +24,13 @@ public class ccd extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recycler);
 
-        List<cdata> cdata = fill_with_data();
+        List<ctdata> ctdata = fill_with_data();
+        setTitle("Cafe Coffee Day @SVCE");
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xffD61820));
+
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
-        mcrecyadapter adapter = new mcrecyadapter(cdata,ccd.this);
+        mctrecyadapter adapter = new mctrecyadapter(ctdata,ccd.this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -106,18 +110,18 @@ public class ccd extends AppCompatActivity {
                 })
         );
     }
-    public List<cdata> fill_with_data() {
+    public List<ctdata> fill_with_data() {
 
-        List<cdata> data = new ArrayList<>();
+        List<ctdata> data = new ArrayList<>();
 
-        data.add(new cdata("Hot Coffees", (float) 3,"Rs 20-40", R.drawable.ccdhotcof));
-        data.add(new cdata("Hoteas", (float) 3,"Rs 20-35", R.drawable.ccdhottea));
-        data.add(new cdata("Healthy Classics",(float) 3 ,"Rs 25-40 ", R.drawable.ccdhealth));
-        data.add(new cdata("Cold Coffees", (float) 3.5,"Rs 40", R.drawable.ccdcoldcof));
-        data.add(new cdata("Frosteas", (float) 4,"Rs 25", R.drawable.ccdfrosttea));
-        data.add(new cdata("Chocoholicas", (float) 4,"Rs 35-40", R.drawable.ccdchocd));
-        data.add(new cdata("Fruiteazers", (float) 4,"Rs 25-50", R.drawable.ccdfruitj));
-        data.add(new cdata("Soups", (float) 2.5,"Rs 30", R.drawable.ccdsoups));
+        data.add(new ctdata("Hot Coffees", (float) 3,"Rs 20-40","From 10.10 AM to 3.30 PM", R.drawable.coffee));
+        data.add(new ctdata("Hoteas", (float) 3,"Rs 20-35","From 10.10 AM to 3.30 PM", R.drawable.tea));
+        data.add(new ctdata("Healthy Classics",(float) 3 ,"Rs 25-40 ","From 10.10 AM to 3.30 PM", R.drawable.horlicks));
+        data.add(new ctdata("Cold Coffees", (float) 3.5,"Rs 40","From 11 AM to 3.30 PM", R.drawable.coldcoffee));
+        data.add(new ctdata("Frosteas", (float) 4,"Rs 25","From 11 AM to 3.30 PM", R.drawable.icetea));
+        data.add(new ctdata("Chocoholicas", (float) 4,"Rs 35-40","From 10.10 AM to 3.30 PM", R.drawable.chocoholicas));
+        data.add(new ctdata("Fruiteazers", (float) 4,"Rs 25-50","From 10.10 AM to 3.30 PM", R.drawable.fruiteazers));
+        data.add(new ctdata("Soups", (float) 2.5,"Rs 30","From 10.10 AM to 3.30 PM", R.drawable.soup));
         return data;
     }
 }

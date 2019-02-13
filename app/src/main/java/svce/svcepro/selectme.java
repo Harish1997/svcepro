@@ -3,13 +3,16 @@ package svce.svcepro;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 
 
 public class selectme extends AppCompatActivity {
     Integer x, y, z,t;
 
+    ImageView displayimg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +22,8 @@ public class selectme extends AppCompatActivity {
         y = extras.getInt("sem");
         z = extras.getInt("sel");
         t = extras.getInt("sec");
-
+     displayimg=(ImageView)findViewById(R.id.myimg);
+        Glide.with(this).load("http://quotesideas.com/wp-content/uploads/2015/03/Knowledge-is-of-no-value....png").into(displayimg);
 
         switch (z) // getting the valuefor depatrmnt
         {
@@ -451,6 +455,32 @@ public class selectme extends AppCompatActivity {
                 }
                 break;
 
+            }
+            case 10:// automobile
+            {
+                switch (t) {
+                    case 1: {
+                        if (y % 2 == 0) // calling the even semester
+                        {
+                            Intent newint = new Intent(selectme.this, fmarinetwo.class);
+                            newint.putExtra("sec",1);
+                            newint.putExtra("year",x);
+                            newint.putExtra("sem",y);
+                            newint.putExtra("sel",z);
+                            startActivity(newint);
+
+                        } else {
+                            Intent newint = new Intent(selectme.this, fmarineone.class);
+                            newint.putExtra("sec",1);
+                            newint.putExtra("year",x);
+                            newint.putExtra("sem",y);
+                            newint.putExtra("sel",z);
+                            startActivity(newint);
+                        }
+                        break;
+                    }
+                }
+                break;
             }
         }
 

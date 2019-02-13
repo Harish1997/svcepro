@@ -22,110 +22,7 @@ import java.util.ArrayList;
 public class ttperiod extends Activity {
     ListView listView;
 
-
-    String[] fautoonemonday = {"1-Engineering Practices Lab", "2-Engineering Practices Lab", "3-Engineering Practices Lab", "4-Computer Programming", "5-Engineering Physics I", "6-Technical English I", "7-Maths I"};
-    String[] fautoonetuesday = {"1-Engineering Graphics", "2-Engineering Graphics", "3-Engineering Graphics", "4-Engineering Physics I", "5-Computer Programming", "6-Technical English I", "7-Engineering Chemistry I"};
-    String[] fautoonewednesday = {"1-Engineering Physics I", "2-Maths", "3-Engineering Chemistry", "4-Maths", "5-Engineering Graphics", "6-Engineering Graphics", "7-Engineering Graphics"};
-    String[] fautoonethursday = {"1-Maths", "2-Physics/Chemistry Lab", "3-Physics/Chemistry Lab", "4-Chemistry I", "5-English I", "6-Maths I", "7-Computer Programming", "8-Sports"};
-    String[] fautoonefriday = {"1-Computer Programming", "2-Physics I", "3-English", "4-Chemistry", "5-Computer Lab", "6-Computer Lab", "7-Computer Lab"};
-
-    String[] fbiotechonemonday = {"1-Computer Programming", "2-Physics I", "3-English I", "4-Maths I", "5-Engineering Graphics", "6-Engineering Graphics", "7-Engineering Graphics"};
-    String[] fbiotechonetuesday = {"1-Engineering Physics I", "2-Engineering Chemistry I", "3-Technical English I", "4-Computer Programming", "5-Engineering Practices Lab", "6-Engineering Practices Lab", "7-Engineering Practices Lab"};
-    String[] fbiotechonewednesday = {"1-Technical English I", "2-Maths I", "3-Computer Programming", "4-Chemistry I", "5-Physics I", "6-Physics/Chemistry Lab", "7-Physics/Chemistry Lab"};
-    String[] fbiotechonethursday = {"1-Maths I", "2-Chemistry I", "3-Physics I", "4-English", "5-Computer Programming Lab", "6-Computer Programming Lab", "7-Computer Programming Lab"};
-    String[] fbiotechonefriday = {"1-Engineering Graphics", "2-Engineering Graphics", "3-Engineering Graphics", "4-Chemistry I", "5-Maths I", "6-Computer Programming", "7-Maths  I"};
-
-    String[] fcivilonemonday = {"1-Engineering Graphics", "2-Engineering Graphics", "3-Engineering Graphics", "4-Mathematics-I", "5-Technical English-I", "6-Engineering Physics", "7-Engineering Chemistry"};
-    String[] fcivilonetuesday = {"1-Computer Programming", "2-Engienering Chemistry", "3-Mathematics-I", "4-Computer Programming", "5-Mathematics-I", "6-Engieering Physics-I", "7-Technical English-I"};
-    String[] fcivilonewednesday = {"1-Technical English-I", "2-Mathematics-I", "3-Engineering Physics", "4-Engieering Chemistry", "5-Computer Practise Lab", "6-Computer Pracise Lab", "7-Computer Practise Lab"};
-    String[] fcivilonethursday = {"1-Engineering Graphics", "2-Engineering Graphics", "3-Engineering Graphics", "4-Engineering Chemistry", "5-Computer Programming", "6-Physics/Chemistry Lab,'7-Physics/Chemistry Lab"};
-    String[] fcivilonefriday = {"1-Engineering Practise Lab", "2-Engineering Practise Lab", "3-Engineering Practise Lab", "4-Mathematics-I", "5-Engineering Physics-I", "6-Technical English-I", "7-Computer Programming"};
-
-    String[] fchemaonemonday = {"1-Engineering Graphics", "2-Engineering Graphics", "3-Engineering Graphics", "4-Chemistry I", "5-Maths I", "6-Chemistry", "7-Computer Programming"};
-    String[] fchemaonetuesday = {"1-Physics I", "2-Maths I", "3-English I", "4-Computer Programming", "5-Engineering Graphics", "6-Engineering Graphics", "7-Engineering Graphics"};
-    String[] fchemaonewednesday = {"1-Computer Programming Lab", "2-Computer Programming Lab", "3-Computer Programming Lab", "4-Computer Programming", "5-English I", "6-Physics I", "7-Maths I"};
-    String[] fchemaonethursday = {"1-Engineering Practices Lab", "2-Engineering Practices Lab", "3-Engineering Practices Lab", "4-Chemistry I", "5-Physics I", "6-Maths I", "7-English I"};
-    String[] fchemaonefriday = {"1-Computer Programming", "2-Maths I", "3-Physics I", "4-English I", "5-Chemistry I", "6-Physics/Chmeistry Lab", "7-Physics/Chemistry Lab"};
-
-    String[] fchembonemonday = {"1-Physics I", "2-Chemistry I", "3-Computer Programming", "4-Physics/Chemistry Lab", "5-Physics/Chemistry Lab", "6-Maths I", "7-Physics I"};
-    String[] fchembonetuesday = {"1-Engineering Graphics", "2-Engineering Graphics", "3-Engineering Graphics", "4-Computer Programming", "5-ENglish I", "6-Chemistry I", "7-Maths I"};
-    String[] fchembonewednesday = {"1-English I", "2-Computer Programming", "3-Maths I", "4-Physcis I", "5-Engineering Graphics", "6-Engineering Graphics", "7-Engineering Graphics"};
-    String[] fchembonethursday = {"1-Computer Programming", "2-Computer Programming", "3-Computer Programming", "4-Maths I", "5-English I", "6-Chemistry I", "7-English I"};
-    String[] fchembonefriday = {"1-Maths I", "2-Chemistry I", "3-Physcis I", "4-Computer Programming", "5-Engineering Practices Lab", "6-Engineering Practices Lab", "7-Engineering Practices Lab"};
-
-
-    String[] fcseaonemonday = {"1-Engineering Graphics", "2-Engineering Graphics", "3-Engineering Graphics", "4-Computer Programming", "5-English I", "6-Maths I", "7-Physcis I"};
-    String[] fcseaonetuesday = {"1-English I", "2-Chemistry I", "3-Physcis I", "4-English I", "5-ENgineering Graphics", "6-ENgineering Graphics", "7-Engineering Graphics"};
-    String[] fcseaonewednesday = {"1-Computer Programming", "2-Computer Programming", "3-Computer Programming", "4-Maths I", "5-English I", "6-Chemistry I", "7-Computer Programming"};
-    String[] fcseaonethursday = {"1-Maths I", "2-Physics I", "3-Maths I", "4-Physics/Chemistry Lab", "5-Physics/Chemistry Lab", "6-Computer Programming", "7-Physics I"};
-    String[] fcseaonefriday = {"1-Engineering Practices Lab", "2-Engineering Practices Lab", "3-Engineering Practices Lab", "4-Computer Programming", "5-Chemistry I", "6-Physics I", "7-Maths I"};
-
-    String[] fcsebonemonday = {"1.Computer Programming", "2.maths", "3.Physics", "4.english", "5.Engineering Practices Lab", "6.Engineering Practices Lab", "7.Engineering Practices Lab"};
-    String[] fcsebonetuesday = {"1.Engineering Graphics", "2.Engineering Graphics", "3.Engineering Graphics", "4.Physics/Chemistry Lab", "5.Physics/Chemistry Lab", "6.maths", "7.English"};
-    String[] fcsebonewednesday = {"1.Physics", "2.Chemsitry", "3.Computer Programming", "4.Chemsitry", "5.Engineering Graphics", "6.Engineering Graphics", "7.Engineering Graphics"};
-    String[] fcsebonethursday = {"1.Computer Programming Lab", "2.Computer Programming Lab", "3.Computer Programming Lab", "4.Maths", "5.English", "6.Chemistry", "7.Computer Programming"};
-    String[] fcsebonefriday = {"1.Physics", "2.English", "3.Maths", "4.Physics", "5.Maths", "6.Chemsitry", "7.Computer Programming"};
-
-
-    String[] fcseconemonday = {"1.Maths", "2.Physics", "3.Chemistry", "4.Physics/Chemistry Lab", "5.Physics/Chemsitry Lab", "6.English", "7.Computer Programming"};
-    String[] fcseconetuesday = {"1.Chemistry", "2.Computer Programming", "3.Physics", "4.Maths", "5.Computer Programming Lab", "6.Computer Programming Lab", "7.Computer Programming Lab"};
-    String[] fcseconewednesday = {"1.Engineering Graphics", "2.Engineering Graphics", "3.Engineering Graphics", "4.Maths", "5.Engineering Practices Lab", "6.Engineering Practices Lab", "7.Engineering Practices Lab"};
-    String[] fcseconethursday = {"1.Computer Programming", "2.English", "3.Physics", "4.Chemistry", "5.Engineering Graphics", "6.Engineering Graphics", "7.Engineering Graphics"};
-    String[] fcseconefriday = {"1.Physics", "2.Maths", "3.Chemistry", "4.Computer Programming", "5.English", "6.Maths", "7.English"};
-
-    String[] feceaonemonday = {"1.Chemistry", "2.Maths", "3.Physics", "4.Computer Programming", "5.Engineering Practices Lab", "6.Engineering Practices Lab", "7.Engineering Practices Lab"};
-    String[] feceaonetuesday = {"1.Computer Programming Lab", "2.Computer Programming Lab", "3.Computer Programming Lab", "4.Maths", "5.Physics", "6.English", "7.Computer Programming"};
-    String[] feceaonewednesday = {"1.Computer Programming", "2.Chemistry", "3.English", "4.Physics/Chemistry Lab", "5.Physics/Chemistry Lab", "6.Physics", "7.Maths"};
-    String[] feceaonethursay = {"1.Engineering Graphics", "2.Engineering Graphics", "3.Engineering Graphics", "4.Physics", "5.Chemistry", "6.Maths", "7.English"};
-    String[] feceaonefriday = {"1.English", "2.Maths", "3.Chemistry", "4.Computer Programming", "5.Engineering Graphics", "6.Engineering Graphics", "7.Engineering Graphics"};
-
-    String[] fecebonemonday = {"1.Computer Programming", "2.Maths", "3.English", "4.Physics", "5.Engineering Graphics", "6.Engineering Graphics", "7.Engineering Graphics"};
-    String[] fecebonetuesday = {"1.Engineering Practices Lab", "2.Engineering Practices Lab", "3.Engineering Practices Lab", "4.Chemistry", "5.Maths", "6.Chemistry", "7.English"};
-    String[] fecebonewednesday = {"1.English", "2.Physics", "3.Maths", "4.Computer Programming", "5.Maths", "6.Physics/Chemistry Lab", "7.Physics/Chemistry Lab"};
-    String[] fecebonethursday = {"1.Computer Programming Lab", "2.Computer Programming Lab", "3.Computer Programming Lab", "4.English", "5.Physics", "6.Chemistry", "7.Computer Programming"};
-    String[] fecebonefriday = {"1-Engineering Graphics", "2-Engineering Graphics", "3-Engineering Graphics", "4-Computer Programming", "5-Chemistry-1", "6-Physics-1", "7-Mathematics-1"};
-
-    String[] fececonemonday = {"1.Engineering Graphics", "2.Engineering Graphics", "3.Engineering Graphics", "4.Maths", "5.Physics", "6.English", "7.Chemistry"};
-    String[] fececonetuesday = {"1.Computer Programming", "2.Maths", "3.Chemistry", "4.Maths", "5.Engineering Graphics", "6.Engineering Graphics", "7.Engineering Graphics"};
-    String[] fececonewednesday = {"1.Physics", "2.Physics/Chemistry Lab", "3.Physics/Chemistry Lab", "4.Chemistry", "5.English", "6.Maths", "7.Chemistry"};
-    String[] fececonethursday = {"1.Engineering Practices Lab", "2.Engineering Practices Lab", "3.Engineering Practices Lab2", "4.English", "5.Computer Programming", "6.Physics", "7.Computer Programming"};
-    String[] fececonefriday = {"1.Computer Practise Lab", "2.Computer Practise Lab", "3.Computer Practise Lab", "4.Physics", "5.Computer Programming", "6.English", "7.Maths"};
-
-    String[] feeeaonemonday = {"1-Computer Programming", "2-Technical English-I", "3-Engineering Chemistry-I", "4-Engineering Physics-I", "5-Computer Programming", "6-Physics/Chemistry Lab"};
-    String[] feeeaonetuesday = {"1-Engineering Graphics", "2-Engineering Graphics", "3-Engineering Graphics", "4-Technical English", "5-Engineering Physics-I", "6-Mathematics-I", "7-Engineering Chemistry"};
-    String[] feeeaonewednesday = {"1-Engineering Physics-I", "2-Computer Programming", "3-Mathematics-I", "4-Mathematics-I", "5-Engineering Graphics", "6-Engineering Grpahics", "7-Engineering Graphics"};
-    String[] feeeaonethursday = {"1-Engineering Chemistry-I", "2-Mathematics-I", "3-Engineering Physics-I", "4-Computer programming", "5-Engineering Practise Lab", "6-Engineering Practise Lab", "7-Engineering Practise Lab"};
-    String[] feeeaonefriday = {"1-Technical English", "2-Mathematics-I", "3-Engineering Chemistry-I", "4-Technical English", "5-Computer Practise Lab", "6-Computer Practise Lab", "7-Computer Practise Lab"};
-
-    String[] feeebonemonday = {"1-Computer Programming", "2-Mathematics-I", "3-Engineering Physics-I", "4-Technical English", "5-Computer Practise lab", "6-Computer Practise Lab", "7-Computer Practise Lab"};
-    String[] feeebonetuesday = {"1-Engineering Physics-I", "2-Engineering Chemistry-I", "3-Mathematics-I", "4-Computer Programming", "5-Engineering Practise Lab", "6-Engineering Practise Lab", "7-Engineering Practise Lab"};
-    String[] feeebonewednesday = {"1-Engineering Graphics", "2-Engineering Graphics", "3-Engineering Graphics", "4-Computer Programming", "5-Mathematics-I", "6-Technical English-I ", "7-Engineering Physics-I"};
-    String[] feeebonethursday = {"1-Mathematics-I", "2-Technical English-I", "3-Computer Programming", "4-Engineering Chemistry-I", "5-Engineering Graphics", "6-Engineering Graphics", "7-Engineering Graphics"};
-    String[] feeebonefriday = {"1-Engineering Physics-I", "2-Engineering Chemistry-I", "3-Technical English", "4-Physics/Chemistry Lab", "5-Physics/Chemistry Lab", "6-Engineering Chemistry-I", "Mathematics-I"};
-
-    String[] fitaonemonday = {"1-Engineering Chemistry-I", "2-Technical English-I", "3-Computer Programming", "4.Engineering Physics-I", "5-Mathematics-I", "6-Physics/Chemistry Lab", "7-Physics/Chemistry Lab"};
-    String[] fitaonetuesday = {"1-Computer Practise Lab", "2-Computer Practise Lab", "3-Computer Practise Lab", "4-Mathematics-I", "5-Engineering Physics-I", "Technical English-I", "COmputer Programming"};
-    String[] fitaonewednesday = {"1-Engineering Practise Lab", "2-Engineering Practise Lab", "3-Engineering Practise Lab", "4-Engineering Chemistry-I", "5-Engeering Physics-I", "6-Engeering Chemistry-I", "Mathematics-I"};
-    String[] fitaonethursday = {"1-Engeering Graphics", "2-Engeering Graphics", "3-Engeering Graphics", "4-Technical English", "5-Mathematics-I", "6-Computer Programming", "7-Technical English-I"};
-    String[] fitaonefriday = {"1-Engeering Chemistry-I", "2-COmputer Programming", "3-Engeering Physics-I", "4-Mathematics-I", "5-Engeering Graphics", "6-Engeering Graphics", "7-Engeering Graphics"};
-
-    String[] fitbonemonday = {"1-Engineering Physics-I", "2-Technical english-I", "3-Computer Programming", "4-Mathematics-I", "5-Engineering Graphics", "6-Engineering Graphics", "7-Engineering Graphics"};
-    String[] fitbonetuesday = {"1-Engineerng Practise Lab", "2-Engineering Practise Lab", "3-Engineering Practise Lab", "4-Computer Programming", "5-Chemistry-1", "6-Mathematics-1", "7-Physics-1"};
-    String[] fitbonewednesday = {"1-Engineering CHemistry", "2-Mathematics-I", "3-Technical English", "4-Mathematics-I", "5-Computer Practise Lab", "6-Computer Practise Lab", "7-Computer Practise Lab"};
-    String[] fitbonethursday = {"1-Techncail English-I", "2-Computer Programming", "3-Technical English", "4-Mathematics-I", "5-Engineering Chemistry", "6-Engineering Physics", "7-Computer Programming"};
-    String[] fitbonefriday = {"1-Engineering Graphics", "2-Engineering Graphics", "3-Engineering Graphics", "4-Engineering Physics-I", "5-Engineering Chemistry", "6-Physics/Chemistry Lab"};
-
-    String[] fmechaonemonday = {"1-Engineering Practise Lab", "2-Engineering Practise Lab", "3-Engineering Practise Lab", "4-Technical English", "5-Engineering Chemistry", "6-Engineering Physcis", "7-Mathematics"};
-    String[] fmechaonetuesday = {"1-Computer Programming", "2-Technical English", "3-Mathematics_I", "4-Engineering Physics", "5-Computer Practise Lab", "6-Computer Practise Lab", "7-Computer Practise Lab"};
-    String[] fmechaonewednesday = {"1-Engineering Graphics", "2-Engineering Graphics", "3-Engineering Graphics", "4-Engineering Physics-I", "5-Technical English", "6-Mathematics-I", "7-Engineering Chemistry"};
-    String[] fmechaonethursday = {"1-Engineering Physics", "2-Engineering Chemistry", "3-Mathematics", "4-Computer Programming", "5-Engineering Graphics", "6-Engineering Graphics", "7-Engineering Graphics"};
-    String[] fmechaonefriday = {"1-Mathematics-I", "2-Physics/Chemistry Lab", "3-Physics/Chemistry Lab", "4-Computer Programming", "5-Engineering Chemistry", "6-Technical English", "7-Computer Programming"};
-
-    String[] fmechbonemonday = {"1-Technical English", "2-Engineering Chemistry-I", "3-Computer Programming", "4-Mathematics-I", "5-Computer Practise Lab", "6-Computer Practise Lab", "7-Computer Practose Lab"};
-    String[] fmechbonetuesday = {"1-Mathematics-I", "2-Engineering Chemistry-I", "3-Mathematics-I", "4-Engineering Chemistry-I", "5-technical English-I", "6-Physics/Chemistry Lab", "7-Physics/Chemistry Lab"};
-    String[] fmechbonewednesday = {"1-Engineering Chemistry", "2-Technical English-I", "3-Engineering Physics-I", "4-Mathematics-I", "5-Engineerign Practise Lab", "6-Engineering Practise Lab", "7-Engineering Practise Lab"};
-    String[] fmechbonethursday = {"1-Engineering Graphics", "2-Engineering graphics", "3-Engineering graphics", "4-Engineering Physics-I", "5-COmputer Programming", "6-Engineering Physics-I", "7-Engieering Chemistry-I"};
-    String[] fmechbonefriday = {"1-Computer Programming", "2-Technical English", "3-Computer Programming", "4-Mathematics-I", "5-Engineering graphics", "6-Engineering Graphics", "7-Engineering Graphics"};
+//even sems for auto dept below
 
     //first yr auto
     String[] fautotwomonday = {"1-Mathematics II", "2-Engineering Mechanics", "3-BEEE", "4-Technical English II", "5-Engineering mechanics/Mathematics II", "6-Engineering Chemistry II", "7-Engineering Physics II"};
@@ -136,49 +33,60 @@ public class ttperiod extends Activity {
 
 
     //second year auto
-    String[] sautotwomonday = {"1-Automotive Chassis", "2-Computer Aided Machine Drawing Laboratory/Strength of Materials Laboratory", "3-Computer Aided Machine Drawing Laboratory/Strength of Materials Laboratory", "4-Computer Aided Machine Drawing Laboratory/Strength of Materials Laboratory", "5-Electronics and Microprocessors", "6-Engineering Materials and Metallurgy", "7-Statistics and numerical methods"};
-    String[] sautotwotuesday = {"1-Electronics and microprocessors", "2-Applied thermodynamics and heat transfer", "3-Statistics and numerical methods", "4-Strength of materials", "5-Automotive Chassis", "6-Statistics and numerical methods", "7-Electronics and microprocessors "};
-    String[] sautotwowednesday = {"1-Strength of materials", "2-Electronics and microprocessors", "3-Applied thermodynamics and heat transfer", "4-Statistics ans numerical methods", "5-Electronics and microprocessors lab/Computer aided machine drawing lab", "Electronics and microprocessors lab/Computer aided machine drawing lab", "Electronics and microprocessors lab/Computer aided machine drawing lab"};
-    String[] sautotwothursday = {"1-Statistics and numerical methods", "2-Strength of materials", "3-Automotive Chassis/Engineering materials and metallurgy", "4-Applied thermodynamics and heat transfer", "5-Strength of materials lab/Electronics and microprocessors lab", "6-Strength of materials lab/Electronics and microprocessors lab", "7-Strength of materials lab/Electronics and microprocessors lab"};
-    String[] sautotwofriday = {"1-Engineering materials and metallurgy", "2-Applied thermodynamics and heat transfer", "3-Automotive Chassis", "4-Electronics and microprocessors", "5-Strength of materials", "6-Statistics and numerical methods", "7-Applied thermodynamics and heat transfer"};
+    String[] sautotwomonday = {"1-Fluid Mechanics and Machinery / Mechanics of Machines", "2-Electronics and Microcontroller Laboratory/Fluid Mechanics and Machinery Laboratory", "3-Electronics and Microcontroller Laboratory/Fluid Mechanics and Machinery Laboratory", "4-Electronics and Microcontroller Laboratory/Fluid Mechanics and Machinery Laboratory", "5-Electronics and Microcontroller", "6-Mechanics of Machines (Tutorial)/Fluid Mechanics and Machinery (Tutorial)", "7-Environmental Science and Engineering"};
+    String[] sautotwotuesday = {"1-Mechanics of Machines / Fluid Mechanics and Machinery", "2-Computational Methods", "3-Fluid Mechanics and Machinery / Mechanics of Machines", "4-Environmental Science and Engineering", "5-Automotive Chassis", "6-Computational Methods (Tutorial)", "7-Electronics and Microcontroller "};
+    String[] sautotwowednesday = {"1-Automotive Chassis", "2-Mechanics of Machines / Fluid Mechanics and Machinery", "3-Computational Methods", "4-Fluid Mechanics and Machinery / Mechanics of Machines", "5-Automotive Components Laboratory / Electronics and Microcontroller Laboratory", "6-Automotive Components Laboratory / Electronics and Microcontroller Laboratory", "7-Automotive Components Laboratory / Electronics and Microcontroller Laboratory"};
+    String[] sautotwothursday = {"1-Computational Methods", "2-Fluid Mechanics and Machinery / Mechanics of Machines", "3-Electronics and Microcontroller", "4-Mechanics of Machines / Fluid Mechanics and Machinery", "5-Fluid Mechanics and Machinery Laboratory / Automotive Components Laboratory", "6-Fluid Mechanics and Machinery Laboratory / Automotive Components Laboratory", "7-Fluid Mechanics and Machinery Laboratory / Automotive Components Laboratory"};
+    String[] sautotwofriday = {"1-Automotive Chassis/Environmental Science and Engineering", "2-Mechanics of Machines / Fluid Mechanics and Machinery", "3-Electronics and Microcontroller", "4-Computational Methods", "5-Environmental Science and Engineering", "6-Fluid Mechanics and Machinery(Tutorial) / Mechanics of Machines(Tutorial)", "7-Automotive Chassis"};
 
     //third year auto
-    String[] tautotwomonday = {"1-Vehicle dynamics", "2-Automotive Chassis components design", "3-Principles of management", "4-Two and three wheelers", "5-Automotive engine components design", "6-Alternative fuels and energy system", "7-Seminar"};
-    String[] tautotwotuesday = {"1-Principle of management", "2-Alternative fuels and energy system", "3-Two and three wheelers", "4-library", "5-Principle of management", "6-Automotive Chassis components design", "7-placement 1"};
-    String[] tautotwowednesday = {"1-Automotive engine components design", "2-Vehicle dynamics", "3-automotive chassis components design", "4-Principle of management", "5-Two and three wheelers", "6-placement 2", "7-placement 3"};
-    String[] tautotwothursday = {"1-Automotive chassis components design", "2-Automotive engine components design", "3-Vehicle Dynamics","4-Alternative fuel and energy system", "5-Computer aided engine and chassis design lab/Two and three wheelers lab", "6-Computer aided engine and chassis design lab/Two and three wheelers lab", "7-Computer aided engine and chassis design lab/Two and three wheelers lab"};
-    String[] tautotwofriday = {"1-Automotive chassis components design", "2-Two and three wheelers", "3-automotive engine components design", "4-Vehicle dynamics", "5-Computer aided engine and chassis design lab/Two and three wheelers lab", "6-Computer aided engine and chassis design lab/Two and three wheelers lab", "7-Computer aided engine and chassis design lab/Two and three wheelers lab"};
+    String[] tautotwomonday = {"1-Automotive Air Conditioning (E) / Alternate Fuels and Energy Systems (E)", "2-Two and Three Wheelers", "3-Vehicle Dynamics (Tutorial)", "4-Principles of Management", "5-Placement", "6-Automotive Engine Components Design", "7-Library"};
+    String[] tautotwotuesday = {"1-Automotive Engine Components Design", "2-Principles of Management", "3-Automotive Chassis Components Design", "4-Seminar", "5-Computer Aided Engine and Chassis Design Laboratory / Two and Three Wheelers Laboratory", "6-Computer Aided Engine and Chassis Design Laboratory / Two and Three Wheelers Laboratory", "7-Computer Aided Engine and Chassis Design Laboratory / Two and Three Wheelers Laboratory"};
+    String[] tautotwowednesday = {"1-Automotive Chassis Components Design", "2-Automotive Air Conditioning (E) / Alternate Fuels and Energy Systems (E)", "3-Two and Three Wheelers", "4-Principles of Management", "5-Vehicle Dynamics", "6-Automotive Engine Components Design (Tutorial)", "7-Placement"};
+    String[] tautotwothursday = {"1-Vehicle Dynamics", "2-Automotive Engine Components Design", "3-Automotive Air Conditioning (E) / Alternate Fuels and Energy Systems (E)","4-Automotive Chassis Components Design (Tutorial)", "5-Principles of Management", "6-Two and Three Wheelers", "7-Placement"};
+    String[] tautotwofriday = {"1-Two and Three Wheelers", "2-Automotive Chassis Components Design", "3-Vehicle Dynamics", "4-Automotive Air Conditioning (E) / Alternate Fuels and Energy Systems (E)", "5-Two and Three Wheelers Laboratory / Computer Aided Engine and Chassis Design Laboratory", "6-Two and Three Wheelers Laboratory / Computer Aided Engine and Chassis Design Laboratory", "7-Two and Three Wheelers Laboratory / Computer Aided Engine and Chassis Design Laboratory"};
 
     //fourth year auto
-    String[] frautotwomonday = {"1-Vehicle body engineering", "2-Transport management", "3-Placement", "4-Transport management", "5-Vehicle body design", "6-Project work(1)", "7-Project work(1)"};
-    String[] frautotwotuesday = {"1-transport management", "2-Vehicle body engineering", "3-Transport management", "4-Vehicle body engineering", "5-Project work(2)", "6-Project work(2)", "7-library"};
-    String[] frautotwowednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frautotwothursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frautotwofriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
+    String[] frautotwomonday = {"1-Vehicle Body Engineering", "2-Transport Management / Operations Research", "3-Transport Management / Operations Research", "4-Vehicle Body Engineering", "5-Transport Management / Operations Research", "6-Vehicle Body Engineering", "7-Vehicle Body Engineering / Transport Management & Operations Research"};
+    String[] frautotwotuesday = {"1-Project Work", "2-Project Work", "3-Project Work", "4-Project Work", "5-Project Work", "6-Project Work", "7-Project Work"};
+    String[] frautotwowednesday = {"1-Project Work", "2-Project Work", "3-Project Work", "4-Project Work", "5-Project Work", "6-Project Work", "7-Project Work"};
+    String[] frautotwothursday = {"1-Project Work", "2-Project Work", "3-Project Work", "4-Project Work", "5-Project Work", "6-Project Work", "7-Project Work"};
+    String[] frautotwofriday = {"1-Project Work", "2-Project Work", "3-Project Work", "4-Project Work", "5-Project Work", "6-Project Work", "7-Project Work"};
 
-  // ****odd sem of 2nd year 3rd and 4th year of automobile
+    // ****odd sem of 1st, 2nd year 3rd and 4th year of automobile
 
-    //second year auto
-    String[] sautoonemonday = {"1-Engineering Thermodynamics","2-Mechnaics of Solids","3-Manufacturing Technology",};
-    String[] sautoonetuesday = {""};
-    String[] sautoonewednesday = {""};
-    String[] sautoonethursday = {""};
-    String[] sautoonefriday = {""};
+
+
+    String[] fautoonemonday = {"1-Basic Electrical and Electronics Engineering", "2-Engineering Physics", "3-Communicative English", "4-Engineering Mathematics - I", "5-Engineering Practices Laboratory", "6Engineering Practices Laboratory", "7-Engineering Practices Laboratory", "8-Sports"};
+    String[] fautoonetuesday = {"1-Engineering Drawing", "2-Engineering Drawing", "3-Engineering Drawing", "4-Engineering Mathematics - I", "5-Engineering Chemistry", "6-Engineering Physics", "7-Basic Electrical and Electronics Engineering"};
+    String[] fautoonewednesday = {"1-Engineering Mathematics - I", "2-Engineering Chemistry", "3-Communicative English", "4-Basic Electrical and Electronics Engineering", "5-Engineering Drawing", "6-Engineering Drawing", "7-Engineering Drawing"};
+    String[] fautoonethursday = {"1-Engineering Chemistry", "2-Seminar I", "3-Engineering Mathematics - I", "4-Engineering Physics", "5-Communicative English ", "6-Physics and Chemistry Laboratory", "7-Physics and Chemistry Laboratory"};
+    String[] fautoonefriday = {"1-Basic Electrical and Electronics Engineering", "2-Communicative English", "3-Engineering Physics", "4-Engineering Chemistry", "5-Seminar II", "6-Engineering Mathematics - I", "7-Library"};
+
+
+    String[] sautoonemonday = {"1-Automotive Engines", "2-Engineering Thermodnamics", "3-Mechanics of Solids", "4-Engineering Materials and Metallurgy / Manufacturing Technology", "5-Mathematics III", "6-Manufacturing Technology", "7-Engineering Materials and Metallurgy"};
+    String[] sautoonetuesday = {"1-Engineering Thermodnamics", "2-Engineering Performance and Emission Testing Lab / Strength of Materials Lab", "3-Engineering Performance and Emission Testing Lab / Strength of Materials Lab", "4-Engineering Performance and Emission Testing Lab / Strength of Materials Lab", "5-Manufacturing Technology", "6-Mechanics of Solids", "7-Mathematics III(Tutorial)"};
+    String[] sautoonewednesday = {"1-Mechanics of Solids", "2-Engineering Thermodnamics", "3-Mathematics III", "4-Mechanics of Solids(Tutorial)", "5-Manufacturing Technology lab/Engine Performance and Emission Testing lab", "Manufacturing Technology lab/Engine Performance and Emission Testing lab", "Manufacturing Technology lab/Engine Performance and Emission Testing lab"};
+    String[] sautoonethursday = {"1-Automotive Engines", "2-Mathematics III", "3-Engineering Materials and Metallurgy", "4-Engineering Thermodnamics(Tutorial)", "5-Strength of Materials lab / Manufacturing Technology Lab", "6-Strength of Materials lab / Manufacturing Technology Lab", "7-Strength of Materials lab / Manufacturing Technology Lab"};
+    String[] sautoonefriday = {"1-Mechanics of Solids", "2-Automotive Engines", "3-Engineering Thermodnamics", "4-Manufacturing Technology", "5-Automotive Engines", "6-Mathematics III", "7-Engineering Materials and Metallurgy"};
 
     //third year auto
-    String[] tautoonemonday = {"1-Vehicle dynamics", "2-Automotive Chassis components design", "3-Principles of management", "4-Two and three wheelers", "5-Automotive engine components design", "6-Alternative fuels and energy system", "7-Seminar"};
-    String[] tautoonetuesday = {"1-Principle of management", "2-Alternative fuels and energy system", "3-Two and three wheelers", "4-library", "5-Principle of management", "6-Automotive Chassis components design", "7-placement 1"};
-    String[] tautoonewednesday = {"1-Automotive engine components design", "2-Vehicle dynamics", "3-automotive chassis components design", "4-Principle of management", "5-Two and three wheelers", "6-placement 2", "7-placement 3"};
-    String[] tautoonethursday = {"1-Automotive chassis components design", "2-Automotive engine components design", "4-Alternative fuel and energy system", "5-Computer aided engine and chassis design lab/Two and three wheelers lab", "6-Computer aided engine and chassis design lab/Two and three wheelers lab", "7-Computer aided engine and chassis design lab/Two and three wheelers lab"};
-    String[] tautoonefriday = {"1-Automotive chassis components design", "2-Two and three wheelers", "3-automotive engine components design", "4-Vehicle dynamics", "5-Computer aided engine and chassis design lab/Two and three wheelers lab", "6-Computer aided engine and chassis design lab/Two and three wheelers lab", "7-Computer aided engine and chassis design lab/Two and three wheelers lab"};
+    String[] tautoonemonday = {"1-Automotive Transmission", "2-Design of Machine elements", "3-Automotive Fuels and Lubricants", "4-Automotive Electrical and Electronics Systems", "5-Automotive Fuels and Lubricants Lab / Automotive Electrical and Electronics Systems Lab", "6-Automotive Fuels and Lubricants Lab / Automotive Electrical and Electronics Systems Lab", "7-Automotive Fuels and Lubricants Lab / Automotive Electrical and Electronics Systems Lab"};
+    String[] tautoonetuesday = {"1-Vehicle Design Data Characteristics", "2-Automotive Transmission", "3-Design of Machine elements", "4-Applied Thermodynamics and Heat Transfer", "5-Automotive Electrical and Electronics Systems Lab / Computer Aided Machine Drawing Lab", "6-Automotive Electrical and Electronics Systems Lab / Computer Aided Machine Drawing Lab", "7-Automotive Electrical and Electronics Systems Lab / Computer Aided Machine Drawing Lab"};
+    String[] tautoonewednesday = {"1-Automotive Electrical and Electronics Systems", "2-Automotive Fuels and Lubricants", "3-Applied Thermodynamics and Heat Transfer", "4-Automotive Fuels and Lubricants", "5-Automotive Transmission", "6-Applied Thermodynamics and Heat Transfer", "7-Vehicle Design Data Characteristics(T)"};
+    String[] tautoonethursday = {"1-Design of Machine elements", "2-Vehicle Design Data Characteristics", "3-Automotive Transmission", "4-Vehicle Design Data Characteristics", "5-Applied Thermodynamics and Heat Transfer", "6-Automotive Fuels and Lubricants", "7-Automotive Electrical and Electronics Systems"};
+    String[] tautoonefriday = {"1-Design of Machine elements", "2-Computer Aided Machine Drawing Lab / Automotive Fuels and Lubricants Lab", "3-Computer Aided Machine Drawing Lab / Automotive Fuels and Lubricants Lab", "4-Computer Aided Machine Drawing Lab / Automotive Fuels and Lubricants Lab", "5-Design of Machine elements(T)", "6-Automotive Electrical and Electronics Systems", "7-Applied Thermodynamics and Heat Transfer(Tutorial)"};
 
     //fourth year auto
-    String[] frautoonemonday = {"1-Vehicle body engineering", "2-Transport management", "3-Placement", "4-Transport management", "5-Vehicle body design", "6-Project work(1)", "7-Project work(1)"};
-    String[] frautoonetuesday = {"1-transport management", "2-Vehicle body engineering", "3-Transport management", "4-Vehicle body engineering", "5-Project work(2)", "6-Project work(2)", "7-library"};
-    String[] frautoonewednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frautoonethursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frautoonefriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
+    String[] frautoonemonday = {"1-Automotive Aerodynamics / Automotive Safety", "2-Vehicle Maintenance", "3-Engine and Vehicle Management System", "4-Finite Element Analysis(T)", "5-New Generation and Hybrid Vehicles", "6-Placement(1)", "7-Automotive Aerodynamics / Automotive Safety"};
+    String[] frautoonetuesday = {"1-Finite Element Analysis", "2-Vehicle Maintenance", "3-Automotive Pollution and Control", "4-Placement(2)", "5-New Generation and Hybrid Vehicles", "6-Engine and Vehicle Management System", "7-Project Work(1)"};
+    String[] frautoonewednesday = {"1-Vehicle Maintenance", "2-Finite Element Analysis", "3-Automotive Aerodynamics / Automotive Safety", "4-New Generation and Hybrid Vehicles", "5-Engine and Vehicle Management System", "6-New Generation and Hybrid Vehicles", "7-Library"};
+    String[] frautoonethursday = {"1-Engine Performance and Emission Testing Lab / Vehicle Maintenace Lab", "2-Engine Performance and Emission Testing Lab / Vehicle Maintenace Lab", "3-Engine Performance and Emission Testing Lab / Vehicle Maintenace Lab", "4-Automotive Aerodynamics / Automotive Safety", "5-Engine and Vehicle Management System", "6-Automotive Pollution and Control", "7-Vehicle Maintenance"};
+    String[] frautoonefriday = {"1-Engine and Vehicle Management System", "2-Automotive Pollution and Control", "3-New Generation and Hybrid Vehicles", "4-Finite Element Analysis", "5-Vehicle Maintenace Lab / Engine Performance and Emission Testing Lab", "6-Vehicle Maintenace Lab / Engine Performance and Emission Testing Lab", "7-Vehicle Maintenace Lab / Engine Performance and Emission Testing Lab"};
 
+
+
+    // even sems for biotech depts below
 
     //biotech first yr
 
@@ -190,13 +98,13 @@ public class ttperiod extends Activity {
 
 
     //biotech second year
-    String[] sbiotechtwomonday = {"1-Applied thermodynamics for Biotechnologies", "2-Probability and statistics", "3-Analytical method and instrumentation", "4-Heat transfer operations", "5-Bioprocess principles", "6-Probability and Statistics", "7-Seminar"};
-    String[] sbiotechtwotuesday = {"1-Chemical Engineering lab/Instrumental method of analysis lab", "2-Chemical Engineering lab/Instrumental method of analysis lab", "3-Chemical Engineering lab/Instrumental method of analysis lab", "4-Chemical Engineering lab/Instrumental method of analysis lab", "5-Probability and statistics", "6-Analytical methods and instrumentation", "7-Heat transfer operations"};
-    String[] sbiotechtwowednesday = {"1-Chemical Engineering lab/Instrumental method of analysis lab", "2-Chemical Engineering lab/Instrumental method of analysis lab", "3-Chemical Engineering lab/Instrumental method of analysis lab", "4-Chemical Engineering lab/Instrumental method of analysis lab", "5-Bioprocess principles", "6-Applied thermodynamics for biotechnologies", "7-Enzyme technology and bio transformation"};
-    String[] sbiotechtwothursday = {"1-Heat transform operation", "2-Analytical methods and instrumentation", "3-Probability and Statistics", "4-Bioprocess principles", "5-Applied thermodynamics for biotechnologies", "6-Enzyme technology and Biotransformation", "7-Library"};
-    String[] sbiotechtwofriday = {"1-Analytical methods and instrumentation ", "2-Enzyme technology and Biotransformation", "3-Applied thermodynamics for biotechnologies", "4-Bioprocess Principles", "5-Probability and statistics", "6-heat transfer operations", "7-Enzyme technology and biotransformation"};
+    String[] sbiotechtwomonday = {"1-Applied Thermodynamics for Biotechnologists", "2-Probability and Statistics", "3-Bioprocess Principles", "4-Heat and Momentum Transfer Operations", "5-Bioprocess Principles (Tutorial)", "6-Probability and Statistics (Tutorial)", "7-Analytical Methods and Instrumentation"};
+    String[] sbiotechtwotuesday = {"1-Chemical Engineering Laboratory / Instrumental Methods for Analysis Laboratory", "2-Chemical Engineering Laboratory / Instrumental Methods for Analysis Laboratory", "3-Chemical Engineering Laboratory / Instrumental Methods for Analysis Laboratory", "4-Chemical Engineering Laboratory / Instrumental Methods for Analysis Laboratory", "5-Probability and Statistics", "6-Analytical Methods and Instrumentation", "7-Heat and Momentum Transfer Operations (Tutorial)"};
+    String[] sbiotechtwowednesday = {"1-Chemical Engineering Laboratory / Instrumental Methods for Analysis Laboratory", "2-Chemical Engineering Laboratory / Instrumental Methods for Analysis Laboratory", "3-Chemical Engineering Laboratory / Instrumental Methods for Analysis Laboratory", "4-Chemical Engineering Laboratory / Instrumental Methods for Analysis Laboratory", "5-Bioprocess Principles", "6-Enzyme Technology and Biotransformation", "7-Applied Thermodynamics for Biotechnologists (Tutorial)"};
+    String[] sbiotechtwothursday = {"1-Analytical Methods and Instrumentation", "2-Heat and Momentum Transfer Operations", "3-Probability and Statistics", "4-Bioprocess Principles", "5-Applied Thermodynamics for Biotechnologists", "6-Library", "7-Enzyme Technology and Biotransformation"};
+    String[] sbiotechtwofriday = {"1-Probability and Statistics ", "2-Analytical Methods and Instrumentation", "3-Enzyme Technology and Biotransformation", "4-Applied Thermodynamics for Biotechnologists", "5-Seminar", "6-Enzyme Technology and Biotransformation (Tutorial)", "7-Heat and Momentum Transfer Operations"};
 
-    //boitech third yr
+    //boitech third yr (Not yet updated)
     String[] tbiotechtwomonday = {"1-Employability skills lab", "2-Employability skills lab", "3-Employability skills lab", "4-Employability skills lab", "5-library", "6-Total quality management for biotechnologist", "7-Plant biotechnology/Metabolic engineering"};
     String[] tbiotechtwotuesday = {"1-Plant biotechnology/Metabolic engineering", "2-Total quality management for biotechnologist", "3-Immunology", "4-Chemical reaction engineering", "5-Genetic engineering and genomics", "6-Moleculer Pathogenesis of Infections Disease/Cancer biology and therapeutics", "7-Seminar"};
     String[] tbiotechtwowednesday = {"1-MolecularPathogenesis of infections disease/Cancer biology and therapeutics", "2-Immunology", "3-Genetic engineering and genomics", "4-lunch break(11.15-11.55)", "5-Genetic engineering lab/Bioprocess lab-2", "6-Genetic engineering lab/Bioprocess lab-2", "7-Genetic engineering lab/Bioprocess lab-2"};
@@ -205,36 +113,48 @@ public class ttperiod extends Activity {
 
     //biotech fourth year
 
-    String[] frbiotechtwomonday = {"1-Project work", "2-Project work", "3-Library", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frbiotechtwotuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frbiotechtwowednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frbiotechtwothursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work review", "5-Project work review", "6-Project work review", "7-Project work review"};
-    String[] frbiotechtwofriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work review", "5-Project work review", "6-Project work review", "7-Project work review"};
+    String[] frbiotechtwomonday = {"1-Project Work", "2-Project Work", "3-Library", "4-Project Work", "5-Project Work", "6-Project Work", "7-Project Work"};
+    String[] frbiotechtwotuesday = {"1-Project Work", "2-Project Work", "3-Project Work", "4-Project Work", "5-Project Work", "6-Project Work", "7-Project Work"};
+    String[] frbiotechtwowednesday = {"1-Project Work", "2-Project Work", "3-Project Work", "4-Project Work", "5-Project Work", "6-Project Work", "7-Project Work"};
+    String[] frbiotechtwothursday = {"1-Project Work", "2-Project Work", "3-Project Work", "4-Project Work Review", "5-Project Work Review", "6-Project Work Review", "7-Project Work Review"};
+    String[] frbiotechtwofriday = {"1-Project Work", "2-Project Work", "3-Project Work", "4-Project Work Review", "5-Project Work Review", "6-Project Work Review", "7-Project Work Review"};
 
-    // odd sem of sec,third and fourth year biotech
 
-    //biotech second year
-    String[] sbiotechonemonday = {"1-Applied thermodynamics for Biotechnologies", "2-Probability and statistics", "3-Analytical method and instrumentation", "4-Heat transfer operations", "5-Bioprocess principles", "6-Probability and Statistics", "7-Seminar"};
-    String[] sbiotechonetuesday = {"1-Chemical Engineering lab/Instrumental method of analysis lab", "2-Chemical Engineering lab/Instrumental method of analysis lab", "3-Chemical Engineering lab/Instrumental method of analysis lab", "4-Chemical Engineering lab/Instrumental method of analysis lab", "5-Probability and statistics", "6-Analytical methods and instrumentation", "7-Heat transfer operations"};
-    String[] sbiotechonewednesday = {"1-Chemical Engineering lab/Instrumental method of analysis lab", "2-Chemical Engineering lab/Instrumental method of analysis lab", "3-Chemical Engineering lab/Instrumental method of analysis lab", "4-Chemical Engineering lab/Instrumental method of analysis lab", "5-Bioprocess principles", "6-Applied thermodynamics for biotechnologies", "7-Enzyme technology and bio transformation"};
-    String[] sbiotechonethursday = {"1-Heat transform operation", "2-Analytical methods and instrumentation", "3-Probability and Statistics", "4-Bioprocess principles", "5-Applied thermodynamics for biotechnologies", "6-Enzyme technology and Biotransformation", "7-Library"};
-    String[] sbiotechonefriday = {"1-Analytical methods and instrumentation ", "2-Enzyme technology and Biotransformation", "3-Applied thermodynamics for biotechnologies", "4-Bioprocess Principles", "5-Probability and statistics", "6-heat transfer operations", "7-Enzyme technology and biotransformation"};
+    // odd sem of 1st,sec,third and fourth year biotech
+
+
+    String[] fbiotechonemonday = {"1-Basic Electrical and Electronics Engineering", "2-Engineering Chemistry", "3-Communicative English", "4-Engineering Mathematics - I", "5-Engineering Drawing", "6-Engineering Drawing", "7-Engineering Drawing"};
+    String[] fbiotechonetuesday = {"1-Engineering Practices Laboratory", "2-Engineering Practices Laboratory", "3-Engineering Practices Laboratory", "4-Engineering Physics", "5-Engineering Mathematics - I", "6-Engineering Chemistry", "7-Communicative English","8-Sports"};
+    String[] fbiotechonewednesday = {"1-Communicative English", "2-Engineering Mathematics - I", "3-Basic Electrical and Electronics Engineering", "4-Physics and Chemistry Laboratory", "5-Physics and Chemistry Laboratory", "6-Engineering Physics", "7-Seminar I"};
+    String[] fbiotechonethursday = {"1-Engineering Physics", "2-Communicative English", "3-Engineering Mathematics - I", "4-Basic Electrical and Electronics Engineering", "5-Library", "6-Engineering Chemistry", "7-Seminar II"};
+    String[] fbiotechonefriday = {"1-Engineering Drawing", "2-Engineering Drawing", "3-Engineering Drawing", "4-Engineering Chemistry", "5-Basic Electrical and Electronics Engineering", "6-Engineering Physics", "7-Engineering Mathematics - I"};
+
+
+    String[] sbiotechonemonday = {"1-Transforms and Partial Differential Equations", "2-Bioorganic Chemistry", "3-Environmental Science and Engineering", "4-Basic Industrial Biotechnology", "5-Cell Biology", "6-Stoichiometry and Process Calculations", "7-Basic Industrial Biotechnology"};
+    String[] sbiotechonetuesday = {"1-Stoichiometry and Process Calculations", "2-Bioorganic Chemistry(T)", "3-Environmental Science and Engineering", "4-LUNCH(11.15-11.55)", "5-Cell Biology Lab/Bioorganic Chemistry Lab", "6-Cell Biology Lab/Bioorganic Chemistry Lab", "7-Cell Biology Lab/Bioorganic Chemistry Lab"};
+    String[] sbiotechonewednesday = {"1-Basic Industrial Biotechnology", "2-Cell Biology", "3-Basic Industrial Biotechnology", "4-LUNCH(11.15-11.55)", "5-Cell Biology Lab/Bioorganic Chemistry Lab", "6-Cell Biology Lab/Bioorganic Chemistry Lab", "7-Cell Biology Lab/Bioorganic Chemistry Lab"};
+    String[] sbiotechonethursday = {"1-Cell Biology", "2-Stoichiometry and Process Calculations(T)", "3-Library", "4-Transforms and Partial Differential Equations", "5-Bioorganic Chemistry", "6-Basic Industrial Biotechnology", "7-Environmental Science and Engineering"};
+    String[] sbiotechonefriday = {"1-Bioorganic Chemistry(T)", "2-Cell Biology(T)", "3-Seminar", "4-Stoichiometry and Process Calculations", "5-Environmental Science and Engineering", "6-Transforms and Partial Differential Equations", "7-Transforms and Partial Differential Equations(T)"};
 
     //boitech third yr
-    String[] tbiotechonemonday = {"1-Employability skills lab", "2-Employability skills lab", "3-Employability skills lab", "4-Employability skills lab", "5-library", "6-Total quality management for biotechnologist", "7-Plant biotechnology/Metabolic engineering"};
-    String[] tbiotechonetuesday = {"1-Plant biotechnology/Metabolic engineering", "2-Total quality management for biotechnologist", "3-Immunology", "4-Chemical reaction engineering", "5-Genetic engineering and genomics", "6-Moleculer Pathogenesis of Infections Disease/Cancer biology and therapeutics", "7-Seminar"};
-    String[] tbiotechonewednesday = {"1-MolecularPathogenesis of infections disease/Cancer biology and therapeutics", "2-Immunology", "3-Genetic engineering and genomics", "4-lunch break(11.15-11.55)", "5-Genetic engineering lab/Bioprocess lab-2", "6-Genetic engineering lab/Bioprocess lab-2", "7-Genetic engineering lab/Bioprocess lab-2"};
-    String[] tbiotechonethursday = {"1-Chemical Reaction engineering", "2-MolecularPathogenesis of infections disease/Cancer biology and therapeutics", "3-immunology", "4-lunch break(11.15-11.55)", "5-Genetic engineering lab/Bioprocess lab-2", "6-Genetic engineering lab/Bioprocess lab-2", "7-Genetic engineering lab/Bioprocess lab-2"};
-    String[] tbiotechonefriday = {"1-Genetic engineering and genomics", "2-Immunology", "3-Chemical reaction engineering", "4-Genetic engineering an genomics", "5-Total quality management for biotechnologist", "6-Genetic engineering adn genomics", "7-Chemical reaction engineering"};
+    String[] tbiotechonemonday = {"1-Protein Structure Function and Proteomics", "2-Bioprocess Engineering", "3-Biophysics / Principles of Food Processing", "4-LUNCH(11.15-11.55)", "5-Bioprocess lab-1/Molecular Biology lab", "6-Bioprocess lab-1/Molecular Biology lab", "7-Bioprocess lab-1/Molecular Biology lab"};
+    String[] tbiotechonetuesday = {"1-Bioprocess Engineering", "2-Protein Structure Function and Proteomics", "3-Mass Transfer Operation", "4-LUNCH(11.15-11.55)", "5-Bioprocess lab-1/Molecular Biology lab", "6-Bioprocess lab-1/Molecular Biology lab", "7-Bioprocess lab-1/Molecular Biology lab"};
+    String[] tbiotechonewednesday = {"1-Biopharmaceutical Technology", "2-Molecular Biology", "3-Seminar I", "4-Mass Transfer Operation", "5-Protein Structure Function and Proteomics", "6-Library", "7-Mass Transfer Operation"};
+    String[] tbiotechonethursday = {"1-Molecular Biology", "2-Biopharmaceutical Technology", "3-Bioprocess Engineering", "4-Biophysics / Principles of Food Processing", "5-Biopharmaceutical Technology", "6-Biophysics / Principles of Food Processing", "7-Protein Structure Function and Proteomics(T)"};
+    String[] tbiotechonefriday = {"1-Mass Transfer Operation(T)", "2-Bioprocess Engineering(T)", "3-Biophysics / Principles of Food Processing", "4-Biopharmaceutical Technology", "5-Molecular Biology", "6-Seminar II", "7-Molecular Biology"};
 
-    //biotech fourth year
+//biotech fourth year
 
-    String[] frbiotechonemonday = {"1-Project work", "2-Project work", "3-Library", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frbiotechonetuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frbiotechonewednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frbiotechonethursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work review", "5-Project work review", "6-Project work review", "7-Project work review"};
-    String[] frbiotechonefriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work review", "5-Project work review", "6-Project work review", "7-Project work review"};
+    String[] frbiotechonemonday = {"1-Bioinformatics and Computational Biology", "2-Bioconjugate Technology and Applications / Bio Industrial and Entrepreneurship ", "3-Downstream Processing", "4-Bioinformatics and Computational Biology(T)", "5-Creativity, Innovation and New Product Development", "6-Tissue Engineering / Neurobiology and Cognitive Sciences", "7-Seminar"};
+    String[] frbiotechonetuesday = {"1-Bioinformatics and Computational Biology", "2-Project Planning", "3-Downstream Processing", "4-Creativity, Innovation and New Product Development", "5-Bioconjugate Technology and Applications / Bio Industrial and Entrepreneurship ", "6-Creativity, Innovation and New Product Development", "7-Tissue Engineering / Neurobiology and Cognitive Sciences"};
+    String[] frbiotechonewednesday = {"1-Tissue Engineering / Neurobiology and Cognitive Sciences", "2-Bioinformatics and Computational Biology", "3-Library", "4-Immunology lab/Bioinformatics lab", "5-Immunology lab/Bioinformatics lab", "6-Immunology lab/Bioinformatics lab", "7-Immunology lab/Bioinformatics lab"};
+    String[] frbiotechonethursday = {"1-Creativity, Innovation and New Product Development", "2-Bioconjugate Technology and Applications / Bio Industrial and Entrepreneurship ", "3-Downstream Processing", "4-Bioinformatics lab/Downstream Processing lab", "5-Bioinformatics lab/Downstream Processing lab", "6-Bioinformatics lab/Downstream Processing lab", "7-Bioinformatics lab/Downstream Processing lab"};
+    String[] frbiotechonefriday = {"1-Bioconjugate Technology and Applications / Bio Industrial and Entrepreneurship ", "2-Tissue Engineering / Neurobiology and Cognitive Sciences", "3-Downstream Processing(T)", "4-Downstream Processing lab/Immunology lab", "5-Downstream Processing lab/Immunology lab", "6-Downstream Processing lab/Immunology lab", "7-Downstream Processing lab/Immunology lab"};
 
+
+
+
+    //chem a all even semesters below
     //chem a first yr
 
     String[] fchematwomonday = {"1-Phy and chem lab II", "2-Phy and chem lab II", "3-Phy and chem lab II", "4-Engineering mechanics", "5-Engineering physics II", "6-Mathematics II", "7-BEEE"};
@@ -243,25 +163,23 @@ public class ttperiod extends Activity {
     String[] fchematwothursday = {"1-Engineering physics II", "2-BEEE", "3-Engineering Chemistry II", "4-BEEE", "5-Technical english II", "6-Engineering mechanics", "7-Mathematics II"};
     String[] fchematwofriday = {"1-BEEE lab/CP lab", "2-BEEE lab/CP lab", "3-BEEE lab/CP lab", "4-Mathematics II", "5-Technical english II", "6-Engineering chemistry II", "7-Engineering mechanics "};
 
-    //chem a second yr
-
-    String[] schematwomonday = {"Probability and Statistics", "2-Chemical process calculations", "3-Mechanical operations", "4-Chemical engineering thermodynamics I", "5-Chemical process calculations", "6-Chemical engineering thermodynamics I", "7-Chemical Process Industries I"};
-    String[] schematwotuesday = {"1-Chemical Engineering thermodynamics I", "2-Probability and Statistics", "3-Chemical process industries I", "4-Mechanical operations", "5-Environmental science and engineering", "6-Chemical process calculations", "7-Envionmental science and engineering"};
-    String[] schematwowednesday = {"1-Chemical process calculations", "2-Chemical engineering thermodynamics I", "3-Probabiiliy and Statistics", "4-Chemical Process industries I", "5-Technical analysis lab/fluid mechanics lab", "6-Technical analysis lab/fluid mechanics lab", "7-Technical analysis lab/fluid mechanics lab"};
-    String[] schematwothursday = {"1-Mechanical operations", "2-Environmental science and engineering", "3-Chemical process calculations", "4-Library", "5-Mechanical operations", "6-Probability and statistics", "7-Chemical process calculations"};
-    String[] schematwofriday = {"1-Chemical process industries I", "2-Probability and Statistics", "3-Mechanical operations", "4-Environmental science and engineering", "5-Technical analysis lab/fluid mechanics lab", "6-Technical analysis lab/fluid mechanics lab", "7-Technical analysis lab/fluid mechanics lab"};
+    String[] schematwomonday = {"1-Instrumental Methods of Analysis", "2-Heat Transfer", "3-Chemical Engineering Thermodynamics I", "4-Mechanical Operations", "5-Technical Analysis Laboratory / Fluid Mechanics Laboratory", "6-Technical Analysis Laboratory / Fluid Mechanics Laboratory", "7-Technical Analysis Laboratory / Fluid Mechanics Laboratory"};
+    String[] schematwotuesday = {"1-Mechanical Operations", "2-Chemical Engineering Thermodynamics I", "3-Chemical Process Calculations", "4-Heat Transfer", "5-Probability and Statistics", "6-Instrumental Methods of Analysis", "7-Chemical Engineering Thermodynamics I (Tutorial)"};
+    String[] schematwowednesday = {"1-Heat Transfer", "2-Chemical Process Calculations", "3-Probability and Statistics", "4-Instrumental Methods of Analysis", "5-Chemical Process Calculations", "6-Mechanical Operations", "7-Heat Transfer (Tutorial)"};
+    String[] schematwothursday = {"1-Probability and Statistics", "2-Technical Analysis Laboratory / Fluid Mechanics Laboratory", "3-Technical Analysis Laboratory / Fluid Mechanics Laboratory", "4-Technical Analysis Laboratory / Fluid Mechanics Laboratory", "5-Chemical Engineering Thermodynamics I", "6-Probability and Statistics (Tutorial)", "7-Chemical Process Calculations (Tutorial)"};
+    String[] schematwofriday = {"1-Chemical Process Calculations", "2-Mechanical Operations", "3-Chemical Engineering Thermodynamics I", "4-Probability and Statistics", "5-Instrumental Methods of Analysis", "6-Heat Transfer", "7-Library"};
 
     //chem a third year
-    String[] tchematwomonday = {"1-Process instrumentation dynamics and control", "2-Chemical reaction engineering 1", "3-Mass transfer 2", "4-Material science and technology", "5-Energy engineering", "6-Chemical reaction engineering", "7-Library"};
-    String[] tchematwotuesday = {"1-Food Technology/Air Pollution and Control/Green Chemistry and engineering/Waste Water Management", "2-mass transfer 2", "3-Energy engineering", "4-Chemical reaction engineering 1", "5-Heat transfer lab/Mass transfer lab", "6-Heat transfer lab/Mass transfer lab", "7-Heat transfer lab/Mass transfer lab"};
-    String[] tchematwowednesday = {"1-Mass transfer 2", "2-Energy engineering", "3-Food Technology/Air Pollution and Control/Green Chemistry and engineering/Waste Water Management", "4-Process instrumentation dynamics and control", "5-Heat transfer lab/Process equipment design 2", "6-Heat transfer lab/Process equipment design 2", "7-Heat transfer lab/Process equipment design 2"};
-    String[] tchematwothursday = {"1-Material science and technology", "2-Food Technology/Air Pollution and Control/Green Chemistry and engineering/Waste Water Management", "3-Process instrumentation dynamics and control", "4-Chemical reaction engineering 1", "5-Process equipment design 2/mass transfer lab", "6-Process equipment design 2/mass transfer lab", "7-Process equipment design 2/mass transfer lab"};
-    String[] tchematwofriday = {"1-Chemical reaction engineering", "2-Process instrumentation dynamics and control", "3-Food Technology/Air Pollution and Control/Green Chemistry and engineering/Waste Water Management", "4-Material Science and technology", "5-Mass transfer 2", "6-Energy engineering", "7-Material Science and technology"};
+    String[] tchematwomonday = {"1-Energy Engineering", "2-Mass Transfer II", "3-Food Technology / Air Pollution and Control", "4-Process Instrumentation Dynamics and Control", "5-Material Science and Technology", "6-Chemical Reaction Engineering I", "7-Library"};
+    String[] tchematwotuesday = {"1-Food Technology / Air Pollution and Control", "2-Process Instrumentation Dynamics and Control", "3-Energy Engineering", "4-Material Science and Technology", "5-Process Equipment Design II / Mass Transfer Laboratory", "6-Process Equipment Design II / Mass Transfer Laboratory", "7-Process Equipment Design II / Mass Transfer Laboratory"};
+    String[] tchematwowednesday = {"1-Process Instrumentation Dynamics and Control", "2-Food Technology / Air Pollution and Control", "3-Chemical Reaction Engineering I", "4-Mass Transfer II", "5-Heat Transfer Laboratory / Mass Transfer Laboratory", "6-Heat Transfer Laboratory / Mass Transfer Laboratory", "7-Heat Transfer Laboratory / Mass Transfer Laboratory"};
+    String[] tchematwothursday = {"1-Mass Transfer II", "2-Chemical Reaction Engineering I", "3-Material Science and Technology", "4-Food Technology / Air Pollution and Control", "5-Process Instrumentation Dynamics and Control", "6-Energy Engineering", "7-Chemical Reaction Engineering I"};
+    String[] tchematwofriday = {"1-Chemical Reaction Engineering I", "2-Material Science and Technology", "3-Mass Transfer II", "4-Energy Engineering", "5-Heat Transfer Laboratory / Process Equipment Design II", "6-Heat Transfer Laboratory / Process Equipment Design II", "7-Heat Transfer Laboratory / Process Equipment Design II"};
 
     //chem a fourth year
 
-    String[] frchematwomonday = {"1-Petroleum technology", "2-Process plan utilities", "3-petroleum technology", "4-Process plan utilities", "5-petroleum technology", "6-Process plan utilities", "7-petroleum technology", "8-Process plan utilities"};
-    String[] frchematwotuesday = {"1-Project Practice-Aspen plus training", "2-Project Practice-Aspen plus training", "3-Project Practice-Aspen plus training", "4-Project Practice-Aspen plus training", "5-Project Practice-Aspen plus training", "6-Project Practice-Aspen plus training", "7-Project Practice-Aspen plus training"};
+    String[] frchematwomonday = {"1-Petroleum Technology", "2-Process Plant Utilities", "3-Petroleum Technology", "4-Process Plant Utilities", "5-Petroleum Technology", "6-Project Practice -Aspen Plus Training", "7-Project Practice -Aspen Plus Training"};
+    String[] frchematwotuesday = {"1-Process Plant Utilities", "2-Petroleum Technology", "3-Process Plant Utilities", "4-Project Practice-Aspen plus training", "5-Project Practice-Aspen plus training", "6-Project Practice-Aspen plus training", "7-Project Practice-Aspen plus training"};
     String[] frchematwowednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frchematwothursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frchematwofriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
@@ -269,29 +187,38 @@ public class ttperiod extends Activity {
 
     //odd sem of sec,third and fourth year chem a section
 
+
+    String[] fchemaonemonday = {"1-Communicative English", "2-Physics and Chemistry Laboratory", "3-Physics and Chemistry Laboratory", "4-Engineering Mathematics - I", "5-SPECIAL CLASS -1 for Engineering Mathematics - I", "6-Engineering Chemistry", "7-Engineering Physics"};
+    String[] fchemaonetuesday = {"1-Engineering Physics", "2-Engineering Chemistry", "3-Library", "4-Electrical Machines and Drives", "5-Communicative English", "6-Engineering Mathematics - I", "7-Programming for Problem Solving"};
+    String[] fchemaonewednesday = {"1-Engineering Mathematics - I", "2-Engineering Physics", "3-Engineering Mathematics - I", "4-Programming for Problem Solving", "5-Electrical Machines and Drives", "6-Engineering Physics", "7-Communicative English"};
+    String[] fchemaonethursday = {"1-Programming for Problem Solving", "2-Engineering Mathematics - I", "3-Electrical Machines and Drives", "4-Engineering Chemistry", "5-Electrical Machines and Drives", "6-Communicative English", "7-SPECIAL CLASS -2 for Electrical Machines and Drives"};
+    String[] fchemaonefriday = {"1-Engineering Practices Laboratory", "2-Engineering Practices Laboratory", "3-Engineering Practices Laboratory", "4-Programming for Problem Solving", "5-SPECIAL CLASS -3 for Programming for Problem Solving", "6-Engineering Chemistry", "7-SPECIAL CLASS -4 for Engineering Mathematics - I", "8-SPORTS"};
+
     //chem a second yr
 
-    String[] schemaonemonday = {"Probability and Statistics", "2-Chemical process calculations", "3-Mechanical operations", "4-Chemical engineering thermodynamics I", "5-Chemical process calculations", "6-Chemical engineering thermodynamics I", "7-Chemical Process Industries I"};
-    String[] schemaonetuesday = {"1-Chemical Engineering thermodynamics I", "2-Probability and Statistics", "3-Chemical process industries I", "4-Mechanical operations", "5-Environmental science and engineering", "6-Chemical process calculations", "7-Envionmental science and engineering"};
-    String[] schemaonewednesday = {"1-Chemical process calculations", "2-Chemical engineering thermodynamics I", "3-Probabiiliy and Statistics", "4-Chemical Process industries I", "5-Technical analysis lab/fluid mechanics lab", "6-Technical analysis lab/fluid mechanics lab", "7-Technical analysis lab/fluid mechanics lab"};
-    String[] schemaonethursday = {"1-Mechanical operations", "2-Environmental science and engineering", "3-Chemical process calculations", "4-Library", "5-Mechanical operations", "6-Probability and statistics", "7-Chemical process calculations"};
-    String[] schemaonefriday = {"1-Chemical process industries I", "2-Probability and Statistics", "3-Mechanical operations", "4-Environmental science and engineering", "5-Technical analysis lab/fluid mechanics lab", "6-Technical analysis lab/fluid mechanics lab", "7-Technical analysis lab/fluid mechanics lab"};
+    String[] schemaonemonday = {"1-Electrical Drives and Controls", "2-Mathematics III", "3-Fluid Mechanics", "4-Physical Chemistry", "5-Mathematics III", "6-Mechanics of Solids for Chemical Engineering", "7-Physical Chemistry"};
+    String[] schemaonetuesday = {"1-Fluid Mechanics", "2-Electrical Drives and Controls", "3-Mechanics of Solids for Chemical Engineering", "4-Mathematics III", "5-Library", "6-Organic Chemistry", "7-Fluid Mechanics"};
+    String[] schemaonewednesday = {"1-Mathematics III", "2-Electrical Drives and Controls", "3-Mechanics of Solids for Chemical Engineering(T)", "4-Organic Chemistry", "5-Organic Chemistry Lab / Physical Chemistry Lab", "6-Organic Chemistry Lab / Physical Chemistry Lab", "7-Organic Chemistry Lab / Physical Chemistry Lab"};
+    String[] schemaonethursday = {"1-Fluid Mechanics", "2-Physical Chemistry Lab / Organic Chemistry Lab", "3-Physical Chemistry Lab / Organic Chemistry Lab", "4-Physical Chemistry Lab / Organic Chemistry Lab", "5-Mechanics of Solids for Chemical Engineering", "6-Physical Chemistry", "7-Mathematics III"};
+    String[] schemaonefriday = {"1-Organic Chemistry", "2-Fluid Mechanics", "3-Physical Chemistry", "4-Mechanics of Solids for Chemical Engineering", "5-Electrical Drives and Controls", "6-Fluid Mechanics(T)", "7-Organic Chemistry"};
 
     //chem a third year
-    String[] tchemaonemonday = {"1-Process instrumentation dynamics and control", "2-Chemical reaction engineering 1", "3-Mass transfer 2", "4-Material science and technology", "5-Energy engineering", "6-Chemical reaction engineering", "7-Library"};
-    String[] tchemaonetuesday = {"1-Energy engineering/Material science and technology/Process instrumentation dynamics and control/waste water treatment", "2-mass transfer 2", "3-Energy engineering", "4-Chemical reaction engineering 1", "5-Heat transfer lab/Mass transfer lab", "6-Heat transfer lab/Mass transfer lab", "7-Heat transfer lab/Mass transfer lab"};
-    String[] tchemaonewednesday = {"1-Mass transfer 2", "2-Energy engineering", "3-Energy engineering/Material science and technology/Process instruction dynamics and control/waste water treatment", "4-Process instrumentation dynamics and control", "5-Heat transfer lab/Process equipment design 2", "6-Heat transfer lab/Process equipment design 2", "7-Heat transfer lab/Process equipment design 2"};
-    String[] tchemaonethursday = {"1-Material science and technology", "2-Energy engineering/Material science and technology/Process instruction dynamics and control/waste water treatment", "3-Process instruction dynamics and control", "4-Chemical reaction engineering 1", "5-Process equipment design 2/mass transfer lab", "6-Process equipment design 2/mass transfer lab", "7-Process equipment design 2/mass transfer lab"};
-    String[] tchemaonefriday = {"1-Chemical reaction engineering", "2-Process instruction dynamics and control", "3-Energy engineering/Material science and technology/Process instruction dynamics and control/waste water treatment", "4-Material Science and technology", "5-Mass transfer 2", "6-Energy engineering", "7-Material Science and technology"};
+    String[] tchemaonemonday = {"1-Chemical Process Industries I", "2-Chemical Engineering Thermodynamics II", "3-Environmental Science and Engineering", "4-Process Instrumentation Dynamics and Control", "5-Mass Transfer I", "6-Computational Methods", "7-Process Instrumentation Dynamics and Control"};
+    String[] tchemaonetuesday = {"1-Interview and Career Skills Lab", "2-Interview and Career Skills Lab", "3-Interview and Career Skills Lab", "4-Interview and Career Skills Lab", "5-Mass Transfer I", "6-Computational Methods", "7-Chemical Process Industries I"};
+    String[] tchemaonewednesday = {"1-Chemical Process Industries I", "2-Process Instrumentation Dynamics and Control", "3-Environmental Science and Engineering", "4-Chemical Engineering Thermodynamics II", "5-Computational Methods", "6-Mass Transfer I", "7-Chemical Engineering Thermodynamics II"};
+    String[] tchemaonethursday = {"1-Computational Methods", "2-Process Instrumentation Dynamics and Control", "3-Chemical Engineering Thermodynamics II", "4-Environmental Science and Engineering", "5-Mechanical Operations Lab / Heat Transfer Lab", "6-Mechanical Operations Lab / Heat Transfer Lab", "7-Mechanical Operations Lab / Heat Transfer Lab"};
+    String[] tchemaonefriday = {"1-Chemical Engineering Thermodynamics II", "2-Computational Methods", "3-Mass Transfer I", "4-Environmental Science and Engineering", "5-Heat Transfer Lab / Mechanical Operations Lab", "6-Heat Transfer Lab / Mechanical Operations Lab", "7-Heat Transfer Lab / Mechanical Operations Lab"};
 
-    //chem a fourth year
+//chem a fourth year
 
-    String[] frchemaonemonday = {"1-Petroleum technology", "2-Process plan utilities", "3-petroleum technology", "4-Process plan utilities", "5-petroleum technology", "6-Process plan utilities", "7-petroleum technology", "8-Process plan utilities"};
-    String[] frchemaonetuesday = {"1-Project Practice-Aspen plus training", "2-Project Practice-Aspen plus training", "3-Project Practice-Aspen plus training", "4-Project Practice-Aspen plus training", "5-Project Practice-Aspen plus training", "6-Project Practice-Aspen plus training", "7-Project Practice-Aspen plus training"};
-    String[] frchemaonewednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frchemaonethursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frchemaonefriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
+    String[] frchemaonemonday = {"1-Biochemical Engineering", "2-Chemical Process Plant Safety", "3-Drugs and Pharmaceutical Technology / Fertilizer Technology / Industrial Management", "4-Process Economics", "5-Transport Phenomena", "6-Process Economics", "7-Chemical Reaction Engineering(T)"};
+    String[] frchemaonetuesday = {"1-Transport Phenomena", "2-Chemical Reaction Engineering", "3-Chemical Process Plant Safety", "4-Process Economics", "5-Chemical Reaction Engineering Lab / Process Control Lab", "6-Chemical Reaction Engineering Lab / Process Control Lab", "7-Chemical Reaction Engineering Lab / Process Control Lab"};
+    String[] frchemaonewednesday = {"1-Chemical Reaction Engineering", "2-Drugs and Pharmaceutical Technology / Fertilizer Technology / Industrial Management", "3-Biochemical Engineering", "4-Drugs and Pharmaceutical Technology / Fertilizer Technology / Industrial Management", "5-Seminar and Comprehension", "6-Seminar and Comprehension", "7-Seminar and Comprehension"};
+    String[] frchemaonethursday = {"1-Drugs and Pharmaceutical Technology / Fertilizer Technology / Industrial Management", "2-Chemical Process Plant Safety", "3-Biochemical Engineering", "4-Chemical Reaction Engineering", "5-Transport Phenomena", "6-Chemical Reaction Engineering", "7-Transport Phenomena"};
+    String[] frchemaonefriday = {"1-Transport Phenomena", "2-Chemical Process Plant Safety", "3-Process Economics", "4-Biochemical Engineering", "5-Process Control Lab / Chemical Reaction Engineering Lab", "6-Process Control Lab / Chemical Reaction Engineering Lab", "7-Process Control Lab / Chemical Reaction Engineering Lab"};
 
+
+    //chem b all even semesters below
     //chem b first yr
     String[] fchembtwomonday = {"1-Engineering mechanics", "2-BEEE", "3-Mathematics II", "4-Engineering chemistry II", "5-Technical english II", "6-BEEE", "7-Engineering physics II"};
     String[] fchembtwotuesday = {"1-Cp Lab/BEEE lab", "2-Cp Lab/BEEE lab", "3-Cp Lab/BEEE lab", "4-Enginering mechanics ", "5-BEEE", "6-Engineering physics II", "7-Technical english II"};
@@ -299,52 +226,62 @@ public class ttperiod extends Activity {
     String[] fchembtwothursday = {"1-BEEE", "2-Engineering chemistry II", "3-Mathematics II", "4-Engineering mechanics", "5-Phy and Chem lab II", "6-Phy and Chem lab II", "7-Phy and Chem lab II"};
     String[] fchembtwofriday = {"2-Technical english II", "2-Mathematics II", "3-Engineering physics II", "4-Engineering chemistry II", "5-CP /BEEE Lab", "6-CP /BEEE Lab", "7-CP /BEEE Lab"};
 
-
     //chem b second yr
-    String[] schembtwomonday = {"1-Chemical process calculations", "2-Chemical engineering thermodynamics 1", "3-Probability and statistics", "4-Chemical process industries 1", "5-Technical analysis lab/Fluid mechanics lab", "6-Technical analysis lab/Fluid mechanics lab", "7-Technical analysis lab/Fluid mechanics lab"};
-    String[] schembtwotuesday = {"1-Environmental Science and engineering", "2-Chemical process calculations", "3-Chemical process industries 1", "4-Chemical engineering thermodynamics 1", "5-Probability and statistics ", "6-Chemical process industries 1", "7-Chemical engineering thermodynanmics"};
-    String[] schembtwowednesday = {"1-Chemical engineering thermodynamics", "2-Probability and statistics", "3-Chemical process calculations", "4-Mechanical operations", "5-Environmental science and engineering", "6-Mechanical operations", "7-Library"};
-    String[] schembtwothursday = {"1-Mechanical operations", "2-Environmental science and engineering", "3-probability and statistics", "4-Chemical process calculations", "5-Technical analysis lab/Fluid mechanics lab", "6-Technical analysis lab/Fluid mechanics lab", "7-Technical analysis lab/Fluid mechanics lab"};
-    String[] schembtwofriday = {"1-Probability and statistics", "2-Mechanical operations", "3-Environmental science an engineering", "4-Mechanical operations", "5-Chemical process calculations", "6-Chemical engineering thermodynamics 1", "7-Chemical process industries 1"};
+    String[] schembtwomonday = {"1-Chemical Process Calculations", "2-Heat Transfer", "3-Probability and Statistics", "4-Mechanical Operations", "5-Heat Transfer (Tutorial)", "6-Instrumental Methods of Analysis", "7-Chemical Engineering Thermodynamics I (Tutorial)"};
+    String[] schembtwotuesday = {"1-Heat Transfer", "2-Mechanical Operations", "3-Instrumental Methods of Analysis", "4-Probability and Statistics", "5-Technical Analysis Laboratory / Fluid Mechanics Laboratory ", "6-Technical Analysis Laboratory / Fluid Mechanics Laboratory", "7-Technical Analysis Laboratory / Fluid Mechanics Laboratory"};
+    String[] schembtwowednesday = {"1-Probability and Statistics", "2-Heat Transfer", "3-Chemical Engineering Thermodynamics I", "4-Chemical Process Calculations", "5-Instrumental Methods of Analysis", "6-Chemical Engineering Thermodynamics I", "7-Library"};
+    String[] schembtwothursday = {"1-Instrumental Methods of Analysis", "2-Chemical Process Calculations", "3-Mechanical Operations", "4-Chemical Engineering Thermodynamics I", "5-Probability and Statistics (Tutorial)", "6-Heat Transfer", "7-Chemical Process Calculations (Tutorial)"};
+    String[] schembtwofriday = {"1-Chemical Engineering Thermodynamics I", "2-Technical Analysis Laboratory / Fluid Mechanics Laboratory", "3-Technical Analysis Laboratory / Fluid Mechanics Laboratory", "4-Technical Analysis Laboratory / Fluid Mechanics Laboratory", "5-Mechanical Operations", "6-Chemical Process Calculations", "7-Probability and Statistics"};
 
     //chem b third yr
 
-    String[] tchembtwomonday = {"1-Energy engineering", "2-Chemical reaction engineering 1", "3-Process instrumentation dynamics and control", "4-Mass transfer 2 ", "5-Chemical reaction engineering", "6-Process instrumentation dynamics and control", "7-library"};
-    String[] tchembtwotuesday = {"1-Food Technology/Air Pollution and Control/Green Chemistry and engineering/Waste Water Management", "2-Process instrumentation dynamics and control", "3-Material science and technology", "4-Energy engineering", "5-Mass transfer 2", "6-Material science and technology", "7-Energy engineering"};
-    String[] tchembtwowednesday = {"1-Chemical reactions engineering 1", "2-Energy engineering", "3-Energy engineering/Material science and technology/green chemistry and engineering/Waste water management", "4-Material science and technology", "5-Process equipment design 2/Mass transfer lab", "6-Process equipment design 2/Mass transfer lab", "7-Process equipment design 2/Mass transfer lab"};
-    String[] tchembtwothursday = {"1-Process instrumentations dynamics and control", "2-Food Technology/Air Pollution and Control/Green Chemistry and engineering/Waste Water Management", "3-Chemical reaction engineering 1", "4-mass transfer 2", "5-heat transfer lab/Process equipment design 2", "6-heat transfer lab/Process equipment design 2", "7-heat transfer lab/Process equipment design 2"};
-    String[] tchembtwofriday = {"1-Mass transfer 2", "2-Material science and technology", "3-Food Technology/Air Pollution and Control/Green Chemistry and engineering/Waste Water Management", "4-Chemical reaction engineering 1", "5-Heat transfer lab/Mass transfer lab", "6-Heat transfer lab/Mass transfer lab", "7-Heat transfer lab/Mass transfer lab"};
+    String[] tchembtwomonday = {"1-Process Instrumentation Dynamics and Control", "2-Chemical Reaction Engineering I", "3-Food Technology / Air Pollution and Control", "4-Mass Transfer II ", "5-Process Equipment Design II / Mass Transfer Laboratory", "6-Process Equipment Design II / Mass Transfer Laboratory", "7-Process Equipment Design II / Mass Transfer Laboratory"};
+    String[] tchembtwotuesday = {"1-Food Technology / Air Pollution and Control", "2-Energy Engineering", "3-Materials Science and Technology", "4-Process Instrumentation Dynamics and Control", "5-Heat Transfer Laboratory / Process Equipment Design II", "6-Heat Transfer Laboratory / Process Equipment Design II", "7-Heat Transfer Laboratory / Process Equipment Design II"};
+    String[] tchembtwowednesday = {"1-Energy Engineering", "2-Food Technology / Air Pollution and Control", "3-Chemical Reaction Engineering I", "4-Materials Science and Technology", "5-Mass Transfer II", "6-Energy Engineering", "7-Chemical Reaction Engineering I"};
+    String[] tchembtwothursday = {"1-Chemical Reaction Engineering I", "2-Mass Transfer II", "3-Process Instrumentation Dynamics and Control", "4-Food Technology / Air Pollution and Control", "5-Heat Transfer Laboratory / Mass Transfer Laboratory", "6-Heat Transfer Laboratory / Mass Transfer Laboratory", "7-Heat Transfer Laboratory / Mass Transfer Laboratory"};
+    String[] tchembtwofriday = {"1-Materials Science and Technology", "2-Process Instrumentation Dynamics and Control", "3-Mass Transfer II", "4-Library", "5-Materials Science and Technology", "6-Chemical Reaction Engineering I", "7-Energy Engineering"};
 
     //chem b fourth yr
-    String[] frchembtwomonday = {"1-Petroleum technology", "2-Process plant utilities", "3-Petroleum technology", "4-Process plant utilities", "5-Petroleum technology", "6-Process plant utilities", "7-Petroleum technology", "8-Process plant utilities"};
-    String[] frchembtwotuesday = {"1-Project practice aspen plus training", "2-Project practice aspen plus training", "3-Project practice aspen plus training", "4-Project practice aspen plus training", "5-Project practice aspen plus training", "6-Project practice aspen plus training", "7-Project practice aspen plus training", "8-Project practice aspen plus training"};
-    String[] frchembtwowednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work", "8-Project work"};
-    String[] frchembtwothursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work", "8-Project work"};
-    String[] frchembtwofriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work", "8-Project work"};
+    String[] frchembtwomonday = {"1-Project Work", "2-Project Work", "3-Project Work", "4-Project Work", "5-Project Work", "6-Project Work", "7-Project Work"};
+    String[] frchembtwotuesday = {"1-Project Work", "2-Project Work", "3-Project Work", "4-Project Work", "5-Project Work", "6-Project Work", "7-Project Work"};
+    String[] frchembtwowednesday = {"1-Project Work", "2-Project Work", "3-Project Work", "4-Project Work", "5-Project Work", "6-Project Work", "7-Project Work"};
+    String[] frchembtwothursday = {"1-Process Plant Utilities", "2-Petroleum Technology", "3-Process Plant Utilities", "4-Project Practice -Aspen Plus Training", "5-Project Practice -Aspen Plus Training", "6-Project Practice -Aspen Plus Training", "7-Project Practice -Aspen Plus Training"};
+    String[] frchembtwofriday = {"1-Petroleum Technology", "2-Process Plant Utilities", "3-Petroleum Technology", "4-Process Plant Utilities", "5-Petroleum Technology", "6-Project Practice -Aspen Plus Training", "7-Project Practice -Aspen Plus Training"};
 
     // odd sem of second ,third and fourth year of chem bsection
 
+
+    //chem b frst year
+    //chem b frst year
+    String[] fchembonemonday = {"1-Engineering Physics", "2-Electrical Machines and Drives", "3-Communicative English", "4-Engineering Mathematics - I", "5-Engineering Chemistry", "6-SPECIAL CLASS -1 for Engineering Mathematics - I", "7-Programming for Problem Solving"};
+    String[] fchembonetuesday = {"1-Engineering Mathematics - I", "2-Programming for Problem Solving", "3-Engineering Chemistry", "4-Physics and Chemistry Laboratory", "5-Physics and Chemistry Laboratory", "6-Electrical Machines and Drives", "7-Communicative English"};
+    String[] fchembonewednesday = {"1-Programming for Problem Solving", "2-Engineering Chemistry", "3-Electrical Machines and Drives", "4-Engineering Mathematics - I", "5-Programming for Problem Solving", "6-Engineering Graphics", "7-SPECIAL CLASS -2 for Electrical Machines and Drives"};
+    String[] fchembonethursday = {"1-Electrical Machines and Drives", "2-Engineering Physics", "3-SPECIAL CLASS -3 for Programming for Problem Solving", "4-Communicative English", "5-Engineering Physics", "6-Engineering Mathematics - I", "7-SPECIAL CLASS -4 for Engineering Mathematics - I"};
+    String[] fchembonefriday = {"1-Communicative English", "2-Engineering Chemistry", "3-Engineering Mathematics - I", "4-Engineering Physics", "5-Engineering Practices Laboratory", "6-Engineering Practices Laboratory", "7-Engineering Practices Laboratory","8-Sports"};
+
     //chem b second yr
-    String[] schembonemonday = {"1-Chemical process calculations", "2-Chemical engineering thermodynamics 1", "3-Probability and statistics", "4-Chemical process industries 1", "5-Technical analysis lab/Fluid mechanics lab", "6-Technical analysis lab/Fluid mechanics lab", "7-Technical analysis lab/Fluid mechanics lab"};
-    String[] schembonetuesday = {"1-Environmental Science and engineering", "2-Chemical process calculations", "3-Chemical process industries 1", "4-Chemical engineering thermodynamics 1", "5-Probability and statistics ", "6-Chemical process industries 1", "7-Chemical engineering thermodynanmics"};
-    String[] schembonewednesday = {"1-Chemical engineering thermodynamics", "2-Probability and statistics", "3-Chemical process calculations", "4-Mechanical operations", "5-Environmental science and engineering", "6-Mechanical operations", "7-Library"};
-    String[] schembonethursday = {"1-Mechanical operations", "2-Environmental science and engineering", "3-probability and statistics", "4-Chemical process calculations", "5-Technical analysis lab/Fluid mechanics lab", "6-Technical analysis lab/Fluid mechanics lab", "7-Technical analysis lab/Fluid mechanics lab"};
-    String[] schembonefriday = {"1-Probability and statistics", "2-Mechanical operations", "3-Environmental science an engineering", "4-Mechanical operations", "5-Chemical process calculations", "6-Chemical engineering thermodynamics 1", "7-Chemical process industries 1"};
+    String[] schembonemonday = {"1-Mechanics of Solids for Chemical Engineering", "2-Organic Chemistry", "3-Mathematics III", "4-Electrical Drives and Controls", "5-Organic Chemistry Lab / Physical Chemistry Lab", "6-Organic Chemistry Lab / Physical Chemistry Lab", "7-Organic Chemistry Lab / Physical Chemistry Lab"};
+    String[] schembonetuesday = {"1-Mathematics III", "2-Physical Chemistry Lab / Organic Chemistry Lab", "3-Physical Chemistry Lab / Organic Chemistry Lab", "4-Physical Chemistry Lab / Organic Chemistry Lab", "5-Library", "6-Electrical Drives and Controls", "7-Physical Chemistry"};
+    String[] schembonewednesday = {"1-Fluid Mechanics", "2-Mathematics III", "3-Physical Chemistry", "4-Organic Chemistry", "5-Fluid Mechanics", "6-Organic Chemistry", "7-Mechanics of Solids for Chemical Engineering"};
+    String[] schembonethursday = {"1-Electrical Drives and Controls", "2-Mechanics of Solids for Chemical Engineering(T)", "3-Mechanics of Solids for Chemical Engineering", "4-Fluid Mechanics", "5-Physical Chemistry", "6-Fluid Mechanics", "7-Mathematics III"};
+    String[] schembonefriday = {"1-Fluid Mechanics(T)", "2-Mechanics of Solids for Chemical Engineering", "3-Electrical Drives and Controls", "4-Organic Chemistry", "5-Physical Chemistry", "6-Mathematics III", "7-Mechanics of Solids for Chemical Engineering"};
 
     //chem b third yr
 
-    String[] tchembonemonday = {"1-Energy engineering", "2-Chemical reaction engineering 1", "3-Process instrumentation dynamics and control", "4-Mass transfer 2 ", "5-Chemical reaction engineering", "6-Process instrumentation dynamics and control", "7-library"};
-    String[] tchembonetuesday = {"1-Energy engineering/Material science and technology/green chemistry and engineering/Waste water management", "2-Process instructions dynamics and control", "3-Material science and technology", "4-Energy engineering", "5-Mass transfer 2", "6-Material science and technology", "7-Energy engineering"};
-    String[] tchembonewednesday = {"1-Chemical reactions engineering 1", "2-Energy engineering", "3-Energy engineering/Material science and technology/green chemistry and engineering/Waste water management", "4-Material science and technology", "5-Process equipment design 2/Mass transfer lab", "6-Process equipment design 2/Mass transfer lab", "7-Process equipment design 2/Mass transfer lab"};
-    String[] tchembonethursday = {"1-Process instruction dynamics and control", "2-Energy engineering/Material science and technology/green chemistry and engineering/Waste water management", "3-Chemical reaction engineering 1", "4-mass transfer 2", "5-heat transfer lab/Process equipment design 2", "6-heat transfer lab/Process equipment design 2", "7-heat transfer lab/Process equipment design 2"};
-    String[] tchembonefriday = {"1-Mass transfer 2", "2-Material science and technology", "3-Energy engineering/Material science and technology/green chemistry and engineering/Waste water management", "4-Chemical reaction engineering 1", "5-Heat transfer lab/Mass transfer lab", "6-Heat transfer lab/Mass transfer lab", "7-Heat transfer lab/Mass transfer lab"};
+    String[] tchembonemonday = {"1-Chemical Engineering Thermodynamics II", "2-Computational Methods", "3-Mass Transfer I", "4-Environmental Science and Engineering", "5-Mechanical Operations Lab / Heat Transfer Lab", "6-Mechanical Operations Lab / Heat Transfer Lab", "7-Mechanical Operations Lab / Heat Transfer Lab"};
+    String[] tchembonetuesday = {"1-Computational Methods", "2-Process Instrumentation Dynamics and Control", "3-Mass Transfer I", "4-Chemical Process Industries I", "5-Heat Transfer Lab / Mechanical Operations Lab", "6-Heat Transfer Lab / Mechanical Operations Lab", "7-Heat Transfer Lab / Mechanical Operations Lab"};
+    String[] tchembonewednesday = {"1-Chemical Engineering Thermodynamics II", "2-Chemical Process Industries I", "3-Process Instrumentation Dynamics and Control", "4-Mass Transfer I", "5-Process Instrumentation Dynamics and Control", "6-Computational Methods", "7-Chemical Engineering Thermodynamics II"};
+    String[] tchembonethursday = {"1-Interview and Career Skills Lab", "2-Interview and Career Skills Lab", "3-Interview and Career Skills Lab", "4-Interview and Career Skills Lab", "5-Chemical Engineering Thermodynamics II", "6-Environmental Science and Engineering", "7-Chemical Engineering Thermodynamics-2"};
+    String[] tchembonefriday = {"1-Environmental Science and Engineering", "2-Computational Methods", "3-Process Instrumentation Dynamics and Control", "4-Mass Transfer I", "5-Chemical Engineering Thermodynamics II", "6-Chemical Process Industries I", "7-Environmental Science and Engineering"};
 
     //chem b fourth yr
-    String[] frchembonemonday = {"1-Petroleum technology", "2-Process plant utilities", "3-Petroleum technology", "4-Process plant utilities", "5-Petroleum technology", "6-Process plant utilities", "7-Petroleum technology", "8-Process plant utilities"};
-    String[] frchembonetuesday = {"1-Project practice aspen plus training", "2-Project practice aspen plus training", "3-Project practice aspen plus training", "4-Project practice aspen plus training", "5-Project practice aspen plus training", "6-Project practice aspen plus training", "7-Project practice aspen plus training", "8-Project practice aspen plus training"};
-    String[] frchembonewednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work", "8-Project work"};
-    String[] frchembonethursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work", "8-Project work"};
-    String[] frchembonefriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work", "8-Project work"};
+    String[] frchembonemonday = {"1-Transport Phenomena", "2-Process Economics", "3-Drugs and Pharmaceutical Technology / Fertilizer Technology / Industrial Management", "4-Chemical Process Plant Safety", "5-Seminar and Comprehension", "6-Seminar and Comprehension", "7-Seminar and Comprehension"};
+    String[] frchembonetuesday = {"1-Process Economics", "2-Chemical Process Plant Safety", "3-Biochemical Engineering", "4-Chemical Reaction Engineering", "5-Transport Phenomena", "6-Chemical Process Plant Safety", "7-Process Economics"};
+    String[] frchembonewednesday = {"1-Transport Phenomena", "2-Drugs and Pharmaceutical Technology / Fertilizer Technology / Industrial Management", "3-Chemical Reaction Engineering", "4-Drugs and Pharmaceutical Technology / Fertilizer Technology / Industrial Management", "5-Chemical Reaction Engineering Lab / Process Control Lab", "6-Chemical Reaction Engineering Lab / Process Control Lab", "7-Chemical Reaction Engineering Lab / Process Control Lab"};
+    String[] frchembonethursday = {"1-Drugs and Pharmaceutical Technology / Fertilizer Technology / Industrial Management", "2-Biochemical Engineering", "3-Transport Phenomena", "4-Biochemical Engineering", "5-Process Control Lab / Chemical Reaction Engineering Lab", "6-Process Control Lab / Chemical Reaction Engineering Lab", "7-Process Control Lab / Chemical Reaction Engineering Lab"};
+    String[] frchembonefriday = {"1-Transport Phenomena", "2-Chemical Reaction Engineering", "3-Chemical Process Plant Safety", "4-Chemical Reaction Engineering(T)", "5-Biochemical Engineering", "6-Chemical Reaction Engineering", "7-Process Economics"};
+
+    //even sems for civil dept given below
 
     //civil first yr
     String[] fciviltwomonday = {"1-Engineering chemistry II", "2-Basic electric and electronic eng", "3-engineering mechanics", "4-Engineering chemistry II", "5-Mathematics II", "6-Engineering physics II", "7-Technical englih II"};
@@ -354,51 +291,61 @@ public class ttperiod extends Activity {
     String[] fciviltwofriday = {"1-Basic electric and electronic eng", "2-Technical english II", "3-Engineering mechanics", "4-Engineering physics", "5-Mathematics II", "6-Engineering chemistry II", "7-Mathematics/Engineering mechanics (Tut)"};
 
     //civil 2nd yr
-    String[] sciviltwomonday = {"1-Strength of materials", "2-Numerical methods", "3-Construction materials", "4-Strength of materials", "5-Hydraulic engineering lab/Survey practical 2", "6-Hydraulic engineering lab/Survey practical 2", "7-Hydraulic engineering lab/Survey practical 2", "8-Survey practical 2"};
-    String[] sciviltwotuesday = {"1-Surveying 2", "2-Strength of materials lab/Hydraulic engineering lab", "3-Strength of materials lab/Hydraulic engineering lab", "4-Strength of materials lab/Hydraulic engineering lab", "5-Construction materials", "6-Soil mechanics", "7-Applied hydraulic engineering"};
-    String[] sciviltwowednesday = {"1-Applied hydraulic engineering", "2-Numerical methods", "3-Strength of materials", "4-Surveying 2", "5-Strength of materials lab/Survey practical 2", "6-Strength of materials lab/Survey practical 2", "7-Strength of materials lab/Survey practical 2"};
-    String[] sciviltwothursday = {"1-Soil mechanics", "2-Surveying 2", "3-Applied hydraulic engineering", "4-Numerical methods", "5-Strength of materials", "6-Applied hydraulic engineering", "7-Construction materials"};
-    String[] sciviltwofriday = {"1-Numerical methods", "2-Soil mechanics", "3-Applied hydraulic engineering", "4-Strength of materials", "5-Numerical methods", "6-Soil mechanics", "7-Surveying 2"};
+    String[] sciviltwomonday = {"1-Surveying II", "2-Applied Hydraulic Engineering", "3-Soil Mechanics", "4-Environmental Science and Engineering", "5-Computational Methods", "6-Strength of Materials II (Tutorial)", "7-Applied Hydraulic Engineering (Tutorial)"};
+    String[] sciviltwotuesday = {"1-Soil Mechanics", "2-Environmental Science and Engineering", "3-Computational Methods", "4-Survey Practical", "5-Hydraulic Engineering Laboratory / Survey Practical", "6-Hydraulic Engineering Laboratory / Survey Practical", "7-Hydraulic Engineering Laboratory / Survey Practical"};
+    String[] sciviltwowednesday = {"1-Computational Methods", "2-Surveying II", "3-Applied Hydraulic Engineering", "4-Strength of Materials II", "5-Hydraulic Engineering Laboratory / Survey Practical", "6-Hydraulic Engineering Laboratory / Survey Practical", "7-Hydraulic Engineering Laboratory / Survey Practical"};
+    String[] sciviltwothursday = {"1-Strength of Materials II", "2-Computational Methods", "3-Applied Hydraulic Engineering", "4-Strength of Materials II", "5-Surveying II", "6-Environmental Science and Engineering", "7-Soil Mechanics"};
+    String[] sciviltwofriday = {"1-Environmental Science and Engineering", "2-Strength of Materials II", "3-Soil Mechanics", "4-Library", "5-Applied Hydraulic Engineering", "6-Computational Methods (Tutorial)", "7-Surveying II"};
 
     //civil 3rd yr
-    String[] tciviltwomonday = {"1-Design of steel structures", "2-Structural analysis 2", "3-Design of reinforced concrete & brick masonry structure", "4-Environmental engineering lab/Concrete and highway engineering lab", "5-Environmental engineering lab/Concrete and highway engineering lab", "7-Environmental engineering lab/Concrete and highway engineering lab"};
-    String[] tciviltwotuesday = {"1-Railways Airport and harbour engineering", "2-Environmental engineering 2", "3-Structural analysis 2", "4-Environmental engineering lab/Concrete and highway engineering lab", "5-Environmental engineering lab/Concrete and highway engineering lab", "6-Environmental engineering lab/Concrete and highway engineering lab", "7-Environmental engineering lab/Concrete and highway engineering lab"};
-    String[] tciviltwowednesday = {"1-Structural analysis 2", "2-Construction planning and scheduling", "3-design of steel structures", "4-Design of reinforced concrete &brick masonry structures", "5-Railways airport and harbour engineering", "6-environmental engineering 2", "7-Design of reinforced concrete & brick masonry structures"};
-    String[] tciviltwothursday = {"1-Construction planning and scheduling", "2-Design of steel structures", "3-Environmental engineering 2", "4-Design of steel structures", "5-Structural analysis 2", "6-Environmental engineering 2", "7-Railways airports and harbour engineering"};
-    String[] tciviltwofriday = {"1-Design of reinforced concrete &brick masonry structures", "2-Railways airport and harbour engineering", "3-Structural analysis 2", "4-Library", "5-Design of steel structures", "6-Environmental engineering 2", "7-Construction planning and scheduling"};
+    String[] tciviltwomonday = {"1-Design of Reinforced Concrete & Brick Masonry Structures", "2-Concrete Technology / Construction Planning and Scheduling", "3-Structural Analysis II", "4-Railways, Airports and Harbour Engineering", "5-Environmental Engineering II", "6-Concrete Technology / Construction Planning and Scheduling", "7-Design of Steel Structures"};
+    String[] tciviltwotuesday = {"1-Structural Analysis II", "2-Concrete Technology / Construction Planning and Scheduling", "3-Design of Steel Structures", "4-Environmental Engineering  Laboratory / Concrete and Highway Engineering Laboratory", "5-Environmental Engineering  Laboratory / Concrete and Highway Engineering Laboratory", "6-Environmental Engineering  Laboratory / Concrete and Highway Engineering Laboratory", "7-Environmental Engineering  Laboratory / Concrete and Highway Engineering Laboratory"};
+    String[] tciviltwowednesday = {"1-Concrete Technology / Construction Planning and Scheduling", "2-Structural Analysis II", "3-Design of Reinforced Concrete & Brick Masonry Structures", "4-Environmental Engineering  Laboratory / Concrete and Highway Engineering Laboratory", "5-Environmental Engineering  Laboratory / Concrete and Highway Engineering Laboratory", "6-Environmental Engineering  Laboratory / Concrete and Highway Engineering Laboratory", "7-Environmental Engineering  Laboratory / Concrete and Highway Engineering Laboratory"};
+    String[] tciviltwothursday = {"1-Railways, Airports and Harbour Engineering", "2-Design of Steel Structures", "3-Design of Reinforced Concrete & Brick Masonry Structures", "4-Library", "5-Environmental Engineering II", "6-Structural Analysis II (Tutorial)", "7-Railways, Airports and Harbour Engineering"};
+    String[] tciviltwofriday = {"1-Design of Steel Structures", "2-Environmental Engineering II", "3-Railways, Airports and Harbour Engineering", "4-Environmental Engineering II", "5-Design of Steel Structures (Tutorial)", "6-Structural Analysis II", "7-Design of Reinforced Concrete & Brick Masonry Structures"};
 
     //civil 4th yr
     String[] frciviltwomonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frciviltwotuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frciviltwowednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frciviltwothursday = {"1-Principle of management", "2-Prefabricated structures", "3-Repair and rehabilitation structures", "4-Principle of management", "5-Project work", "6-Repair and rehabilitation structures", "7-Prefabricated structures"};
-    String[] frciviltwofriday = {"1-Repair and rehabilitation of structures", "2-Principle of management", "3-Prefabricated Structures", "4-Repair and rehabilitation of structures", "5-project work", "6-Prefabricated structures", "7-Principle of management"};
+    String[] frciviltwothursday = {"1-Prefabricated Structures", "2-Repair and Rehabilitation Structures", "3-Principles of Management", "4-Prefabricated Structures", "5-Repair and Rehabilitation Structures", "6-Project work", "7-Principles of Management"};
+    String[] frciviltwofriday = {"1-Principles of Management", "2-Prefabricated Structures", "3-Repair and Rehabilitation Structures", "4-Principles of Management", "5-project work", "6-Repair and Rehabilitation Structures", "7-Prefabricated Structures"};
 
-    //odd sem for second ,third and fourth year in civil
+
+    //odd sem for first, second ,third and fourth year in civil
+
+    //civil 1st year
+
+    String[] fcivilonemonday = {"1-Engineering Drawing", "2-Engineering Drawing", "3-Engineering Drawing", "4-Basic Electrical and Electronics Engineering", "5-Engineering Physics", "6-Engineering Mathematics - I", "7-Communicative English"};
+    String[] fcivilonetuesday = {"1-Engineering Physics", "2-Engineering Chemistry", "3-Seminar I", "4-Seminar II", "5-Engineering Drawing", "6-Engineering Drawing", "7-Engineering Drawing"};
+    String[] fcivilonewednesday = {"1-Engineering Mathematics - I", "2-Engineering Physics", "3-Engineering Mathematics - I", "4-Engineering Physics I", "5-Engineering Practices Laboratory", "6-Engineering Practices Laboratory", "7-Engineering Practices Laboratory", "8-Sports"};
+    String[] fcivilonethursday = {"1-Engineering Chemistry", "2-Communicative English", "3-Engineering Mathematics - I", "4-Engineering Physics", "5-Communicative English", "6-Library", "7-Engineering Chemistry"};
+    String[] fcivilonefriday = {"1-Basic Electrical and Electronics Engineering", "2-Engineering Physics", "3-Basic Electrical and Electronics Engineering", "4-Communicative English", "5-Engineering Chemistry", "6-Physics and Chemistry Laboratory", "7-Physics and Chemistry Laboratory"};
+
 
     //civil 2nd yr
-    String[] scivilonemonday = {"1-Strength of materials", "2-Numerical methods", "3-Construction materials", "4-Strength of materials", "5-Hydraulic engineering lab/Survey practical 2", "6-Hydraulic engineering lab/Survey practical 2", "7-Hydraulic engineering lab/Survey practical 2", "8-Survey practical 2"};
-    String[] scivilonetuesday = {"1-Surveying 2", "2-Strength of materials lab/Hydraulic engineering lab", "3-Strength of materials lab/Hydraulic engineering lab", "4-Strength of materials lab/Hydraulic engineering lab", "5-Construction materials", "6-Soil mechanics", "7-Applied hydraulic engineering"};
-    String[] scivilonewednesday = {"1-Applied hydraulic engineering", "2-Numerical methods", "3-Strength of materials", "4-Surveying 2", "5-Strength of materials lab/Survey practical 2", "6-Strength of materials lab/Survey practical 2", "7-Strength of materials lab/Survey practical 2"};
-    String[] scivilonethursday = {"1-Soil mechanics", "2-Surveying 2", "3-Applied hydraulic engineering", "4-Numerical methods", "5-Strength of materials", "6-Applied hydraulic engineering", "7-Construction materials"};
-    String[] scivilonefriday = {"1-Numerical methods", "2-Soil mechanics", "3-Applied hydraulic engineering", "4-Strength of materials", "5-Numerical methods", "6-Soil mechanics", "7-Surveying 2"};
+    String[] scivilonemonday = {"1-Construction Materials", "2-Mechanics of Fluids", "3-Strength of Materials I", "4-Mathematics III", "5-Mechanics of Fluids", "6-Surveying I", "7-Strength of Materials I(T)"};
+    String[] scivilonetuesday = {"1-Engineering Geology", "2-Surveying I", "3-Strength of Materials I", "4-Mathematics III", "5-Strength of Materials lab/Computer Aided Building Drawing", "6-Strength of Materials lab/Computer Aided Building Drawing", "7-Strength of Materials lab/Computer Aided Building Drawing"};
+    String[] scivilonewednesday = {"1-Mathematics III", "2-Mechanics of Fluids", "3-Construction Materials", "4-Surveying I", "5-Strength of Materials lab/Computer Aided Building Drawing", "6-Strength of Materials lab/Computer Aided Building Drawing", "7-Strength of Materials lab/Computer Aided Building Drawing"};
+    String[] scivilonethursday = {"1-Mechanics of Fluids", "2-Construction Materials", "3-Engineering Geology", "4-Library", "5-Strength of Materials-1", "6-Mathematics III", "7-Engineering Geology"};
+    String[] scivilonefriday = {"1-Mathematics III", "2-Strength of Materials I", "3-Mechanics of Fluids(T)", "4-Mathematics III", "5-Construction Materials", "6-Seminar", "7-Engineering Geology"};
 
     //civil 3rd yr
-    String[] tcivilonemonday = {"1-Design of steel structures", "2-Structural analysis 2", "3-Design of reinforced concrete & brick masonry structure", "4-Environmental engineering lab/Concrete and highway engineering lab", "5-Environmental engineering lab/Concrete and highway engineering lab", "7-Environmental engineering lab/Concrete and highway engineering lab"};
-    String[] tcivilonetuesday = {"1-Railways Airport and harbour engineering", "2-Environmental engineering 2", "3-Structural analysis 2", "4-Environmental engineering lab/Concrete and highway engineering lab", "5-Environmental engineering lab/Concrete and highway engineering lab", "6-Environmental engineering lab/Concrete and highway engineering lab", "7-Environmental engineering lab/Concrete and highway engineering lab"};
-    String[] tcivilonewednesday = {"1-Structural analysis 2", "2-Construction planning and scheduling", "3-design of steel structures", "4-Design of reinforced concrete &brick masonry structures", "5-Railways airport and harbour engineering", "6-environmental engineering 2", "7-Design of reinforced concrete & brick masonry structures"};
-    String[] tcivilonethursday = {"1-Construction planning and scheduling", "2-Design of steel structures", "3-Environmental engineering 2", "4-Design of steel structures", "5-Structural analysis 2", "6-Environmental engineering 2", "7-Railways airports and harbour engineering"};
-    String[] tcivilonefriday = {"1-Design of reinforced concrete &brick masonry structures", "2-Railways airport and harbour engineering", "3-Structural analysis 2", "4-Library", "5-Design of steel structures", "6-Environmental engineering 2", "7-Construction planning and scheduling"};
+    String[] tcivilonemonday = {"1-Soil Mechanics Lab / Interview and Career Skills Lab", "2-Soil Mechanics Lab / Interview and Career Skills Lab", "3-Soil Mechanics Lab / Interview and Career Skills Lab", "4-Soil Mechanics Lab / Interview and Career Skills Lab", "5-Enviromental Engineering I", "6-Structural Analysis I", "7-Design of Reinforced Concrete Elements"};
+    String[] tcivilonetuesday = {"1-Enviromental Engineering I", "2-Structural Analysis I(T)", "3-Construction Techniques, Equipment and Practice", "4-Design of Reinforced Concrete Elements", "5-Structural Analysis I", "6-Highway Engineering", "7-Foundation Engineering"};
+    String[] tcivilonewednesday = {"1-Soil Mechanics Lab / Interview and Career Skills Lab", "2-Soil Mechanics Lab / Interview and Career Skills Lab", "3-Soil Mechanics Lab / Interview and Career Skills Lab", "4-Soil Mechanics Lab / Interview and Career Skills Lab", "5-Highway Engineering", "6-Foundation Engineering", "7-Construction Techniques, Equipment and Practice"};
+    String[] tcivilonethursday = {"1-Construction Techniques, Equipment and Practice", "2-Foundation Engineering", "3-Enviromental Engineering I", "4-Highway Engineering", "5-Structural Analysis I", "6-Design of Reinforced Concrete Elements", "7-Seminar"};
+    String[] tcivilonefriday = {"1-Structural Analysis I", "2-Design of Reinforced Concrete Elements", "3-Highway Engineering", "4-Foundation Engineering", "5-Construction Techniques, Equipment and Practice", "6-Enviromental Engineering I", "7-Library"};
 
     //civil 4th yr
-    String[] frcivilonemonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcivilonetuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcivilonewednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcivilonethursday = {"1-Principle of management", "2-Prefabricated structures", "3-Repair and rehabilitation structures", "4-Principle of management", "5-Project work", "6-Repair and rehabilitation structures", "7-Prefabricated structures"};
-    String[] frcivilonefriday = {"1-Repair and rehabilitation of structures", "2-Principle of management", "3-Prefabricated Structures", "4-Repair and rehabilitation of structures", "5-project work", "6-Prefabricated structures", "7-Principle of management"};
+    String[] frcivilonemonday = {"1-Municipal Solid Waste Management", "2-Structural Dynamics and Earthquake Engineering", "3-Water Resources and Irrigation Engineering", "4-Traffic Engineering and Management", "5-Prestressed Concrete Structures", "6-Estimation and Quantity Surveying", "7-Library"};
+    String[] frcivilonetuesday = {"1-Traffic Engineering and Management", "2-Estimation and Quantity Surveying", "3-Municipal Solid Waste Management", "4-Prestressed Concrete Structures", "5-Water Resources and Irrigation Engineering", "6-Structural Dynamics and Earthquake Engineering", "7-Technical Skills"};
+    String[] frcivilonewednesday = {"1-Structural Dynamics and Earthquake Engineering", "2-Traffic Engineering and Management", "3-Municipal Solid Waste Management", "4-Prestressed Concrete Structures", "5-Water Resources and Irrigation Engineering", "6-Estimation and Quantity Surveying", "7-Quantitative and Aptitude"};
+    String[] frcivilonethursday = {"1-Estimation and Quantity Surveying", "2-Traffic Engineering and Management", "3-Structural Dynamics and Earthquake Engineering", "4-Computer Aided Design and Drafting Lab / Design Project", "5-Computer Aided Design and Drafting Lab / Design Project", "6-Computer Aided Design and Drafting Lab / Design Project", "7-Computer Aided Design and Drafting Lab / Design Project"};
+    String[] frcivilonefriday = {"1-Water Resources and Irrigation Engineering", "2-Municipal Solid Waste Management", "3-Prestressed Concrete Structures", "4-Computer Aided Design and Drafting Lab / Design Project", "5-Computer Aided Design and Drafting Lab / Design Project", "6-Computer Aided Design and Drafting Lab / Design Project", "7-Computer Aided Design and Drafting Lab / Design Project"};
 
 
-
+    //Even sem for cse a all years
     //cse a first yr
     String[] fcseatwomonday = {"1-Digital lab/PDS I lab", "2-Digital lab/PDS I lab", "3-Digital lab/PDS I lab", "4-technical english II", "5-Engineering physics II", "6-Dpsd", "7-Mathematics II"};
     String[] fcseatwotuesday = {"1-Digital lab/PDS I lab", "2-Digital lab/PDS I lab", "3-Digital lab/PDS I lab", "4-PDS I", "5-Technical english II", "6-Mathemcatics II", "7-DPSD"};
@@ -406,51 +353,61 @@ public class ttperiod extends Activity {
     String[] fcseatwothursday = {"1-Technical english II", "2-DPSD", "3-PDS I", "4-Engineering physics II", "5-Mathematics II", "6-Technical english II", "7-Library"};
     String[] fcseatwofriday = {"1-PDS I", "2-Mathematics II", "3-DPSD ", "4-PDS I", "5-Engineering chemistry II", "6-Engineering physics II", "7-Engineering chemistry II"};
     //cse a 2nd yr
-    String[] scseatwomonday = {"1-Operating systems", "2-Design and analysis of algorithm", "3-Probability and Queueing theory", "4-Microprocessor and microcontroller", "5-Operating system lab/Networks lab", "6-Operating system lab/Networks lab", "7-Operating system lab/Networks lab"};
-    String[] scseatwotuesday = {"1-Design and analysis of algorithm", "2-Microprocessor and microcontroller", "3-Library", "4-operating system", "5-Computer networks", "6-Probability and queueing theory", "7-Software engineering"};
-    String[] scseatwowednesday = {"1-Microprocessor and microcontroller", "2-Probability and queueing theory", "3-Computer networks", "4-Design and analysis of algorithm", "5-Probability and queueing theory", "6-Software engineering", "7-Operating systems"};
-    String[] scseatwothursday = {"1-Probability and queueing theory", "2-Design and analysis of algorithm", "3-Software engineering", "4-Computer networks", "5-Microprocessor and microcontroller lab/Operating system lab", "6-Microprocessor and microcontroller lab/Operating system lab", "7-Microprocessor and microcontroller lab/Operating system lab"};
-    String[] scseatwofriday = {"1-Microprocessor and microcontroller", "2-Computer network", "3-operating systems", "4-Software engineering", "5-Networks lab/microprocessor and microcontroller lab", "6-Networks lab/microprocessor and microcontroller lab", "7-Networks lab/microprocessor and microcontroller lab"};
+    String[] scseatwomonday = {"1-Probability and Queueing Theory", "2-Computer Networks", "3-Computer Architecture", "4-Database Management Systems", "5-Networks Laboratory / Database Management Systems Laboratory", "6-Networks Laboratory / Database Management Systems Laboratory", "7-Networks Laboratory / Database Management Systems Laboratory"};
+    String[] scseatwotuesday = {"1-Computer Architecture", "2-Software Engineering Laboratory / Networks Laboratory", "3-Software Engineering Laboratory / Networks Laboratory", "4-Software Engineering Laboratory / Networks Laboratory", "5-Probability and Queueing Theory", "6-Design and Analysis of Algorithms", "7-Software Engineering"};
+    String[] scseatwowednesday = {"1-Database Management Systems", "2-Software Engineering", "3-Probability and Queueing Theory", "4-Software Engineering", "5-Probability and Queueing Theory", "6-Computer Networks", "7-Library"};
+    String[] scseatwothursday = {"1-Computer Networks", "2-Design and Analysis of Algorithms", "3-Computer Architecture", "4-Database Management Systems", "5-Database Management Systems Laboratory / Software Engineering Laboratory", "6-Database Management Systems Laboratory / Software Engineering Laboratory", "7-Database Management Systems Laboratory / Software Engineering Laboratory"};
+    String[] scseatwofriday = {"1-Software Engineering", "2-Database Management Systems", "3-Design and Analysis of Algorithms", "4-Probability and Queueing Theory", "5-Computer Networks", "6-Computer Architecture", "7-Design and Analysis of Algorithms"};
 
     //cse a 3rd yr
-    String[] tcseatwomonday = {"1-Data warehousing and data mining", "2-Mobile computing", "3-Digital signal processing", "4-Distributed systems", "5-Mobile application development lab/compiler lab", "6-Mobile application development lab/compiler lab", "7-Mobile application development lab/compiler lab"};
-    String[] tcseatwotuesday = {"1-Communication and soft skill lab", "2--Communication and soft skill lab", "3-Communication and soft skill lab", "4-Communication and soft skill lab", "5-Digital signal processing", "6-Distributes systems", "7-Mobile computing"};
-    String[] tcseatwowednesday = {"1-Computer design", "'2-Artificial intelligence", "3-Mobile computing", "4-Distributed system", "5-Data warehousing and data mining", "6-Digital signal processing", "7-Distributed system"};
-    String[] tcseatwothursday = {"1-Digital signal processing", "2-Computer design", "3-Artificial intelligence", "4-Mobile computing", "5-Data warehousing and data mining", "6-Compiler design", "7-Artificial Intelligence"};
-    String[] tcseatwofriday = {"1-Artificial intelligence", "2-Compiler lab/Mobile app dev lab", "3-Compiler lab/Mobile app dev lab", "4-Compiler lab/Mobile app dev lab", "5-Data warehousing and data mining", "6-Compiler design", "7-Digital signal processing(Tutorial)"};
+    String[] tcseatwomonday = {"1-Digital Signal Processing", "2-Distributed Systems", "3-Artificial Intelligence", "4-Total Quality Management", "5-Distributed Systems", "6-Total Quality Management", "7-Compiler Design"};
+    String[] tcseatwotuesday = {"1-Total Quality Management", "2-Compiler Design", "3-Distributed Systems", "4-Artificial Intelligence", "5-Mobile Computing", "6-Artificial Intelligence", "7-Digital Signal Processing"};
+    String[] tcseatwowednesday = {"1-Communication and Soft Skills Laboratory Based", "2-Communication and Soft Skills Laboratory Based", "3-Communication and Soft Skills Laboratory Based", "4-Communication and Soft Skills Laboratory Based", "5-Digital Signal Processing", "6-Mobile Computing", "7-Total Quality Management"};
+    String[] tcseatwothursday = {"1-Compiler Design", "2-Digital Signal Processing", "3-Mobile Computing", "4-Digital Signal Processing", "5-Compiler Laboratory / Mobile Application Development Laboratory", "6-Compiler Laboratory / Mobile Application Development Laboratory", "7-Compiler Laboratory / Mobile Application Development Laboratory"};
+    String[] tcseatwofriday = {"1-Mobile Computing", "2-Mobile Application Development Laboratory / Compiler Laboratory", "3-Mobile Application Development Laboratory / Compiler Laboratory", "4-Mobile Application Development Laboratory / Compiler Laboratory", "5-Artificial Intelligence", "6-Compiler Design", "7-Distributed Systems"};
 
     //cse a 4th yr
     String[] frcseatwomonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frcseatwotuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frcseatwowednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcseatwothursday = {"1-Multi-core architecture &programming", "2-Knowledge management", "3-Multi-core architecture &programming", "4-Professional ethics & engineering", "5-Project work", "6-Knowledge management", "7-Professional ethics & engineering"};
-    String[] frcseatwofriday = {"1-Professional ethics & engineering", "2-Multi-core architecture &programming", "3-Library", "4-Knowledge management", "5-Professional ethics & engineering", "6-Multi-core architecture &programming", "Knowledge managemnt"};
-
-    //odd sem for second,third and fourth year of cse a section
-
-    //cse a 2nd yr
-    String[] scseaonemonday = {"1-Operating systems", "2-Design and analytics of algorithm", "3-Probability and Queueing theory", "4-Microprocessor and microcontroller", "5-Operating system lab/Networks lab", "6-Operating system lab/Networks lab", "7-Operating system lab/Networks lab"};
-    String[] scseaonetuesday = {"1-Design and analytics of algorithm", "2-Microprocessor and microcontroller", "3-Library", "4-operating system", "5-Computer networks", "6-Probability and queueing theory", "7-Software engineering"};
-    String[] scseaonewednesday = {"1-Microprocessor and microcontroller", "2-Probability and queueing theory", "3-Computer networks", "4-Design and analytics of algorithm", "5-Probability and queueing theory", "6-Software engineering", "7-Operating systems"};
-    String[] scseaonethursday = {"1-Probability and queueing theory", "2-Design and analytics of algorithm", "3-Software engineering", "4-Computer networks", "5-Microprocessor and microcontroller lab/Operating system lab", "6-Microprocessor and microcontroller lab/Operating system lab", "7-Microprocessor and microcontroller lab/Operating system lab"};
-    String[] scseaonefriday = {"1-Microprocessor and microcontroller", "2-Computer network", "3-operating systems", "4-Software engineering", "5-Networks lab/microprocessor and microcontroller lab", "6-Networks lab/microprocessor and microcontroller lab", "7-Networks lab/microprocessor and microcontroller lab"};
-
-    //cse a 3rd yr
-    String[] tcseaonemonday = {"1-Data warehousing and data mining", "2-Mobile computing", "3-Digital signal processing", "4-Distributed systems", "5-Mobile application development lab/compiler lab", "6-Mobile application development lab/compiler lab", "7-Mobile application development lab/compiler lab"};
-    String[] tcseaonetuesday = {"1-Communication and soft skill lab", "2--Communication and soft skill lab", "3-Communication and soft skill lab", "4-Communication and soft skill lab", "5-Digital signal processing", "6-Distributes systems", "7-Mobile computing"};
-    String[] tcseaonewednesday = {"1-Computer design", "'2-Artificial intelligence", "3-Mobile computing", "4-Distributed system", "5-Data warehousing and data mining", "6-Digital signal processing", "7-Distributed system"};
-    String[] tcseaonethursday = {"1-Digital signal processing", "2-Computer design", "3-Artificial intelligence", "4-Mobile computing", "5-Data warehousing and data mining", "6-Compiler design", "7-Artificial design"};
-    String[] tcseaonefriday = {"1-Artificial intelligence", "2-Compiler lab/Mobile app dev lab", "3-Compiler lab/Mobile app dev lab", "4-Compiler lab/Mobile app dev lab", "5-Data warehousing and data mining", "6-Compiler design", "7-Digital signal processing(Tutorial)"};
-
-    //cse a 4th yr
-    String[] frcseaonemonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcseaonetuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcseaonewednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcseaonethursday = {"1-Multi-core architecture &programming", "2-Knowledge management", "3-Multi-core architecture &programming", "4-Professional ethics & engineering", "5-Project work", "6-Knowledge management", "7-Professional ethics & engineering"};
-    String[] frcseaonefriday = {"1-Professional ethics & engineering", "2-Multi-core architecture &programming", "3-Library", "4-Knowledge management", "5-Professional ethics & engineering", "6-Multi-core architecture &programming", "Knowledge managemnt"};
+    String[] frcseatwothursday = {"1-Multi-core Architectures and Programming", "2-Professional Ethics & Engineering", "3-Knowledge Management", "4-Project work", "5-Knowledge Management", "6-Professional Ethics & Engineering", "7-Multi-core Architectures and Programming"};
+    String[] frcseatwofriday = {"1-Professional Ethics & Engineering", "2-Multi-core Architectures and Programming", "3-Knowledge Management", "4-Professional Ethics & Engineering", "5-Multi-core Architectures and Programming", "6-Knowledge Management", "7-Project work"};
 
 
+    //odd sem for first,second,third and fourth year of cse a section
 
+    // cse a 1st year
+
+    String[] fcseaonemonday = {"1-Computer Practices Laboratory", "2-Engineering Chemistry", "3-Engineering Physics", "4-Physics and Chemistry Laboratory", "5-Physics and Chemistry Laboratory", "6-Programming for Problem Solving", "7-Communicative English","8-Sports"};
+    String[] fcseaonetuesday = {"1-Programming for Problen Solving Laboratory", "2-Programming for Problen Solving Laboratory", "3-Programming for Problen Solving Laboratory", "4-Communicative English", "5-Engineering Mathematics - I", "6-Basic Electrical and Electronics Engineering", "7-Library"};
+    String[] fcseaonewednesday = {"1-Engineering Chemistry", "2-Engineering Graphics", "3-Engineering Mathematics - I", "4-Basic Electrical and Electronics Engineering", "5-Seminar", "6-Communicative English", "7-Programming for Problem Solving"};
+    String[] fcseaonethursday = {"1-Programming for Problem Solving", "2-Communicative English", "3-Basic Electrical and Electronics Engineering", "4-Engineering Physics", "5-Engineering Mathematics - I", "6-Engineering Chemistry", "7-Engineering Physics"};
+    String[] fcseaonefriday = {"1-Engineering Practices Laboratory", "2-Engineering Practices Laboratory", "3-Engineering Practices Laboratory", "4-Programming for Problem Solving", "5-Basic Electrical and Electronics Engineering", "6-Engineering Mathematics - I", "7-Engineering Chemistry"};
+
+    //cse c 2nd yr
+    String[] scseaonemonday = {"1-Operating Systems", "2-Programming and Data Structures II", "3-Microprocessor and Microcontroller", "4-Mathematics III", "5-Library", "6-Analog and Digital Communication", "7-Environmental Science and Engineering"};
+    String[] scseaonetuesday = {"1-Mathematics III", "2-Operating Systems Lab / Microprocessor and Microcontroller Lab", "3-Operating Systems Lab / Microprocessor and Microcontroller Lab", "4-Operating Systems Lab / Microprocessor and Microcontroller Lab", "5-Programming and Data Structures II ", "6-Analog and Digital Communication", "7-Software engineering"};
+    String[] scseaonewednesday = {"1-Microprocessor and Microcontroller", "2-Environmental Science and Engineering", "3-Operating Systems", "4-Analog and Digital Communication", "5-Programming and Data Structures Lab II / Operating Systems Lab", "6-Programming and Data Structures Lab II / Operating Systems Lab", "7-Programming and Data Structures Lab II / Operating Systems Lab"};
+    String[] scseaonethursday = {"1-Analog and Digital Communication", "2-Microprocessor and Microcontroller Lab / Programming and Data Structures Lab II", "3-Microprocessor and Microcontroller Lab / Programming and Data Structures Lab II", "4-Microprocessor and Microcontroller Lab / Programming and Data Structures Lab II", "5-Mathematics III", "6-Operating Systems", "7-Programming and Data Structures II"};
+    String[] scseaonefriday = {"1-Environmental Science and Engineering", "2-Microprocessor and Microcontroller", "3-Programming and Data Structures II", "4-Mathematics III", "5-Environmental Science and Engineering", "6-Operating Systems", "7-Microprocessor and Microcontroller"};
+
+    //cse c 3rd yr
+    String[] tcseaonemonday = {"1-Object Oriented Analysis and Design", "2-Internet Programming(T)", "3-Theory of Computation", "4-Discrete Mathematics", "5-Computer Graphics Lab / Internet Programming Lab", "6-Computer Graphics Lab / Internet Programming Lab", "7-Computer Graphics Lab / Internet Programming Lab"};
+    String[] tcseaonetuesday = {"1-Interview and Career Skills Lab", "2-Interview and Career Skills Lab", "3-Interview and Career Skills Lab", "4-Interview and Career Skills Lab", "5-Internet Programming", "6-Seminar I", "7-Computer Graphics"};
+    String[] tcseaonewednesday = {"1-Internet Programming", "2-Object Oriented Analysis and Design", "3-Discrete Mathematics", "4-Theory of Computation", "5-Library", "6-Computer Graphics", "7-Object Oriented Analysis and Design"};
+    String[] tcseaonethursday = {"Discrete Mathematics", "2-Seminar II", "3-Theory of Computation", "4-Computer Graphics", "5-Discrete Mathematics", "6-Internet Programming", "7-Theory of Computation"};
+    String[] tcseaonefriday = {"1-Computer Graphics", "2-Internet Programming", "3-Discrete Mathematics", "4-Object Oriented Analysis and Design", "5-Internet Programming Lab / Computer Graphics Lab", "6-Internet Programming Lab / Computer Graphics Lab", "7-Internet Programming Lab / Computer Graphics Lab"};
+
+    //cse c 4th yr
+
+    String[] frcseaonemonday = {"1-Resource Management Techniques", "2-Cyber Forensics", "3-Cryptography and Network Security", "4-Project I", "5-Grid and Cloud Computing", "6-Project II", "7-Information Retrieval"};
+    String[] frcseaonetuesday = {"1-Security Lab / Grid and Cloud Computing Lab", "2-Security Lab / Grid and Cloud Computing Lab", "3-Security Lab / Grid and Cloud Computing Lab", "4-Grid and Cloud Computing", "5-Cyber Forensics", "6-Cryptography and Network Security", "7-Project III"};
+    String[] frcseaonewednesday = {"1-Grid and Cloud Computing", "2-Information Retrieval", "3-Cryptography and Network Security", "4-Cyber Forensics", "5-Library", "6-Resource Management Techniques", "7-Graph Theory and Applications"};
+    String[] frcseaonethursday = {"1-Graph Theory and Applications", "2-Information Retrieval", "3-Graph Theory and Applications", "4-Cryptography and Network Security", "4-project work", "5-Seminar", "6-Cyber Forensics", "7-Resource Management Techniques"};
+    String[] frcseaonefriday = {"1-Grid and Cloud Computing Lab / Security Lab", "2-Grid and Cloud Computing Lab / Security Lab", "3-Grid and Cloud Computing Lab / Security Lab", "4-Resource Management Techniques", "5-Graph Theory and Applications", "6-Information Retrieval", "7-Grid and Cloud Computing"};
+
+
+    //even sem for cse b
     //cse b first yr
 
     String[] fcsebtwomonday = {"1-Mathematics II", "2-Engineering physics II", "3-Engineering chemistry II", "4-Library", "5-DPSD/PDS I Lab", "6-DPSD/PDS I Lab", "7-DPSD/PDS I Lab"};
@@ -460,51 +417,62 @@ public class ttperiod extends Activity {
     String[] fcsebtwofriday = {"1-DPSD", "2-Engineering physics II", "3-Technical english II", "4-Mathematics II", "5-Phy and Chem lab II", "6-Phy and Chem lab II", "7-Phy and Chem lab II"};
 
     //cse b 2nd yr
-    String[] scsebtwomonday = {"1-Software engineering", "2-Design and analysis of algorithm", "3-Computer networks", "4-Microprocessor and microcontroller", "5-Operating systems", "6-Probability and queueing theory", "7-Operating systems"};
-    String[] scsebtwotuesday = {"1-Probability and queueing theory", "2-Design and analysis of algorithm", "3-Computer networks", "4-Software engineering", "5-Microprocessor and microcontroller lab/Operating system lab", "6-Microprocessor and microcontroller lab/Operating system lab", "7-Microprocessor and microcontroller lab/Operating system lab"};
-    String[] scsebtwowednesday = {"1-Probability and queueing theory", "2-Operating system lab/Networks lab", "3-Operating system lab/Networks lab", "4-Operating system lab/Networks lab", "5-Microprocessor and microcontroller", "6-Computer networks", "7-Software engineering"};
-    String[] scsebtwothursday = {"1-Operating system", "2-network lab/Microprocessor and microcontroller lab", "3-network lab/Microprocessor and microcontroller lab", "4-network lab/Microprocessor and microcontroller lab", "5-Microprocessor and microcontrollere", "6-Computer networks", "7-design and analysis of algorithm"};
-    String[] scsebtwofriday = {"1-Computer networks", "2-Probability and queueing theory", "3-Software engineering", "4-Operating systems", "5-Microprocessor and microcontroller", "6-Probability and queueing theory", "7-Library"};
+    String[] scsebtwomonday = {"1-Computer Networks", "2-Database Management Systems Laboratory / Software Engineering Laboratory", "3-Database Management Systems Laboratory / Software Engineering Laboratory", "4-Database Management Systems Laboratory / Software Engineering Laboratory", "5-Computer Architecture", "6-Probability and Queueing Theory", "7-Software Engineering"};
+    String[] scsebtwotuesday = {"1-Computer Architecture", "2-Database Management Systems", "3-Computer Networks", "4-Probability and Queueing Theory", "5-Networks Laboratory / Database Management Systems Laboratory", "6-Networks Laboratory / Database Management Systems Laboratory", "7-Networks Laboratory / Database Management Systems Laboratory"};
+    String[] scsebtwowednesday = {"1-Probability and Queueing Theory", "2-Software Engineering Laboratory / Networks Laboratory", "3-Software Engineering Laboratory / Networks Laboratory", "4-Software Engineering Laboratory / Networks Laboratory", "5-Design and Analysis of Algorithms", "6-Database Management Systems", "7-Software Engineering"};
+    String[] scsebtwothursday = {"1-Software Engineering", "2-Design and Analysis of Algorithms", "3-Database Management Systems", "4-Design and Analysis of Algorithms", "5-Probability and Queueing Theory", "6-Library", "7-Computer Networks"};
+    String[] scsebtwofriday = {"1-Database Management Systems", "2-Computer Architecture", "3-Probability and Queueing Theory", "4-Software Engineering", "5-Computer Architecture", "6-Computer Networks", "7-Design and Analysis of Algorithms"};
 
     //cse b 3rd yr
-    String[] tcsebtwomonday = {"1-Artificial intelligence", "2-Digital signal processing", "3-Mobile computing", "4-Distributed system", "5-Compiler design", "6-Distributed systems", "7-Total quality management"};
-    String[] tcsebtwotuesday = {"1-Compiler design", "2-Total quality management", "3-artificial intelligence", "4-Digital signal processing", "5-Mobile computing", "6-Distributed systems", "7-Mobile computing"};
-    String[] tcsebtwowednesday = {"1-Communication and soft skill lab", "2-Communication and soft skill lab", "3-Communication and soft skill lab", "4-Communication and soft skill lab", "5-Digital signal processing", "6-Compiler design", "7-Distributed system"};
-    String[] tcsebtwothursday = {"1-Total quality management", "2-Mobile application dev lab/Compiler lab", "3-Mobile application ev lab/Compiler lab", "4-Mobile application dev lab/Compiler lab", "5-Mobile computing", "6-Digital signal processing(tutorial)", "7-Artificial intelligence"};
-    String[] tcsebtwofriday = {"1-Digital signal processing", "2-Artificial intelligence", "3-Total quality management", "4-Compiler design", "5-Compiler lab/Mobile app dev lab", "6-Compiler lab/Mobile app dev lab", "7-Compiler lab/Mobile app dev lab"};
+    String[] tcsebtwomonday = {"1-Digital Signal Processing", "2-Compiler Design", "3-Artificial Intelligence", "4-Distributed Systems", "5-Compiler Laboratory / Mobile Application Development Laboratory", "6-Compiler Laboratory / Mobile Application Development Laboratory", "7-Compiler Laboratory / Mobile Application Development Laboratory"};
+    String[] tcsebtwotuesday = {"1-Total Quality Management", "2-Mobile Application Development Laboratory / Compiler Laboratory", "3-Mobile Application Development Laboratory / Compiler Laboratory", "4-Mobile Application Development Laboratory / Compiler Laboratory", "5-Distributed Systems", "6-Artificial Intelligence", "7-Digital Signal Processing"};
+    String[] tcsebtwowednesday = {"1-Distributed Systems", "2-Mobile Computing", "3-Digital Signal Processing", "4-Artificial Intelligence", "5-Compiler Design", "6-Communication and Soft Skills Laboratory Based", "7-Communication and Soft Skills Laboratory Based"};
+    String[] tcsebtwothursday = {"1-Artificial Intelligence", "2-Digital Signal Processing", "3-Total Quality Management", "4-Distributed Systems", "5-Mobile Computing", "6-Communication and Soft Skills Laboratory Based", "7-Communication and Soft Skills Laboratory Based"};
+    String[] tcsebtwofriday = {"1-Mobile Computing", "2-Total Quality Management", "3-Digital Signal Processing", "4-Mobile Computing", "5-Compiler Design", "6-Total Quality Management", "7-Compiler Design"};
 
     //cse b 4th yr
     String[] frcsebtwomonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frcsebtwotuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frcsebtwowednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcsebtwothursday = {"1-Multi-core Architecture &programming", "2-Professional ethics and engineering", "3-Multi-core Architecture &programming", "4-Knowledge management", "5-Library", "6-Professional ethics and engineering", "7-Knowledge management"};
-    String[] frcsebtwofriday = {"1-Professional ethics and management", "2-Multi-core Architecture &programming", "3-Knowledge management", "4-Project work", "5-Knowledge management", "6-Multi-core Architecture &programming", "7-professional ethics and engineering"};
+    String[] frcsebtwothursday = {"1-Multi-core Architectures and Programming", "2-Professional Ethics & Engineering", "3-Multi-core Architectures and Programming", "4-Knowledge Management", "5-Project work", "6-Professional Ethics & Engineering", "7-Knowledge Management"};
+    String[] frcsebtwofriday = {"1-Professional Ethics & Engineering", "2-Knowledge Management", "3-Multi-core Architectures and Programming", "4-Knowledge Management", "5-Multi-core Architectures and Programming", "6-Professional Ethics & Engineering", "7-Project work"};
 
 
-    //odd sem for second,third and fourth for cse b section
+    //odd sem for frst, second,third and fourth for cse b section
+
+
+    // cse  b frst year
+
+    String[] fcsebonemonday = {"1-Engineering Practices Laboratory", "2-Engineering Practices Laboratory", "3-Engineering Practices Laboratory", "4-Engineering Mathematics - I", "5-Communicative English", "6-Engineering Physics", "7-Programming for Problem Solving"};
+    String[] fcsebonetuesday = {"1-Basic Electrical and Electronics Engineering", "2-Engineering Physics", "3-Engineering Mathematics - I", "4-Programming for Problem Solving", "5-Communicative English", "6-Library", "7-Engineering Chemistry", "8-Sports"};
+    String[] fcsebonewednesday = {"1-Engineering Mathematics - I", "2-Physics and Chemistry Laboratory", "3-Physics and Chemistry Laboratory", "4-Engineering Chemistry", "5-Programming for Problem Solving", "6-Communicative English", "7-Basic Electrical and Electronics Engineering"};
+    String[] fcsebonethursday = {"1-Programming for Problem Solving", "2-Engineering Physics", "3-Basic Electrical and Electronics Engineering", "4-Engineering Mathematics - I", "5-Engineering Chemistry", "6-Communicative English", "7-Seminar"};
+    String[] fcsebonefriday = {"1-Engineering Chemistry", "2-Engineering Physics", "3-Engineering Mathematics - I", "4-Basic Electrical and Electronics Engineering", "5-Programming for Problen Solving Laboratory", "6-Programming for Problen Solving Laboratory", "7-Programming for Problen Solving Laboratory"};
+
 
     //cse b 2nd yr
-    String[] scsebonemonday = {"1-Software engineering", "2-Design and analytics of algorithm", "3-Computer networks", "4-Microprocessor and microcontroller", "5-Operating systems", "6-Probability and queueing theory", "7-Operating systems"};
-    String[] scsebonetuesday = {"1-Probability and queueing theory", "2-Design and analytics of algorithm", "3-Computer networks", "4-Software engineering", "5-Microprocessor and microcontroller lab/Operating system lab", "6-Microprocessor and microcontroller lab/Operating system lab", "7-Microprocessor and microcontroller lab/Operating system lab"};
-    String[] scsebonewednesday = {"1-Probability and queueing theory", "2-Operating system lab/Networks lab", "3-Operating system lab/Networks lab", "4-Operating system lab/Networks lab", "5-Microprocessor and microcontroller", "6-Computer networks", "7-Software engineering"};
-    String[] scsebonethursday = {"1-Operating system", "2-network lab/Microprocessor and microcontroller lab", "3-network lab/Microprocessor and microcontroller lab", "4-network lab/Microprocessor and microcontroller lab", "5-Microprocessor and microcontrollere", "6-Computer networks", "7-design and analysis of algorithm"};
-    String[] scsebonefriday = {"1-Computer networks", "2-Probability and queueing theory", "3-Software engineering", "4-Operating systems", "5-Microprocessor and microcontroller", "6-Probability and queueing theory", "7-Library"};
+    String[] scsebonemonday = {"1-Microprocessor and Microcontroller", "2-Programming and Data Structures Lab II / Operating Systems Lab", "3-Programming and Data Structures Lab II / Operating Systems Lab", "4-Programming and Data Structures Lab II / Operating Systems Lab", "5-Programming and Data Structures II", "6-Mathematics III", "7-Operating Systems"};
+    String[] scsebonetuesday = {"1-Programming and Data Structures II", "2-Operating Systems", "3-Mathematics III", "4-Analog and Digital Communication", "5-Microprocessor and Microcontroller Lab / Programming and Data Structures Lab II", "6-Microprocessor and Microcontroller Lab / Programming and Data Structures Lab II", "7-Microprocessor and Microcontroller Lab / Programming and Data Structures Lab II"};
+    String[] scsebonewednesday = {"1-Operating Systems", "2-Environmental Science and Engineering", "3-Programming and Data Structures II", "4-Microprocessor and Microcontroller", "5-Library", "6-Microprocessor and Microcontroller", "7-Analog and Digital Communication"};
+    String[] scsebonethursday = {"1-Operating Systems", "2-Mathematics III", "3-Environmental Science and Engineering", "4-Analog and Digital Communication", "5-Microprocessor and Microcontroller", "6-Environmental Science and Engineering", "7-Mathematics III"};
+    String[] scsebonefriday = {"1-Mathematics III", "2-Operating Systems Lab / Microprocessor and Microcontroller Lab", "3-Operating Systems Lab / Microprocessor and Microcontroller Lab", "4-Operating Systems Lab / Microprocessor and Microcontroller Lab", "5-Analog and Digital Communication", "6-Environmental Science and Engineering", "7-Programming and Data Structures II"};
 
     //cse b 3rd yr
-    String[] tcsebonemonday = {"1-Artificial intelligence", "2-Digital signal processing", "3-Mobile computing", "4-Distributed system", "5-Compiler design", "6-Distributed systems", "7-Total quality management"};
-    String[] tcsebonetuesday = {"1-Compiler design", "2-Total quality management", "3-artificial intelligence", "4-Digital signal processing", "5-Mobile computing", "6-Distributed systems", "7-Mobile computing"};
-    String[] tcsebonewednesday = {"1-Communication and soft skill lab", "2-Communication and soft skill lab", "3-Communication and soft skill lab", "4-Communication and soft skill lab", "5-Digital signal processing", "6-Compiler design", "7-Distributed system"};
-    String[] tcsebonethursday = {"1-Total quality management", "2-Mobile application dev lab/Compiler lab", "3-Mobile application ev lab/Compiler lab", "4-Mobile application dev lab/Compiler lab", "5-Mobile computing", "6-Digital signal processing(tutorial)", "7-Artificial intelligence"};
-    String[] tcsebonefriday = {"1-Digital signal processing", "2-Artificial intelligence", "3-Total quality management", "4-Compiler design", "5-Compiler lab/Mobile app dev lab", "6-Compiler lab/Mobile app dev lab", "7-Compiler lab/Mobile app dev lab"};
+    String[] tcsebonemonday = {"1-Theory of Computation", "2-Discrete Mathematics", "3-Object Oriented Analysis and Design", "4-Internet Programming", "5-Seminar I", "6-Interview and Career Skills Lab", "7-Interview and Career Skills Lab"};
+    String[] tcsebonetuesday = {"1-Computer Graphics", "2-Discrete Mathematics", "3-Internet Programming", "4-Discrete Mathematics", "5-Library", "6-Interview and Career Skills Lab", "7-Interview and Career Skills Lab"};
+    String[] tcsebonewednesday = {"1-Internet Programming(T)", "2-Internet Programming Lab / Computer Graphics Lab", "3-Internet Programming Lab / Computer Graphics Lab", "4-Internet Programming Lab / Computer Graphics Lab", "5-Object Oriented Analysis and Design", "6-Computer Graphics", "7-Theory of Computation"};
+    String[] tcsebonethursday = {"1-Object Oriented Analysis and Design", "2-Computer Graphics Lab / Internet Programming Lab", "3-Computer Graphics Lab / Internet Programming Lab", "4-Computer Graphics Lab / Internet Programming Lab", "5-Discrete Mathematics", "6-Theory of Computation", "7-Computer Graphics"};
+    String[] tcsebonefriday = {"1-Internet Programming", "2-Seminar II", "3-Computer Graphics", "4-Discrete Mathematics", "5-Theory of Computation", "6-Internet Programming", "7-Object Oriented Analysis and Design"};
 
     //cse b 4th yr
-    String[] frcsebonemonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcsebonetuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcsebonewednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcsebonethursday = {"1-Multi-core Architecture &programming", "2-Professional ethics and engineering", "3-Multi-core Architecture &programming", "4-Knowledge management", "5-Library", "6-Professional ethics and engineering", "7-Knowledge management"};
-    String[] frcsebonefriday = {"1-Professional ethics and management", "2-Multi-core Architecture &programming", "3-Knowledge management", "4-Project work", "5-Knowledge management", "6-Multi-core Architecture &programming", "7-professional ethics and engineering"};
+    String[] frcsebonemonday = {"1-Graph Theory and Applications", "2-Grid and Cloud Computing", "3-Seminar", "4-Cyber Forensics", "5-Security Lab / Grid and Cloud Computing Lab", "6-Security Lab / Grid and Cloud Computing Lab", "7-Security Lab / Grid and Cloud Computing Lab"};
+    String[] frcsebonetuesday = {"1-Grid and Cloud Computing", "2-Resource Management Techniques", "3-Information Retrieval", "4-Cryptography and Network Security", "5-Project I", "6-Graph Theory and Applications", "7-Project II"};
+    String[] frcsebonewednesday = {"1-Cryptography and Network Security", "2-Library", "3-Grid and Cloud Computing lab/Security lab", "4-Information Retrieval", "5-Grid and Cloud Computing", "6-Cyber Forensics", "7-Graph Theory and Applications"};
+    String[] frcsebonethursday = {"1-Grid and Cloud Computing Lab / Security Lab", "2-Grid and Cloud Computing Lab / Security Lab", "3-Grid and Cloud Computing Lab / Security Lab", "4-Cyber Forensics", "5-Information Retrieval", "6-Cryptography and Network Security", "7-Resource Management Techniques"};
+    String[] frcsebonefriday = {"1-Cyber Forensics", "2-Project III", "3-Graph Theory and Applications", "4-Information Retrieval", "5-Resource Management Techniques", "6-Cryptography and Network Security", "7-Grid and Cloud Computing"};
 
 
+    // even sem for cse c
     //cse c 1st yr
     String[] fcsectwomonday = {"1-Phy and Chem lab II", "2-Phy and Chem lab II", "3-Phy and Chem lab II", "4-Technical english II", "5-Engineering chemistry II", "6-Mathematics II", "7-Engineering physics II"};
     String[] fcsectwotuesday = {"1-PDS I", "2-Engineering physics II", "3-Engineering chemistry II", "4-PDS I", "5-Mathematics II", "6-DPSD", "7-Library"};
@@ -513,53 +481,59 @@ public class ttperiod extends Activity {
     String[] fcsectwofriday = {"1-techincal english II", "2-PDS I", "3-Mathematics II", "4-DPSD", "5-Digital lab/PDS I Lab", "6-Digital lab/PDS I Lab", "7-Digital lab/PDS I Lab"};
 
     //cse c 2nd yr
-    String[] scsectwomonday = {"1-Software engineering", "2-Operating systems", "3-Computer networks", "4-Probability and queueing theory", "5-Operating system", "6-Microprocessors and microcontrollers"};
-    String[] scsectwotuesday = {"1-Probability and queueing theory", "2-Operating systems lab/networks lab", "3-Operating systems lab/networks lab", "4-Operating systems lab/networks lab", "5-Operating systems", "6-Computer networks", "7-Software engineering"};
-    String[] scsectwowednesday = {"1-probability and queueig theory", "2-Design and analysis of algorithm", "3-Library", "4-Microprocessor and microcontroller", "5-Microprocessor and microcontroller lab/Operating system lab", "6-Microprocessor and microcontroller lab/Operating system lab", "7-Microprocessor and microcontroller lab/Operating system lab"};
-    String[] scsectwothursday = {"1-Operating systems", "2-Design and analysis of algorithm", "3-Microprocessor and microcontroller", "4-Probability and queueing theory", "5-Computer networks", "6-Microprocessor and microcontroller", "7-Design and analysis of algorithm"};
-    String[] scsectwofriday = {"1-Design and analysis of algorithm", "2-Networks lab/Microprocessor and microcontroller lab", "3-Networks lab/Microprocessor and microcontroller lab", "4-Networks lab/Microprocessor and microcontroller lab", "5-Software engineering", "6-Computer networks", "7-Probability and queuing theory"};
+    String[] scsectwomonday = {"1-Software Engineering", "2-Probability and Queueing Theory", "3-Computer Networks", "4-Library", "5-Probability and Queueing Theory", "6-Design and Analysis of Algorithms", "7-Database Management Systems"};
+    String[] scsectwotuesday = {"1-Database Management Systems", "2-Software Engineering", "3-Computer Architecture", "4-Probability and Queueing Theory", "5-Software Engineering", "6-Design and Analysis of Algorithms", "7-Computer Networks"};
+    String[] scsectwowednesday = {"1-Probability and Queueing Theory", "2-Computer Architecture", "3-Database Management Systems", "4-Computer Networks", "5-Database Management Systems Laboratory / Software Engineering Laboratory", "6-Database Management Systems Laboratory / Software Engineering Laboratory", "7-Database Management Systems Laboratory / Software Engineering Laboratory"};
+    String[] scsectwothursday = {"1-Design and Analysis of Algorithms", "2-Software Engineering Laboratory / Networks Laboratory", "3-Software Engineering Laboratory / Networks Laboratory", "4-Software Engineering Laboratory / Networks Laboratory", "5-Database Management Systems", "6-Computer Architecture", "7-Probability and Queueing Theory"};
+    String[] scsectwofriday = {"1-Computer Architecture", "2-Computer Networks", "3-Software Engineering", "4-Design and Analysis of Algorithms", "5-Networks Laboratory / Database Management Systems Laboratory", "6-Networks Laboratory / Database Management Systems Laboratory", "7-Networks Laboratory / Database Management Systems Laboratory"};
 
     //cse c 3rd yr
-    String[] tcsectwomonday = {"1-Digital signal processing", "2-Mobile computing", "3-Distribute systems", "4-Artificial Intelligence", "5-Compiler design", "6-"};
-    String[] tcsectwotuesday = {"1-Compiler design", "2-Disributed systems", "3-Data warehousing and data mining", "4-Digital signal processing", "5-Mobile computing", "6-Aritifical intelligence", "7-Distributed systems"};
-    String[] tcsectwowednesday = {"1-Distributed Systems", "2-Digital signal processing", "3-Compiler design", "4-Artificial intelligence", "5-Compiler lab/Mobile application dev lab", "6-5-Compiler lab/Mobile application dev lab", "7-5-Compiler lab/Mobile application dev lab"};
-    String[] tcsectwothursday = {"Artificial intelligence", "2-Data warehousing and data mining", "3-Digital signal processing", "4-Mobile computing", "5-Mobile application dev lab/Compiler design lab", "6-5-Mobile application dev lab/Compiler design lab", "7-5-Mobile application dev lab/Compiler design lab"};
-    String[] tcsectwofriday = {"1-Data warehousing and data mining", "2-Compiler design", "3-Mobile computing", "4-Data warehousing and data mining", "5-Digital signal processing(tut)", "6-Communication and soft skill lab", "7-Communication and soft skill lab"};
+    String[] tcsectwomonday = {"1-Digital Signal Processing", "2-Mobile Application Development Laboratory / Compiler Laboratory", "3-Mobile Application Development Laboratory / Compiler Laboratory", "4-Mobile Application Development Laboratory / Compiler Laboratory", "5-Total Quality Management", "6-Artificial Intelligence", "7-Mobile Computing"};
+    String[] tcsectwotuesday = {"1-Total Quality Management", "2-Mobile Computing", "3-Digital Signal Processing", "4-Total Quality Management", "5-Mobile Computing", "6-Distributed Systems", "7-Compiler Design"};
+    String[] tcsectwowednesday = {"1-Distributed Systems", "2-Artificial Intelligence", "3-Distributed Systems", "4-Artificial Intelligence", "5-Compiler Laboratory / Mobile Application Development Laboratory", "6-Compiler Laboratory / Mobile Application Development Laboratory", "7-Compiler Laboratory / Mobile Application Development Laboratory"};
+    String[] tcsectwothursday = {"Communication and Soft Skills Laboratory Based", "2-Communication and Soft Skills Laboratory Based", "3-Communication and Soft Skills Laboratory Based", "4-Communication and Soft Skills Laboratory Based", "5-Digital Signal Processing", "6-Compiler Design", "7-Digital Signal Processing"};
+    String[] tcsectwofriday = {"1-Compiler Design", "2-Artificial Intelligence", "3-Distributed Systems", "4-Compiler Design", "5-Mobile Computing", "6-Digital Signal Processing", "7-Total Quality Management"};
 
-    //cse c 4th yr
-
+    //cse 4th yr
     String[] frcsectwomonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frcsectwotuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frcsectwowednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcsectwothursday = {"1-Knowledge management", "2-Multi-core architecture and programming", "3-Knowleddge management", "4-Professional ethics and engineering", "4-project work", "5-knowledge management", "6-professional ethics and engineering", "7-Library"};
-    String[] frcsectwofriday = {"1-Multi-core architecture and programming", "2-Knowledge management", "3-Multi-core architecture and programming", "4-professional ethics and engineering", "5-Knowledge management", "6-Professional ethics and engineering", "7-Library"};
+    String[] frcsectwothursday = {"1-Multi-core Architectures and Programming", "2-Knowledge Management", "3-Professional Ethics & Engineering", "4-Knowledge Management", "4-Project work", "5-knowledge management", "6-Professional Ethics & Engineering", "7-Multi-core Architectures and Programming"};
+    String[] frcsectwofriday = {"1-Knowledge Management", "2-Professional Ethics & Engineering", "3-Multi-core Architectures and Programming", "4-Knowledge Management", "5-Professional Ethics & Engineering", "6-Multi-core Architectures and Programming", "7-Project work"};
+    //*** odd sem for frst, second ,third and fourth sem for cse c section
 
-            //*** odd sem for second ,third and fourth sem for cse c section
+    //cse c 1st year
 
-    //cse c 2nd yr
-    String[] scseconemonday = {"1-Software engineering", "2-Operating systems", "3-Computer networks", "4-Probability and queueing theory", "5-Operating system", "6-Microprocessors and microcontrollers"};
-    String[] scseconetuesday = {"1-Probability and queueing theory", "2-Operating systems lab/networks lab", "3-Operating systems lab/networks lab", "4-Operating systems lab/networks lab", "5-Operating systems", "6-Computer networks", "7-Software engineering"};
-    String[] scseconewednesday = {"1-probability and queueig theory", "2-Design and analytics of algorithm", "3-Library", "4-Microprocessor and microcontroller", "5-Microprocessor and microcontroller lab/Operating system lab", "6-Microprocessor and microcontroller lab/Operating system lab", "7-Microprocessor and microcontroller lab/Operating system lab"};
-    String[] scseconethursday = {"1-Operating systems", "2-Design and analytics of algorithm", "3-Microprocessor and microcontroller", "4-Probability and queueing theory", "5-Computer networks", "6-Microprocessor and microcontroller", "7-Design and analytics of algorithm"};
-    String[] scseconefriday = {"1-Design and analytics of algorithm", "2-Networks lab/Microprocessor and microcontroller lab", "3-Networks lab/Microprocessor and microcontroller lab", "4-Networks lab/Microprocessor and microcontroller lab", "5-Software engineering", "6-Computer networks", "7-Probability and queuing theory"};
+    String[] fcseconemonday = {"1-Engineering Mathematics - I", "2-Communicative English", "3-Engineering Physics", "4-Basic Electrical and Electronics Engineering", "5-Engineering Chemistry", "6-Physics and Chemistry Laboratory", "7-Physics and Chemistry Laboratory"};
+    String[] fcseconetuesday = {"1-Programming for Problem Solving", "2-Communicative English", "3-Programming for Problem Solving", "4-Basic Electrical and Electronics Engineering", "5-Engineering Mathematics - I", "6-Library", "7-Engineering Physics"};
+    String[] fcseconewednesday = {"1-Engineering Practices Laboratory", "2-Engineering Practices Laboratory", "3-Engineering Practices Laboratory", "4-Engineering Mathematics - I", "5-Communicative English", "6-Programming for Problem Solving", "7-Library","8-Sports"};
+    String[] fcseconethursday = {"1-Engineering Chemistry", "2-Engineering Mathematics - I", "3-Engineering Physics", "4-Basic Electrical and Electronics Engineering", "5-Programming for Problen Solving Laboratory", "6-Programming for Problen Solving Laboratory", "7-Programming for Problen Solving Laboratory"};
+    String[] fcseconefriday = {"1-Basic Electrical and Electronics Engineering", "2-Engineering Chemistry", "3-Engineering Mathematics - I", "4-Engineering Physics", "5-Engineering Chemistry", "6-Communicative English", "7-Programming for Problem Solving"};
+
+    // cse c 2nd year
+    String[] scseconemonday = {"1-Microprocessor and Microcontroller", "2-Mathematics III", "3-Environmental Science and Engineering", "4-Operating Systems", "5-Microprocessor and Microcontroller Lab / Programming and Data Structures Lab II", "6-Microprocessor and Microcontroller Lab / Programming and Data Structures Lab II", "7-Microprocessor and Microcontroller Lab / Programming and Data Structures Lab II"};
+    String[] scseconetuesday = {"1-Programming and Data Structures II", "2-Operating Systems", "3-Analog and Digital Communication", "4-Library", "5-Mathematics III", "6-Microprocessor and Microcontroller", "7-Environmental Science and Engineering"};
+    String[] scseconewednesday = {"1-Environmental Science and Engineering", "2-Programming and Data Structures Lab II / Operating Systems Lab", "3-Programming and Data Structures Lab II / Operating Systems Lab", "4-Programming and Data Structures Lab II / Operating Systems Lab", "5-Mathematics III", "6-Analog and Digital Communication", "7-Programming and Data Structures II"};
+    String[] scseconethursday = {"1-Operating Systems", "2-Microprocessor and Microcontroller", "3-Programming and Data Structures II", "4-Mathematics III", "5-Programming and Data Structures II", "6-Analog and Digital Communication", "7-Microprocessor and Microcontroller"};
+    String[] scseconefriday = {"1-Analog and Digital Communication", "2-Mathematics III", "3-Operating Systems", "4-Environmental Science and Engineering", "5-Operating Systems Lab / Microprocessor and Microcontroller Lab", "6-Operating Systems Lab / Microprocessor and Microcontroller Lab", "7-Operating Systems Lab / Microprocessor and Microcontroller Lab"};
 
     //cse c 3rd yr
-    String[] tcseconemonday = {"1-Digital signal processing", "2-Mobile computing", "3-Distribute systems", "4-Artificial Intelligence", "5-Compiler design", "6-Communication and Soft Skills lab"};
-    String[] tcseconetuesday = {"1-Compiler design", "2-Disributed systems", "3-Data warehousing and data mining", "4-Digital signal processing", "5-Mobile computing", "6-Aritifical intelligence", "7-Distributed systems"};
-    String[] tcseconewednesday = {"1-Distributed Systems", "2-Digital signal processing", "3-Compiler design", "4-Artificial intelligence", "5-Compiler lab/Mobile application dev lab", "6-Compiler lab/Mobile application dev lab", "7-Compiler lab/Mobile application dev lab"};
-    String[] tcseconethursday = {"Artificial intelligence", "2-Data warehousing and data mining", "3-Digital signal processing", "4-Mobile computing", "5-Mobile application dev lab/Compiler design lab", "6-5-Mobile application dev lab/Compiler design lab", "7-5-Mobile application dev lab/Compiler design lab"};
-    String[] tcseconefriday = {"1-Data warehousing and data mining", "2-Compiler design", "3-Mobile computing", "4-Data warehousing and data mining", "5-Digital signal processing(tut)", "6-Communication and soft skill lab", "7-Communication and soft skill lab"};
+    String[] tcseconemonday = {"1-Object Oriented Analysis and Design", "2-Internet Programming Lab / Computer Graphics Lab", "3-Internet Programming Lab / Computer Graphics Lab", "4-Internet Programming Lab / Computer Graphics Lab", "5-Theory of Computation", "6-Computer Graphics", "7-Seminar I"};
+    String[] tcseconetuesday = {"1-Computer Graphics", "2-Discrete Mathematics", "3-Object Oriented Analysis and Design", "4-Internet Programming", "5-Computer Graphics Lab / Internet Programming Lab", "6-Computer Graphics Lab / Internet Programming Lab", "7-Computer Graphics Lab / Internet Programming Lab"};
+    String[] tcseconewednesday = {"1-Interview and Career Skills Lab", "2-Interview and Career Skills Lab", "3-Interview and Career Skills Lab", "4-Interview and Career Skills Lab", "5-Discrete Mathematics", "6-Theory of Computation", "7-Internet Programming"};
+    String[] tcseconethursday = {"1-Internet Programming", "2-Theory of Computation", "3-Library", "4-Internet Programming(T)", "5-Discrete Mathematics", "6-Object Oriented Analysis and Design", "7-Computer Graphics"};
+    String[] tcseconefriday = {"1-Discrete Mathematics", "2-Internet Programming", "3-Computer Graphics", "4-Theory of Computation", "5-Seminar II", "6-Discrete Mathematics", "7-Object Oriented Analysis and Design"};
 
-    //cse c 4th yr
+//cse c 4th yr
 
-    String[] frcseconemonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcseconetuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcseconewednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frcseconethursday = {"1-Knowledge management", "2-Multi-core architecture and programming", "3-Knowleddge management", "4-Professional ethics and engineering", "4-project work", "5-knowledge management", "6-professional ethics and engineering", "7-Library"};
-    String[] frcseconefriday = {"1-Multi-core architecture and programming", "2-Knowledge management", "3-Multi-core architecture and programming", "4-professional ethics and engineering", "5-Knowledge management", "6-Professional ethics and engineering", "7-Library"};
+    String[] frcseconemonday = {"1-Grid and Cloud Computing", "2-Graph Theory and Applications", "3-Data Analytics", "4-Seminar", "5-Adhoc and Sensor Networks", "6-Cryptography and Network Security", "7-Resource Management Techniques"};
+    String[] frcseconetuesday = {"1-Adhoc and Sensor Networks", "2-Cryptography and Network Security", "3-Project I", "4-Grid and Cloud Computing", "5-Data Analytics", "6-Resource Management Techniques", "7-Graph Theory and Applications"};
+    String[] frcseconewednesday = {"1-Cryptography and Network Security", "2-Resource Management Techniques", "3-Grid and Cloud Computing", "4-Adhoc and Sensor Networks", "5-Security Lab / Grid and Cloud Computing Lab", "6-Security Lab / Grid and Cloud Computing Lab", "7-Security Lab / Grid and Cloud Computing Lab"};
+    String[] frcseconethursday = {"1-Graph Theory and Applications", "2-Adhoc and Sensor Networks", "3-Project II", "4-Data Analytics", "5-Grid and Cloud Computing Lab / Security Lab", "6-Grid and Cloud Computing Lab / Security Lab", "7-Grid and Cloud Computing Lab / Security Lab"};
+    String[] frcseconefriday = {"1-Resource Management Techniques", "2-Data Analytics", "3-Graph Theory and Applications", "4-Project III", "5-Cryptography and Network Security", "6-Library", "7-Grid and Cloud Computing"};
 
 
-            //*** even sem ece a section
+    //*** even sem ece a section
     //ece a first yr
     String[] feceatwomonday = {"1-Electronic devices", "2-Engineering physics II", "3-Engineering chemistry II", "4-Mathematics II", "5-Circuits and devices lab", "6-Circuits and devices lab", "7-Circuits and devices lab"};
     String[] feceatwotuesday = {"1-Engineering chemistry II", "2-Technical english II", "3-Mathematics  II", "4-Circuit theory", "5-Engineering physics II", "6-Electronic device", "7-Circuit theory"};
@@ -569,57 +543,63 @@ public class ttperiod extends Activity {
 
     //ece a second yr
 
-    String[] seceatwomonday = {"1-Probability and random process", "2-Control system engineering", "3-Electronic circuit II", "4-Electromagnetic fields", "5-Linear integrated circuit lab/Electrical engineering and control lab", "6-Linear integrated circuit lab/Electrical engineering and control lab", "7-Linear integrated circuit lab/Electrical engineering and control lab"};
-    String[] seceatwotuesday = {"1-Electromagnetic fields", "2-Electronics circuit II", "3-Probability and random, process", "4-Linear integrated circuits", "5-Electromagnetic fields", "6-Control system engineering", "7-Communication theory"};
-    String[] seceatwowednesday = {"1-Control system engineering", "2-Linear integrated circuit", "3-Electromagetic fields", "4-Communication theory", "5-Circuits and simulation integrated lab/Electrical engineering and control system lab", "6-Circuits and simulation integrated lab/Electrical engineering and control system lab", "7-Circuits and simulation integrated lab/Electrical engineering and control system lab"};
-    String[] seceatwothursday = {"Electronics circuit II", "2-Probability and random process", "3-Communication theory", "4-Control system engineering", "5-Electromagnetic fields(tut)", "6-Probability and random process", "7-Linear integrated circuits"};
-    String[] seceatwofriday = {"1-Linear integrated circuits", "2-Circuits and simulation integrated lab/Linear integrated circuit lab", "3-Circuits and simulation integrated lab/Linear integrated circuit lab", "4-Circuits and simulation integrated lab/Linear integrated circuit lab", "5-Probability and random process", "6-Communication theory", "7-Electronics circuit II"};
+    String[] seceatwomonday = {"1-Probability and Random Process", "2-Control System Engineering", "3-Analog Communication Systems", "4-Signals and Systems", "5-Linear Integrated Circuits", "6-Linear Integrated Circuits", "7-Linear Integrated Circuits"};
+    String[] seceatwotuesday = {"1-Signals and Systems", "2-Analog Communication Systems", "3-Electronic Circuits II", "4-Control System Engineering", "5-Library", "6-Linear Integrated Circuits", "7-Probability and Random Process"};
+    String[] seceatwowednesday = {"1-Linear Integrated Circuits", "2-Electronic Circuits II", "3-Probability and Random Process", "4-Analog Communication Systems", "5-Circuits and Simulation Laboratory / Electrical Engineering and Control System Laboratory", "6-Circuits and Simulation Laboratory / Electrical Engineering and Control System Laboratory", "7-Circuits and Simulation Laboratory / Electrical Engineering and Control System Laboratory"};
+    String[] seceatwothursday = {"Control System Engineering", "2-Probability and Random Process", "3-Signals and Systems", "4-Linear Integrated Circuits", "5-Analog Communication Systems", "6-Signals and Systems", "7-Electronic Circuits II"};
+    String[] seceatwofriday = {"1-Circuits and Simulation Laboratory / Electrical Engineering and Control System Laboratory", "2-Circuits and Simulation Laboratory / Electrical Engineering and Control System Laboratory", "3-Circuits and Simulation Laboratory / Electrical Engineering and Control System Laboratory", "4-Probability and Random Process", "5-Electronic Circuits II", "6-Control System Engineering", "7-Seminar"};
 
     //ece a third yr
 
-    String[] teceatwomonday = {"1-VLSI Design", "2-Medical Electronics I", "3-Principle of management", "4-Computer networks", "5-Computer networks lab/VLSI Design lab", "6-Computer networks lab/VLSI Design lab", "7-Computer networks lab/VLSI Design lab"};
-    String[] teceatwotuesday = {"1-Communication and soft skill lab", "2-Communication and soft skill lab", "3-Communication and soft skill lab", "4-Communication and soft skill lab", "5-Principles of management", "6-Antena and wave propagation", "7-Computer Architecture"};
-    String[] teceatwowednesday = {"1-Medical electronics(Elective I)", "2-Computer networks", "3-Antenna and wave propagation", "4-VLSI Design", "5-Computer Architecture", "6-Principles of management", "7-Library"};
-    String[] teceatwothursday = {"1-Computer networks", "2-Antenna and wave propagation", "3-Computer Architecture", "4-Medical electronics", "5-Computer networks lab/VLSI Design lab", "6-Computer networks lab/VLSI Design lab", "7-Computer networks lab/VLSI Design lab"};
-    String[] teceatwofriday = {"1-Computer architecture", "2-VLSI Design", "3-Antenna and wave propagation", "4-Principles of management", "5-Computer networks", "6-Medical electronics(Elective I)", "7-VLSI Design"};
+    String[] teceatwomonday = {"1-Communication and Soft Skills Laboratory Based", "2-Communication and Soft Skills Laboratory Based", "3-Communication and Soft Skills Laboratory Based", "4-Communication and Soft Skills Laboratory Based", "5-Antenna and Wave Propagation", "6-Computer Architecture", "7-Computer Networks"};
+    String[] teceatwotuesday = {"1-Medical Electronics / Robotics and Automation", "2-Principles of Management", "3-Computer Architecture", "4-VLSI Design", "5-Computer Networks", "6-Antenna and Wave Propagation", "7-Medical Electronics / Robotics and Automation "};
+    String[] teceatwowednesday = {"1-Computer Networks", "2-VLSI Design", "3-Medical Electronics / Robotics and Automation ", "4-Principles of Management", "5-Computer Networks Laboratory / VLSI Design Laboratory", "6-Computer Networks Laboratory / VLSI Design Laboratory", "7-Computer Networks Laboratory / VLSI Design Laboratory"};
+    String[] teceatwothursday = {"1-Principles of Management", "2-Computer Architecture", "3-VLSI Design", "4-Antenna and Wave Propagation", "5-Computer Networks Laboratory / VLSI Design Laboratory", "6-Computer Networks Laboratory / VLSI Design Laboratory", "7-Computer Networks Laboratory / VLSI Design Laboratory"};
+    String[] teceatwofriday = {"1-Antenna and Wave Propagation", "2-Medical Electronics / Robotics and Automation ", "3-Computer Networks", "4-Computer Architecture", "5-VLSI Design", "6-Library", "7-Principles of Management"};
 
     // ece a fourth year
 
-    String[] freceatwomonday={"1-Wireless Communication","2-Wireless Networks","3-Total quality Management","4-Wireless Communication","5-Professional Ethics in Engineering","6-Total quality management","7-Project"};
-    String[] freceatwotuesday={"1-Total Quality Management","2-Professional ethics in engineering","3-Wireless networks","4-Project","5-Wireless Networks","6-Wireless Communication","7-Professional ethics in engineering"};
-    String[] freceatwowednesday={"1-Wireless Networks","2-Wireless Communication","3-Library","4-Professional ethics in engineering","5-Project","6-Total Quality Management","7-Project"};
-    String[] freceatwothursday={"1-Project work","2-Project work","3-Project work","4-Project work","5-Project work","6-Project work","7-Project work"};
-    String[] freceatwofriday={"1-Project work","2-Project work","3-Project work","4-Project work","5-Project work","6-Project work","7-Project work"};
+    String[] freceatwomonday={"1-Project Work","2-Project Work","3-Project Work","4-Project Work","5-Project Work","6-Project Work","7-Project Work"};
+    String[] freceatwotuesday={"1-Project Work","2-Project Work","3-Project Work","4-Project Work","5-Project Work","6-Project Work","7-Project Work"};
+    String[] freceatwowednesday={"1-Wireless Communication","2-Professional Ethics in Engineering","3-Cryptography and Network Security / Total Quality Management / Entrepreneurship Development","4-Project I","5-Professional Ethics in Engineering","6-Library","7-Wireless Networks"};
+    String[] freceatwothursday={"1-Cryptography and Network Security / Total Quality Management / Entrepreneurship Development","2-Wireless Networks","3-Wireless Communication","4-Wireless Networks","5-Project II","6-Cryptography and Network Security / Total Quality Management / Entrepreneurship Development","7-Wireless Communication"};
+    String[] freceatwofriday={"1-Wireless Networks","2-Project III","3-Professional Ethics in Engineering","4-Project IV","5-Cryptography and Network Security / Total Quality Management / Entrepreneurship Development","6-Wireless Communication","7-Professional Ethics in Engineering"};
 
 
-    // ****odd sem for second year,third year and fourth year for ece a section***
+    // ****odd sem for first,second year,third year and fourth year for ece a section***
 
-    //ece a second yr
+    String[] feceaonemonday = {"1-Engineering Drawing", "2-Engineering Drawing", "3-Engineering Drawing", "4-Engineering Chemistry", "5-Communicative English", "6-Engineering Physics", "7-Seminar I"};
+    String[] feceaonetuesday = {"1-Engineering Mathematics - I", "2-Engineering Physics", "3-Engineering Chemistry", "4-Seminar II", "5-Engineering Drawing", "6-Engineering Drawing", "7-Engineering Drawing"};
+    String[] feceaonewednesday = {"1-Basic Electrical Engineering", "2-Communicative English", "3-Engineering Mathematics - I", "4-Engineering Physics", "5-Communicative English", "6-Basic Electrical Engineering", "7-Engineering Mathematics - I"};
+    String[] feceaonethursay = {"1-Engineering Practices Laboratory", "2-Engineering Practices Laboratory", "3-Engineering Practices Laboratory", "4-Engineering Mathematics - I", "5-Basic Electrical Engineering", "6-Communicative English", "7-Library"};
+    String[] feceaonefriday = {"1-Engineering Chemistry", "2-Basic Electrical Engineering", "3-Engineering Chemistry", "4-Engineering Physics", "5-Engineering Mathematics - I", "6-Physics and Chemistry Laboratory", "7-Physics and Chemistry Laboratory"};
 
-    String[] seceaonemonday = {"1-Probability and random process", "2-Control system engineering", "3-Electronic circuit II", "4-Electromagnetic fields", "5-Linear integrated circuit lab/Electrical engineering and control lab", "6-Linear integrated circuit lab/Electrical engineering and control lab", "7-Linear integrated circuit lab/Electrical engineering and control lab"};
-    String[] seceaonetuesday = {"1-Electromagnetic fields", "2-Electronics circuit II", "3-Probability and random, process", "4-Linear integrated circuits", "5-Electromagnetic fields", "6-Control system engineering", "7-Communication theory"};
-    String[] seceaonewednesday = {"1-Control system engineering", "2-Linear integrated circuit", "3-Electromagetic fields", "4-Communication theory", "5-Circuits and simulation integrated lab/Electrical engineering and control system lab", "6-Circuits and simulation integrated lab/Electrical engineering and control system lab", "7-Circuits and simulation integrated lab/Electrical engineering and control system lab"};
-    String[] seceaonethursday = {"Electronics circuit II", "2-Probability and random process", "3-Communication theory", "4-Control system engineering", "5-Electromagnetic fields(tut)", "6-Probability and random process", "7-LInear integrated circuits"};
-    String[] seceaonefriday = {"1-Linear integrated circuits", "2-Circuits and stimulation integrated lab/Linear integrated circuit lab", "3-Circuits and stimulation integrated lab/Linear integrated circuit lab", "4-Circuits and stimulation integrated lab/Linear integrated circuit lab", "5-Probability and random process", "6-Communication theory", "7-Electronics circuit II"};
+
+
+    String[] seceaonemonday = {"1-Mathematics III", "2-Electromagnetic Fields", "3-Digital Electronics", "4-Electronic Circuits I", "5-Mathematics III", "6-Programming and Data Structures", "7-Electrical Engineering and Instrumentation"};
+    String[] seceaonetuesday = {"1-Electromagnetic Fields", "2-Digital Electronics", "3-Electronic Circuits I", "4-Mathematics III", "5-Analog Circuits Lab / Programming and Data Structures Lab", "6-Analog Circuits Lab / Programming and Data Structures Lab", "7-Analog Circuits Lab / Programming and Data Structures Lab"};
+    String[] seceaonewednesday = {"1-Digital Electronics", "2-Programming and Data Structures", "3-Mathematics III", "4-Electrical Engineering and Instrumentation", "5-Electronic Circuits I", "6-Electromagnetic Fields", "7-Digital Electronics"};
+    String[] seceaonethursday = {"Programming and Data Structures", "2-Digital Electronics Lab / Analog Circuits Lab", "3-Digital Electronics Lab / Analog Circuits Lab", "4-Digital Electronics Lab / Analog Circuits Lab", "5-Electromagnetic Fields", "6-Electrical Engineering and Instrumentation", "7-Mathematics III"};
+    String[] seceaonefriday = {"1-Electrical Engineering and Instrumentation", "2-Digital Electronics Lab / Programming and Data Structures Lab", "3-Digital Electronics Lab / Programming and Data Structures Lab", "4-Digital Electronics Lab / Programming and Data Structures Lab", "5-Electromagnetic Fields(T) / Library", "6-Electronic Circuits I", "7-Programming and Data Structures"};
 
     //ece a third yr
 
-    String[] teceaonemonday = {"1-VLSI Design", "2-Medical Electronics I", "3-Principle of management", "4-Computer networks", "5-Computer networks lab/VLSI Design lab", "6-Computer networks lab/VLSI Design lab", "7-Computer networks lab/VLSI Design lab"};
-    String[] teceaonetuesday = {"1-Communication and soft skill lab", "2-Communication and soft skill lab", "3-Communication and soft skill lab", "4-Communication and soft skill lab", "5-Principles of management", "6-Antena and wave propagation", "7-Computer Architecture"};
-    String[] teceaonewednesday = {"1-Medical electronics(Elective I)", "2-Computer networks", "3-Antenna and wave propagation", "4-VLSI Design", "5-Computer Architecture", "6-Principles of management", "7-Library"};
-    String[] teceaonethursday = {"1-Computer networks", "2-Antenna and wave propagation", "3-Computer Architecture", "4-VLSI Design", "5-Computer networks lab/VLSI Design lab", "6-Computer networks lab/VLSI Design lab", "7-Computer networks lab/VLSI Design lab"};
-    String[] teceaonefriday = {"1-Computer architecture", "2-VLSI Design", "3-Antenna and wave propagation", "4-Principles of management", "5-Computer networks", "6-Medical electronics(Elective I)", "7-VLSI Design"};
+    String[] teceaonemonday = {"1-Digital Communication", "2-Digital Signal Processing Lab / Microprocessor and Microcontroller Lab", "3-Digital Signal Processing Lab / Microprocessor and Microcontroller Labb", "4-Digital Signal Processing Lab / Microprocessor and Microcontroller Lab", "5-Medical Electronics / Robotics and Automation", "6-Microprocessor and Microcontroller", "7-Environmental Science and Engineering"};
+    String[] teceaonetuesday = {"1-Principles of Digital Signal Processing", "2-Medical Electronics / Robotics and Automation", "3-Environmental Science and Engineering", "4-Transmission Lines and Waveguides", "5-Principles of Digital Signal Processing", "6-Microprocessor and Microcontroller", "7-Digital Communication"};
+    String[] teceaonewednesday = {"1-Medical Electronics / Robotics and Automation", "2-Microprocessor and Microcontroller Lab / Communication System Lab", "3-Microprocessor and Microcontroller Lab / Communication System Lab", "4-Microprocessor and Microcontroller Lab / Communication System Lab", "5-Digital Communication", "6-Principles of Digital Signal Processing(T)", "7-Transmission Lines and Waveguides"};
+    String[] teceaonethursday = {"1-Microprocessor and Microcontroller", "2-Transmission Lines and Waveguides", "3-Principles of Digital Signal Processing", "4-Environmental Science and Engineering", "5-Digital Signal Processing Lab / Communication System Lab", "6-Digital Signal Processing Lab / Communication System Lab", "7-Digital Signal Processing Lab / Communication System Lab"};
+    String[] teceaonefriday = {"1-Environmental Science and Engineering", "2-Microprocessor and Microcontroller", "3-Transmission Lines and Waveguides(T) / Library", "4-Principles of Digital Signal Processing", "5-Digital Communication", "6-Principles of Digital Signal Processing", "7-Medical Electronics / Robotics and Automation"};
 
-   // ece a fourth year
+// ece a fourth year
 
-    String[] freceaonemonday={"1-Wireless Communication","2-Wireless Networks","3-Total quality Management","4-Wireless Communication","5-Professional Ethics in Engineering","6-Total quality management","7-Project"};
-    String[] freceaonetuesday={"1-Total Quality Management","2-Professional ethics in engineering","3-Wireless networks","4-Project","5-Wireless Networks","6-Wireless Communication","7-Professional ethics in engineering"};
-    String[] freceaonewednesday={"1-Wireless Networks","2-Wireless Communication","3-Library","4-Professional ethics in engineering","5-Project","6-Total Quality Management","7-Project"};
-    String[] freceaonethursday={"1-Project work","2-Project work","3-Project work","4-Project work","5-Project work","6-Project work","7-Project work"};
-    String[] freceaonefriday={"1-Project work","2-Project work","3-Project work","4-Project work","5-Project work","6-Project work","7-Project work"};
+    String[] freceaonemonday = {"1-Embedded and Real Time Systems", "2-Satellite Communication / Digital Image Processing", "3-RF and Microwave Engineering", "4-Advanced Computer Architecture", "5-Library", "6-Optical Communication and Networks", "7-Advanced Microprocessors and Microcontrollers"};
+    String[] freceaonetuesday = {"1-Advanced Microprocessors and Microcontrollers", "2-Advanced Computer Architecture", "3-Optical Communication and Networks", "4-Satellite Communication / Digital Image Processing", "5-Seminar I", "6-RF and Microwave Engineering", "7-Embedded and Real Time Systems"};
+    String[] freceaonewednesday = {"1-Embedded Lab / Optical and Microwave Lab", "2-Embedded Lab / Optical and Microwave Lab", "3-Embedded Lab / Optical and Microwave Lab", "4-Optical Communication and Networks", "5-Embedded and Real Time Systems", "6-Advanced Microprocessors and Microcontrollers", "7-Seminar II"};
+    String[] freceaonethursday = {"1-RF and Microwave Engineering", "2-Seminar III", "3-Advanced Computer Architecture", "4-Satellite Communication / Digital Image Processing", "5-Embedded Lab / Optical and Microwave Lab", "6-Embedded Lab / Optical and Microwave Lab", "7-Embedded Lab / Optical and Microwave Lab"};
+    String[] freceaonefriday = {"1-Satellite Communication / Digital Image Processing", "2-Optical Communication and Networks", "3-Advanced Microprocessors and Microcontrollers", "4-Embedded and Real Time Systems", "5-Seminar IV", "6-Advanced Computer Architecture", "7-RF and Microwave Engineering"};
+
 
     // even sem for ece b section
-
 
     //ece b first year
 
@@ -630,108 +610,119 @@ public class ttperiod extends Activity {
     String[] fecebtwofriday={"1-Technical English II","2-Circuit Theory","3-Electronic devices(T)","4-Mathemactics II","5-Technical English II","6-Engineering Chemistry II","7-Engineering Physics II"};
 
 
-
     //ece b 2nd yr
-    String[] secebtwomonday = {"1-Linear integrated circuits", "2-Control systems engineering", "3-Probability and random process", "4-Communication theory", "5-Control system engineering", "6-Electromagnetic fields", "7-Electronic circuits II"};
-    String[] secebtwotuesday = {"1-Electronic circuits II", "2-Linear integrated circuits", "3-Commnication theory", "4-Probabiliy and random process", "5-Electromagnetic fields", "6-Electronic circuits II", "7-Control systems engineering"};
-    String[] secebtwowednesday = {"1-Probability and random process", "2-Circuits and simulation integration lab/electrical engineering and control system lab", "3-Circuits and simulation integration lab/electrical engineering and control system lab", "4-Circuits and simulation integration lab/electrical engineering and control system lab", "5-Linear integrated circuits", "6-Communication theory", "7-Electromagnetic fields(t)"};
-    String[] secebtwothursday = {"1-Control system engineering", "2-Probability and random process", "3-Linear integrated circuits", "4-Electromagnetci fields", "5-Circuits and simulation integrated lab/Linear integrated circuit lab", "6-Circuits and simulation integrated lab/Linear integrated circuit lab", "7-Circuits and simulation integrated lab/Linear integrated circuit lab"};
-    String[] secebtwofriday = {"1-Communication theory", "2-Electromagnetic fields", "3-Electronic circuits II", "4-Probability and random process", "5-Linear integrated circuit lab/Electrical engineering and control system lab", "6-Linear integrated circuit lab/Electrical engineering and control system lab", "7-Linear integrated circuit lab/Electrical engineering and control system lab"};
+    String[] secebtwomonday = {"1-Probability and Random Process", "2-Signals and systems", "3-Electronic Circuits-II", "4-Control System Engineering", "5-Probability and Random Process", "6-Linear Integrated Circuits", "7-Signals and Systems"};
+    String[] secebtwotuesday = {"1-Analog Communication Systems", "2-Electronic Circuits-II", "3-Linaer Integrated Circuits", "4-Signals and Systems", "5-Seminar", "6-Control Systems Engineering", "7-Electronic Circuits-II"};
+    String[] secebtwowednesday = {"1-Signals and Systems", "2-Circuits and simulation integration lab/Electrical engineering and control system lab", "3-Circuits and simulation integration lab/electrical engineering and control system lab", "4-Circuits and simulation integration lab/electrical engineering and control system lab", "5-Control System Engineering", "6-Analog Communication Systems", "7-Probability and Random Process"};
+    String[] secebtwothursday = {"1-Control system engineering", "2-Linear Integrated Circuits", "3-Probability and Random Process", "4-Analog Communication Systems", "5-Circuits and simulation integrated lab/Linear integrated circuit lab", "6-Circuits and simulation integrated lab/Linear integrated circuit lab", "7-Circuits and simulation integrated lab/Linear integrated circuit lab"};
+    String[] secebtwofriday = {"1-Electronic circuits II", "2-Probability and Random Process", "3-Signals and Systems", "4-Library", "5-Analog Communication Systems", "6-Seminar", "7-Linear integrated circuits "};
 
     //ece b 3rd yr
-    String[] tecebtwomonday = {"1-Medical electronics(elective I)", "2-computer architecture", "3-Copmuter networks", "4-VLSI Design", "5-Computer architecture", "6-Antenna and wave propagation", "7-Principles of management"};
-    String[] tecebtwotuesday = {"1-Antenna and wave propagation", "2-Computer networks lab/VLSI design lab", "3-Computer networks lab/VLSI design lab", "4-Computer networks lab/VLSI design lab", "5-Computer networks", "6-VLSI Design", "7-Medical electronics(elective I)"};
-    String[] tecebtwowednesday = {"1-VLSI Design", "2-Computer networks", "3-Medical electronics (elective I)", "4-Antenna and wave propagation", "5-Principles of management", "6-Commmunication and soft skills lab", "7-Communication and soft skills lab"};
-    String[] tecebtwothursday = {"1-Principles of management", "2-Antenna and wave propagation", "3-Computer architecture", "4-Medical electronics(elective I)", "5-Library", "6-Communication and soft skills lab","7-Communication and soft skills lab"};
-    String[] tecebtwofriday = {"1-Computer Architecture", "2-Antenna and wave propagation", "3-Principles of management", "4-Computer networks", "5-Computer networks lab/VLSI Design lab", "6-Computer networks lab/VLSI Design lab", "7-Computer networks lab/VLSI Design lab"};
+    String[] tecebtwomonday = {"1-Principles of management", "2-Computer networks", "3-VLSI Design", "4-Computer architecture", "5-Principles of management", "6-Antenna and wave propagation", "7-Computer networks"};
+    String[] tecebtwotuesday = {"1-Medical Electronics/Robotics and Automation(Elective-I)", "2-Computer networks lab/VLSI design lab", "3-Computer networks lab/VLSI design lab", "4-Computer networks lab/VLSI design lab", "5-Antenna and wave propagation", "6-Computer Architecture", "7-Medical electronics?Robotics and Automation(elective I)"};
+    String[] tecebtwowednesday = {"1-Antenna and Wave Propagation", "2-Computer Architecture", "3-Medical Electronics/Robotics and Automation(Elective-I", "4-VLSI Design", "5-Computer Networks", "6-Principles of Management", "7-VLSI Design"};
+    String[] tecebtwothursday = {"1-Communication and soft skills-Laboratory Based", "2-Communication and soft skills-Laboratory Based", "3-Communication and soft skills-Laboratory Based", "4-Communication and soft skills-Laboratory Based", "5-Library", "6-VLSI Design","7-Computer Architecture"};
+    String[] tecebtwofriday = {"1-Computer Networks", "2-Medical Electronics/Robotics and Automation(Elective-I)", "3-Principles of management", "4-Antenna and wave propagation", "5-Computer networks lab/VLSI Design lab", "6-Computer networks lab/VLSI Design lab", "7-Computer networks lab/VLSI Design lab"};
 
-    //ece b 4th yr
+//ece b 4th yr
 
-    String[] frecebtwomonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frecebtwotuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frecebtwowednesday = {"-wireless communication", "2-Wireless networks", "3-Total quality management", "4-Project", "5-Wireless networks", "6-Project", "7-Professional ethics in engineering"};
-    String[] frecebtwothursday = {"1-Total quality management", "2-Wireless communication", "3-Library", "4-Wireless networks", "5-Professional ethics in engineering", "6-Wireless communication", "7-project"};
-    String[] frecebtwofriday = {"1-Professional ethics in engineering", "2-Total quality management", "3-wireless networks", "4-Professional ethics in engineering", "5-Wireless communication", "6-Project", "7-Total quality management"};
+    String[] frecebtwomonday = {"1-Total Quality Management(Elective-VI)", "2-Wireless Communication", "3-Wireless Networks", "4-Total Quality Management(Elective-VI)", "5-Project", "6-Professional ethics in engineering(Elective-V)", "7-Wireless Networks"};
+    String[] frecebtwotuesday = {"1-Professional ethics in engineering(Elective-V)", "2-Project", "3-Wireless Communication", "4-Wireless Networks", "5-Total Quality Management(Elective-VI)", "6-Library", "7-Professional ethics in engineering(Elective-V)"};
+    String[] frecebtwowednesday = {"1-Wireless Communication", "2-Project", "3-Professional ethics in engineering(Elective-V)", "4-Wireless Communication", "5-Wireless networks", "6-Total Quality Management(Elective-VI)", "7-Project"};
+    String[] frecebtwothursday = {"1-Project Work", "2-Project Work", "3Project Work", "4-Project Work", "5-Project Work", "6-Project Work", "7-Project Work"};
+    String[] frecebtwofriday = {"1-Project Work", "2-Project Work", "3-Project Work", "4-Project Work", "5-Project Work", "6-Project Work", "7-Project Work"};
 
 
-    // odd sem for second,third and fourth year for ece b section
+
+    // ece b frst yr
+    String[] fecebonemonday = {"1.Engineering Chemistry I", "2.Mathematics I", "3.Communicative English", "4.Engineering Physics I", "5.Engineering Graphics", "6.Engineering Graphics", "7.Engineering Graphics"};
+    String[] fecebonetuesday = {"1.Engineering Practices Lab", "2.Engineering Practices Lab", "3.Engineering Practices Lab", "4.Basic Electrical Engineering", "5.Engineering Physics", "6.Mathematics I", "7.Communicative English","8.Sports"};
+    String[] fecebonewednesday = {"1.Basic Electrical Engineering", "2.Engineering Chemistry I", "3.Mathematics I", "4.Engineering Physics I", "5.Communicative English", "6.Physics and Chemistry Lab", "7.Physics and Chemistry Lab"};
+    String[] fecebonethursday = {"1.Mathematics I", "2.Basic Electrical Engineering", "3.Engineering Chemistry I", "4.Basic Electrical Engineering", "5.Engineering Chemistry I", "6.:Library", "7.Seminar I"};
+    String[] fecebonefriday = {"1-Engineering Drawing", "2-Engineering Drawing", "3-Engineering Drawing", "4-Mathematics I", "5-Engineering Physics I", "6-Communicative English", "7-Seminar II"};
 
     //ece b 2nd yr
-    String[] secebonemonday = {"1-Linear integrated circuits", "2-Control systems engineering", "3-Probability and random process", "4-Communication theory", "5-Control system engineering", "6-Electromagnetic fields", "7-Electronic circuits II"};
-    String[] secebonetuesday = {"1-Electronic circuits II", "2-Linear integrated circuits", "3-Commnication theory", "4-Probabiliy and random process", "5-Electromagnetic fields", "6-Electronic circuits II", "7-Control systems engineering"};
-    String[] secebonewednesday = {"1-Probability and random process", "2-Circuits and simulation integration lab/electrical engineering and control system lab", "3-Circuits and simulation integration lab/electrical engineering and control system lab", "4-Circuits and simulation integration lab/electrical engineering and control system lab", "5-Linear integrated circuits", "6-Communication theory", "7-Electromagnetic fields(t)"};
-    String[] secebonethursday = {"1-Control system engineering", "2-Probability and random process", "3-Linear integrated circuits", "4-Electromagnetci fields", "5-Circuits and simulation integrated lab/Linear integrated circuit lab", "6-Circuits and simulation integrated lab/Linear integrated circuit lab", "7-Circuits and simulation integrated lab/Linear integrated circuit lab"};
-    String[] secebonefriday = {"1-Communication theory", "2-Electromagnetic fields", "3-Electronic circuits II", "4-Probability and random process", "5-Linear integrated circuit lab/Electrical engineering and control system lab", "6-Linear integrated circuit lab/Electrical engineering and control system lab", "7-Linear integrated circuit lab/Electrical engineering and control system lab"};
+    String[] secebonemonday = {"1-Electrical Engineering and Instrumentation", "2-Digital Electronic Laboratory/Analog Circuits laboratory", "3-Digital Electronic Laboratory/Analog Circuits laboratory", "4-Digital Electronic LAboratory/Analog Circuits laboratory", "5-Electromagnetic Fields", "6-Programming and Data Structures", "7-Electronic Circuits- I"};
+    String[] secebonetuesday = {"1-Electronic Circuits -I", "2-Digital Electronic Laboratory/Programming and Data Structures Lab", "3-Digital Electronic Laboratory/Programming and Data Structures Lab", "4-Digital Electronic Laboratory/Programming and Data Structures Lab", "5-Digital Electronics", "6-Electrical Engineering and Instrumentation", "7-Mathematics -III"};
+    String[] secebonewednesday = {"1-Programming and Data Structures", "2-Mathematics III", "3-Digital Electronics", "4-Electronic Circuits I", "5-Electrical Engineering and Instrumentation", "6-Mathematics III", "7-Electromagnetic Fields"};
+    String[] secebonethursday = {"1-Electromagnetic Fields", "2-Digital Electronics", "3-Programming and Data Structures", "4-Mathematics III", "5-Electromagnetic field", "6-Electronic Circuits -I", "7-Programming and Data Structures"};
+    String[] secebonefriday = {"1-Mathematics -III", "2-Electrical Engineering and Instrumentation", "3-Digital Electronics", "4-Electromagnetic Fields(T)/ Library", "5- Analog Circuits lab/Programming and Data Structures lab", "6-Analog Circuits lab/Programming and Data Structures lab", "7- Analog Circuits lab/Programming and Data Structures lab"};
 
     //ece b 3rd yr
-    String[] tecebonemonday = {"1-Medical electronics(elective I)", "2-computer architecture", "3-Copmuter networks", "4-VLSI Design", "5-Computer architecture", "6-Antenna and wave propagation", "7-Principles of management"};
-    String[] tecebonetuesday = {"1-Antenna and wave propagation", "2-Computer networks lab/VLSI design lab", "3-Computer networks lab/VLSI design lab", "4-Computer networks lab/VLSI design lab", "5-Computer networks", "6-VLSI Design", "7-Medical electronics(elective I)"};
-    String[] tecebonewednesday = {"1-VLSI Design", "2-Computer networks", "3-Medical electronics (elective I)", "4-Antenna and wave propagation", "5-Principles of management", "6-Commmunication and soft skills lab", "7-Commmunication and soft skills lab"};
-    String[] tecebonethursday = {"1-Cmputer Architecture", "2-Antenna and wave propagation", "3-Computer architecture", "4-Medical electronics(elective I)", "5-Library", "6-Computer networks lab/VLSI Design lab", "6-Commmunication and soft skills lab", "7-Commmunication and soft skills lab"};
-    String[] tecebonefriday = {"1-Computer Architecture", "2-Antenna and wave propagation", "3-Principles of management", "4-Computer networks", "5-Computer networks lab/VLSI Design lab", "6-Computer networks lab/VLSI Design lab", "7-Computer networks lab/VLSI Design lab"};
+    String[] tecebonemonday = {"1-Environmental Science and Engineering", "2-Principles of Digital Signal Processing", "3-Microprocessor and Microcontroller", "4-Transmission Lines and Waveguides", "5-Medical Electronics/ Robotics and Automation(Elective-I)", "6-Digital Communication", "7-Environmental Science and Engineering)"};
+    String[] tecebonetuesday = {"1-Transmission Lines and Waveguides", "2-Medical Electronics/ Robotics and Automation(Elective-I)", "3-Digital Communication", "4-Microprocessor and Microcontroller", "5-Communication System lab/Microprocessor and Microcontroller lab", "6-Communication System lab/Microprocessor and Microcontroller lab", "7-Communication System lab/Microprocessor and Microcontroller lab"};
+    String[] tecebonewednesday = {"1-Medical Electronics/ Robotics and Automation(Elective-I)", "2-Transmission Lines and Waveguides", "3-Principles of Digital Signal Processing", "4-Environmental Science and Engineering", "5-Digital Signal Processing Lab/ Microprocessor Microcontroller Lab", "6-Digital Signal Processing Lab/ Microprocessor Microcontroller Lab", "7-Digital Signal Processing Lab/ Microprocessor Microcontroller Lab"};
+    String[] tecebonethursday = {"1-Principles of Digital Signal Processing", "2-Microprocessor and Microcontroller", "3-Environmental Science and Engineering", "4-Principles of Digital Signal Processing(T)", "5-Transmission Lines and Waveguides(T)/Library","6-Digital Communication", "7-Transmission Lines and Waveguides"};
+    String[] tecebonefriday = {"1-Digital Communication", "2-Communication System lab/Digital Signal Processing lab", "3-Communication System lab/Digital Signal Processing lab", "4-Communication System lab/Digital Signal Processing lab", "5-Microprocessor Microcontroller", "6-Principles of Digital Signal Processing", "7-Medical Electronics/ Robotics and Automation(Elective-I)"};
 
-    //ece b 4th yr
+//ece b 4th yr
 
-    String[] frecebonemonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frecebonetuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frecebonewednesday = {"-wireless communication", "2-Wireless networks", "3-Total quality management", "4-Project", "5-Wireless networks", "6-Project", "7-Professional ethics in engineering"};
-    String[] frecebonethursday = {"1-Total quality management", "2-Wireless communication", "3-Library", "4-Wireless networks", "5-Professional ethics in engineering", "6-Wireless communication", "7-project"};
-    String[] frecebonefriday = {"1-Professional ethics in engineering", "2-Total quality management", "3-wireless networks", "4-Professional ethics in engineering", "5-Wireless communication", "6-Project", "7-Total quality management"};
+    String[] frecebonemonday = {"1-Embedded and Real Time Systems", "2-SEM -I", "3-RF and Microwave Engineering", "4-Optical Communication and Networks", "5-SEM -II", "6-Speech Processing (Elective-III)", "7-Cognitive Radio(Elective-IV)"};
+    String[] frecebonetuesday = {"1-Optical Communication and Networks", "2-Embedded and Real Time Systems", "3-SEM -III", "4-Cognitive Radio (Elective-IV)", "5-RF and Microwave Engineering", "6-Satellite Communication(Elective-I)", "7-Speech Processing (Elective-III)"};
+    String[] frecebonewednesday = {"1-RF and Microwave Engineering", "2-Cognitive Radio (Elective-IV)", "3-Satellite Communication (Elective-II)", "4-Speech Processing (Elective-III)", "5-Embedded lab/Optical and Microwave lab", "6-Embedded lab/Optical and Microwave lab", "7-Embedded lab/Optical and Microwave lab"};
+    String[] frecebonethursday = {"1-Speech Processing (Elective-III)", "2-SEM -IV", "3-Cognitive Radio (Elective-IV)", "4-Library", "5-Embedded and Real Time Systems", "6-Optical Communication and Networks", "7-Satellite Communication(Elective-I)"};
+    String[] frecebonefriday = {"1-Embedded lab/Optical and Microwave lab", "2-Embedded lab/Optical and Microwave lab", "3-Embedded lab/Optical and Microwave lab", "4-Satellite Communication(Elective-I)", "5-Optical Communication and Networks", "6-Embedded and Real Time Systems", "7-RF and Microwave Engineering"};
 
-   //   even sem for ece c section
 
-    //ece c first yr
-    String[] fecectwomonday = {"1-Circuits and devices lab", "2-Circuits and devices lab", "3-Circuits and devices lab", "4-Mathematics II", "5-Circuit theory(Tut)", "6-Electronic device", "7-Engineering physics II"};
+
+    //ece c even
+    // first yr
+    String[] fecectwomonday={"1-Circuits and devices lab","2-Circuits and devices lab","3-Circuits and devices lab","4-Mathematics II","5-Circuit theory(Tut)","6-Electronic device","7-Engineering physics II"};
     String[] fecectwotuesday = {"1-Mathematics II", "2-Engineering chemistry II", "3-Electronic device(Tut)", "4-Engineering physics II", "5-Electronic devices", "6-Mathematics II", "7-Engineering Chemistry II"};
     String[] fecectwowednesday = {"1-Phy and Chem lab II", "2-Phy and Chem lab II", "3-Phy and Chem lab II", "4-Circuit theory", "5-Technical english II", "6-Engineering physics II", "7-Mathematics/Circuit theory(Tut)"};
     String[] fecectwothursday = {"1-Mathematics II", "2-Circuit theory", "3-Electronic device", "4-Engineering chemistry II", "5-Circuit theory", "6-Library", "7-Technical english II"};
     String[] fecectwofriday = {"1-Electronic device", "2-Engineering physics II", "3-Technical english II", "4-Mathematics II", "5-Engineering chemistry II", "6-Technical english II", "7-Circuit theory"};
 
-    // ece 2nd year
+    // ece c 2nd year
 
-    String[] secectwomonday={"1-Electromagnetic fields","2-Linear Integrated circuit lab/Electrical engineering and control lab","3-Linear Integrated circuit lab/Electrical engineering and control lab","4-Linear Integrated circuit lab/Electrical engineering and control lab","5-Probability and random process","6-Communication theory","7-Control System engineering"};
-    String[] secectwotuesday={"1-Linear integrated circuits","2-Electronic circuits II","3-Electromagnetic fields","4-Probability and random process","5-Circuits and simulation integrated lab/Electrical engineering and control lab","6-Circuits and simulation integrated lab/Electrical engineering and control lab","7-Circuits and simulation integrated lab/Electrical engineering and control lab"};
-    String[] secectwowednesday={"1-Communication theory","2-Control system engineering","3-Probability and random process","4-Electromagnetic fields","5-Linear integrated circuits","6-Control system engineering","7-Communication theory"};
-    String[] secectwothursday={"1-Elecrtonic circuits II","2-Circuits and simulation integrated lab/Linear integrated circuit lab","3-Circuits and simulation integrated lab/Linear integrated circuit lab","4-Circuits and simulation integrated lab/Linear integrated circuit lab","5-Electromagnetic fields","6-Control system engineering","7-Communication theory"};
-    String[] secectwofriday={"1-Probability and random process","2-Communication theory","3-Control system engineering","4-Linear integrated circuits","5-Electronic circuits II","6-Electromagnetic fields(T)","7-Probability and random process"};
+    String[] secectwomonday={"1-Signals and Systems","2-Control system engineering","3-Linear Integrated circuits","4-Seminar","5-Control System Engineering","6-Analog Communication Systems ","7-Electronic Circuits-II"};
+    String[] secectwotuesday={"1-Circuits and Simulation Laboratory/Electrical Engineering and Control System Laboratory","2-Circuits and Simulation Laboratory/Electrical Engineering and Control System Laboratory","3-Circuits and Simulation Laboratory/Electrical Engineering and Control System Laboratory","4-Electronic Circuits-II","5-Analog Communication Systems","6-Signals and Systems","7-Probability and Random Process"};
+    String[] secectwowednesday={"1-Elecrtonic circuits II","2-Analog Communication Systems","3-Linear Integrated circuits","4-Signals and Systems","5-PRobability and Random Process","6-Control system engineering","7-Signals and Systems"};
+    String[] secectwothursday={"1-Probability and random process","2-Circuits and simulation integrated lab/Linear integrated circuit lab","3-Circuits and simulation integrated lab/Linear integrated circuit lab","4-Circuits and simulation integrated lab/Linear integrated circuit lab","5-Electronic Circuits-II","6-Linear Integrated Circuits","7-Seminar"};
+    String[] secectwofriday={"1-Analog Communication Systems","2-Probability and random process","3-Signals and Systems","4-Linear integrated circuits","5-Library","6-Probability and random process","7-Control System Engineering"};
 
     //ece c 3rd yr
-    String[] tecectwomonday = {"1-Medical electronics", "2-Antenna and wave propagation", "3-VLSI Design", "4-Computer Architecture", "5-Computer networks", "6-Antenna and wave propagation", "7-Principles of management"};
-    String[] tecectwotuesday = {"1-VLSI Design", "2- Computer networks", "3-Computer Architecture", "4-principles of management", "5-Computer networks lab/VLSI Design lab", "6-Computer networks lab/VLSI Design lab", "7-Computer networks lab/VLSI Design lab"};
-    String[] tecectwowednesday = {"1-Antenna and wave propagation", "2-Medical electronics", "3-Principles of management", "4-VLSI Design", "5-Computer networks lab/VLSI Design lab", "6-Computer networks lab/VLSI Design lab", "7-Computer networks lab/VLSI Design lab"};
-    String[] tecectwothursday = {"1-Principles of management", "2-Computer architecture", "3-Medical electronics", "4-Library", "5-Computer networks", "6-VLSI Design", "7-Antenna and wave propagation"};
-    String[] tecectwofriday = {"1-Communication and soft skills lab", "2-Communication and soft skills lab", "3-Communication and soft skills lab", "4-Communication and soft skills lab", "5-Computer architecture", "6-Computer networks", "7-Medical electronics"};
+    String[] tecectwomonday = {"1-Computer Architecture", "2-Computer Networks", "3-Medical Electronics(Elective-I)", "4-VLSI Design", "5-Computer Srchitecture", "6-Library", "7-Principles of management"};
+    String[] tecectwotuesday = {"1-Medical Electronics(Elective-I)", "2- VLSI Design", "3-Antenna and Wave Propagation", "4-Computer Networks", "5-Computer networks lab/VLSI Design lab", "6-Computer networks lab/VLSI Design lab", "7-Computer networks lab/VLSI Design lab"};
+    String[] tecectwowednesday = {"1-VLSI Design", "2-Principles of Management", "3-Computer Networks", "4-Antenna and Wave Propagation", "5-Medical Electronics(Elective-I)", "6-Communication and soft skills lab", "7-Communication and soft skills lab"};
+    String[] tecectwothursday = {"1-Principles of management", "2-Antenna and Wave Propagation", "3-Computer Architecture", "4-Medical Electronics(Elective-I)", "5-Computer networks", "6-Communication and soft skills lab", "7-Communication and soft skills lab"};
+    String[] tecectwofriday = {"1-Antenna and Wave Propagation", "2-Computer networks lab/VLSI Design lab", "3-Computer networks lab/VLSI Design lab", "4-Computer networks lab/VLSI Design lab", "5-Principles of management", "6-Computer Architecture", "7-VLSI Design"};
 
     //ece c 4th yr
     String[] frecectwomonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frecectwotuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frecectwowednesday = {"1-Total quality management", "2-Wireless communication", "3-Professional ethics in engineering", "4-Wireless networks", "5-Total quality management", "6-Wireless networks", "7-Wireless communication"};
-    String[] frecectwothursday = {"1-Wireless networks", "2-Project", "3-Total quality management", "4-Professional ethics in engineering", "5-project", "6-Wireless networks", "7-Wireless communication"};
-    String[] frecectwofriday = {"1-Wireless communication", "2-Professional ethics in engineering", "3-Library", "4-Wireless communication", "5-Wireless networks", "6-Total quality management", "7-project"};
+    String[] frecectwowednesday = {"1-Wireless Networks", "2-Professional ethics in engineering(Elective-V)", "3-Cryptography and Network Security/Total Quality Managment/Entrepreneurship Development(Elective-VI)", "4-Wireless Communication", "5-Library", "6-Pofessional Ethics in Engineering(Elective-V)", "7-Project"};
+    String[] frecectwothursday = {"1-Cryptography and Network Security/Total Quality Managment/Entrepreneurship Development(Elective-VI)", "2-Wireless Networks", "3-Wireless Communication", "4-Project", "5-Professional ethics in engineering(Elective-V)", "6-Cryptography and Network Security/Total Quality Managment/Entrepreneurship Development(Elective-VI)", "7-Wireless Networks"};
+    String[] frecectwofriday = {"1-Wireless Communication", "2-Professional ethics in engineering(Elective-V)", "3-Project", "4-Wireless Networks", "5-Cryptography and Network Security/Total Quality Managment/Entrepreneurship Development(Elective-VI)", "6-Project", "7-Wireless Communication"};
 
-    // odd sem for second,third and fourth year ece c section
+    //ece c odd sem
+    //ece c 1st yr
+    String[] fececonemonday = {"1.Engineering Drawing", "2.Engineering Drawing", "3.Engineering Drawing", "4.Engineering Chemistry I", "5. Engineering Physics I", "6.Technical English 1", "7..Mathematics 1"};
+    String[] fececonetuesday = {"1.Engineering Physics I", "2.Mathematics 1", "3.Seminar I", "4.Basic Electrical Engineering", "5.Engineering Drawing", "6.Engineering Drawing", "7.Engineering Drawing"};
+    String[] fececonewednesday = {"1.Communicative English", "2.Engineering Physics I", "3.Engineering Chemistry I", "4.Mathematics I", "5.Communicative English", "6.Basic Electrical Engineering", "7.Seminar 2","8.Sports"};
+    String[] fececonethursday = {"1.Mathematics 1", "2.Engineering Chemistry", "3.Basic Electrical Engineering", "4.Engineering Physics", "5.Engineering Practices Laboratory", "6.Engineering Practices Laboratory", "7.Engineering Practices Laboratory"};
+    String[] fececonefriday = {"1.Basic Electrical Engineering", "2.Physics and Chemistry Laboratory", "3.Physics and Chemistry Laboratory", "4.Mathematics I", "5.Engineering Chemistry", "6.Communiactive English", "7.Library"};
 
-    // ece 2nd year
-
-    String[] sececonemonday={""};
-    String[] sececonetuesday={""};
-    String[] sececonewednesday={""};
-    String[] sececonethursday={""};
-    String[] sececonefriday={""};
+    // ece c 2nd yr
+    String[] sececonemonday = {"1-Electromagnetic Fields", "2-Programming and Data Structures", "3-Electrical Engineering and Instrumentation", "4-Electromagnetic Fields(T)/ Library", "5-Mathematics III", "6-Digital Electronics", "7-Electronic Circuits I"};
+    String[] sececonetuesday = {"1-Electrical Engineering and Instrumentation", "2-Digital Electronics lab/Analog Circuits lab", "3-Digital Electronics lab/Analog Circuits lab", "4-Digital Electronics lab/Analog Circuits lab", "5-Electromagnetic Fields", "6-Electronic Circuits -I", "7-Programming and Data Structures"};
+    String[] sececonewednesday = {"1-Electronic Circuits I", "2-Electromagnetic Fields", "3-Digital Electronics", "4-Mathematics III", "5-Analog Circuits lab/Programming and Data Structures", "6-Analog Circuits lab/Programming and Data Structures", "7-Analog Circuits lab/Programming and Data Structures"};
+    String[] sececonethursday = {"1-Programming and Data Structures", "2-Digital Electronics", "3-Mathematics III", "4-Electrical Engineering and Instrumentation", "5-Digital Electronics lab/Programming and Data Structures Lab", "6-Digital Electronics lab/Programming and Data Structures Lab", "7-Digital Electronics lab/Programming and Data Structures Lab"};
+    String[] sececonefriday = {"1-Mathematics -III", "2-Electronic Circuits I", "3-Electromagnetic Fields", "4-Programming and Data Structures", "5-Digital Electronics", "6-Mathematics III", "7-Electrical Engineering and Instrumentation"};
 
     //ece c 3rd yr
-    String[] tececonemonday = {"1-Medical electronics", "2-Antenna and wave propagation", "3-VLSI Design", "4-Computer Architecture", "5-Computer networks", "6-Antenna and wave propagation", "7-Principles of management"};
-    String[] tececonetuesday = {"1-VLSI Design", "2- Computer networks", "3-Computer Architecture", "4-principles of management", "5-Computer networks lab/VLSI Design lab", "6-Computer networks lab/VLSI Design lab", "7-Computer networks lab/VLSI Design lab"};
-    String[] tececonewednesday = {"1-Antenna and wave propagation", "2-Medical electronics", "3-Principles of management", "4-VLSI Design", "5-Computer networks lab/VLSI Design lab", "6-Computer networks lab/VLSI Design lab", "7-Computer networks lab/VLSI Design lab"};
-    String[] tececonethursday = {"1-Principles of management", "2-Computer architecture", "3-Medical electronics", "4-Library", "5-Computer networks", "6-VLSI Design", "7-Antenna and wave propagation"};
-    String[] tececonefriday = {"1-Communication and soft skills lab", "2-Communication and soft skills lab", "3-Communication and soft skills lab", "4-Communication and soft skills lab", "5-Computer architecture", "6-Computer networks", "7-Medical electronics"};
+    String[] tececonemonday = {"1-Digital Communication", "2-Transmission Lines and Waveguides", "3-Medical Electronics (E-I)", "4-Microprocessor and Microcontroller", "5-Communication System lab/Microprocessor and Microcontroller lab", "6-Communication System lab/Microprocessor and Microcontroller lab", "7-Communication System lab/Microprocessor and Microcontroller lab"};
+    String[] tececonetuesday = {"1-Environmental Science and Engineering", "2-Transmission Lines and Waveguides(T)/Library", "3-Microprocessor and Microcontroller", "4-Digital Communication", "5-Principles of Digital Signal Processing", "6-Transmission Lines and Waveguides", "7-Environmental Science and Engineering"};
+    String[] tececonewednesday = {"1-Principles of Digital Signal Processing", "2-Medical Electronics (E-I)", "3-Transmission Lines and Waveguides", "4-Environmental Science and Engineering", "5-Digital Communication", "6-Principles of Digital Signal Processing(T)", "7-Microprocessor and Microcontroller"};
+    String[] tececonethursday = {"1-Medical Electronics (E-I)", "2-Digital Signal Processing lab/Communication System lab", "3-Digital Signal Processing lab/Communication System lab", "4-Digital Signal Processing lab/Communication System lab", "5-Environmental Science and Engineering", "6-Principles of Digital Signal Processing", "7-Transmission Lines and Waveguides (Tutorial)"};
+    String[] tececonefriday = {"1-Microprocessor and Microcontroller", "2-Digital Communication", "3-Principles of Digital Signal Processing", "4-Medical Electronics (E-I)", "5-Digital Signal Processing lab/Microprocessor and Microcontroller lab", "6-Digital Signal Processing lab/Microprocessor and Microcontroller lab", "7-Digital Signal Processing lab/Microprocessor and Microcontroller lab"};
 
     //ece c 4th yr
-    String[] frececonemonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frececonetuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frececonewednesday = {"1-Total quality management", "2-Wireless communication", "3-Professional ethics in engineering", "4-Wireless networks", "5-Total quality management", "6-Wireless networks", "7-Wireless communication"};
-    String[] frececonethursday = {"1-Wireless networks", "2-Project", "3-Total quality management", "4-Professional ethics in engineering", "5-project", "6-Wireless networks", "7-Wireless communication"};
-    String[] frececonefriday = {"1-Wireless communication", "2-Professional ethics in engineering", "3-Library", "4-Wireless communication", "5-Wireless networks", "6-Total quality management", "7-project"};
+    String[] frececonemonday = {"1-Advanced Computer Architecture(E-III)", "2-Satellite Communication/Digital Image Processing(E-II)", "3-RF and Microwave Engineering", "4-SEM -I", "5-Advanced Microprocessors and Microcontrollers (E-IV)", "6-Embedded and Real Time Systems", "7-SEM -II"};
+    String[] frececonetuesday = {"1-Optical Communication and Networks", "2-Advanced Microprocessors and Microcontrollers (E-IV)", "3-Advanced Computer Architecture(E-III)", "4-Satellite Communication/Digital Image Processing(E-II)", "5-RF and Microwave Engineering", "6-Library", "7-Embedded and Real Time Systems"};
+    String[] frececonewednesday = {"1-Advanced Microprocessors and Microcontrollers (E-IV)", "2-Embedded and Real Time Systems", "3-SEM -III", "4-Advanced Computer Architecture(E-III)", "5-SEM -IV", "6-RF and Microwave Engineering", "7-Optical Communication and Networks"};
+    String[] frececonethursday = {"1-Embedded Lab/ Optical and Microwave Lab", "2-Embedded Lab/ Optical and Microwave Lab", "3-Embedded Lab/ Optical and Microwave Lab", "4-Advanced Computer Architecture", "5-Library", "6-Embedded and Real Time Systems", "7-SEM 3"};
+    String[] frececonefriday = {"1-Satellite Communication/Digital Image Processing(E-II)", "2-RF and Microwave Engineering", "3-Optical Communication and Networks", "4-Embedded and Real Time Systems", "5-Embedded Lab/ Optical and Microwave Lab", "6-Embedded Lab/ Optical and Microwave Lab", "7-Embedded Lab/ Optical and Microwave Lab"};
 
     //even sem eee a full
 
@@ -741,44 +732,54 @@ public class ttperiod extends Activity {
     String[] feeeatwothursday = {"1-Phy and Chem lab II", "2-Phy and Chem lab II", "3-Phy and Chem lab II", "4-Mathematics II", "5-Circuit theory", "6-Engineering physics II", "7-Technical english II"};
     String[] feeeatwofriday = {"1-Circuit theory ", "2-technial English II", "3-Mathematics II", "4-Engineering chemistry II", "5-Engineering physics II", "6-Basic ME", "7-Circuit theory"};
 
-    String[] seeeatwomonday = {"1-Electrical methods I", "2-Numerical methods", "3-Transmissions and distribution", "4-Object oriented programming", "5-Oops lab/EM I lab", "6-Oops lab/EM I lab", "7-Oops lab/EM I lab"};
-    String[] seeeatwotuesday = {"1-Object oriented programming", "2-Discrete time systems and Signal processing", "3-Electrical machines I", "4-Measurements and Instrumentation", "5-Library", "6-Numerical methods", "7-Transmissions and distributions"};
-    String[] seeeatwowednesday = {"1-Discrete time systems and Signal processing", "2-Measurements and instrumentation", "3-Numerical methods", "4-Transmissions and distributions", "5-Electrical methods I", "6-Object oriented programming", "7-Discrete time systems and Signal processing(Tut)"};
-    String[] seeeatwothursday = {"1-Numerical methods", "2-Electrical machines I", "3-Measurements and instrumentation", "4-Discrete time systems and Signal processing", "5-EM I lab/Oops Lab", "6-EM I lab/Oops Lab", "7-EM I lab/Oops Lab"};
-    String[] seeeatwofriday = {"1-Transmissions and distributions", "2-Object oriented programming", "3-Discrete time systems and signal processing", "4-Electrical machines I", "5-Numerical methods", "6-Measurements and Instrumentation", "7-Seminar"};
-
-    String[] teeeatwomonday = {"1-Communication engineering", "2-Solid state drives", "3-Embedded systems", "4-Design of electrical machines", "5-PED lab/uP and uC lab", "6-PED lab/uP and uC lab", "7-PED lab/uP and uC lab"};
-    String[] teeeatwotuesday = {"1-Design of electrical machines", "2-Power system operation and control", "3-Communcation engineering", "4-Solid state drives", "'5-Visual language and its applications", "6-Embedded systems", "7-Library"};
-    String[] teeeatwowednesday = {"1-Solid state drives", "2-Visual language and its applications", "3-Power systems operation and control", "4-Embedded systems", "5-Solid state drives", "6-Power systems operation and control", "7-Communication engineering"};
-    String[] teeeatwothursday = {"1-embedded systems", "2-Design of electrical methods", "3-Visual language and its applications", "4-design of electrical methods", "5-PED lab/uP and uC lab", "6-PED lab/uP and uC lab", "7-PED lab/uP and uC lab"};
-    String[] teeeatwofriday = {"1-Power systems operation and control", "2-Solid state drives", "3-Communication engineering", "4-design of electrical methods", "5-PSTS SAM", "6-PSTS KS", "7-PSTS KS"};
-
-    String[] freeeatwomonday = {"1-Power electronics for renewable energy systems", "2-Professional ethics in engineering", "3-Electric energy generation,utilization and conservation", "4-Professional ethics in engineering", "5-Electric energy generation,utilization and conservation", "6-Power electronics for renewable energy systems", "7-Library VMR"};
-    String[] freeeatwotuesday = {"1-Electric energy generation,utilization and conservation", "2-Power electronics for renewable energy systems", "3-Professional ethics in engineering", "4-Power electronics for renewable energy systems", "5-Electric energy generation,utilization and conservation", "6-Seminar STM", "7-Professional ethics in engineering"};
+    //eee a 2nd
+    String[] seeeatwomonday = {"1-Digital Logic Circuits", "2-Electrical Machines-II Lab/Digital and Analog Circuits Lab", "3-Electrical Machines-II Lab/Digital and Analog Circuits Lab", "4-Electrical Machines-II Lab/Digital and Analog Circuits Lab", "5-Analog Circuits", "6-Control Systems", "7-Computational Methods"};
+    String[] seeeatwotuesday = {"1-Electrical Machines-II", "2-Electric Power System", "3-Computational Methods", "4-Control Systems", "5-Control Systems and Instrumentation Lab/Electricl Machines-II Lab", "6-Control Systems and Instrumentation Lab/Electricl Machines-II Lab", "7-Control Systems and Instrumentation Lab/Electricl Machines-II Lab"};
+    String[] seeeatwowednesday = {"1-Computational Methods", "2-Electrical Machines-II", "3-Analog Circuits", "4-Control Systems", "5-Analog Circuits", "6-Digital Logic Ciruits ", "7-Electrical Machines-II"};
+    String[] seeeatwothursday = {"1-Electric Power System", "2-Computational Methods", "3-Digital Logic Circuits", "4-Electrical Machines-II", "5-Digital and Analog Circuits LAb/Control Systems and Instrumentaion Lab", "6-Digital and Analog Circuits LAb/Control Systems and Instrumentaion Lab", "7-Digital and Analog Circuits LAb/Control Systems and Instrumentaion Lab"};
+    String[] seeeatwofriday = {"1-Control Systems", "2-Analog Circuits", "3-Electric Power System", "4-Digital Logic Circuits", "5-Control Systems", "6-Computational Methods", "7-Electric Power System"};
+    //eee a 3rd
+    String[] teeeatwomonday = {"1-Communication engineering", "2-Power system operation and control", "3-Communication engineering", "4-Adavanced Control System(e)/Optimisation Techniques(E)", "5-PED lab/uP and uC lab", "6-PED lab/uP and uC lab", "7-PED lab/uP and uC lab"};
+    String[] teeeatwotuesday = {"1-Design of electrical machines", "2-Communication engineering", "3-Solid State Drives", "4-Embedded systems", "'5-PSTS MM", "6-PSTS GVK", "7-PSTS RKD"};
+    String[] teeeatwowednesday = {"1-Embedded systems", "2-Design of electrical machines", "3-Communication engineering", "4-Power systems operation and control", "5-Adavanced Control System(e)/Optimisation Techniques(E)", "6-Solid State Drives", "7-Design of Electrical Machines"};
+    String[] teeeatwothursday = {"1-Power systems operation and control", "2-PED lab/uP and uC lab", "3-PED lab/uP and uC lab", "4-PED lab/uP and uC lab", "5-Solid State Drives", "6-Design of Electrical Machines", "7-Power systems operation and control"};
+    String[] teeeatwofriday = {"1-Adavanced Control System(e)/Optimisation Techniques(E)", "2-Embedded systems", "3-Design of Electrical Machines", "4-LIB VMR", "5-Adavanced Control System(e)/Optimisation Techniques(E)", "6-Communication Engineering", "7-Embedded Systems"};
+    //eee a 4th
+    String[] freeeatwomonday = {"1-Electric energy generation,utilization and conservation", "2-Power electronics for renewable energy systems", "3-Professional ethics in engineering", "4-Power electronics for renewable energy systems", "5-Professional ethics in engineering", "6-LIB CK", "7-Electric energy generation,utilization and conservation"};
+    String[] freeeatwotuesday = {"1-Professional Ethics in Engineering", "2-Electric energy generation,utilization and conservation", "3-Power electronics for renewable energy systems", "4-Electric energy generation,utilization and conservation", "5-Power electronics for renewable energy systems", "6-Professional ethics in engineering", "7-SEM TA"};
     String[] freeeatwowednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] freeeatwothursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] freeeatwofriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
 
-    // second,third and fourth year odd sem eee a section
 
 
-    String[] seeeaonemonday = {"1-Electrical methods I", "2-Numerical methods", "3-Transmissions and distribution", "4-Object oriented programming", "5-Oops lab/EM I lab", "6-Oops lab/EM I lab", "7-v"};
-    String[] seeeaonetuesday = {"1-Object oriented programming", "2-Discrete time systems and Signal processing", "3-Electrical methods I", "4-Measuments and Instrumentation", "5-Library", "6-Numerical methods", "7-Transmissions and distributions"};
-    String[] seeeaonewednesday = {"1-Discrete time systems and Signal processing", "2-Measurements and instrumentation", "3-Numerical methods", "4-Transmissions and distributions", "5-Electrical methods I", "6-Object oriented programming", "7-Discrete time systems and Signal processing(Tut)"};
-    String[] seeeaonethursday = {"1-Numerical methods", "2-Electrical methods", "3-Measurements and instrumentation", "4-Discrete time systems and Signal processing", "5-EM I lab/Oops Lab", "6-EM I lab/Oops Lab", "7-EM I lab/Oops Lab"};
-    String[] seeeaonefriday = {"1-Transmissions and distributions", "2-Object oriented programming", "3-Discrete time systems and signal processing", "4-Electrical methods I", "5-Numerical methods", "6-Measurements and Instrumentation", "7-Seminar"};
+    //eee-a odd sem
 
-    String[] teeeaonemonday = {"1-Communication engineering", "2-Solid state drives", "3-Embedded systems", "4-Design of electrical machines", "5-PED lab/uP and uC lab", "6-PED lab/uP and uC lab", "7-PED lab/uP and uC lab"};
-    String[] teeeaonetuesday = {"1-Design of electrical machines", "2-Power system operation and control", "3-Communcation engineering", "4-Solid state drives", "'5-Visual language and its applications", "6-Embedded systems", "7-Library"};
-    String[] teeeaonewednesday = {"1-Solid state drives", "2-Visual language and its applications", "3-Power systems operation and control", "4-Embedded systems", "5-Solid state drives", "6-Power systems operation and control", "7-Communication engineering"};
-    String[] teeeaonethursday = {"1-embedded systems", "2-Design of electrical methods", "3-Visual language and its applications", "4-design of electrical methods", "5-Solid state drives", "6-Power system operation and control", "7-Communication engineering"};
-    String[] teeeaonefriday = {"1-Power systems operation and control", "2-Solid state drives", "3-Communication engineering", "4-design of electrical methods", "5-PSTS SAM", "6-PSTS KS", "7-PSTS KS"};
 
-    String[] freeeaonemonday = {"1-Power electronics for renewable energy systems", "2-Professional ethics in engineering", "3-Electric energy generation,utilization and conservation", "4-Professional ethics in engineering", "5-Electric energy generation,utilization and conservation", "6-Power electronics for renewable energy systems", "7-Library VMR"};
-    String[] freeeaonetuesday = {"1-Electric energy generation,utilization and conservation", "2-Power electronics for renewable energy systems", "3-Professional ethics in engineering", "4-Power electronics for renewable energy systems", "5-Electric energy generation,utilization and conservation", "6-Seminar STM", "7-Professional ethics in engineering"};
-    String[] freeeaonewednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] freeeaonethursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] freeeaonefriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
+    String[] feeeaonemonday = {"1-Engineering Mathematics I", "2-Basic Civil Engineering", "3-Basic Mechanical Engineering", "4-Engineering Chemistry I", "5-Engineering Chemistry I", "6-Engineering Physics I","7-Engineering Mathematics I"};
+    String[] feeeaonetuesday = {"1-Programming for problem solving", "2-Basic Civil Engineering", "3-Engineering Physics I", "4-Mathematics I", "5-Programming for problem solving", "6-Engineering Chemistry I", "7-Seminar I"};
+    String[] feeeaonewednesday = {"1-Engineering Practices Lab", "2-Engineering Practices Lab", "3-Engineering Practices Lab", "4-Library", "5-Engineering Physics", "6-Communicative English", "7-Seminar II"};
+    String[] feeeaonethursday = {"1-Engineering Chemistry I", "2-Programming for problem solving", "3-Engineering Mathematics I", "4-Commmunicative English", "5-Programming for problem solving Lab", "6-Programming for problem solving La", "7-Programming for problem solving La","8-Sports"};
+    String[] feeeaonefriday = {"1-Communicative English", "2-Engineering Chemistry", "3-Programming for problem solving", "4-Engineering Chemistry I", "5-Mathematics I", "6-Basic Mechanical Engineering", "7-Seminar III"};
+
+
+    String[] seeeaonemonday = {"1-Mathematics III", "2-Electrical Machines I", "3-Electron Devices and Circuits", "4-Programming and Data Structures", "5-Electron Devices and Circuits lab/Electrical Machines I lab", "6-Electron Devices and Circuits lab/Electrical Machines I lab", "7-Electron Devices and Circuits lab/Electrical Machines I lab"};
+    String[] seeeaonetuesday = {"1-Electrical Machines I", "2-Measurements and Instrumentation", "3-Mathematics III", "4-Electrical Machines I", "5-Electromagnetic Theory", "6-Mathematics III", "7-Programming and Data Structures"};
+    String[] seeeaonewednesday = {"1-Programming and Data Structures", "2-Electronic Devices and Circuits Lab/Programming and Data Structures Lab", "3-Electronic Devices and Circuits Lab/Programming and Data Structures Lab", "4-Electronic Devices and Circuits Lab/Programming and Data Structures Lab", "5-Electromagnetic Theory", "6-Electrical Machines -I", "7-Electron Devices and Circuits"};
+    String[] seeeaonethursday = {"1-Electron Devices and Circuits", "2-Mathematics III", "3-Electromagnetic Theory", "4-Measurements and Instrumentation", "5-Electrical Machines I lab/Programming and Data Structures Lab", "6-Electrical Machines I lab/Programming and Data Structures Lab", "7-Electrical Machines I lab/Programming and Data Structures Lab"};
+    String[] seeeaonefriday = {"1-Measurements and Instrumentation", "2-Programming and Data Structures", "3-Electromagnetic Theory", "4-Electron Devices and Circuits", "5-Electrical Machines I", "6-Mathematics III", "7-Measurements and Instrumentation"};
+
+    String[] teeeaonemonday = {"1-Power System Analysis", "2-Environmental Scence and Engineering", "3-Power Electronics", "4-Power Plant Engineering", "5-Design of Electrical Apparatus", "6-Microprocessors and Microcontrollers", "7-SEMINAR"};
+    String[] teeeaonetuesday = {"1-Microprocessors and Microcontrollers", "2-Power Electronics lab/Microprocessors and Microcontrollers Lab", "3-Power Electronics lab/Microprocessors and Microcontrollers Lab", "4-Power Electronics lab/Microprocessors and Microcontrollers Lab", "'5-Power Electronics ", "6-Power system Analysis", "7-Power Plant Engineeering"};
+    String[] teeeaonewednesday = {"1-Power Plant Engineering ", "2-Power System Analysis", "3-Environmental Science and Engineering", "4-Power Electronics", "5-Microprocessors and Microcontrollers", "6-Design of Electrical Apparatus", "7-Power Plant Engineering"};
+    String[] teeeaonethursday = {"1-Power Electronics", "2-Environmental Science and Engineering", "3-Power Plant Engineering", "4-Design of Electrical Apparatus", "5-Microprocessor and Microcontroller Lab/Power Electronice Lab", "6-Microprocessor and Microcontroller Lab/Power Electronice Lab", "7-Microprocessor and Microcontroller Lab/Power Electronice Lab"};
+    String[] teeeaonefriday = {"1-Design of Electrical Apparatus", "2-Power Electronics", "3-Design of Electrical Apparatus", "4-Microprocessors and Microcontrollers", "5-Environmental Science and Engineering", "6-Power System Analysis", "7-SEMINAR"};
+
+    String[] freeeaonemonday = {"1-High Voltage Engineering", "2-Principles of Management", "3-Protection & Switchgear", "4-High Voltage Engineering", "5-Power System Simulation lab/Comprehension", "6-Power System Simulation lab/Comprehension", "7-Power System Simulation lab/Comprehension"};
+    String[] freeeaonetuesday = {"1-Special Electrical Machines", "2-Bio-Medical Instrumentation", "3-Fundamentals of Nanoscience", "4-Protection & Switchgear", "5-Principles of Management", "6-High Voltage Engineering", "7-Library DA"};
+    String[] freeeaonewednesday = {"1-Protection & Switchgear", "2-Bio-Medical Instrumentation", "3-Fundamentals of Nanoscience", "4-Special Electrical Machines", "5-Power System Simulation lab/Comprehension", "6-Power System Simulation lab/Comprehension", "7-Power System Simulation lab/Comprehension"};
+    String[] freeeaonethursday = {"1-High Voltage Engineering", "2-Special Electrical Machines", "3-Principles of Management", "4-Bio-Medical Instrumentation", "5-Protection & Switchgear", "6-Fundamentals of Nanoscience", "7-SEMINAR CGN"};
+    String[] freeeaonefriday = {"1-Principles of Management", "2-Bio-Medical Instrumentation", "3-High Voltage Engineering", "4-Special Electrical Machines", "5-SST GVK", "6-SST CK", "7-SST KS"};
 
 
     //even sem eee b section full
@@ -788,94 +789,114 @@ public class ttperiod extends Activity {
     String[] feeebtwothursday = {"1-Technical english II", "2-Basic ME", "3-Circuit theory", "4-Mathematics II", "5-Electronics circuit lab", "6-Electronics circuit lab", "7-Electronics circuit lab"};
     String[] feeebtwofriday = {"1-Basic CE", "2-Mathematics II", "3-Engineering physics II", "4-Basic ME", "5-Circuit theory", "6-Engineering chemistry II", "7-Technical english II"};
 
-    String[] seeebtwomonday = {"1-Transmission and distribution", "2-Dicrete time systems and signal processing", "3-Measurement and instrumentation", "4-Numericsl methods", "5-Library SSM", "6-Transmission and distribution", "7-Electrical machines I"};
-    String[] seeebtwotuesday = {"1-Object oriented programming", "2-transmission and distributions", "3-Electrical machines I", "4-Measurements and Instrumentation", "5-OOPS LAB/EM I LAB", "'6-OOPS LAB/EM I LAB", "7-OOPS LAB/EM I LAB"};
-    String[] seeebtwowednesday = {"1-Numerical methods", "2-Object oriented programming", "3-Electrical machines I", "4-Dicrete time systems and signal processing", "5-Numerical methods", "6-Object oriented programming", "7-Seminar DA"};
-    String[] seeebtwothursday = {"1-Discrete time system and signal processing", "2-EM I LAB/OOPS LAB", "3-EM I LAB/OOPS LAB", "4-EM I LAB/OOPS LAB", "5-Electrical machines I", "6-Measuremetns and instrumentation", "7-Numerical methods"};
-    String[] seeebtwofriday = {"1-Electrical machines I", "2-Measurements and instrumentation", "3-Numerical methods", "4-Transmissions and distributions", "5-object oriented  programming", "6-Discrete time system and signal processing", "7-Discrete time signal and processing(Tut)"};
+    String[] seeebtwomonday = {"1-Electric Power System", "2-Analog Circuits", "3-Control Systems", "4-Computational Methods", "5-Electrical Machines-II Lab/Control Systes and Instrumentation Lab", "6-Electrical Machines-II Lab/Control Systes and Instrumentation Lab", "7-Electrical Machines-II Lab/Control Systes and Instrumentation Lab"};
+    String[] seeebtwotuesday = {"1-Computational Methods", "2-Electric Power System", "3-Analog Circuits", "4-Electrical machines-II", "5-Digital Logic Circuits", "'6-Compuataional Methods", "7-Electric Power System"};
+    String[] seeebtwowednesday = {"1-Digital Logic Circuits", "2-Control System and Instrumentation Lab/Digital and Analog Circuits Lab", "3-Control System and Instrumentation Lab/Digital and Analog Circuits Lab", "4-Control System and Instrumentation Lab/Digital and Analog Circuits Lab", "5-Computational Methods", "6-Digital Logic Circuits", "7-Control Systems"};
+    String[] seeebtwothursday = {"1-Control Systems", "2-Electrical Machines-II", "3-Computational Methods", "4-Control Systems", "5-Analog Circuits", "6-Electric Power System", "7-Electric Machines-II"};
+    String[] seeebtwofriday = {"1-Electrical Machines-II", "2-Control Systems", "3-Digital Logic Circuits", "4-Control Systems", "5-Digital and Analog Circuits LAb/Electrical Machines-II Lab", "6-Digital and Analog Circuits LAb/Electrical Machines-II Lab", "7-Digital and Analog Circuits LAb/Electrical Machines-II Lab"};
 
-    String[] teeebtwomonday = {"1-Design of electrical machines", "2-Commnication engineering", "3-Embedded systems", "4-Optimization technique", "5-Power system operation and control", "6-Solid state design", "7-design of electrical machine"};
-    String[] teeebtwotuesday = {"1-Solid state design", "2-Embedded systems", "3-Optimization technique", "4-Power system optimization and control", "5-PED LAB/uP AND uC LAB", "6-PED LAB/uP AND uC LAB", "7-PED LAB/uP AND uC LAB"};
-    String[] teeebtwowednesday = {"1-Optimization technique", "2-Power system operation and control", "3-Design of electrical machine", "4-Library STM", "5-Solid state design", "6-Communication engineering", "7-Embedded systems"};
-    String[] teeebtwothursday = {"1-Power system operation and control", "2-Design of electrical methods", "3-Communication engineering", "4-Embedded systems", "5-PSTS ASK", "6-PSTS ASK", "7-PSTS GSK"};
-    String[] teeebtwofriday = {"1-Communication engineering", "2-Optimization methods", "3-Solid state drives", "4-Design of electrical machine", "5-uP AND uC LAB/PED LAB", "6-uP AND uC LAB/PED LAB", "7-uP AND uC LAB/PED LAB"};
+    String[] teeebtwomonday = {"1-Embedded Systems", "2-Design of Electrical Machines", "3-Power system operation and control", "4-Advanced Control System(E)/Optimization technique(E)", "5-PSTS STM", "6-PSTS GVK", "7-PSTS RKD"};
+    String[] teeebtwotuesday = {"1-Design of Electrical Machines", "2-Power system operation and control", "3-Solid State Drives", "4-Power system optimization and control", "5-PED LAB/uP AND uC LAB", "6-PED LAB/uP AND uC LAB", "7-PED LAB/uP AND uC LAB"};
+    String[] teeebtwowednesday = {"1-Communication Engineering", "2-Solid State Drives", "3-Embedded Systems", "4-Design of electrical machine", "5-Advanced Control System(E)/Optimization technique(E)", "6-Embedded Systems", "7-Solid State Dives"};
+    String[] teeebtwothursday = {"1-Solid State Drives", "2-Communication engineering", "3-Design of electrical machines", "4-Communication Engineering", "5-Power system optimization and control", "6-Embedded Systems", "7-Design of Electrical Machines"};
+    String[] teeebtwofriday = {"1-Advanced Control System(E)/Optimization technique(E)", "2-PED LAB/uP AND uC LAB", "3-PED LAB/uP AND uC LAB", "4-PED LAB/uP AND uC LAB", "5-Advanced Control System(E)/Optimization technique(E)", "6-LIB KS", "7-Communication Engineering"};
 
-    String[] freeebtwomonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] freeebtwotuesday = {"1-Project work\",\"2-Project work\",\"3-Project work\",\"4-Project work\",\"5-Project work\",\"6-Project work\",\"7-Project work"};
-    String[] freeebtwowednesday = {"1-Electrical energy generation,utilization and conservation", "2-Professional ethics in engineering", "3-Electrical energy generation,utilization and conservation", "4-Power electronics for renewable energy system", "5-professional ethics in engineering", "6-Electrical energy generation,utilization and conservation", "7-Professional ethics in engineering"};
-    String[] freeebtwothursday = {"1-Power electronics for renewable energy system", "2-Professional ethics in engineering", "3-Power electronics for renewable energy system", "4-Electrical energy generation,utilization and conservation", "5-Library CV", "6-Electrical energy generation,utilization and conservation", "7-Professional ethics in engineering"};
-    String[] freeebtwofriday = {"1-Project work\",\"2-Project work\",\"3-Project work\",\"4-Project work\",\"5-Project work\",\"6-Project work\",\"7-Project work"};
-
-    //odd sem for second,third and fourth year eee b section
-
-    String[] seeebonemonday = {"1-Transmission and distribution", "2-Dicrete time systems and signal processing", "3-Measurement and instrumentation", "4-Numericsl methods", "5-Library SSM", "6-Transmission and distribution", "7-Electrical machines I"};
-    String[] seeebonetuesday = {"1-Object oriented programming", "2-transmission and distributions", "3-Electrical machines I", "4-Measurements and Instrumentation", "5-OOPS LAB/EM I LAB", "'6-OOPS LAB/EM I LAB", "7-OOPS LAB/EM I LAB"};
-    String[] seeebonewednesday = {"1-Numerical methods", "2-Object oriented programming", "3-Electrical machines I", "4-Dicrete time systems and signal processing", "5-Numerical methods", "6-Object oriented programming", "7-Seminar DA"};
-    String[] seeebonethursday = {"1-Discrete time system and signal processing", "2-EM I LAB/OOPS LAB", "3-EM I LAB/OOPS LAB", "4-EM I LAB/OOPS LAB", "5-Electrical machines I", "6-Measuremetns and instrumentation", "7-Numerical methods"};
-    String[] seeebonefriday = {"1-Electrical methods I", "2-Measurements and instrumentation", "3-Numerical methods", "4-Transmissions and distributions", "5-object oriented  programming", "6-Discrete time system and signal processing", "7-Discrete time signal and processing(Tut)"};
-
-    String[] teeebonemonday = {"1-Design of electrical machines", "2-Commnication engineering", "3-Embedded systems", "4-Optimization technique", "5-Power system operation and control", "6-Solid state design", "7-design of electrical machine"};
-    String[] teeebonetuesday = {"1-Solid state design", "2-Embedded systems", "3-Optimization technique", "4-Power system optimization and control", "5-PED LAB/uP AND uC LAB", "6-PED LAB/uP AND uC LAB", "7-PED LAB/uP AND uC LAB"};
-    String[] teeebonewednesday = {"1-Optimization technique", "2-Power system operation and control", "3-Design of electrical machine", "4-Library STM", "5-Solid state design", "6-Communication engineering", "7-Embedded systems"};
-    String[] teeebonethursday = {"1-Power system operation and control", "2-Design of electrical methods", "3-Communication engineering", "4-Embedded systems", "5-PSTS ASK", "6-PSTS ASK", "7-PSTS GSK"};
-    String[] teeebonefriday = {"1-Communication engineering", "2-Optimization methods", "3-Solid state drives", "4-Design of electrical machine", "5-uP AND uC LAB/PED LAB", "6-uP AND uC LAB/PED LAB", "7-uP AND uC LAB/PED LAB"};
-
-    String[] freeebonemonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] freeebonetuesday = {"1-Project work\",\"2-Project work\",\"3-Project work\",\"4-Project work\",\"5-Project work\",\"6-Project work\",\"7-Project work"};
-    String[] freeebonewednesday = {"1-Electrical energy generation,utilization and conservation", "2-Professional ethics in engineering", "3-Electrical energy generation,utilization and conservation", "4-Power electronics for renewable energy system", "5-professional ethics in engineering", "6-Electrical energy generation,utilization and conservation", "7-Professional ethics in engineering"};
-    String[] freeebonethursday = {"1-Power electronics for renewable energy system", "2-Professional ethics in engineering", "3-Power electronics for renewable energy system", "4-Electrical energy generation,utilization and conservation", "5-Library CV", "6-Electrical energy generation,utilization and conservation", "7-Professional ethics in engineering"};
-    String[] freeebonefriday = {"1-Project work\",\"2-Project work\",\"3-Project work\",\"4-Project work\",\"5-Project work\",\"6-Project work\",\"7-Project work"};
+    String[] freeebtwomonday = {"1-Engineering Economics", "2-Entrepreneurship Development/Operation Research", "3-Advanced IC Engines/Additive Manufacturing/Non Destructive Testing Materials", "4-Engineering Economics", "5-Entrepreneurship Development/Operation Research", "6-Advanced IC Engines/Additive Manufacturing/Non Destructive Testing Materials", "7-Project work"};
+    String[] freeebtwotuesday = {"1-Engineering Economics","2-Entrepreneurship Development/Operation Research","3-Advanced IC Engines/Additive Manufacturing/Non Destructive Testing Materials","4-Entrepreneurship Development/Operation Research","5-Engineering Economics","6-Advanced IC Engines/Additive Manufacturing/Non Destructive Testing Materials","7-Project work"};
+    String[] freeebtwowednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
+    String[] freeebtwothursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
+    String[] freeebtwofriday = {"1-Project work","2-Project work","3-Project work","4-Project work","5-Project work","6-Project work","7-Project work"};
 
 
-    //it a full
+
+    //odd sem for frst ,second,third and fourth year eee b section
+
+
+
+    String[] feeebonemonday = {"1-Communicative English", "2-Programming for problem solving", "3-Library", "4-Mathematics I", "5-Programming for problem solving Lab", "6-Programming for problem solving Lab", "7-Programming for problem solving Lab"};
+    String[] feeebonetuesday = {"1-Basic Civil Engineering", "2-Seminar I", "3-Engineering Physics I", "4-Communicative English", "5-Engineering Chemistry I", "6-Mathematics I", "7-Programming for problem solving"};
+    String[] feeebonewednesday = {"1-Programming for problem solving", "2-Engineering Chemistry I", "3-Seminar II", "4-Mathematics I", "5-Engineering Practices Lab", "6-Engineering Practices Lab ", "7-Engineering Practices Lab"};
+    String[] feeebonethursday = {"1-Mathematics-I", "2-Basic Civil Engineering", "3-Engineering Physics-I", "4-Basic Civil Engineering", "5-Communicative English", "6-Engineering Physics", "7-Engineering Chemistry"};
+    String[] feeebonefriday = {"1-Communicative English", "2-Programming for problem solving", "3-Basic Civil Engineering", "4-Seminar III", "5-Engineering Physics I", "6-Engineering Chemiostry I", "7-Engineering Methematics","8-Sports"};
+
+    String[] seeebonemonday = {"1-Electromagnetic Theory", "2-Electrical Machines I", "3-Mathematics III", "4-Measurements and Instrumentation", "5-Programming and Data Structures", "6-Electron Devices and Circuits", "7-Mathematics III"};
+    String[] seeebonetuesday = {"1-Mathematics III", "2-Electrical Machines I", "3-Measurements and Instrumentation", "4-Programming and Data Structures", "5-Electrical Machines I lab/Electron Devices and Circuits lab", "6-Electrical Machines I lab/Electron Devices and Circuits lab", "7-Electrical Machines I lab/Electron Devices and Circuits lab"};
+    String[] seeebonewednesday = {"1-Electron Devices and Circuits", "2-Measurements and Instrumentation", "3-Electromagnetic Theory", "4-Electrical Machines I", "5-Programming and Data Structures", "6-Electron Devices and Circuits", "7-Electrical Machines I"};
+    String[] seeebonethursday = {"1-Programming and Data Structures", "2-Electron Devices and Circuits Lab/Programming and Data Structures Lab", "3-Electron Devices and Circuits Lab/Programming and Data Structures Lab", "4-Electron Devices and Circuits Lab/Programming and Data Structures Lab", "5-Electromagnetic Theory", "6-Mathematics III", "7-Measurements and Instrumentation"};
+    String[] seeebonefriday = {"1-Electromagnetic Theory", "2-Electron Devices and Circuits", "3-Mathematics III", "4-Electrical Machines I", "5-Programming and Data Structures lab/Electrical Machines I lab", "6-Programming and Data Structures lab/Electrical Machines I lab", "7-Programming and Data Structures lab/Electrical Machines I lab"};
+
+    String[] teeebonemonday = {"1-Microprocessors and Microcontrollers", "2-Power Electronics", "3-Total Quality Management", "4-Design of Electrical Apparatus ", "5-Environmental science and Engineering", "6-Total Quality Management", "7-Library "};
+    String[] teeebonetuesday = {"1-Total Quality Management", "2-Design of Electrical Apparatus", "3-Environmental science and Engineering", "4-Power system Analysis", "5-Environmental science and Engineering", "6-Power Electronics", "7-SEMINAR "};
+    String[] teeebonewednesday = {"1-Design of Electrical Apparatus", "2-Power system Analysis", "3-Microprocessor and Microcontroller", "4-Power Electronics", "5-Power Electronics Lab/Microprocessor and Microcontroller Lab", "6-Power Electronics Lab/Microprocessor and Microcontroller Lab", "7-Power Electronics Lab/Microprocessor and Microcontroller Lab"};
+    String[] teeebonethursday = {"1-Power System Analysis ", "2-Environmental science and Engineering", "3-Power Electronics", "4-Design of Electrical Apparatus", "5-Microprocessor and Microcontroller", "6-Total Quality Management", "7-Seminar"};
+    String[] teeebonefriday = {"1-Microprocessors and Microcontrollers", "2-Power Electronics Lab/Microprocessor and Microcontroller Lab", "3-Power Electronics Lab/Microprocessor and Microcontroller Lab ", "4-Power Electronics Lab/Microprocessor and Microcontroller Lab", "5-Power System Analysis", "6-Power Electronics", "7-Design of Electrical Apparatus"};
+
+    String[] freeebonemonday = {"1-Fundamentals of Nanoscience", "2-Bio-Medical Instrumentation", "3-Special Electrical Machines", "4-Bio-Medical Instrumentation", "5-Protection & Switchgear", "6-Protection & Switchgear", "7-SEMINAR"};
+    String[] freeebonetuesday = {"1-Special Electrical Machines", "2-High Voltage Engineering", "3-Fundamentals of Nanoscience", "4-Principles of Management", "5-Power System Simulation lab/Comprehension", "6-Power System Simulation lab/Comprehension", "7-Power System Simulation lab/Comprehension"};
+    String[] freeebonewednesday = {"1-Bio-Medical Instrumentation", "2-Principles of Management", "3-High Voltage Engineering", "4-Protection & Switchgear", "5-SST SSI", "6-SST RKK", "7-SST RKK"};
+    String[] freeebonethursday = {"1-High Voltage Engineering", "2-Protection & Switchgear", "3-Bio-Medical Instrumentation", "4-Special Electrical Machines", "5-Fundamentals of Nanoscience", "6-Special Electrical Machines", "7-Principles of Management"};
+    String[] freeebonefriday = {"1-Power System Simulation lab/Comprehension", "2-Power System Simulation lab/Comprehension", "3-Power System Simulation lab/Comprehension", "4-Principles of Management", "5-High Voltage Engineering", "6-Fundamentals of Nanoscience", "7-Library"};
+
+
+    //even it a full
     String[] fitatwomonday = {"1-Techincal English II", "2-DPSD", "3-Mathematics II", "4-Engineering physics II", "5-Engineering chemistry II", "6-PDS I", "7-Technical english II"};
     String[] fitatwotuesday = {"1-Engineering physics II", "2-DPSD", "3-Mathematics II", "4-Engineering chemistry II", "5-Digital lab/PDS lab", "6-Digital lab/PDS lab", "7-Digital lab/PDS lab"};
     String[] fitatwowednesday = {"1-Phy and Chem lab", "2-Phy and Chem lab", "3-Phy and Chem lab", "4-PDS I", "5-Technical english II", "6-Library", "7-Mathematics II"};
     String[] fitatwothursday = {"1-DPSD", "2-Engineering chemistry II", "3-PDS I", "4-Engineering physics II", "5-Digital /PDS I lab", "6-Digital /PDS I lab", "7-Digital /PDS I lab"};
     String[] fitatwofriday = {"1-Engineering chemistry II", "2-Mathematics II", "3-Technical english II", "4-DPSD", "5-Mathematics II", "6-Engineering physics II", "7-PDS I"};
 
-    String[] sitatwomonday = {"1-Design and analysis of algorithm", "2-Operating systems", "3-Software engineering", "4-Microprocessor and microcontroller", "5-Operating system", "6-Software engineering(Tut)", "7-Probability and queuing theory"};
-    String[] sitatwotuesday = {"1-Software engineering", "2-Probability and queuing theory", "3-Design and analysis of algorithm", "4-Operating systems", "5-Probability and queuing theory", "6-Operating systems(Tut)", "7-Microprocessor and microcontroller"};
-    String[] sitatwowednesday = {"1-Operating systems", "2-Microprocessor and microcontroller", "3-Probability and queuing theory", "4-Design and analysis of algorithm", "5-MC and MP LAB/OS LAB", "6-MC and MP LAB/OS LAB", "7-MC and MP LAB/OS LAB"};
+    String[] sitatwomonday = {"1-Microprocessor and Microcontroller", "2-Paradigms of Algorithm Design", "3-Database Management Systems", "4-Probability and Queuing Theory", "5-IT Essentials", "6-PAradigms of Algorithm Design", "7-Library"};
+    String[] sitatwotuesday = {"1-Paradigms of Algorithm", "2-Microprocessor and Microcontroller", "3-Probability and Queuing Theory", "4-Daabase Management Systems", "5-Mini Project", "6-Mini Project", "7-Mini Project "};
+    String[] sitatwowednesday = {"1-Probability and Queing Theory", "2-Microprocessor and microcontroller Laboratory/Database Management Systems Laboratory", "3-Microprocessor and microcontroller Laboratory/Database Management Systems Laboratory", "4-Microprocessor and microcontroller Laboratory/Database Management Systems Laboratory", "5-IT Essentials", "6-Database Management Systems", "7-Software Engineering Methodologies "};
     String[] sitatwothursday = {"1-Microprocessor and microcontroller", "2-OS LAB/SE LAB", "3-OS LAB/SE LAB", "4-OS LAB/SE LAB", "5-Operating system(Tut)", "6-Software engineering", "7-Library"};
-    String[] sitatwofriday = {"1-Probability and queuing theory", "2-Design and analysis of algorithm", "3-Microprocessor and microcontroller", "4-Software engineering", "5-SE LAB/MC AND MP LAB", "6-SE LAB/MC AND MP LAB", "7-SE LAB/MC AND MP LAB"};
+    String[] sitatwofriday = {"1-IT Essentials", "2-Probability and Queing Theory", "3-Software Engineering Methodologies", "4-IT Essentials", "5-Microprocessor and microcontroller Laboratory/Database Management Systems Laboratory", "6-Microprocessor and microcontroller Laboratory/Database Management Systems Laboratory", "7-Microprocessor and microcontroller Laboratory/Database Management Systems Laboratory"};
 
 
-    String[] titatwomonday = {"1-Distributed system", "2-Mobile app dev lab/Compiler lab", "3-Mobile app dev lab/Compiler lab", "4-Mobile app dev lab/Compiler lab", "5-Total quality management", "6-Artificial intelligence", "7-Software architecture"};
-    String[] titatwotuesday = {"1-Compiler design", "2-Artificial intelligence", "3-Software applications", "4-Total quality management", "5-Mobile computing", "6-Distributed systems", "7-Library"};
-    String[] titatwowednesday = {"1-Communication and soft skill lab", "2-Communication and soft skill lab", "3-Communication and soft skill lab", "4-Communication and soft skill lab", "5-Compiler design", "6-Mobile computing", "7-Total quality management"};
-    String[] titatwothursday = {"1-Mobile computing", "2-Software architecture", "3-Distributed system", "4-Compiler design", "5-Artificial intelligence", "6-Total quality management", "7-Mobile computing"};
-    String[] titatwofriday = {"1-Artificial intelligence", "2-Compiler lab/Mobile app dev lab", "3-Compiler lab/Mobile app dev lab", "4-Compiler lab/Mobile app dev lab", "5-Software architecture", "6-Compiler design", "7-Distributed systems"};
+    String[] titatwomonday = {"1-Communication and soft skill lab", "2-Communication and soft skill lab", "3-Communication and soft skill lab", "4-Communication and soft skill lab", "5-Compiler Design", "6-Artificial intelligence", "7-Software architecture"};
+    String[] titatwotuesday = {"1-Distributed Systems", "2-Compiler Design", "3-Software applications", "4-Artificial Intelligence", "5-Compiler lab/Mobile app dev lab", "6-Compiler lab/Mobile app dev lab", "7-Compiler lab/Mobile app dev lab"};
+    String[] titatwowednesday = {"1-Compiler Design", "2-Software architecture", "3-Distributed Systems", "4-Total Quality Management", "5-Mobile Computing", "6-Distributed Systems", "7-Library"};
+    String[] titatwothursday = {"1-Artificial Inteliigence", "2-Mobile Computing", "3-Compiler Design", "4-Distributed Systems", "5-Software Architectures", "6-Mobile Computing", "7-Total Quality Management"};
+    String[] titatwofriday = {"1-Mobile Computing", "2-Total Quality Management", "3-Artificial Intelligence", "4-Total Quality Management", "5-Compiler lab/Mobile app dev lab", "6-Compiler lab/Mobile app dev lab", "7-Compiler lab/Mobile app dev lab"};
 
 
-    String[] fritatwomonday = {"1-Service oriented architecture", "2-Cyber forensics", "3-Professional ethics in engineering", "4-Cyber forensics(Tut)", "5-Service oriented architecture", "6-Cyber forensics", "7-Software project management"};
-    String[] fritatwotuesday = {"1-Professional ethics in engineering", "2-Software project management", "3-Cyber forensics", "4-Service oriented architecture", "5-Cyber forensics", "6-Software project management", "7-professional ethics in engineering(Tut)"};
-    String[] fritatwowednesday = {"1-Software project management", "2-Service oriented architecture", "3-Library", "4-Professional ethics in engineering", "5-Software project management", "6-Professional ethics in engineering"};
-    String[] fritatwothursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] fritatwofriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-
-    //odd sem for second ,third and fourth year it a section
-
-    String[] sitaonemonday = {"1-Design and analysis algorithm", "2-Operating system", "3-Software engineering", "4-Microprocessor and microcontroller", "5-Operating system", "6-Software engineering(Tut)", "7-Probability and queuing theory"};
-    String[] sitaonetuesday = {"1-Software engineering", "2-Probability and queuing theory", "3-design and analysis algorithm", "4-operating systems", "5-Probability and queuing theory", "6-Operating system(Tut)", "7-Microprocessor and microcontroller"};
-    String[] sitaonewednesday = {"1-Operating systems", "2-Microprocessor and microcontroller", "3-Probability and queuing theory", "4-Design and analysis algorithm", "5-MC and MP LAB/OS LAB", "6-MC and MP LAB/OS LAB", "7-MC and MP LAB/OS LAB"};
-    String[] sitaonethursday = {"1-Microprocessor and microcontroller", "2-OS LAB/SE LAB", "3-OS LAB/SE LAB", "4-OS LAB/SE LAB", "5-Operating system(Tut)", "6-Software engineering", "7-Library"};
-    String[] sitaonefriday = {"1-Probability and queuing theory", "2-Design and analysis of algorithm", "3-Microprocessor and microcontroller", "4-Software engineering", "5-SE LAB/MC AND MP LAB", "6-SE LAB/MC AND MP LAB", "7-SE LAB/MC AND MP LAB"};
+    String[] fritatwomonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
+    String[] fritatwotuesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
+    String[] fritatwowednesday = {"1-Service oriented architecture", "2-Professional Ethics in Engineering", "3-Library", "4-Service Oriented Architecture", "5-Professional ethics in engineering", "6-Cyber Forensics","7-Project Work"};
+    String[] fritatwothursday = {"1-Professional ethics in engineering", "2-Cyber Forensics", "3-Software Project Management", "4-Cyber Forensics", "5-Service Oriented Architecture", "6-Professional ethics in engineering", "7-Software Project Management"};
+    String[] fritatwofriday = {"1-Cyber Forensics", "2-Software Project management", "3-Service Oriented Architecture", "4-Software Project Management", "5-Cyber Forensics", "6-Service Oriented Architecture", "7-Professional ethics in engineering"};
 
 
-    String[] titaonemonday = {"1-Distributed system", "2-Mobile app dev lab/Compiler lab", "3-Mobile app dev lab/Compiler lab", "4-Mobile app dev lab/Compiler lab", "5-Total quality management", "6-Artificial intelligence", "7-Software architecture"};
-    String[] titaonetuesday = {"1-Compiler design", "2-Artificial intelligence", "3-Software applications", "4-Total quality management", "5-Mobile computing", "6-Distributed systems", "7-Library"};
-    String[] titaonewednesday = {"1-Communication and soft skill lab", "2-Communication and soft skill lab", "3-Communication and soft skill lab", "4-Communication and soft skill lab", "5-Compiler design", "6-Mobile computing", "7-Total quality management"};
-    String[] titaonethursday = {"1-Mobile computing", "2-Software architecture", "3-Distributed system", "4-Compiler design", "5-Artificial intelligence", "6-Total quality management", "7-Mobile computing"};
-    String[] titaonefriday = {"1-Artificial intelligence", "2-Compiler lab/Mobile app dev lab", "3-Compiler lab/Mobile app dev lab", "4-Compiler lab/Mobile app dev lab", "5-Software architecture", "6-Compiler design", "7-Distributed systems"};
+
+    //odd sem IT
 
 
-    String[] fritaonemonday = {"1-Service oriented architecture", "2-Cyber forensics", "3-Professional ethics in engineering", "4-Cyber forensics(Tut)", "5-Service oriented architecture", "6-Cyber forensics", "7-Software project management"};
-    String[] fritaonetuesday = {"1-Professional ethics in engineering", "2-Software project management", "3-Cyber forensics", "4-Service oriented architecture", "5-Cyber forensics", "6-Software project management", "7-professional ethics in engineering(Tut)"};
-    String[] fritaonewednesday = {"1-Software project management", "2-Service oriented architecture", "3-Library", "4-Professional ethics in engineering", "5-Software project management", "6-Professional ethics in engineering"};
-    String[] fritaonethursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] fritaonefriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
 
+    String[] fitaonemonday = {"1-Basic Electrical and Electronics Engineering", "2-Engineering Physics I", "3-Engineering Chemistry I", "4.Programming for problem solving", "5-Communicative English ", "6-Engineering Mathematics I", "7-Programming for problem solving"};
+    String[] fitaonetuesday = {"1-Communicative English", "2-Engineering Chemistry", "3-Engineering Mathematics III", "4-Engineering Physics I", "5-Basic Electrical and Electronics Engineering", "6-Physics/Chemistry Lab", "7-Physics/Chemistry Lab"};
+    String[] fitaonewednesday = {"1-Basic Electrical and Electronics Engineering", "2-Seminar", "3-Engineering Physics", "4-Mathematics I", "5-Library", "6-Programming for problem solving", "7-Communicative English"};
+    String[] fitaonethursday = {"1-Engineering Practices Lab", "2-Engineering Practices Lab", "3-Engineering Practices Lab", "4-Mathematics I", "5-Engineering Physics I", "6-Engineering Physics I", "7-Basic Electrical and Electronics Engineering","8-Sports"};
+    String[] fitaonefriday = {"1-Programming for problem solving", "2-Communicative English", "3-Engineering Chemistry-I", "4-Mathematics-I", "5-Programming for problem solving Lab ", "6-Programming for problem solving Lab", "7-Programming for problem solving Lab"};
+
+
+    String[] sitaonemonday = {"1-Operating Systems", "2-Analog and Digital Communication lab/Programming and Data Structures lab II", "3-Analog and Digital Communication lab/Programming and Data Structures lab II", "4-Analog and Digital Communication lab/Programming and Data Structures lab II", "5-Mathematics III", "6-Analog and Digital Communication", "7-Computer Organization and Architecture"};
+    String[] sitaonetuesday = {"1-Programming and Data Structures II", "2-Computer Organization and Architecture", "3-Mathematics III", "4-Operating Systems", "5-Environmental Science and Engineering", "6-Programming and Data Structures II", "7-Mathematics-III"};
+    String[] sitaonewednesday = {"1-Analog and Digital Communication", "2-Operating Systems", "3-Computer Organization and Architecture", "4-Programming and Data Structures", "5-Operating Systems lab/Analog and Digital Communication lab", "6-Operating Systems lab/Analog and Digital Communication lab", "7-Operating Systems lab/Analog and Digital Communication lab"};
+    String[] sitaonethursday = {"1-Computer Organization and Architecture", "2-Analog and Digital Communication", "3-Mathematics III", "4-Environmental Science and Engineering", "5-Programming and Data Structures lab II/Operating Systems lab", "6-Programming and Data Structures lab II/Operating Systems lab", "7-Programming and Data Structures lab II/Operating Systems lab"};
+    String[] sitaonefriday = {"1-Mathematics III", "2-Programming and Data Structures II", "3-Analog and Digital Communication", "4-Environmental Science and Engineering", "5-Library", "6-Operating Systems", "7-Environmental Science and Engineering"};
+
+
+    String[] titaonemonday = {"1-Web Programming", "2-Computational Intelligence", "3-Digital Signal Processing", "4-Graphics and Multimedia", "5-Networks Lab", "6-Networks Lab", "7-Networks Lab"};
+    String[] titaonetuesday = {"1-Computer Networks", "2-Case Tools lab/Web Programming lab", "3-Case Tools lab/Web Programming lab", "4-Case Tools lab/ lab", "5-Computational Intelligence", "6-Web Programming", "7-Computer Networks"};
+    String[] titaonewednesday = {"1-Digital Signal Processing", "2-Object Oriented Analysis and Design", "3-Graphics and Multimedia", "4-Web Programming", "5-Computer Networks", "6-Computational Intelligence (T)", "7-Digital Signal Processing(T)"};
+    String[] titaonethursday = {"1-Computational Intelligence", "2-Case Tools lab/Web Programming lab", "3-Case Tools lab/Web Programming lab", "4-Case Tools lab/Web Programming lab", "5-Digital Signal Processing", "6-Object Oriented Analysis and Design", "7-Graphics and multimedia"};
+    String[] titaonefriday = {"1-Graphics and Multimedia", "2-Computer Networks", "3-Web Programming", "4-Computational Intelligence", "5-Object Oriented Analysis and Design", "6-Digital Signal Processing", "7-Object Oriented Analysis and Design"};
+
+
+    String[] fritaonemonday = {"1-Grid and cloud computing lab/Security lab", "2-Grid and cloud computing lab/Security lab", "3-Grid and cloud computing lab/Security lab", "4-Information Management", "5-Cryptography and Network Security", "6-Data Ware Housing and Data Mining", "7-Library"};
+    String[] fritaonetuesday = {"1-Grid and Cloud Computing", "2-Cryptography and Network Security", "3-Information Management", "4-Data Ware Housing and Data Mining", "5-Security lab/Grid and Cloud Computing lab", "6-Security lab/Grid and Cloud Computing lab", "7-Security lab/Grid and Cloud Computing lab"};
+    String[] fritaonewednesday = {"1-Data Mining Lab", "2-Data Mining Lab", "3-Data Mining Lab", "4-Software Testings", "5-Seminar", "6-Grid and Cloud Computing", "7-Seminar"};
+    String[] fritaonethursday = {"1-Software Testing ", "2-Data Ware Housing and Data Mining", "3-Information Management", "4-Seminar", "5-Grid and Cloud Computing", "6-Cryptography and Network Security", "7-Seminar"};
+    String[] fritaonefriday = {"1-Cryptography and Network Security", "2--Grid and Cloud Computing", "3-Software Testings", "4-Data Ware Housing and Data Mining", "5-Software Testings", "6-Cryptography and Network Security", "7-Seminar"};
 
 
     //it b full
@@ -885,48 +906,56 @@ public class ttperiod extends Activity {
     String[] fitbtwothursday = {"1-Engineering physics II", "2-PDS I", "3-DPSD", "4-Engineering chemistry II", "5-Technical english II", "6-Mathematics II", "7-Technical english II"};
     String[] fitbtwofriday = {"1-Digital lab/PDS I lab", "2-Digital lab/PDS I lab", "3-Digital lab/PDS I lab", "4-Engineering physics II", "5-PDS I", "6-DPSD", "7-Mathematics II"};
 
-    String[] sitbtwomonday = {"1-Probability and queuing theory", "2-Software engineering", "3-Operating systems", "4-design and analysis of algorithm", "5-MC AND MP LAB/OS LAB", "6-MC AND MP LAB/OS LAB", "7-MC AND MP LAB/OS LAB"};
-    String[] sitbtwotuesday = {"1-microprocessor and microcontroller", "2-OS LAB/SE LAB", "3-OS LAB/SE LAB", "4-OS LAB/SE LAB", "5-Microprocesser and microcontroller(Tut)", "6-Probability and queuing theory", "7-Software engineering"};
-    String[] sitbtwowednesday = {"1-Design and analysis of algorithm", "2-Probability and queuing theory", "3-Software engineering", "4-Operating system", "5-Probability and queuing theory", "6-Microprocessor and microcontroller","7-Design and analysis of algorithm"};
-    String[] sitbtwothursday = {"1-Software engineering", "2-Operating system", "3-Microprocessor and microcontroller", "4-Design and analysis of algorithm", "5-SE LAB/MP AND MC LAB", "6-SE LAB/MP AND MC LAB", "7-SE LAB/MP AND MC LAB"};
-    String[] sitbtwofriday = {"1-Operating System", "2-Microprocessor and microcontroller", "3-Design and analysis of algorithm", "4-Probability and queuing theory", "5-Software engineering", "6-Operating systems", "7-Library"};
+    String[] sitbtwomonday = {"1-Probability and queuing theory", "2-IT Essentials", "3-Pardigms of Algorithm Design", "4-Probability and Wueing Theory", "5-Mini Project", "6-Mini Project", "7-Mini Project"};
+    String[] sitbtwotuesday = {"1-Probability and Queing Theory", "2-Paradigms of Algorithm Design", "3-Microprocessor and Microcontroller", "4-Database Management Systems", "5-Software Engineering Methodologies", "6-IT Essentials", "7-Library"};
+    String[] sitbtwowednesday = {"1-Paradigms of Algorithm Designs", "2-Software Engineering Methodologies", "3-Database Management Systems", "4-Probability and Queing Theory", "5-Microprocessor and Microcontroller Lab/Databse Management Systems Lab", "6-Microprocessor and Microcontroller Lab/Databse Management Systems Lab","7-Microprocessor and Microcontroller Lab/Databse Management Systems Lab"};
+    String[] sitbtwothursday = {"1-IT Essentials", "2-Microprocessor and Microcontroller Lab/Databse Management Systems Lab", "3-Microprocessor and Microcontroller Lab/Databse Management Systems Lab", "4-Microprocessor and Microcontroller Lab/Databse Management Systems Lab", "5-Probability and Queing Theory", "6-Paradigms of Algorithm Design", "7-Software Engineering Methodologies"};
+    String[] sitbtwofriday = {"1-Database Management Systems","2-Microprocessor and Microcontroller","3-IT Essentials","4-Probability and Quening Theory","5-Database Management Systems","6-Software Engineering Methodologies","7-Microprocessor and Microcontroller"};
 
-
-    String[] titbtwomonday = {"1-distributed system", "2-Compiler design", "3-Total quality management", "4-Software architecture", "5-Mobile computing", "6-Artificial intelligence", "7-Total quality management"};
-    String[] titbtwotuesday = {"1-Artificial intelligence", "2-Mobile computing", "3-Compiler design", "4-Toal quality management", "5-Mobile App dev lab/Compiler lab", "6-Mobile App dev lab/Compiler lab", "7-Mobile App dev lab/Compiler lab"};
-    String[] titbtwowednesday = {"1-Mobile computing", "2-Compiler lab/Mobile app dev lab", "3-Compiler lab/Mobile app dev lab", "4-Compiler lab/Mobile app dev lab", "5-Software architecture", "6-Compiler design", "7-Distributed systems"};
-    String[] titbtwothursday = {"1-Communication and soft skill lab", "2-Communication and soft skill lab", "3-Communication and soft skill lab", "4-Communication and soft skill lab", "5-Artificial intelligence", "6-Distributes systems", "7-Software architecture"};
-    String[] titbtwofriday = {"1-Compiler design", "2-Distributed systems", "3-Software architecture", "4-Artificial intelligence", "5-Total quality management", "6-Mobile computing", "7-Library"};
+    String[] titbtwomonday = {"1-Software Architectures", "2-Compiler lab/Mobile app dev lab","3-Compiler lab/Mobile app dev lab","4-Compiler lab/Mobile app dev lab","5-Compiler Design","6-Communication skills lab","7-Communication skills lab","8-Communication skills lab"};
+    String[] titbtwotuesday = {"1-Distributed Systems", "2-Artificial Intelligence", "3-Compiler design", "4-Mobile Computing", "5-Software Architectures", "6-Communication skills lab", "7-Communication skills lab"};
+    String[] titbtwowednesday = {"1-Artificial Intelligence", "2-Mobile Computing", "3-Artificial Intelligence", "4-Total Quality Management", "5-Distributed Systems", "6-Library", "7-Total Quality Management"};
+    String[] titbtwothursday = {"1-Mobile Computing", "2-Compiler Design", "3-Software Architectures", "4-Distributed Systems", "5-Total Quality Management", "6-Artificial Intelligence", "7-Software architecture"};
+    String[] titbtwofriday = {"1-TOtal Quality Management", "2-Compiler lab/Mobile app dev lab", "3-Compiler lab/Mobile app dev lab", "4-Compiler lab/Mobile app dev lab", "5-Distributed Systems", "6-Compiler Design", "7-Mobile Computing"};
 
 
     String[] fritbtwomonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] fritbtwotuesday = {"1-Project work\",\"2-Project work\",\"3-Project work\",\"4-Project work\",\"5-Project work\",\"6-Project work\",\"7-Project work"};
-    String[] fritbtwowednesday = {"1-Cyber Forensics", "2-Service oriented architecture ", "3-Professional ethics in engineering", "4-Cyber forensics ", "5-Service oriented architecture", "6-Professional ethics in engineering", "7-Software project management "};
-    String[] fritbtwothursday = {"1-Service oriented architecture", "2-Software project management", "3-Cyber forensics(Tut)", "4-Software project management(Tut)", "5-Professional ethics in engineering", "6-Service oriented architecture", "7-Professional ethics in engineering"};
-    String[] fritbtwofriday = {"1-Software project management", "2-Cyber forensics", "3-Library", "4-Professional ethics in engineering", "5-Software project management", "6-Software oriented architecture", "7-Cyber forensics"};
-
-    //odd sem for second,third and fourth year for it b section
-
-    String[] sitbonemonday = {"1-Probability and queuing theory", "2-Software engineering", "3-Operating systems", "4-design and analysis of algorithm", "5-MC AND MP LAB/OS LAB", "6-MC AND MP LAB/OS LAB", "7-MC AND MP LAB/OS LAB"};
-    String[] sitbonetuesday = {"1-microprocessor and microcontroller", "2-OS LAB/SE LAB", "3-OS LAB/SE LAB", "4-OS LAB/SE LAB", "5-Microprocesser and microcontroller(Tut)", "6-Probability and queuing theory", "7-Software engineering"};
-    String[] sitbonewednesday = {"1-Design and analysis algorithm", "2-Probability and queuing theory", "3-Software engineering", "4-Operating system", "5-Probability and queuing theory", "6-Microprocessor and microcontroller"};
-    String[] sitbonethursday = {"1-Software engineering", "2-Operating system", "3-Microprocessor and microcontroller", "4-Design and analysis algorithm", "5-SE LAB/MP AND MC LAB", "6-SE LAB/MP AND MC LAB", "7-SE LAB/MP AND MC LAB"};
-    String[] sitbonefriday = {"1-Operating System", "2-Microprocessor and microcontroller", "3-Software engineering", "4-Probability and queuing theory", "5-Software engineering", "6-Operating systems", "7-Library"};
+    String[] fritbtwowednesday = {"1-Software project management", "2-Service oriented architecture ", "3-Professional ethics in engineering", "4-Software project management ", "5-Cyber Forensics", "6-Service oriented architecture", "7-Project"};
+    String[] fritbtwothursday = {"1-Service oriented architecture", "2-Professional ethics in engineering", "3-Library)", "4-Cyber Forensics", "5-Service Oriented Architecture", "6-Software project management", "7-Cyber Forensics"};
+    String[] fritbtwofriday = {"1-Cyber Forensics", "2-=Service Oriented Architecture", "3-Software Project Management", "4-Professional ethics in engineering", "5-Cyber Forensics", "6-Professional ethics in engineering", "7-Software project management"};
 
 
-    String[] titbonemonday = {"1-distributed system", "2-Compiler design", "3-Total quality management", "4-Software architecture", "5-Mobile computing", "6-Artificial intelligence", "7-Total quality management"};
-    String[] titbonetuesday = {"1-Artificial intelligence", "2-Mobile computing", "3-Compiler design", "4-Toal quality management", "5-Mobile App dev lab/Compiler lab", "6-Mobile App dev lab/Compiler lab", "7-Mobile App dev lab/Compiler lab"};
-    String[] titbonewednesday = {"1-Mobile computing", "2-Compiler lab/Mobile app dev lab", "3-Compiler lab/Mobile app dev lab", "4-Compiler lab/Mobile app dev lab", "5-Software architecture", "6-Compiler design", "7-Distributed systems"};
-    String[] titbonethursday = {"1-Communication and soft skill lab", "2-Communication and soft skill lab", "3-Communication and soft skill lab", "4-Communication and soft skill lab", "5-Artificial intelligence", "6-Distributes systems", "7-Software architecture"};
-    String[] titbonefriday = {"1-Compiler design", "2-Distributed systems", "3-Software architecture", "4-Artificial intelligence", "5-Total quality management", "6-Mobile computing", "7-Library"};
+
+    //odd sem for frst,second,third and fourth year for it b section
 
 
-    String[] fritbonemonday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] fritbonetuesday = {"1-Project work\",\"2-Project work\",\"3-Project work\",\"4-Project work\",\"5-Project work\",\"6-Project work\",\"7-Project work"};
-    String[] fritbonewednesday = {"1-Cyber Forensics", "2-Service oriented architecture ", "3-Professional ethics in engineering", "4-Cyber forensics ", "5-Service oriented architecture", "6-Professional ethics in engineering", "7-Software project management "};
-    String[] fritbonethursday = {"1-Service oriented architecture", "2-Software project management", "3-Cyber forensics(Tut)", "4-Software project management(Tut)", "5-Professional ethics in engineering", "6-Service oriented architecture", "7-Professional ethics in engineering"};
-    String[] fritbonefriday = {"1-Software project management", "2-Cyber forensics", "3-Library", "4-Professional ethics in engineering", "5-Software project management", "6-Software oriented architecture", "7-Cyber forensics"};
 
+    String[] fitbonemonday = {"1-Engineering Practices Lab", "2-Engineering Practices Lab", "3-Engineering Practices Lab", "4-Engineering Physics I", "5-Mathematics I", "6-Communicative English","7-Engineering Chemistry I"};
+    String[] fitbonetuesday = {"1-Programming for problem solving", "2-Communicative English", "3-Engineering Chemistry I", "4-Mathematics I", "5-Basic Electrical and Electronics Engineering", "6-Engineering Physics I", "7-Programming for Probelm solving"};
+    String[] fitbonewednesday = {"1-Mathematics I", "2-Programming for problem solving", "3-Basic Electrical and Electronics Engineering", "4-Library", "5-Programming for problem solving Lab", "6-Programming for problem solving Lab", "7-Programming for problem solving Lab"};
+    String[] fitbonethursday = {"1-Engineering Physics I", "2-Basic Electrical and Electronics Engineering", "3-Engineering Cehmistry I", "4-Physics/ Chemistry Lab", "5-Physics/ Chemistry Lab", "6-Mathematics", "7-Communicative English"};
+    String[] fitbonefriday = {"1-Basic Electrical and Electronics Engineering", "2-Mathematics I", "3-Communicative English", "4-PRogramming for problem solving", "5-Seminar", "6-Engineering Chemistry I","7-Engineering Physics I","8-Sports"};
+
+    String[] sitbonemonday = {"1-Mathematics III", "2-Programming and Data Structures II", "3-Mathematics III", "4-Environmental Science and Engineering", "5-Programming and Data Structures lab II/Operating Systems lab", "6-Programming and Data Structures lab II/Operating Systems lab", "7-Programming and Data Structures lab II/Operating Systems lab"};
+    String[] sitbonetuesday = {"1-Computer Organization and Architecture", "2-Operating Systems lab/Analog and Digital Communication lab", "3-Operating Systems lab/Analog and Digital Communication lab", "4-Operating Systems lab/Analog and Digital Communication lab", "5-Analog and Digital Communication", "6-Environmental Science and Engineering", "7-Operating Systems"};
+    String[] sitbonewednesday = {"1-Mathematics III", "2-Analog and Digital Communication", "3-Computer Organization and Architecture", "4-Operating Systems", "5-Programming and Data Structures II", "6-Mathematics III", "7-Library"};
+    String[] sitbonethursday = {"1-Analog and Digital Communication", "2-Operating Systems", "3-Programming and Data Structures II", "4-Computer Organization and Architecture", "5-Mathematics III", "6-Environmental Science and Engineering", "7-Analog and Digital Communication"};
+    String[] sitbonefriday = {"1-Programming and Data Structures II", "2-Computer Organization and Architecture", "3-Environmental Science and Engineering", "4-Mathematics III", "5-Analog and Digital Communication lab/Programming and Data Structures lab II", "6-Analog and Digital Communication lab/Programming and Data Structures lab II", "7-Analog and Digital Communication lab/Programming and Data Structures lab II"};
+
+
+    String[] titbonemonday = {"1-Graphics and Multimedia", "2-Networks lab", "3-Networks lab", "4-Networks lab", "5-", "6-Digital Signal Processing", "7-Computational Intelligence (T)"};
+    String[] titbonetuesday = {"1-Computational Intelligence", "2-Computer Networks", "3-Object Oriented Analysis and Design", "4-Digital Signal Processing", "5-Web Programming", "6-Computer Networks", "7-Graphics and Multimedia"};
+    String[] titbonewednesday = {"1-Digital Signal Processing", "2-Object Oriented Analysis and Design", "3-Graphics and Multimedia", "4-Object Oriented Analysis and Design", "5-Case Tools lab/Web Programming lab", "6-Case Tools lab/Web Programming lab", "7-Case Tools lab/Web Programming lab"};
+    String[] titbonethursday = {"1-Web Programming", "2-Digital Signal Processing", "3-Computational Intelligence", "4-Computer Networks", "5-Computational Intelligence", "6-Graphics and Multimedia", "7-Digital Signal Processing(Tutorial)"};
+    String[] titbonefriday = {"1-Computer Networks", "2-Case Tools lab/Web Programming lab", "3-Case Tools lab/Web Programming lab", "4-Case Tools lab/Web Programming lab", "5-Computational Intelligence", "6-Web Programming", "7-Object Oriented Analysis and Design"};
+
+
+    String[] fritbonemonday = {"1-Information Management", "2-Cryptography and Network Security", "3-Data Ware Housing and Data Mining", "4-Grid and Cloud Computing", "5-Seminar", "6-Software Testing", "7-Seminar"};
+    String[] fritbonetuesday = {"1-Grid and Cloud Computing","2-Data Ware Housing and Data Mining","3-Cryptography and Network Security","4-Seminar","5-Data Mining lab","6-Data Mining lab","7-Data Mining lab"};
+    String[] fritbonewednesday = {"1-Security lab/Grid and Cloud Computing lab", "2-Security lab/Grid and Cloud Computing lab", "3-Security lab/Grid and Cloud Computing lab", "4-Information Management", "5-Software Testing", "6-Grid and Cloud Computing", "7-Seminar "};
+    String[] fritbonethursday = {"1-Software Testing", "2-Information Management", "3-Data Ware Housing and Data Mining", "4-Seminar", "5-Cryptography and Network Security", "6-Information Management", "7-Library"};
+    String[] fritbonefriday = {"1-Data Ware Housing and Data Mining", "2-/Grid and Cloud Computing", "3-Cryptography and Network Security", "4-Software Testing", "5-Security lab/Grid and Cloud Computing lab", "6-Grid and Cloud Computing", "7-Software Testing/Data Analytics"};
 
     //even sem mech a full
     String[] fmechatwomonday = {"1-BEEE", "2-Engineering mechanics", "3-Engineering chemistry II", "4-Mathematics II", "5-CAD/CAM Lab", "6-CAD/CAM Lab", "7-CAD/CAM Lab"};
@@ -935,50 +964,63 @@ public class ttperiod extends Activity {
     String[] fmechatwothursday = {"1-Technical english II", "2-BEEE", "3-Mathematics II", "4-Engineering physics II", "5-Library", "6-Engineering mechanics", "7-Mathematics II"};
     String[] fmechatwofriday = {"1-Engineering chemistry II", "2-Mathematics II", "3-BEEE", "4-Technical english II", "5-Engineering physics II", "6-Engineering mechanics", "7-Technical english II"};
 
-    String[] smechatwomonday = {"engineering materials and metallurgy", "2-Thermal engineering", "3-Statistics and numerical methods", "4-Manufacturing technology II", "5-Thermal engineering lab/Strength of materials lab", "6-Thermal engineering lab/Strength of materials lab", "7-Thermal engineering lab/Strength of materials lab"};
-    String[] smechatwotuesday = {"1-Statistics and numerical methods", "2-Kinematics of machinery", "3-Environmental science and engineering", "4-thermal engineering(Tut)", "5-Manufacturig technology lab II/Thermal engineering lab I","6-Manufacturig technology lab II/Thermal engineering lab I", "7-Manufacturig technology lab II/Thermal engineering lab I"};
-    String[] smechatwowednesday = {"1-Thermal engineering", "2-Manufacturing technology lab I/SOM Lab", "3-Manufacturing technology lab I/SOM Lab", "4-Manufacturing technology lab I/SOM Lab", "5-Kinematics of machinery", "6-Manufacturing technology", "7-Statistics and numerical methods (Tut)"};
-    String[] smechatwothursday = {"1-Environmental science and engineering", "2-Engneering materials and metallurgy", "3-Manufacturing technology", "4-Statistics and numerical methods", "5-Kinematics of machinery(Tut)", "6-Engineering materials and metallurgy", "7-Environmental science and engineering"};
-    String[] smechatwofriday = {"1-kinematics of machinery", "2-Thermal engineering", "3-Environmental science and engineering", "4-Engineering materials and metallurgy", "5-Statistics and numerical methods", "6-Manufacturing technology II", "7-Seminar/Library"};
+    String[] smechatwomonday = {"1-Computational Methods", "2-Manufacturing Technology-II", "3-Thermal Engineering", "4-Kiunetics of Machinery", "5-Thermal engineering lab/Manufacturing Technology lab-II", "6-Thermal engineering lab/Manufacturing Technology lab-II", "7-Thermal engineering lab/Manufacturing Technology lab-II"};
+    String[] smechatwotuesday = {"1-Thermal Engineering", "2-Kinematics of machinery", "3-Thermal Engineering", "4-Manufacturing Technology-II", "5-Environmantal Science and Engineering","6-Fluind Mechanics and Machinery", "7-Computational Methods"};
+    String[] smechatwowednesday = {"1-Kinetics of Machinery", "2-Thermal Engineering", "3-Computational Methods", "4-Fluid Mechanics and Machinery", "5-Thermal engineering lab/Manufacturing Technology lab-II", "6-Thermal engineering lab/Manufacturing Technology lab-II", "7-Thermal engineering lab/Manufacturing Technology lab-II"};
+    String[] smechatwothursday = {"1-Fluid Mechanics and Machinery", "2-Thermal Engineering Laboratory/Fluid Mechanics and Machinery Lab", "3-Thermal Engineering Laboratory/Fluid Mechanics and Machinery Lab", "4-Thermal Engineering Laboratory/Fluid Mechanics and Machinery Lab", "5-Computational Methods", "6-Manufacturing Technology lab-II", "7-Environmental science and engineering"};
+    String[] smechatwofriday = {"1-Environmental science and engineering", "2-Fluid Mechanics and Machinery(T)", "3-Computational Methods", "4-Fluid Mechanics and Machinery", "5-Kinematics of Machinery", "6-Thermla Engineering(T)", "7-Manufacturing Technology-II"};
 
 
-    String[] tmechatwomonday = {"1-Finite element analysis", "2-Design of transmission system", "3-gas dynamics and jet propulsion", "4-Automobile engineering", "5-Finite element analysis(E)/Gas dynamics and jet propagation(E)/Marketing management(E)", "6-Principles of management", "7-Automobile engineering"};
-    String[] tmechatwotuesday = {"1-Gas dynamics and jet propagation", "2-Principles of management", "3-Design of transmission system", "4-Finite element analysis", "5-CAD/CAM Lab", "6-CAD/CAM Lab", "7-CAD/CAM Lab"};
-    String[] tmechatwowednesday = {"1-Finite element analysis(E)/Gas dynamics and jet propagation(E)/Marketing management(E)", "2-Automobile engineering", "3-Finite element analysis(Tut)", "4-Finite element analysis", "5-Finite element analysis(E)/Gas dynamics and jet propagation(E)/Marketing management(E)", "6-Gas dynamics and jet propulsion", "7-Design and fabrication project"};
-    String[] tmechatwothursday = {"1-Communication skills lab", "2-Communication skills lab", "3-Communication skills lab", "4-Communication skills lab", "5-Designs of transmission systems", "6-Automobile engineering", "7-Principles of management"};
-    String[] tmechatwofriday = {"1-Design of transmission systems(Tut)", "2-Gas dynamics and jet propagation", "3-Finite element analysis(E)/Gas dynamics and jet propagation(E)/Marketing management(E)", "4-Principles of management", "5-design and fabrication project", "6-Design and fabrication project", "7-Design and fabrication project"};
+    String[] tmechatwomonday = {"1-Gas dynamics and jet propagation", "2-Design of transmission system", "3-Finite element analysis", "4-Gas dynamics and jet propagation", "5-Principles of management", "6-Finite element analysis", "7-Automobile engineering"};
+    String[] tmechatwotuesday = {"1-Communication skills lab", "2-Communication skills lab", "3-Communication skills lab", "4-Communication skills lab", "5-Automobile engineering", "6-Design of transmission systems(T)", "7-Gas dynamics and jet propagation(T)"};
+    String[] tmechatwowednesday = {"1-Design of transmission system", "2-Automobile engineering", "3-Finite element analysis(Tut)", "4-Principles of management", "5-CAD/CAM Lab", "6-CAD/CAM Lab", "7-CAD/CAM Lab"};
+    String[] tmechatwothursday = {"1-Renewable Sources of Energy/Unconventional Machining Process", "2-Finite element analysis", "3-Gas Dynamics and Jet Propulsion", "4-Automobile Engineering", "5-Principles of Management", "6-Renewable Sources of Energy/Unconventional Machining Process", "7-Design and fabrication project"};
+    String[] tmechatwofriday = {"1-Renewable Sources of Energy/Unconventional Machining Process", "2-Principles of Management", "3-Design of transmission system", "4-Renewable Sources of Energy/Unconventional Machining Process", "5-Design and fabrication project", "6-Design and fabrication project", "7-Design and fabrication project"};
 
 
-    String[] frmechatwomonday = {"Engineering economics", "2-Advanced IC Engines/Additive manufacturing", "3-engineering economics", "4-Entrepreneurship development/Operation research", "5-Advanced IC Engine/Additive manufacturing", "6-Entreprenuership development/Operations research", "7-Project work"};
-    String[] frmechatwotuesday = {"1-Entreprenuership development/Operation research", "2-Advanced IC Engines/Additive manufacturing", "3--Entrepreneurship development/Operation research", "4-Engineering economics", "5-Advanced IC Engines/Additive manufacturing", "6-Engineering economics", "7-Project work"};
+    String[] frmechatwomonday = {"Engineering economics", "2-Entreprenuership development/Operation research", "3-Advanced IC Engines/Additive manufacturing/Non Destructive Testing and Materials", "4-Engineering economics", "5-Entreprenuership development/Operations research", "6-Advanced IC Engines/Additive manufacturing/Non Destructive Testing and Materials", "7-Project work"};
+    String[] frmechatwotuesday = {"1-Engineering economics", "2-Entrepreneurship development/Operation research", "3-Advanced IC Engines/Additive manufacturing/Non Destructive Testing and Materials", "4-Entreprenuership development/Operations research", "5-Engineering economics", "6-Advanced IC Engines/Additive manufacturing/Non Destructive Testing and Materials", "7-Project work"};
     String[] frmechatwowednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frmechatwothursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frmechatwofriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
 
     //odd sem for second.third and fourth year mech a section
 
-    String[] smechaonemonday = {"engineering materials and metallurgy", "2-Thermal engineering", "3-Statistics and numerical methods", "4-Manufacturing technology II", "5-Thermal engineering lab/Strength of materials lab", "6-Thermal engineering lab/Strength of materials lab", "7-Thermal engineering lab/Strength of materials lab"};
-    String[] smechaonetuesday = {"1-Statistics and numerical methods", "2-Kinematics of machinery", "3-Environmental science and engineering", "4-thermal engineering(Tut)", "6-Manufacturig technology lab II/Thermal engineering lab I", "7-Manufacturig technology lab II/Thermal engineering lab I"};
-    String[] smechaonewednesday = {"1-Thermal engineering", "2-Manufacturing technology lab I/SOM Lab", "3-Manufacturing technology lab I/SOM Lab", "4-Manufacturing technology lab I/SOM Lab", "5-Kinematics of machinery", "6-Manufacturing technology", "7-Statistics and numerical methods (Tut)"};
-    String[] smechaonethursday = {"1-Environmental science and engineering", "2-Engneering materials and metallurgy", "3-Manufacturing technology", "4-Statistics and numerical methods", "5-Kinematics of machinery(Tut)", "6-Engineering materials and metallurgy", "7-Environmental science and engineering"};
-    String[] smechaonefriday = {"1-kinematics of machinery", "2-Thermal engineering", "3-Environmental science and engineering", "4-Engineering materials and metallurgy", "5-Statistics and numerical methods", "6-Manufacturing technology II", "7-Seminar/Library"};
 
 
-    String[] tmechaonemonday = {"1-Finite element analysis", "2-Design of transmission system", "3-gas dynamics and jet propulsion", "4-Automobile engineering", "5-Finite element analysis(E)/Gas dynamics and jet propagation(E)/Marketing management(E)", "6-Principles of management", "7-Automobile engineering"};
-    String[] tmechaonetuesday = {"1-Gas dynamics and jet propagation", "2-Principles of management", "3-Design of transmission system", "4-Finite element analysis", "5-CAD/CAM Lab", "6-CAD/CAM Lab", "7-CAD/CAM Lab"};
-    String[] tmechaonewednesday = {"1-Finite element analysis(E)/Gas dynamics and jet propagation(E)/Marketing management(E)", "2-Automobile engineering", "3-Finite element analysis(Tut)", "4-Finite element analysis", "5-Finite element analysis(E)/Gas dynamics and jet propagation(E)/Marketing management(E)", "6-Gas dynamics and jet propulsion", "7-Design and fabrication project"};
-    String[] tmechaonethursday = {"1-Communication skills lab", "2-Communication skills lab", "3-Communication skills lab", "4-Communication skills lab", "5-Designs of transmission systems", "6-Automobile engineering", "7-Principles of management"};
-    String[] tmechaonefriday = {"1-Design of transmission systems(Tut)", "2-Gas dynamics and jet propagation", "3-Finite element analysis(E)/Gas dynamics and jet propagation(E)/Marketing management(E)", "4-Principles of management", "5-design and fabrication project", "6-Design and fabrication project", "7-Design and fabrication project"};
+    String[] fmechaonemonday = {"1-Engineering Chemistry-I", "2-Basic Electrical and Electronics Engineering", "3-Mathematics-I", "4-Communicative English", "5-Engineering Practices laboratory", "6-Engeering Practise laboratory", "7-Engeering Practise laboratory","8-Sports"};
+    String[] fmechaonetuesday = {"1-Engineering Mathematics", "2-Seminar", "3-Engineering Physics I", "4-Basic Electrical and Electronics Engineering", "5-Chemistry", "6-Computer Practise Laboratory", "7-Computer Practise Laboratory"};
+    String[] fmechaonewednesday = {"1-Engineering Graphics", "2-Engineering Graphics", "3-Engineering Graphics", "4-Communicative English", "5-Engineering Chemistry I", "6-Engineering Physics I", "7-Mathematics-I"};
+    String[] fmechaonethursday = {"1-Communicative English", "2-Engineering Physics-I", "3-Engineering Chemistry-I", "4-Mathematics-I", "5-Engineering Graphics", "6-Engineering Graphics", "7-Engineering Graphics"};
+    String[] fmechaonefriday = {"1-Basic Electrical and Electronics Engineering", "2-Physics/Chemistry Lab", "3-Engineering Mathematics-I", "4-Engineering Mathematics-I", "5-Communicative English", "6-Library", "7-Seminar"};
+
+    String[] smechaonemonday = {"1-Mathematics III", "2-Manufacturing Technology lab I/Strength of Materials lab/Electrical Engineering lab", "3-Manufacturing Technology lab I/Strength of Materials lab/Electrical Engineering lab", "4-Manufacturing Technology lab I/Strength of Materials lab/Electrical Engineering lab", "5-Manufacturing Technology I", "6-Mechanics of Solids", "7-Engineering Materials and Metallurgy/Electrical Drives and Controls"};
+    String[] smechaonetuesday = {"1-Manufacturing Technology I", "2-Engineering Thermodynamics", "3-Electrical Drives and Controls", "4-Mechanics of Solids", "5-Engineering Materials and Metallurgy", "6-Mathematics III", "7-Mechanics of Solids(T)"};
+    String[] smechaonewednesday = {"1-Engineering Thermodynamics", "2-Manufacturing Technology lab I/Strength of Materials lab/Electrical Engineering lab", "3-Manufacturing Technology lab I/Strength of Materials lab/Electrical Engineering lab", "4-Manufacturing Technology lab I/Strength of Materials lab/Electrical Engineering lab", "5-Mathematics-III", "6-Electrical Drives and Controls", "7-Engineering Materials and Metallurgy"};
+    String[] smechaonethursday = {"1-Electrical Drives and Controls", "2-Engineering Materials and Metallurgy", "3-Engineering Thermodynamics", "4-Mechanics of Solids", "5-Engineering Thermodynamics(Tutorial)", "6-Manufacturing Technology lab I", "7-Mathematics III(T)"};
+    String[] smechaonefriday = {"1-Mechanics of Solids", "2-Manufacturing Technology I", "3-Engineering Thermodynamics", "4-Mathematics III", "5-Manufacturing Technology lab I/Strength of Materials lab/Electrical Engineering lab", "6-Manufacturing Technology lab I/Strength of Materials lab/Electrical Engineering lab", "7-Manufacturing Technology lab I/Strength of Materials lab/Electrical Engineering lab"};
+
+    String[] tmechaonemonday = {"1-Heat and Mass Transfer", "2-Design of Machine Elements", "3-Dynamics of Machines", "4-Heat and Mass Transfer(T)", "5-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab", "6-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab", "7-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab"};
+    String[] tmechaonetuesday = {"1-Metrology and Measurements", "2-Principles of Management", "3-Computer Aided Design", "4-Metrology and Measurements", "5-Heat and Mass Transfer", "6-Design of Machine Elements", "7-Dynamics of Machines"};
+    String[] tmechaonewednesday = {"1-Principles of Management", "2-Computer Aided Design", "3-Heat and Mass Transfer", "4-Metrology and Measurements", "5-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab", "6-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab", "7-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab"};
+    String[] tmechaonethursday = {"1-Dynamics of Machines", "2-Design of Machine Elements", "3-Principles of Management", "4-Heat and Mass Transfer", "5-Computer Aided Design", "6-Metrology and Measurements", "7-Principles of Management"};
+    String[] tmechaonefriday = {"1-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab", "2-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab", "3-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab", "4-Computer Aided Design", "5-Design of Machine Elements", "6-Dynamics of Machines(T)", "7-Design of Machine Elements"};
 
 
-    String[] frmechaonemonday = {"Engineering economics", "2-Advanced IC Engines/Additive manufacturing", "3-engineering economics", "4-Entrepreneurship development/Operation research", "5-Advanced IC Engine/Additive manufacturing", "6-Entreprenuership development/Operations research", "7-Project work"};
-    String[] frmechaonetuesday = {"1-Entreprenuership development/Operation research", "2-Advanced IC Engines/Additive manufacturing", "3--Entrepreneurship development/Operation research", "4-Engineering economics", "5-Advanced IC Engines/Additive manufacturing", "6-Engineering economics", "7-Project work"};
-    String[] frmechaonewednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frmechaonethursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frmechaonefriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
+
+    String[] frmechaonemonday = {"1-Simulation and Analysis lab/Mechatronics lab", "2-Simulation and Analysis lab/Mechatronics lab", "3-Simulation and Analysis lab/Mechatronics lab", "4-Mechatronics", "5-Robotics/Maintenance Engineering", "6-Process Planning and Cost Estimation/Welding Technology", "7-Comprehension"};
+    String[] frmechaonetuesday = {"1-Computer Integrated Manufacturing Systems", "2-Total Quality Management", "3-Computer Integrated Manufacturing Systems", "4-Power Plant Engineering", "5-Robotics/Maintenance Engineering", "6-Process Planning and Cost Estimation/Welding Technology", "7-Placement (T1)"};
+    String[] frmechaonewednesday = {"1-Total Quality Management", "2-Process Planning and Cost Estimation/Welding Technology", "3-Robotics/Maintenance Engineering", "4-Computer Integrated Manufacturing Systems", "5-Simulation and Analysis lab/Mechatronics lab", "6-Simulation and Analysis lab/Mechatronics lab", "7-Simulation and Analysis lab/Mechatronics lab"};
+    String[] frmechaonethursday = {"1-Mechatronics", "2-Power Plant Engineering", "3-Mechatronics", "4-Power Plant Engineering", "5-Total Quality Management", "6-Computer Integrated Manufacturing Systems", "7-Placement(T2)"};
+    String[] frmechaonefriday = {"1-Power Plant Engineering", "2-Robotics/Maintenance Engineering", "3-Process Planning and Cost Estimation/Welding Technology", "4-Library", "5-Comprehension", "6-Total Quality Management", "7-Mechatronics"};
 
 
-    //even sem mech b full
+    //even sem for second,third and fourth year mech b section
+
+
+
+//even sem for second,third and fourth year mech b section
+
     String[] fmechbtwomonday = {"1-Engineering Chemistry II", "2-Technical english II", "3-Mathematics II", "4-Engineering physics II", "5-BEEE", "6-Mathematics II", "7-Library"};
     String[] fmechbtwotuesday = {"1-Mathematics II", "2-BEEE", "3-Technical english II", "4-Engineering physics II", "5-Engineering mechanics", "6-Engineeing mechanics/Mathematics (Tut)", "7-BEEE"};
     String[] fmechbtwowednesday = {"1-BEEE", "2-Engineering Physics II", "3-Engineering mechanics", "4-Mathematics II", "5-CAD/CAM Lab", "6-CAD/CAM Lab", "7-CAD/CAM Lab"};
@@ -986,48 +1028,129 @@ public class ttperiod extends Activity {
     String[] fmechbtwofriday = {"1-BEEE", "2-Mathematics II", "3-Technical english II", "4-Engineering mechanics", "5-Engineering chemistry II", "6-Technical english II", "7-Engineering mechanics"};
 
 
-    String[] smechbtwomonday = {"1-Statistics and numerical methods", "2-Manufacturing technology II", "3-thermal engineering", "4-Environmental science and engineering", "5-Kinematics of machinery(Tut)", "6-Engineering materials and metallurgy", "7-Seminar/Library"};
-    String[] smechbtwotuesday = {"1-Thermal engineering", "2-Statistics and numerical methods", "3-Environmental science and engineering", "4-Engineering materials and metallurgy", "5-Manufacturing technology II", "6-Kinematics of machinery", "7-Statistics and numerical methods "};
-    String[] smechbtwowednesday = {"1-Manufacturing technology II", "2-Environmental science and engineering", "3-Thermal engineering", "4-Statistics and numerical methods", "5-Manufacturing technology II lab/thermal engineering lab", "6-Manufacturing technology II lab/thermal engineering lab", "7-Manufacturing technology II lab/thermal engineering lab"};
-    String[] smechbtwothursday = {"1-Kinwmatics of machinery", "2-Manufacturing technology lab I/SOM Lab", "3-Manufacturing technology lab I/SOM Lab", "4-Manufacturing technology lab I/SOM Lab", "5-Engineering materials and metallurgy", "6-Manufacturing technology II", "7-Environmental science and engineering"};
-    String[] smechbtwofriday = {"1-Engineering materials and metallurgy", "2-Thermal engineering", "3-Kinematics of machinery", "4-Statistics and numerical methods", "5-Thermal engineering lab I/SOM lab", "6-Thermal engineering lab I/SOM lab", "7-Thermal engineering lab I/SOM lab"};
+    String[] smechbtwomonday = {"1-Kinematics of machinery", "2-Manufacturing technology II", "3-Computational Methods", "4-Fluid Mechanics and Machinery", "5-Thermal Engineering", "6-Environmental Science and Engineering", "7-Manufacturing technology II"};
+    String[] smechbtwotuesday = {"1-Computational Methods", "2-Fluid Mechanics and Machinery", "3-Manufacturing Technology-II", "4-Kinematics of machinery", "5-Manufacturing Technology Lab-II/Thermal Engineering Lab-I", "6-Manufacturing Technology Lab-II/Thermal Engineering Lab-I", "7-Manufacturing Technology Lab-II/Thermal Engineering Lab-I"};
+    String[] smechbtwowednesday = {"1-Fluid Mechanics and Machinery(T)", "2-Manufacturing Technology lab-II/Fluid Mechanics and Machinery Lab", "3-Manufacturing Technology lab-II/Fluid Mechanics and Machinery Lab", "4-Manufacturing Technology lab-II/Fluid Mechanics and Machinery Lab", "5-Environmental science and engineering", "6-Kinematics of Machinery", "7-Thermal engineering"};
+    String[] smechbtwothursday = {"1-Thermal engineering(T)", "2-Computational Methods", "3-Fluid Mechanics and Machinery", "4-Thermal engineering", "5-Manufacturing technology II", "6-Kinematics of machinery(T)", "7-Computational Methods"};
+    String[] smechbtwofriday = {"1-Environmental Science and Engineering", "2-Computational Methods", "3-Thermal Engineering", "4-Fluid Mechanics and Machinery", "5-Thermal engineering lab I/Fluid Mechanics and Machinery Lab", "6-Thermal engineering lab I/Fluid Mechanics and Machinery Lab", "7-Thermal engineering lab I/Fluid Mechanics and Machinery Lab"};
 
 
-    String[] tmechbtwomonday = {"1-Design of transmissions system", "2-Gas dynamics and jet propulsion", "3-Principles of management", "4-Automaobile engineering", "5-Renewable resources of energy(E)/Unconventional marketing process(E)/Marketing management(E)", "6-Communication skills lab", "7-Communication skills lab"};
-    String[] tmechbtwotuesday = {"1-Gas dynamics and jet propulsion", "2-Principles of management", "3-Finite element analysis", "4-Automobile engineering", "5-Design of transmission systems(Tut)", "6-Communication skills lab", "7-Communication skills lab"};
-    String[] tmechbtwowednesday = {"1-Renewable resources of energy(E)/Unconventional marketing process(E)/Marketing management(E)", "2-Gas dynamics and jet propulsion", "3-Automobile engineering", "4-Finnite element analysis", "5-Renewable resources of energy(E)/Unconventional marketing process(E)/Marketing management(E)", "6-Design of transmission system", "7-Design and fabrication project"};
-    String[] tmechbtwothursday = {"1-Finite element analysis", "2-Gas dynamics and jet propulsion(Tut)", "3-Principles of management", "4-Design of transmission systems", "5-Design and fabrication project", "6-Design and fabrication project", "7-Design and fabrication project"};
-    String[] tmechbtwofriday = {"1-Principles of management", "2-Automobile engineering", "3-Renewable resources of energy(E)/Unconventional marketing process(E)/Marketing management(E)", "4-Finte element analysis(Tut)", "5-CAD/CAM LAB", "6-CAD/CAM LAB", "7-CAD/CAM LAB"};
+    String[] tmechbtwomonday = {"1-Design of transmissions system", "2-Gas dynamics and jet propulsion", "3-Finite element analysis", "4-Automabile engineering", "5-Principles of management", "6-Communication skills lab", "7-Communication skills lab"};
+    String[] tmechbtwotuesday = {"1-Finite element analysis", "2-Design of transmissions system(T)", "3-Principles of management", "4-Automobile engineering", "5-Gas dynamics and jet propulsion", "6-Communication skills lab", "7-Communication skills lab"};
+    String[] tmechbtwowednesday = {"1-Gas dynamics and jet propulsion", "2-Principles of management", "3-Automobile engineering", "4-Design of transmission systems", "5-Design and fabrication project", "6-Design and fabrication project", "7-Design and fabrication project"};
+    String[] tmechbtwothursday = {"1-Renewable Resources of Energy/Unconventional Machining Process", "2-Automobile engineering", "3-Finite Element Analysis", "4-Principles of management", "5-Gas Dynamics and Propulsion", "6-Renewable Resources of Energy/Unconventional Machining Process", "7-Design and fabrication project"};
+    String[] tmechbtwofriday = {"1-Renewable Resources of Energy/Unconventional Machining Process", "2-Finoite Element Analysis", "3-Design of transmission systems", "4-Renewable Resources of Energy/Unconventional Machining Process", "5-CAD/CAM LAB", "6-CAD/CAM LAB", "7-CAD/CAM LAB"};
 
-
-    String[] frmechbtwomonday = {"1-Engineering economics", "2-Advanced IC Engines(E)/Additive manufacturing(E)", "3-Engineering economics", "4-Entrepreneurship development(E)/Operations research(E)", "5-Advanced IC Engines(E)/Additive manufacturing(E)", "6-Entrepreneurship development(E)/Operations research(E)", "7-Project work"};
-    String[] frmechbtwotuesday = {"1-Entrepreneurship development(E)/Operations research(E)", "2-Advanced IC Engines(E)/Additive manufacturing(E)", "3-Entrepreneurship development(E)/Operations research(E)", "4-Engineering economics", "5-Advanced IC Engines(E)/Additive manufacturing(E)", "6-Engineering economics", "7-Project work"};
+    String[] frmechbtwomonday = {"1-Engineering economics", "2-Entrepreneurship development/Operations research", "3-Advanced IC Engines/Additive manufacturing/Non Destrutive Testing and Materials", "4-Engineering economics", "5-Entrepreneurship development/Operations research", "6-Advanced IC Engines/Additive manufacturing/Non Destrutive Testing and Materials", "7-Project work"};
+    String[] frmechbtwotuesday = {"1-Engineering economics", "2-Entrepreneurship development/Operations research", "3-Advanced IC Engines/Additive manufacturing/Non Destrutive Testing and Materials", "4-Entrepreneurship development/Operations research", "5-Engineering economics", "6-Advanced IC Engines/Additive manufacturing/Non Destrutive Testing and Materials", "7-Project work"};
     String[] frmechbtwowednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frmechbtwothursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
     String[] frmechbtwofriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
 
-
     // odd sem for second,third and fourth year mech b section
 
-    String[] smechbonemonday = {"1-Statistics and numerical methods", "2-Manufacturing technology II", "3-thermal engineering", "4-Environmental science and engineering", "5-Kinematics of machinery(Tut)", "6-Engineering materials and metallurgy", "7-Seminar/Library"};
-    String[] smechbonetuesday = {"1-Thermal engineering", "2-Statistics and numerical methods", "3-Environmental science and engineering", "4-Engineering materials and metallurgy", "5-Manufacturing technology II", "6-Kinematics of machinery", "7-Statistics and numerical methods "};
-    String[] smechbonewednesday = {"1-Manufacturing technology II", "2-Environmental science and engineering", "3-Thermal engineering", "4-Statistics and numerical methods", "5-Manufacturing technology II lab/thermal engineering lab", "6-Manufacturing technology II lab/thermal engineering lab", "7-Manufacturing technology II lab/thermal engineering lab"};
-    String[] smechbonethursday = {"1-Kinwmatics of machinery", "2-Manufacturing technology lab I/SOM Lab", "3-Manufacturing technology lab I/SOM Lab", "4-Manufacturing technology lab I/SOM Lab", "5-Engineering materials and metallurgy", "6-Manufacturing technology II", "7-Environmental science and engineering"};
-    String[] smechbonefriday = {"1-Engineering materials and metallurgy", "2-Thermal engineering", "3-Kinematics of machinery", "4-Statistics and numerical methods", "5-Thermal engineering lab I/SOM lab", "6-Thermal engineering lab I/SOM lab", "7-Thermal engineering lab I/SOM lab"};
+    String[] fmechbonemonday = {"1-Basic Electrical and Electronics Engineering", "2-Mathematics-I", "3-Communicative English", "4-Seminar I", "5-Engineering Physics I", "6-Mathematics I", "7-Engineering Chemistry I"};
+    String[] fmechbonetuesday = {"1-Communicative English", "2-Mathematics", "3-Seminar 2", "4-Communicative English", "5-Engineering Physics I", "6-Engineering Chemistry I", "7-Library","8-Sports"};
+    String[] fmechbonewednesday = {"1-Engineering Chemistry-I", "2-Physics/Chemistry lab", "3-Physics/Chemistry lab", "4-Basic Electrical and Electronics Engineering", "5-Physics", "6-Mathematics-I", "7-Basic Electrical and Electronics Engineering"};
+    String[] fmechbonethursday = {"1-Engineering Drawing", "2-Engineering Drawing", "3-Engineering Drawing", "4-Mathematics", "5-Engineering Practice Laboratory", "6-Engineering Practices Laboratory", "7-Engineering Practices Laboratory"};
+    String[] fmechbonefriday = {"1-Engineering Physics I", "2-Basic Electrical and Electronics Engineering", "3-Communicative English", "4-Chemistry I", "5-Engineering Graphics", "6-Engineering Graphics", "7-Engineering Graphics"};
 
 
-    String[] tmechbonemonday = {"1-Design of transmissions system", "2-Gas dynamics and jet propulsion", "3-Principles of management", "4-Automaobile engineering", "5-Renewable resources of energy(E)/Unconventional marketing process(E)/Marketing management(E)", "6-Communication skills lab", "7-Communication skills lab"};
-    String[] tmechbonetuesday = {"1-Gas dynamics and jet propulsion", "2-Principles of management", "3-Finite element analysis", "4-Automobile engineering", "5-Design of transmission systems(Tut)", "6-Communication skills lab", "7-Communication skills lab"};
-    String[] tmechbonewednesday = {"1-Renewable resources of energy(E)/Unconventional marketing process(E)/Marketing management(E)", "2-Gas dynamics and jet propulsion", "3-Automobile engineering", "4-Finnite element analysis", "5-Renewable resources of energy(E)/Unconventional marketing process(E)/Marketing management(E)", "6-Design of transmission system", "7-Design and fabrication project"};
-    String[] tmechbonethursday = {"1-Finite element analysis", "2-Gas dynamics and jet propulsion(Tut)", "3-Principles of management", "4-Design of transmission systems", "5-Design and fabrication project", "6-Design and fabrication project", "7-Design and fabrication project"};
-    String[] tmechbonefriday = {"1-Principles of management", "2-Automobile engineering", "3-Renewable resources of energy(E)/Unconventional marketing process(E)/Marketing management(E)", "4-Finte element analysis(Tut)", "5-CAD/CAM LAB", "6-CAD/CAM LAB", "7-CAD/CAM LAB"};
 
 
-    String[] frmechbonemonday = {"1-Engineering economics", "2-Advanced IC Engines(E)/Additive manufacturing(E)", "3-Engineering economics", "4-Entrepreneurship development(E)/Operations research(E)", "5-Advanced IC Engines(E)/Additive manufacturing(E)", "6-Entrepreneurship development(E)/Operations research(E)", "7-Project work"};
-    String[] frmechbonetuesday = {"1-Entrepreneurship development(E)/Operations research(E)", "2-Advanced IC Engines(E)/Additive manufacturing(E)", "3-Entrepreneurship development(E)/Operations research(E)", "4-Engineering economics", "5-Advanced IC Engines(E)/Additive manufacturing(E)", "6-Engineering economics", "7-Project work"};
-    String[] frmechbonewednesday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frmechbonethursday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
-    String[] frmechbonefriday = {"1-Project work", "2-Project work", "3-Project work", "4-Project work", "5-Project work", "6-Project work", "7-Project work"};
+
+    String[] smechbonemonday = {"1-Engineering Thermodynamics", "2-Mathematics III", "3-Engineering Materials and Metallurgy", "4-Mechanics of Solids", "5-Strength of Materials lab/Electrical Engineering lab", "6-Strength of Materials lab/Electrical Engineering lab", "7-Strength of Materials lab/Electrical Engineering lab"};
+    String[] smechbonetuesday = {"1-Manufacturing Technology I", "2-Engineering Materials and Metallurgy", "3-Engineering Thermodynamics", "4-Manufacturing Technology I", "5-Electrical Drives and Controls", "6-Mechanics of Solids", "7-Mechanics of Solids(Tutorial)"};
+    String[] smechbonewednesday = {"1-Electrical Drives and Controls", "2-Mechanics of Solids", "3-Engineering Thermodynamics", "4-Mathematics III", "5-Electrical Drives and Controls/Engineering Materials and Metallurgy", "6-Manufacturing Technology I", "7-Engineering Materials and Metallurgy"};
+    String[] smechbonethursday = {"1-Mathematics III", "2-Manufacturing Technology lab I/Electrical Engineering lab", "3-Manufacturing Technology lab I/Electrical Engineering lab", "4-Manufacturing Technology lab I/Electrical Engineering lab", "5-Mathematics III", "6-Manufacturing Technology I", "7-Engineering Thermodynamics"};
+    String[] smechbonefriday = {"1-Mechanics of Solids", "2-Manufacturing Technology lab I/Strength of Materials lab", "3-Manufacturing Technology lab I/Strength of Materials lab", "4-Manufacturing Technology lab I/Strength of Materials lab", "5-Engineering Thermodynamics", "6-Electrical Drives and Controls", "7-Mathematics III(Tutorial)"};
+
+
+
+    String[] tmechbonemonday = {"1-Computer Aided Design", "2-Heat and Mass Transfer", "3-Principls of Management", "4-Dynamics of Machines", "5-Design of Machine Elements", "6-Computer Aided Design", "7-Metrology and Measurements"};
+    String[] tmechbonetuesday = {"1-Heat and Mass Transfer", "2-Dynamics of Machines", "3-Metrology and Measurements", "4-Principls of Management", "5-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab", "6-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab", "7-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab"};
+    String[] tmechbonewednesday = {"1-Design of Machine Elements", "2-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab", "3-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab", "4-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab", "5-Heat and Mass Transfer", "6-Computer Aided Design", "7-Design of Machine Elements(T)"};
+    String[] tmechbonethursday = {"1-Metrology and Measurements", "2-Dynamics of Machines", "3-Principls of Management", "4-Design of Machine Elements", "5-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab", "6-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab", "7-Dynamics lab/Thermal Engineering lab II/Metrology and Measurements lab"};
+    String[] tmechbonefriday = {"1-Principls of Management", "2-Computer Aided Design", "3-Heat and Mass Transfer", "4-Dynamics of Machines", "5-Design of Machine Elements", "6-Metrology and Measurements", "7-Heat and Mass transfer(T)"};
+
+    String[] frmechbonemonday = {"1-Power Plant Engineering", "2-Computer Integrated Manufacturing Systems", "3-Mechatronics", "4-Total Quality Management", "5-Robotics/Maintenance Engineering", "6-Process Planning and Cost Estimation/Welding Technology", "7-Placement(T3)"};
+    String[] frmechbonetuesday = {"1-Simulation and Analysis lab/Mechatronics lab", "2-Simulation and Analysis lab/Mechatronics lab", "3-Simulation and Analysis lab/Mechatronics lab", "4-Computer Integrated Manufacturing Systems", "5-Robotics/Maintenance Engineering", "6-Process Planning and Cost Estimation/Welding Technology", "7-Placement(T4)"};
+    String[] frmechbonewednesday = {"1-Total Quality Management", "2-Process Planning and Cost Estimation/Welding Technology", "3-Robotics/Maintenance Engineering", "4-Power Plant Engineering", "5-Mechatronics", "6-Comprehension", "7-Library"};
+    String[] frmechbonethursday = {"1-Computer Integrated Manufacturing Systems", "2-Total Quality Management", "3-Mechatronics", "4-Power Plant Engineering", "5-Simulation and Analysis lab/Mechatronics lab", "6-Simulation and Analysis lab/Mechatronics lab", "7-Simulation and Analysis lab/Mechatronics lab"};
+    String[] frmechbonefriday = {"1-Mechatronics", "2-Robotics/Maintenance Engineering", "3-Process Planning and Cost Estimation/Welding Technology", "4-Total Quality Management", "5-Comprehension", "6-Power Plant Engineering", "7-Computer Integrated Manufacturing Systems"};
+
+
+    //marine odd sem
+
+
+    //marine 1st year
+
+    String[] fmarineconemonday = {"1-Mathematics for Marine Engineering-I", "2-Computer Programming", "3-Engineering Physics-I", "4-Computer Programming ", "5-Technical English-I ", "6-Chemistry for Marine Engineering-I", "7-Mathematics for Marine Engineering-I", "8-Basics of Marine Engineering"};
+    String[] fmarineconetuesday = {"1-Basics of Mrine Engineering ", "2-Physics and Chemistry Laboratory-I", "3-Physics and Chemistry Laboratory-I ","4-Basics Of Marine Engineering ", "5-Chemistry for Marine Engineering-I", "6-Engineering Physics-I", "7-Chemistry for Marine Engineering-I", "8-Engineering Physics-I"};
+    String[] fmarineconewednesday = {"1-Engineering Graphics", "2-Engineering Graphics", "3-Engineering Graphics ", "4-Mathematics for Marine Engineering-I", "5-Marine Engineering Practise Laboratory", "6-Marine Engineering Practise Laboratory", "7-Marine Engineering Practise Laboratory", "8-Marine Engineering Practise Laboratory"};
+    String[] fmarineconethursday = {"1-Engineering Physics-I", "2-Mathematics for Marine Engineering-I", "3-Technical English-I", "4-Chemistry for Marine Engineering-I", "5-Technical English-I", "6-Engineering Graphics", "7-Engineering Graphics", "8-Engineering Graphics"};
+    String[] fmarineconefriday = {"1-Technical English-I ", "2-Mathematics for Marine Engineering-I", "3-Chemistry for Marine Engineering-I", "4-Computer Programming", "5-Computer Practise Laboratory", "6-Computer Practise Laboratory", "7-Computer Practise Laboratory", "8-Basics of Marine Engineering"};
+
+    //marine 2nd yr
+    String[] smarineconemonday = {"1-Marine Manufacturing Technology", "2-Marine Electrical Machines – I", "3-Seamanship,Elementary Navigation and Survival at sea ", "4-Marine Electrical Machines – I", "5-Marine Manufacturing Technology", "6-Mathematics III", "7-Stability of ships", "8-Marine Hydraulics and fluid Machinery"};
+    String[] smarineconetuesday = {"1-Mathematics-III", "2-Welding Techniques, Lathe and Special Machine shops(Lathe) ", "3-Welding Techniques, Lathe and Special Machine shops(Lathe)", "4-Welding Techniques, Lathe and Special Machine shops(Lathe)", "5-Marine Steam Engines", "6-Marine Manufacturing Technology", "7-Marine Electrical Machines (T)"};
+    String[] smarineconewednesday = {"1-Marine Electrical Machines -I", "2-Marine hydraulics and Fluid machinery ", "3-Mathematics III", "4-Seamanship,Elementary Navigation and Survival at sea ", "5-Marine hydraulics and Fluid machinery lab", "6-Marine hydraulics and Fluid machinery lab", "7-Marine hydraulics and Fluid machinery lab"};
+    String[] smarineconethursday = {"1-Marine Machinery Drawing", "2-Marine Machinery Drawing", "3-Seamanship,Elementary Navigation and Survival at sea ", "4-Marine Manufacturing Technology", "5-Marine hydraulics and Fluid machinery", "6-Marine Steam Engines", "7-Mathematics III(T)"};
+    String[] smarineconefriday = {"1-Seamanship,Elementary Navigation and Survival at sea", "2-Mathematics III", "3-Marine hydraulics and Fluid machinery", "4-Marine Electrical Machines-I", "5-Welding Techniques, Lathe and Special Machine shops (Welding)", "6-Welding Techniques, Lathe and Special Machine shops(Welding)", "7-Welding Techniques, Lathe and Special Machine shops(Welding)"};
+    String[] smarineconesaturday = {"1-Marine Steam Engines", "2-Library", "3-Marine Steam Engines", "4-Marine Machinery Drawing", "5-Marine Machinery Drawing", "6-Marine Machinery Drawing", "7-Marine Machinery Drawing"};
+
+    //marine 3rd year
+
+    String[] tmarineconemonday = {"1-Marine Auxiliary Machinery -II", "2-Marine Electronics", "3-Marine Diesel enignes -II", "4-Marine Propulsion and Auxliary Machies lab ", "5-Marine Propulsion and Auxliary Machies lab ", "6-Marine Propulsion and Auxliary Machies lab", "7-Marine Propulsion and Auxliary Machies lab"};
+    String[] tmarineconetuesday = {"1-Marine Electrical Machines – II ", "2-Marine Diesel enignes -II", "3-Marine Electronics", "4-Library", "5-Ship Construction", "6-Marine Auxiliary Machinery -II (T)", "7-Mechanics of Marine Machines"};
+    String[] tmarineconewednesday = {"1-Ship Construction", "2-Marine Electrical Machines – II ", "3-Marine Diesel engines -II ", "4-Marine Auxiliary Machinery -II", "5-Mechanics of Marine Machines(Electrical)", "6-Electrical, Electronics and Microprocessor Lab(Electrical)", "7-Electrical, Electronics and Microprocessor Lab(Electrical)"};
+    String[] tmarineconethursday = {"1-Mechanics of Marine Machines", "2-Marine Electronics", "3-Library", "4-Marine Diesel enignes -II", "5-Electrical, Electronics and Microprocessor Lab(Electronics)", "6-Electrical, Electronics and Microprocessor Lab(Electronics)", "7-Electrical, Electronics and Microprocessor Lab(Electronics)"};
+    String[] tmarineconefriday = {"1- Marine Diesel enignes -II", "2-Marine Electronics", "3-Marine Auxiliary Machinery -II", "4-Measurement and Instrumentation Lab ", "5-Measurement and Instrumentation Lab", "6-Measurement and Instrumentation Lab", "7-Measurement and Instrumentation Lab"};
+    String[] tmarineconesaturday = {"1-Ship Construction ", "2-Mechanics of Marine Machines", "3-Mechanics of Marine Machines", "4-Marine Electrical Machines – II ", "5-Marine Electrical Machines – II", "6-Ship Construction", "7-Library"};
+
+    //marine 4th yr
+
+    String[] frmarineconemonday = {"1-Marine System and Machinery Design", "2-Ship’s Fire Prevention and Control", "3-Marine Auxiliary Machinery – II", "4-Fire Fighting, Controls and Simulator Laboratory", "5-Fire Fighting, Controls and Simulator Laboratory", "6-Fire Fighting, Controls and Simulator Laboratory", "7-Fire Fighting, Controls and Simulator Laboratory"};
+    String[] frmarineconetuesday = {"1-Marine Vehicles Performance  ", "2-Marine System and Machinery Design ", "3-Marine Auxiliary Machinery – II ", "4-Marine System and Machinery Design ", "5-Marine Electrical Technology ", "6-Library", "7-Ship’s Fire Prevention and Control"};
+    String[] frmarineconewednesday = {"1-Advanced Marine Heat Engines", "2-Marine Auxiliary Machinery – II ", "3-Marine Vehicles Performance", "4-Marine Electrical Technology", "5-Ship’s Fire Prevention and Control", "6-Marine System and Machinery Design (T)", "7-Library"};
+    String[] frmarineconethursday = {"1-Ship’s Fire Prevention and Control", "2-Marine System and Machinery Design ", "3-Training Assesment Record", "4-Marine Propulsion and Auxiliary Machineries Overhauling lab ", "5-Marine Propulsion and Auxiliary Machineries Overhauling lab", "6-Marine Propulsion and Auxiliary Machineries Overhauling lab", "7-Marine Propulsion and Auxiliary Machineries Overhauling lab"};
+    String[] frmarineconefriday = {"1-Communication skills lab", "2-Communication skills lab", "3-Communication skills lab", "4-Communication skills lab", "5-Marine System and Machinery Design", "6-Marine Auxiliary Machinery – II", "7-Marine Vehicles Performance(T)"};
+    String[] frmarineconesaturday = {"1-Marine Electrical Technology", "2-Marine Electrical Technology ", "3-Marine Vehicles Performance", "4-Marine System and Machinery Design", "5-Marine Vehicles Performance(T)", "6-Advanced Marine Heat Engines", "7-Training Assesment Record"};
+
+
+    //even sem
+    //marine 1st yr
+    String[] fmarinectwomonday = {"1-Computational Methods", "2-Engineering Materials, Metallurgy and Metrology", "3-Marine Refrigeration and Air Conditioning", "4-Marine Diesel Engines I ", "5-Mechanics of Solids ", "6-Marine Boilers and Steam Turbines", "7-Engineering Materials, Metallurgy and Metrology", "8-Marine Auxilliary Machinery I"};
+    String[] fmarinectwotuesday = {"1-Mechanics of Solids", "2-Marine Boilers and Steam Turbines", "3-Engineering Materials, Metallurgy and Metrology", "4-Marine Diesel Engines I", "5-Marine Auxilliary Machinery I", "6-Marine Diesel Engines I (Tutorial)", "7-Computational Methods (Tutorial)", "8-Marine Refrigeration and Air Conditioning"};
+    String[] fmarinectwowednesday = {"1-Engineering Materials, Metallurgy and Metrology", "2-Mechanics of Solids ", "3-Boiler Chemistry Lab ", "4-Boiler Chemistry Lab", "5-Marine Refrigeration and Air Conditioning", "6-Computational Methods", "7-Mechanics of Solids (Tutorial)", "8-Marine Boilers and Steam Turbines"};
+    String[] fmarinectwothursday = {"1-Marine Refrigeration and Air Conditioning", "2-Marine Auxilliary Machinery I", "3-Mechanics of Solids", "4-Computational Methods", "5-Marine Diesel Engines I", "6-Thermal Engineering Lab", "7-Thermal Engineering Lab", "8-Thermal Engineering Lab"};
+    String[] fmarinectwofriday = {"1-Marine Boilers and Steam Turbines ", "2-Computational Methods", "3-Marine Diesel Engines I", "4-Marine Auxilliary Machinery I ", "5-Strength of Materials and Applied Mechanics Lab", "6-Strength of Materials and Applied Mechanics Lab", "7-Strength of Materials and Applied Mechanics Lab", "8-Strength of Materials and Applied Mechanics Lab"};
+
+    //marine 2nd yr
+    String[] smarinectwomonday = {"1-Computational Methods", "2-Engineering Materials, Metallurgy and Metrology", "3-Marine Refrigeration and Air Conditioning", "4-Marine Diesel Engines I ", "5-Mechanics of Solids ", "6-Marine Boilers and Steam Turbines", "7-Engineering Materials, Metallurgy and Metrology", "8-Marine Auxilliary Machinery I"};
+    String[] smarinectwotuesday = {"1-Mechanics of Solids", "2-Marine Boilers and Steam Turbines", "3-Engineering Materials, Metallurgy and Metrology", "4-Marine Diesel Engines I", "5-Marine Auxilliary Machinery I", "6-Marine Diesel Engines I (Tutorial)", "7-Computational Methods (Tutorial)", "8-Marine Refrigeration and Air Conditioning"};
+    String[] smarinectwowednesday = {"1-Engineering Materials, Metallurgy and Metrology", "2-Mechanics of Solids ", "3-Boiler Chemistry Lab ", "4-Boiler Chemistry Lab", "5-Marine Refrigeration and Air Conditioning", "6-Computational Methods", "7-Mechanics of Solids (Tutorial)", "8-Marine Boilers and Steam Turbines"};
+    String[] smarinectwothursday = {"1-Marine Refrigeration and Air Conditioning", "2-Marine Auxilliary Machinery I", "3-Mechanics of Solids", "4-Computational Methods", "5-Marine Diesel Engines I", "6-Thermal Engineering Lab", "7-Thermal Engineering Lab", "8-Thermal Engineering Lab"};
+    String[] smarinectwofriday = {"1-Marine Boilers and Steam Turbines ", "2-Computational Methods", "3-Marine Diesel Engines I", "4-Marine Auxilliary Machinery I ", "5-Strength of Materials and Applied Mechanics Lab", "6-Strength of Materials and Applied Mechanics Lab", "7-Strength of Materials and Applied Mechanics Lab", "8-Strength of Materials and Applied Mechanics Lab"};
+
+    //marine 3rd yr
+    String[] tmarinectwomonday = {"Marine Workshop Practical and afloat training"};
+    String[] tmarinectwotuesday = {"Marine Workshop Practical and afloat training"};
+    String[] tmarinectwowednesday = {"Marine Workshop Practical and afloat training"};
+    String[] tmarinectwothursday = {"Marine Workshop Practical and afloat training"};
+    String[] tmarinectwofriday = {"Marine Workshop Practical and afloat training"};
+
+//marine 4th yr
+
+    String[] frmarinectwomonday = {"1-Marine Control Engineering and Automation", "2-Safety Precautions and Watch Keeping ", "3-Safety Precautions and Watch Keeping", "4-Ship Operational Management and IMO Requirements", "5-Marine Corrosion and Prevention", "6-Project Work, Technical Paper and Viva voce", "7-Project Work, Technical Paper and Viva voce", "8-Project Work, Technical Paper and Viva voce "};
+    String[] frmarinectwotuesday = {"1-Safety Precautions and Watch Keeping ", "2-Safety Precautions and Watch Keeping ", "3-Environmental Science and Engineering ", "4-Ship Operational Management and IMO Requirements ", "5-Project Work, Technical Paper and Viva voce ", "6-Comprehension Test ", "7-Comprehension Test ", "8-Project Work, Technical Paper and Viva voce "};
+    String[] frmarinectwowednesday = {"1-Ship Operational Management and IMO Requirements ", "2-Project Work, Technical Paper and Viva voce ", "3-Marine Corrosion and Prevention  ", "4-Marine Control Engineering and Automation", "5-Comprehension Test", "6-Environmental Science and Engineering ", "7-Project Work, Technical Paper and Viva voce", "8-Project Work, Technical Paper and Viva voce"};
+    String[] frmarinectwothursday = {"1-Marine Corrosion and Prevention ", "2-Marine Control Engineering and Automation ", "3-Project Work, Technical Paper and Viva voce ", "4-Environmental Science and Engineering ", "5-Project Work, Technical Paper and Viva voce ", "6-Project Work, Technical Paper and Viva voce", "7-Project Work, Technical Paper and Viva voce", "8-Project Work, Technical Paper and Viva voce"};
+    String[] frmarinectwofriday = {"1-Environmental Science and Engineering ", "2-Ship Operational Management and IMO Requirements", "3-Project Work, Technical Paper and Viva voce ", "4-Marine Corrosion and Prevention ", "5-Marine Control Engineering and Automation ", "6-Project Work, Technical Paper and Viva voce ", "7-Project Work, Technical Paper and Viva voce ", "8-Project Work, Technical Paper and Viva voce "};
+
+
+
+
 
 
 
@@ -1401,16 +1524,16 @@ public class ttperiod extends Activity {
                                 case 4: //friday for all sem autombile
                                     switch (y) {
                                         case 1:
-                                            new Asyncfbiotechonethursday().execute();
+                                            new Asyncfbiotechonefriday().execute();
                                             break;
                                         case 3:
-                                            new Asyncsbiotechonethursday().execute();
+                                            new Asyncsbiotechonemonday().execute();
                                             break;
                                         case 5:
-                                            new Asynctbiotechonethursday().execute();
+                                            new Asynctbiotechonefriday().execute();
                                             break;
                                         case 7:
-                                            new Asyncfrbiotechonethursday().execute();
+                                            new Asyncfrbiotechonefriday().execute();
                                             break;
                                     }
                                     break;
@@ -1556,48 +1679,48 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem chemical
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfchemaonewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncschemaonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctchemaonewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrchemaonewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for all odd sem chemical
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfchemaonethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncschemaonethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctchemaonethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrchemaonethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem chemical
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfchemaonefriday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncschemaonefriday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctchemaonefriday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrchemaonefriday().execute();
                                             break;
                                     }
@@ -1735,48 +1858,48 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem chemicAl b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfchembonewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncschembonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctchembonewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrchembonewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for all odd sem chemical b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfchembonethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncschembonethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctchembonethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrchembonethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem chemical b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfchembonefriday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncschembonefriday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctchembonefriday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrchembonefriday().execute();
                                             break;
                                     }
@@ -1921,48 +2044,48 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem civil
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfcivilonewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncscivilonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctcivilonewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrcivilonewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for odd sem civil
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfcivilonethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncscivilonethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctcivilonethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrcivilonethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem civil
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfcivilonefriday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncscivilonefriday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctcivilonefriday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrcivilonefriday().execute();
                                             break;
                                     }
@@ -2108,48 +2231,48 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem eee a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfeeeaonewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncseeeaonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asyncteeeaonewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfreeeaonewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for all odd sem eee a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfeeeaonethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncseeeaonethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asyncteeeaonethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfreeeaonethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem eee a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfeeeaonefriday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncseeeaonefriday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asyncteeeaonefriday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfreeeaonefriday().execute();
                                             break;
                                     }
@@ -2288,49 +2411,49 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem eee b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfeeebonewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncseeebonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asyncteeebonewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfreeebonewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for all odd sem eee b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfeeebonethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncseeebonethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asyncteeebonethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfreeebonethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem eee b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfeeebonefriday().execute();
                                             break;
-                                        case 4:
-                                            new Asyncseeebonethursday().execute();
+                                        case 3:
+                                            new Asyncfeeebonefriday().execute();
                                             break;
-                                        case 6:
-                                            new Asyncteeebonethursday().execute();
+                                        case 5:
+                                            new Asyncfeeebonefriday().execute();
                                             break;
-                                        case 8:
-                                            new Asyncfreeebonethursday().execute();
+                                        case 7:
+                                            new Asyncfeeebonefriday().execute();
                                             break;
                                     }
                                     break;
@@ -2477,48 +2600,48 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem it a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfitaonewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsitaonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctitaonewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfritaonewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for all odd sem it a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfitaonethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsitaonethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctitaonethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfritaonethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem it a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfitaonefriday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsitaonefriday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctitaonefriday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfritaonefriday().execute();
                                             break;
                                     }
@@ -2656,48 +2779,48 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem it b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfitbonewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsitbonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctitbonewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfritbonewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for all odd sem it b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfitbonethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsitbonethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctitbonethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfritbonethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem it b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfitbonefriday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsitbonefriday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctitbonefriday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfritbonefriday().execute();
                                             break;
                                     }
@@ -2844,48 +2967,48 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem ece a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfeceaonewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncseceaonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asyncteceaonewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfreceaonewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for all odd sem ece a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfeceaonethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncseceaonethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asyncteceaonethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfreceaonethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem ece a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfeceaonefriday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncseceaonefriday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asyncteceaonefriday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfreceaonefriday().execute();
                                             break;
                                     }
@@ -3024,48 +3147,48 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem ece b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfecebonewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsecebonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctecebonewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrecebonewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for all odd sem ece b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfecebonethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsecebonethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctecebonethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrecebonethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem ece b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfecebonefriday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsecebonefriday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctecebonefriday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrecebonefriday().execute();
                                             break;
                                     }
@@ -3203,48 +3326,48 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem ece c
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfececonewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsececonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctececonewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrececonewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for all odd sem ece c
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfececonethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsececonethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctececonethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrececonethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem ece c
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfececonefriday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsececonefriday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctececonefriday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrececonefriday().execute();
                                             break;
                                     }
@@ -3391,48 +3514,48 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem cse a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfcseaonewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncscseaonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctcseaonewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrcseaonewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for all odd sem cse a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfcseaonethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncscseaonethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctcseaonethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrcseaonethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem cse a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfcseaonefriday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncscseaonefriday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctcseaonefriday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrcseaonefriday().execute();
                                             break;
                                     }
@@ -3571,48 +3694,48 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem cse b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfcsebonewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncscsebonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctcsebonewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrcsebonewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for all odd sem  cse b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfcsebonethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncscsebonethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctcsebonethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrcsebonethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem cse b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfcsebonefriday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncscsebonefriday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctcsebonefriday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrcsebonefriday().execute();
                                             break;
                                     }
@@ -3750,48 +3873,48 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem cse c
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfcseconewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncscseaonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctcseconewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrcseconewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for all odd sem cse c
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfcseconethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncscseconethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctcseconethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrcseconethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem cse c
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfcseconefriday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncscseconefriday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctcseconefriday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrcseconefriday().execute();
                                             break;
                                     }
@@ -3939,48 +4062,48 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem mech a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfmechaonewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsmechaonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctmechaonewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrmechaonewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for all odd sem mech a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfmechaonethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsmechaonethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctmechaonethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrmechaonethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem mech a
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfmechaonefriday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsmechaonefriday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctmechaonefriday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrmechaonefriday().execute();
                                             break;
                                     }
@@ -4119,48 +4242,48 @@ public class ttperiod extends Activity {
                                     break;
                                 case 2:  //wednesday for all odd sem mech b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfmechbonewednesday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsmechbonewednesday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctmechbonewednesday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrmechbonewednesday().execute();
                                             break;
                                     }
                                     break;
                                 case 3: // thursday for all odd sem mech b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfmechbonethursday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsmechbonethursday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctmechbonethursday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrmechbonethursday().execute();
                                             break;
                                     }
                                     break;
                                 case 4: //friday for all odd sem mech b
                                     switch (y) {
-                                        case 2:
+                                        case 1:
                                             new Asyncfmechbonefriday().execute();
                                             break;
-                                        case 4:
+                                        case 3:
                                             new Asyncsmechbonefriday().execute();
                                             break;
-                                        case 6:
+                                        case 5:
                                             new Asynctmechbonefriday().execute();
                                             break;
-                                        case 8:
+                                        case 7:
                                             new Asyncfrmechbonefriday().execute();
                                             break;
                                     }
@@ -4175,41 +4298,198 @@ public class ttperiod extends Activity {
                 break;
 
             }
+            case 10:// marine
+            {
+                switch (t) { //section
+                    case 1: {
+                        if (y % 2 == 0) // calling the even semester
+                        {
+                            // Toast.makeText(ttperiod.this,"Timetable Not yet given",Toast.LENGTH_LONG).show();
+                            switch (d) //day switcher
+                            {
+                                case 0: // monday for all sem auto
+                                    switch (y) {
+                                        case 2:
+                                            new Asyncfmarinetwomonday().execute();
+                                            break;
+                                        case 4:
+                                            new Asyncsmarinetwomonday().execute();
+                                            break;
+                                        case 6:
+                                            new Asynctmarinetwomonday().execute();
+                                            break;
+                                        case 8:
+                                            new Asyncfrmarinetwomonday().execute();
+                                            break;
+
+                                    }
+                                    break;
+                                case 1: //tuesday for all sem automobile
+                                    switch (y) {
+                                        case 2:
+                                            new Asyncfmarinetwotuesday().execute();
+                                            break;
+                                        case 4:
+                                            new Asyncsmarinetwotuesday().execute();
+                                            break;
+                                        case 6:
+                                            new Asynctmarinetwotuesday().execute();
+                                            break;
+                                        case 8:
+                                            new Asyncfrmarinetwotuesday().execute();
+                                            break;
+                                    }
+                                    break;
+                                case 2:  //wednesday for all sem automobile
+                                    switch (y) {
+                                        case 2:
+                                            new Asyncfmarinetwowednesday().execute();
+                                            break;
+                                        case 4:
+                                            new Asyncsmarinetwowednesday().execute();
+                                            break;
+                                        case 6:
+                                            new Asynctmarinetwowednesday().execute();
+                                            break;
+                                        case 8:
+                                            new Asyncfrmarinetwowednesday().execute();
+                                            break;
+                                    }
+                                    break;
+                                case 3: // thursday for all sem automobile
+                                    switch (y) {
+                                        case 2:
+                                            new Asyncfmarinetwothursday().execute();
+                                            break;
+                                        case 4:
+                                            new Asyncsmarinetwothursday().execute();
+                                            break;
+                                        case 6:
+                                            new Asynctmarinetwothursday().execute();
+                                            break;
+                                        case 8:
+                                            new Asyncfrmarinetwothursday().execute();
+                                            break;
+                                    }
+                                    break;
+                                case 4: //friday for all sem autombile
+                                    switch (y) {
+                                        case 2:
+                                            new Asyncfmarinetwofriday().execute();
+                                            break;
+                                        case 4:
+                                            new Asyncsmarinetwofriday().execute();
+                                            break;
+                                        case 6:
+                                            new Asynctmarinetwofriday().execute();
+                                            break;
+                                        case 8:
+                                            new Asyncfrmarinetwofriday().execute();
+                                            break;
+                                    }
+                                    break;
+
+                            }
+
+                        } else {
+                            switch (d) //day switcher
+                            {
+                                case 0: // monday for all sem marine -odd sem
+                                    switch (y) {
+                                        case 1:
+                                            new Asyncfmarineonemonday().execute();
+                                            break;
+                                        case 3:
+                                            new Asyncsmarineonemonday().execute();
+                                            break;
+                                        case 5:
+                                            new Asynctmarineonemonday().execute();
+                                            break;
+                                        case 7:
+                                            new Asyncfrmarineonemonday().execute();
+                                            break;
+
+                                    }
+                                    break;
+                                case 1: //tuesday for all sem marine
+                                    switch (y) {
+                                        case 1:
+                                            new Asyncfmarineonetuesday().execute();
+                                            break;
+                                        case 3:
+                                            new Asyncsmarineonetuesday().execute();
+                                            break;
+                                        case 5:
+                                            new Asynctmarineonetuesday().execute();
+                                            break;
+                                        case 7:
+                                            new Asyncfrmarineonetuesday().execute();
+                                            break;
+                                    }
+                                    break;
+                                case 2:  //wednesday for all sem marine
+                                    switch (y) {
+                                        case 1:
+                                            new Asyncfmarineonewednesday().execute();
+                                            break;
+                                        case 3:
+                                            new Asyncsmarineonewednesday().execute();
+                                            break;
+                                        case 5:
+                                            new Asynctmarineonewednesday().execute();
+                                            break;
+                                        case 7:
+                                            new Asyncfrmarineonewednesday().execute();
+                                            break;
+                                    }
+                                    break;
+                                case 3: // thursday for all sem marine
+                                    switch (y) {
+                                        case 1:
+                                            new Asyncfmarineonethursday().execute();
+                                            break;
+                                        case 3:
+                                            new Asyncsmarineonethursday().execute();
+                                            break;
+                                        case 5:
+                                            new Asynctmarineonethursday().execute();
+                                            break;
+                                        case 7:
+                                            new Asyncfrmarineonethursday().execute();
+                                            break;
+                                    }
+                                    break;
+                                case 4: //friday for all sem marine
+                                    switch (y) {
+                                        case 1:
+                                            new Asyncfmarineonefriday().execute();
+                                            break;
+                                        case 3:
+                                            new Asyncsmarineonefriday().execute();
+                                            break;
+                                        case 5:
+                                            new Asynctmarineonefriday().execute();
+                                            break;
+                                        case 7:
+                                            new Asyncfrmarineonefriday().execute();
+                                            break;
+                                    }
+                                    break;
+
+                            }
+                        }
+                        break;
+                    }
+                } //end of switch t
+                break;
+            }
         }
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
-                    case 0: {
-                        Toast.makeText(ttperiod.this, "Have a Great Day", Toast.LENGTH_SHORT).show();
-                        break;
-                    }
-                    case 1: {
-                        Toast.makeText(ttperiod.this, "Have a Great Day", Toast.LENGTH_SHORT).show();
-                        break;
-                    }
-                    case 2: {
-                        Toast.makeText(ttperiod.this, "Have a Great Day", Toast.LENGTH_SHORT).show();
-                        break;
-                    }
-                    case 3: {
-                        Toast.makeText(ttperiod.this, "Have a Great Day", Toast.LENGTH_SHORT).show();
-                        break;
-                    }
-                    case 4: {
-                        Toast.makeText(ttperiod.this, "Have a Great Day", Toast.LENGTH_SHORT).show();
-                        break;
-                    }
-                    case 5: {
-                        Toast.makeText(ttperiod.this, "Have a Great Day", Toast.LENGTH_SHORT).show();
-                        break;
-                    }
-                    case 6: {
-                        Toast.makeText(ttperiod.this, "Have a Great Day", Toast.LENGTH_SHORT).show();
-                        break;
-                    }
-                    case 7: {
+                    default: {
                         Toast.makeText(ttperiod.this, "Have a Great Day", Toast.LENGTH_SHORT).show();
                         break;
                     }
@@ -4222,6 +4502,2094 @@ public class ttperiod extends Activity {
 
 
     }
+
+    //first yr marine odd sem
+    public class Asyncfmarineonemonday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : fmarineconemonday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfmarineonetuesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : fmarineconetuesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfmarineonewednesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : fmarineconewednesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfmarineonethursday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : fmarineconethursday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfmarineonefriday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : fmarineconefriday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    //second yr marine odd sem
+    public class Asyncsmarineonemonday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : smarineconemonday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncsmarineonetuesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : smarineconetuesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncsmarineonewednesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : smarineconewednesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncsmarineonethursday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : smarineconethursday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncsmarineonefriday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : smarineconefriday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    //third yr marine odd sem
+    public class Asynctmarineonemonday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : tmarineconemonday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asynctmarineonetuesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : tmarineconetuesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asynctmarineonewednesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : tmarineconewednesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asynctmarineonethursday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : tmarineconethursday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asynctmarineonefriday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : tmarineconefriday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    //final yr marine odd sem
+
+    public class Asyncfrmarineonemonday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : frmarineconemonday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfrmarineonetuesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : frmarineconetuesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfrmarineonewednesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : frmarineconewednesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfrmarineonethursday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : frmarineconethursday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfrmarineonefriday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : frmarineconefriday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+
+    //Marine even sem list
+    public class Asyncfmarinetwomonday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : fmarinectwomonday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfmarinetwotuesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : fmarinectwotuesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfmarinetwowednesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : fmarinectwowednesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfmarinetwothursday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : fmarinectwothursday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfmarinetwofriday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : fmarinectwofriday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    //second yr marine odd sem
+    public class Asyncsmarinetwomonday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : smarinectwomonday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncsmarinetwotuesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : smarinectwotuesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncsmarinetwowednesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : smarinectwowednesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncsmarinetwothursday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : smarinectwothursday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncsmarinetwofriday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : smarinectwofriday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    //third yr marine odd sem
+    public class Asynctmarinetwomonday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : tmarinectwomonday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asynctmarinetwotuesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : tmarinectwotuesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asynctmarinetwowednesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : tmarinectwowednesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asynctmarinetwothursday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : tmarinectwothursday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asynctmarinetwofriday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : tmarinectwofriday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    //final yr marine odd sem
+
+    public class Asyncfrmarinetwomonday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : frmarinectwomonday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfrmarinetwotuesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : frmarinectwotuesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfrmarinetwowednesday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : frmarinectwowednesday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfrmarinetwothursday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : frmarinectwothursday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public class Asyncfrmarinetwofriday extends AsyncTask<Void, String, String> {
+
+        ArrayAdapter<String> arrayAdapter;
+        ProgressBar progressBar;
+        int count;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            arrayAdapter = (ArrayAdapter<String>) listView.getAdapter();
+            progressBar = (ProgressBar) findViewById(R.id.progressBart);
+
+            progressBar.setMax(10);
+            progressBar.setProgress(0);
+            progressBar.setVisibility(View.VISIBLE);
+            count = 0;
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            for (String value : frmarinectwofriday) {
+                publishProgress(value);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            return "Added successfully";
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            super.onProgressUpdate(values);
+
+            arrayAdapter.add(values[0]);
+            count++;
+            progressBar.setProgress(count);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            progressBar.setVisibility(View.INVISIBLE);
+        }
+    }
+
+
+
+
+
 
     public class Asyncfautoonemonday extends AsyncTask<Void, String, String> {
 
@@ -29061,7 +31429,7 @@ public class ttperiod extends Activity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for (String value : sececonewednesday) {
+            for (String value : scseconewednesday) {
                 publishProgress(value);
                 try {
                     Thread.sleep(100);
@@ -31709,7 +34077,7 @@ public class ttperiod extends Activity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for (String value : tchembtwothursday) {
+            for (String value : tchembonethursday) {
                 publishProgress(value);
                 try {
                     Thread.sleep(100);
@@ -31761,7 +34129,7 @@ public class ttperiod extends Activity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for (String value : tchembtwofriday) {
+            for (String value : tchembonefriday) {
                 publishProgress(value);
                 try {
                     Thread.sleep(100);
@@ -38054,7 +40422,7 @@ public class ttperiod extends Activity {
         @Override
         protected String doInBackground(Void... voids) {
 
-            for (String value : freeeatwomonday) {
+            for (String value : freeeaonemonday) {
                 publishProgress(value);
                 try {
                     Thread.sleep(100);

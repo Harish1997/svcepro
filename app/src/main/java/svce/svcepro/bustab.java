@@ -1,5 +1,9 @@
 package svce.svcepro;
 
+import android.content.Intent;
+import android.graphics.Color;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -10,6 +14,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuInflater;
@@ -25,31 +30,81 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import pl.droidsonroids.gif.GifTextView;
+
 public class bustab extends AppCompatActivity {
 
     ViewPager viewPager;
-    int[] colorIntArray = {R.color.white,R.color.orange,R.color.white};
-    int[] iconIntArray = {R.drawable.bin,R.drawable.spam,R.drawable.settings};
 
     private TabLayout tablayout;
+    public static GifTextView load;
+    public static android.support.v7.widget.Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bustab);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
+        load=(GifTextView)findViewById(R.id.busloadgif);
+
         viewPager=(ViewPager)findViewById(R.id.pager);
         setupViewPager(viewPager);
         tablayout=(TabLayout)findViewById(R.id.tabs);
         tablayout.setupWithViewPager(viewPager);
         setTitle("Bus Schedule");
+        ActionBar actionBar = getSupportActionBar();
+        //actionBar.setTitle("svce pro");
+        actionBar.hide();
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setSubtitle("  Morning Bus Schedule");
+        toolbar.setSubtitleTextColor(Color.parseColor("#AEEA00"));
+        toolbar.findViewById(R.id.callsvce).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                transalert al=new transalert(bustab.this);
+                al.show();
+            }
+        });
+
 
         if(tablayout!=null)
             tablayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
                 @Override
                 public void onTabSelected(TabLayout.Tab tab) {
                     viewPager.setCurrentItem(tab.getPosition());
+                    switch(tab.getPosition())
+                    {
+                        case 0:
+                        {
+                            toolbar.setSubtitle("  Morning Bus Schedule");
+                            toolbar.setSubtitleTextColor(Color.parseColor("#AEEA00"));
+                            break;
+                        }
+                        case 1:
+                        {
+                            toolbar.setSubtitle("  Noon Bus Schedule");
+                            toolbar.setSubtitleTextColor(Color.parseColor("#FFEB3B"));
+                            break;
+                        }
+                        case 2:
+                        {
+                            toolbar.setSubtitle("  Evening Bus Schedule");
+                            toolbar.setSubtitleTextColor(Color.parseColor("#FFA726"));
+                            break;
+                        }
+                        case 3:
+                        {
+                            toolbar.setSubtitle("  4.30 Bus Schedule");
+                            toolbar.setSubtitleTextColor(Color.parseColor("#29B6F6"));
+                            break;
+                        }
+                        case 4:
+                        {
+                            toolbar.setSubtitle("  5.30 Bus Schedule");
+                            toolbar.setSubtitleTextColor(Color.parseColor("#B388FF"));
+                            break;
+                        }
+                    }
                 }
 
                 @Override
@@ -105,30 +160,6 @@ public class bustab extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             return fragmenttitle.get(position);
         }
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
-        MenuInflater menuinfalter=getMenuInflater();
-        menuinfalter.inflate(R.menu.menu_bustab,menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        int id=item.getItemId();
-        if(id==R.id.action_settings)
-        {
-
-        }
-        if(id==R.id.lic)
-        {
-
-        }
-        return super.onOptionsItemSelected(item);
     }
 
 }

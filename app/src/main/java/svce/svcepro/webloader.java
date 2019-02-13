@@ -146,6 +146,51 @@ public class webloader extends Activity {
                     }
                 });  break;
             }
+            case 6: {
+                //progressBar.setVisibility(View.INVISIBLE);
+
+                webView.loadUrl("http://coe1.annauniv.edu/home/");
+                webView.setDownloadListener(new DownloadListener() {
+                    public void onDownloadStart(String url, String userAgent,
+                                                String contentDisposition, String mimetype,
+                                                long contentLength) {
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                    }
+                });  break;
+            }
+            case 7: {
+                //progressBar.setVisibility(View.INVISIBLE);
+
+                webView.loadUrl("https://www.svce.ac.in/");
+                webView.setDownloadListener(new DownloadListener() {
+                    public void onDownloadStart(String url, String userAgent,
+                                                String contentDisposition, String mimetype,
+                                                long contentLength) {
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                    }
+                });  break;
+            }
+            case 8: {
+                //progressBar.setVisibility(View.INVISIBLE);
+
+                webView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSdfsD1Ksf5SVCktdBIOvbeSpljUy3EXC-INIn5xtmbzJ5EBXw/viewform");
+                webView.setDownloadListener(new DownloadListener() {
+                    public void onDownloadStart(String url, String userAgent,
+                                                String contentDisposition, String mimetype,
+                                                long contentLength) {
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                    }
+                });  break;
+            }
 
 
         }

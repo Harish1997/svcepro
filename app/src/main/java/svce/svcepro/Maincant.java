@@ -23,10 +23,11 @@ public class Maincant extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recycler);
 
-        List<cdata> cdata = fill_with_data();
+        setTitle("SVCE Main Canteen");
+        List<ctdata> ctdata = fill_with_data();
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
-        mcrecyadapter adapter = new mcrecyadapter(cdata,Maincant.this);
+        mctrecyadapter adapter = new mctrecyadapter(ctdata,Maincant.this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -106,18 +107,18 @@ public class Maincant extends AppCompatActivity {
                 })
         );
     }
-    public List<cdata> fill_with_data() {
+    public List<ctdata> fill_with_data() {
 
-        List<cdata> data = new ArrayList<>();
+        List<ctdata> data = new ArrayList<>();
 
-        data.add(new cdata("Breakfast", (float) 4,"Rs 45", R.drawable.breakfast));
-        data.add(new cdata("Lunch", (float) 4.5,"Rs 30", R.drawable.meals));
-        data.add(new cdata("Snacks",(float) 3.5 ,"Rs 10 per piece", R.drawable.burgr));
-        data.add(new cdata("Chocolates", (float) 5,"Rs 5/10/20", R.drawable.choc));
-        data.add(new cdata("Parle biscuits", (float) 3,"Rs 5/10/20", R.drawable.parlebis));
-        data.add(new cdata("Chips", (float) 5,"Rs 5/10/20", R.drawable.bchips));
-        data.add(new cdata("Britannia biscuits", (float) 3,"Rs 5/10/20", R.drawable.britbisc));
-        data.add(new cdata("Soft drinks", (float) 5,"Rs 5/10/20", R.drawable.sodacan));
+        data.add(new ctdata("Breakfast", (float) 4,"Rs 25 - Rs 45","From 7.45 AM to 8.30 AM", R.drawable.idli));
+        data.add(new ctdata("Lunch", (float) 4.5,"Rs 40 - Rs 60","From 11 AM to 11.40 AM/12.05 PM to 12.45 PM", R.drawable.rice));
+        data.add(new ctdata("Snacks",(float) 3.5 ,"Rs 15 per piece","From 8 AM to 4 PM", R.drawable.samosa));
+        data.add(new ctdata("Chocolates", (float) 5,"Rs 5/10/20","From 8 AM to 4 PM", R.drawable.choci));
+        data.add(new ctdata("Parle biscuits", (float) 3,"Rs 5/10/20","From 8 AM to 4 PM", R.drawable.parle));
+        data.add(new ctdata("Chips", (float) 5,"Rs 5/10/20","From 8 AM to 4 PM", R.drawable.chips));
+        data.add(new ctdata("Britannia biscuits", (float) 3,"Rs 5/10/20","From 8 AM to 4 PM", R.drawable.brittania));
+        data.add(new ctdata("Soft drinks", (float) 5,"Rs 5/10/20","From 8 AM to 4 PM", R.drawable.pepsi));
         return data;
     }
 }

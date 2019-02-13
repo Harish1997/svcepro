@@ -7,8 +7,11 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +20,7 @@ public class rdepartment extends AppCompatActivity {
 
     TextView deptdesc;
     public int x,y;
+    ImageView bg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +28,8 @@ public class rdepartment extends AppCompatActivity {
         Bundle extras=getIntent().getExtras();
         x=extras.getInt("year");
         y=extras.getInt("sem");
+        bg=(ImageView)findViewById(R.id.deptimg);
+        Glide.with(this).load("http://www.pbs.org/newshour/extra/app/uploads/2016/05/GettyImages-535837803-1024x768-1024x768.jpg").into(bg);
 
         List<data> data = fill_with_data();
 
@@ -115,6 +121,14 @@ public class rdepartment extends AppCompatActivity {
                                 startActivity(intent);
                                 break;
                             }
+                            case 9: { //marine
+                                Intent intent = new Intent(rdepartment.this, rsection.class);
+                                intent.putExtra("sel", 10);
+                                intent.putExtra("year", x);
+                                intent.putExtra("sem", y);
+                                startActivity(intent);
+                                break;
+                            }
                         }
                         // do whatever
                     }
@@ -146,7 +160,7 @@ public class rdepartment extends AppCompatActivity {
         data.add(new data("EEE", "Guys, please stop calling us a \'lineman'. That joke is as old as floppy disk.", R.drawable.neee));
         data.add(new data("ECE", "Remember that with great power comes great current squared times resistance", R.drawable.nece));
         data.add(new data("IT", "To them cloud brings AWS, IBM and Azure to their mind and no longer the white figures in the sky ", R.drawable.nit));
-        data.add(new data("Mechanical", "The Pink Floyd of all departments,Legend says that everytime u walk into their classrooms ur facial hair grows by a millimetre", R.drawable.nmech));
+        data.add(new data("Mechanical", "The Pink Floyd of all departments,Legend says that everytime u walk into their classrooms ur facial hair grows by a millimetre", R.drawable.mechic));
         data.add(new data("Marine", "I mean, how cool is it to have classes in the swimming pool and pretending to be captain Jack Sparrow", R.drawable.nmarine));
 
         return data;

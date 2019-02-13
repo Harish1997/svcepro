@@ -237,6 +237,7 @@ public class wfececone extends Activity {
 
         }
         Button bb;
+
         bb=(Button)findViewById(R.id.bb);
         bb.setOnClickListener(new View.OnClickListener() {
             @Override

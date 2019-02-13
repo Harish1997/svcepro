@@ -5,23 +5,28 @@
     android:id="@+id/activity_rdepartment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/deptbg"
     android:paddingBottom="2dp"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".rdepartment"
-    android:background="@color/colorPrimary">
+    tools:context=".rdepartment">
 
 
+    <ImageView
+        android:id="@+id/deptimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@color/bg_screen1" />
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/recyclerviewdept"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="21dp"
-                android:layout_weight="0.58"
-                app:cardCornerRadius="@dimen/activity_vertical_margin"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="2dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerviewdept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="0.58"
+        android:paddingTop="4dp"
+        app:cardCornerRadius="@dimen/activity_vertical_margin" />
 
 </RelativeLayout>
