@@ -41,12 +41,12 @@ public class bout extends AppCompatActivity {
     public List<pldata> fill_with_data() {
 
         List<pldata> data = new ArrayList<>();
-        data.add(new pldata("Creator", "Harish Anantharaman IVth Year IT",R.drawable.harishpic));
-        data.add(new pldata("Creator", "Abdullah Mubarak IVth Year IT",R.drawable.abupic));
-        data.add(new pldata("Developer","Sreenidhi.M.J IIIrd Year IT",R.drawable.sree));
-        data.add(new pldata("Developer","Subramanya Sujith.M IIIrd Year IT",R.drawable.sujith));
-        data.add(new pldata("Admin - Cloud backend and \nData updation","IInd Year IT",R.drawable.Akash));
-        data.add(new pldata("Admin - Cloud backend and \nData updation","IInd Year IT",R.drawable.Baskaran));
+        data.add(new pldata("Lead Developer", "Harish Anantharaman IVth Year IT",R.drawable.harishpic));
+        data.add(new pldata("Lead Developer", "Abdullah Mubarak IVth Year IT",R.drawable.abupic));
+        data.add(new pldata("Senior Developer","Sreenidhi M.J IIIrd Year IT",R.drawable.sree));
+        data.add(new pldata("Senior Developer","Subramanya Sujith M IIIrd Year IT",R.drawable.sujith));
+        data.add(new pldata("Junior developer","Akash JP IInd Year IT",R.drawable.akashcomp));
+        data.add(new pldata("Junior developer","Baskaran P IInd Year IT",R.drawable.baskcomp));
 
         return data;
     }

@@ -112,7 +112,7 @@ public class Maincant extends AppCompatActivity {
         List<ctdata> data = new ArrayList<>();
 
         data.add(new ctdata("Breakfast", (float) 4,"Rs 25 - Rs 45","From 7.45 AM to 8.30 AM", R.drawable.idli));
-        data.add(new ctdata("Lunch", (float) 4.5,"Rs 40 - Rs 60","From 11 AM to 11.40 AM/12.05 PM to 12.45 PM", R.drawable.rice));
+        data.add(new ctdata("Lunch", (float) 4.5,"Rs 35 - Rs 60","From 11 AM to 11.40 AM/12.05 PM to 12.45 PM", R.drawable.rice));
         data.add(new ctdata("Snacks",(float) 3.5 ,"Rs 15 per piece","From 8 AM to 4 PM", R.drawable.samosa));
         data.add(new ctdata("Chocolates", (float) 5,"Rs 5/10/20","From 8 AM to 4 PM", R.drawable.choci));
         data.add(new ctdata("Parle biscuits", (float) 3,"Rs 5/10/20","From 8 AM to 4 PM", R.drawable.parle));

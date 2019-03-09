@@ -8,10 +8,10 @@ android {
     defaultConfig {
         applicationId "com.svce.svcepro"
         minSdkVersion 16
-        targetSdkVersion 24
+        targetSdkVersion 26
         multiDexEnabled true
-        versionCode 14
-        versionName "5.0.0"
+        versionCode 15
+        versionName "6.0.0"
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
